@@ -51,7 +51,7 @@ If you would like to *implement* a new addition to the model, please consider th
 
 Code signing is mandatory to make a contribution to OCS&R. Learn more about how to sign code in the following article [About commit signature verification](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification).
 
-Commits that are not signed will no
+Commits that are not signed will not be approved and merged.
 
 ### <a name="submit-issue"></a> Submitting an Issue
 
@@ -69,8 +69,8 @@ Before you submit your Pull Request (PR) consider the following guidelines:
 1. Search [GitHub](https://github.com/pbom-dev/OSCAR/pulls) for an open or closed PR that relates to your submission.
    You don't want to duplicate existing efforts.
 
-2. Be sure that an issue describes the problem you're fixing, or documents the design for the addition you'd like to add.
-   Discussing the design upfront helps to ensure that we're ready to accept your work.
+2. Be sure that an issue describes the problem you are fixing, or documents the design for the addition you would like to add.
+   Discussing the design upfront helps to ensure that we are ready to accept your work.
 
 3. [Fork](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo) the pbom-dev/OSCAR repo.
 
@@ -102,7 +102,7 @@ Before you submit your Pull Request (PR) consider the following guidelines:
 
 ### Reviewing a Pull Request
 
-The OSC&R team reserves the right not to accept pull requests from community members who haven't been good citizens of the community. Such behavior includes not following the [OSC&R code of conduct](https://github.com/pbom-dev/OSCAR/code-of-conduct) and applies within or outside of OSC&R managed channels.
+The OSC&R team reserves the right not to accept pull requests from community members who have not been good citizens of the community. Such behavior includes not following the [OSC&R code of conduct](https://github.com/pbom-dev/OSCAR/code-of-conduct) and applies within or outside of OSC&R managed channels.
 
 #### Addressing review feedback
 
