@@ -54,6 +54,8 @@ metadata:
 detections: [D1001,D1003] 
 mitigations: [M1005,M1010]
 sub.techniques: [T1001.001, T1001.002]
+references: 
+  - https://pytorch.org/blog/compromised-nightly-dependency/
 ```
 
 ## The Structure of the template
@@ -160,7 +162,7 @@ detections: [D1001,D2112, "Detection efforts may be focused on related stages of
 ### mitigations
 
 **Type:** array\
-**Description:** A list of all refmitigation methods associated with the technique itself. Alternativaly it can be replaced with a string - for example: if there aren't any effective mitigation methods.\m
+**Description:** A list of all mitigation methods associated with the technique itself. Alternativaly it can be replaced with a string - for example: if there aren't any effective mitigation methods.\m
 **Field requirement:** <span style="color:#39B55B; background-color:#EBF7EE;">Optional</span>
 
 **Sample Response:**
@@ -168,4 +170,18 @@ detections: [D1001,D2112, "Detection efforts may be focused on related stages of
 ```YAML
 detections: ["As there are no effective mitigation methods efforts should be on prevention",M1001,M3112]
 ```
+
+### references
+
+**Type:** list\
+**Description:** A list of references and/or examples.\
+**Field requirement:** <span style="color:#39B55B; background-color:#EBF7EE;">Optional</span>
+
+**Sample Response:**
+
+```YAML
+refrences:
+  - https://pbom.dev/
+```
+
 
