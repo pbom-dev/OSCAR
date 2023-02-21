@@ -1,0 +1,20 @@
+id: 103
+type: T
+data:
+  summary: Scan public artifacts for secrets
+  description: |
+  Adversaries may search freely available websites and/or domains for information about victims that can be used during targeting. Information about victims may be available in various online sites, such as social media, new sites, or those hosting information about business operations such as hiring or requested/rewarded contracts.
+tactic: Reconnaissance
+realms: ["SCM Posture","Container Security","Secret Hygene"]
+metadata:
+  version: 1.0
+  state: draft
+  created.date: 2023/02/21
+  last.updated: 2023/02/21
+  created.by: Ronen Atias
+detections: [detec"Organization has very little visibilty on these types of scans. Enable access logging if possible."tions] 
+mitigations:
+  - data sanitization: 
+    - Artifacts should be scanned across the entire CI/CD pipeline for sensitive data before being released to public repositories
+  - awareness:
+    - Developers should be advised to remove any sensitive information from artifcats that are made available to public
