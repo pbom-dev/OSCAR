@@ -145,6 +145,27 @@ sub.technique: [T1001.001,T1001.002]
 ```
 
 
+### detections
 
+**Type:** array\
+**Description:** A list of all detection methods associated with the technique itself. Alternativaly it can be replaced with a string - for example: if there aren't any effective detection methods.\
+**Field requirement:** <span style="color:#39B55B; background-color:#EBF7EE;">Optional</span>
 
+**Sample Response:**
+
+```YAML
+detections: [D1001,D2112, "Detection efforts may be focused on related stages of the adversary lifecycle, such as during Initial Access."]
+```
+
+### mitigations
+
+**Type:** array\
+**Description:** A list of all refmitigation methods associated with the technique itself. Alternativaly it can be replaced with a string - for example: if there aren't any effective mitigation methods.\m
+**Field requirement:** <span style="color:#39B55B; background-color:#EBF7EE;">Optional</span>
+
+**Sample Response:**
+
+```YAML
+detections: ["As there are no effective mitigation methods efforts should be on prevention",M1001,M3112]
+```
 
