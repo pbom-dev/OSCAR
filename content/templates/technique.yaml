@@ -1,0 +1,18 @@
+id: id
+technique:
+  summary: summary
+  description: description
+tactic: tactic
+product.lifecycle: [product.lifecycle]
+realms: [realms]
+sub.realms: [sub.realms]
+metadata:
+  version: version
+  state: state
+  created.date: created.date
+  last.updated: last.updated
+  created.by: created.by
+detections: [detections] 
+mitigations: [mitigations]
+sub.techniques: [sub.techniques]
+contributors: [contributors]

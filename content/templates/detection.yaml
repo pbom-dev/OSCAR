@@ -1,0 +1,13 @@
+id: id
+detection:
+  summary: summary
+  description: description
+techniques: [techniques]
+metadata:
+  version: version
+  state: state
+  created.date: created.date
+  last.updated: last.updated
+  created.by: created.by
+mitigations: [mitigations]
+contributors: [contributors]
