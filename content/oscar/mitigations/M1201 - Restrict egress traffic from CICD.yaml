@@ -1,0 +1,16 @@
+id: M1201
+type: Mitigation
+summary: Restrict egresss traffic in CI/CD
+description: |
+  Restrict egress traffic from the build system to authorized destinations. This is pretty straightforward and a very feasble mitigation since a build system usually requires access to a very limited destinations.
+  Controlling the traffic has many benifits:
+  1. Prevent exfiltration of sensitive information
+  2. Block download of packages from unauthorized package repositories
+  3. Block download of malware
+
+references:
+  - https://about.codecov.io/security-update/
+
+metadata:
+  - version: 0.1
+  - state: draft

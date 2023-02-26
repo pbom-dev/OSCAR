@@ -1,0 +1,31 @@
+id: 131
+type: Technique
+
+tactic: Lateral Movement
+
+realm: 
+	- ArtifactSecurity
+	- CI/CDPosture
+	- CloudSecurity
+	- SCMPosture
+
+summary: # REQUIRED - <key:value>
+
+description: # REQUIRED - <key:value> - supports markdown
+
+mitigations: # REQUIRED - <list> -reference to mitigation references
+  - 
+
+detections: # REQUIRED - <list> - reference to detection defintitions
+  - 
+
+subtechinques: # OPTIONAL <list> - reference to TechIDs
+  - 
+
+references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
+  -
+
+metadata: 
+    state: draft
+
+  

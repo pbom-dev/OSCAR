@@ -1,18 +1,49 @@
-id: id
-technique:
-  summary: summary
-  description: description
-tactic: tactic
-product.lifecycle: [product.lifecycle]
-realms: [realms]
-sub.realms: [sub.realms]
-metadata:
-  version: version
-  state: state
-  created.date: created.date
-  last.updated: last.updated
-  created.by: created.by
-detections: [detections] 
-mitigations: [mitigations]
-sub.techniques: [sub.techniques]
-contributors: [contributors]
+# Guidelines
+# It is recommended to append the techinque name to the filename - ex T1111: A very cool technique.yaml
+# We support markdown in description. Use pipe for multiline descriptions
+
+
+id: # REQUIRED - <key:value> prefix with T,M,D - example T1123
+type: # REQUIRED - <key:value> choose one of the following: Techinque,Mitigation,Detection
+tactic: # REQUIRED - <list> - choose at least one technique
+  - Collection
+  - Credential Access
+  - Defense Evasion
+  - Execution
+  - Exfiltration
+  - Impact
+  - Initial Access
+  - Lateral Movement
+  - Persistence
+  - Privilege Escalation
+  - Reconnaissance
+  - Resource Development
+realm: # REQUIRED - <list> - multiple choice
+  - Container Security
+  - Open Source Security
+  - SCM Posture
+  - Secrets Hygiene
+  - Code Security
+  - Cloud Security
+  - CI/CD Posture
+  - Artifact Security
+  - Infrastructure as code
+summary: # REQUIRED - <key:value>
+
+description: # REQUIRED - <key:value> - supports markdown
+
+mitigations: # REQUIRED - <list> -reference to mitigation references
+  - 
+detections: # REQUIRED - <list> - reference to detection defintitions
+  - 
+subtechinques: # OPTIONAL <list> - reference to TechIDs
+  - 
+
+references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
+  -
+
+metadata: # REQUIRED <key:value> choose  draft or release
+version: # OPTIONAL <key:value> note a version number of this document
+
+
+  

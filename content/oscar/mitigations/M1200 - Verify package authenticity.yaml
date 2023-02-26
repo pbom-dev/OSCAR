@@ -1,0 +1,12 @@
+id: M1200
+type: Mitigation
+summary: Verify package authenticity
+description: |
+  Before installing any package, it's important to verify its authenticity. This can include checking the package's digital signature or using a package manager that supports package verification.
+
+references:
+  - https://pip.pypa.io/en/stable/topics/secure-installs/
+
+metadata:
+  - version: 0.1
+  - state: draft
