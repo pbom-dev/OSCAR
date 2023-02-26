@@ -1,0 +1,39 @@
+id: T120
+type:
+    - Techinque
+tactic:
+    - Initial Access
+realm:
+    - Container Security
+    - Open Source Security
+    - Artifact Security
+summary: Dependency Confusion
+description: |
+    Dependency confusion is a type of supply chain attack that occurs when an attacker exploits the way some package managers, such as npm and PyPI, resolve dependencies when installing software libraries.
+    In a typical software development project, developers rely on a variety of external libraries, often referred to as dependencies, to build their applications. These libraries are typically stored in a remote repository, and developers use a package manager to install and manage them.
+
+mitigations:
+# reference to mitigation references
+    - Validate package/library integrity. If possible, specify a hash of the package
+    - Harden package mainfest. Never leave a package with no specific version. Make sure to use only trusted repositories
+
+
+detections: 
+# reference to detection defintitions
+    - Detect rogue outgoing traffic from CI/CD system
+    
+subtechinques:
+# reference to TechIDs
+    - 
+
+refrences:
+    - https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610
+metadata:
+  state: 
+  # draft or release
+    - draft
+    - release
+  created: created.date
+  updated: last.updated
+
+  
