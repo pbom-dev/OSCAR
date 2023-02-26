@@ -1,18 +1,62 @@
-id: id
-technique:
-  summary: summary
-  description: description
-tactic: tactic
-product.lifecycle: [product.lifecycle]
-realms: [realms]
-sub.realms: [sub.realms]
+id: # REQUIRED. prefix with T,M,D 
+type:
+# REQUIRED
+  - Techinque
+  - Mitigation
+  - Detection
+tactic:
+# REQUIRED 
+  - Collection
+  - Credential Access
+  - Defense Evasion
+  - Execution
+  - Exfiltration
+  - Impact
+  - Initial Access
+  - Lateral Movement
+  - Persistence
+  - Privilege Escalation
+  - Reconnaissance
+  - Resource Development
+realm:
+# REQUIRED - multiple choice
+  - Container Security
+  - Open Source Security
+  - SCM Posture
+  - Secrets Hygiene
+  - Code Security
+  - Cloud Security
+  - CI/CD Posture
+  - Artifact Security
+  - Infrastructure as code
+summary: summary
+# REQUIRED - descrption - supports markdown
+description: description
+
+mitigations:
+# REQUIRED - reference to mitigation references
+  - 
+detections: 
+# REQUIRED
+# reference to detection defintitions
+  - 
+subtechinques:
+# OPTIONAL
+# reference to TechIDs
+  - 
+
+references:
+# OPTIONAL
+# reference to attacks, articals, blogs etc...
+  -
+
+
 metadata:
-  version: version
-  state: state
-  created.date: created.date
-  last.updated: last.updated
-  created.by: created.by
-detections: [detections] 
-mitigations: [mitigations]
-sub.techniques: [sub.techniques]
-contributors: [contributors]
+  state: 
+  # REQUIRED
+  # draft or release
+    - draft
+    - release
+
+
+  
