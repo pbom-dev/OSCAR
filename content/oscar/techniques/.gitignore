@@ -1,7 +1,3 @@
-# Ignore temp files
-
-*.tmp
-*.bak
-*.swp
-
-
+# Only yamls here!
+*
+!*.yaml
