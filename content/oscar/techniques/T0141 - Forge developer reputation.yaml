@@ -1,12 +1,12 @@
-id: 141
+id: T0141
 type: Technique
 
 tactic: Resource Development
 
 realm: 
-	- OpenSourceSecurity
+  - OpenSourceSecurity
 
-summary: # REQUIRED - <key:value>
+summary: Forge developer reputation
 
 description: # REQUIRED - <key:value> - supports markdown
 

@@ -1,13 +1,13 @@
-id: 166
+id: T0166
 type: Technique
 
 tactic: Execution
 
 realm: 
-	- CI/CDPosture
-	- SCMPosture
+  - CI/CDPosture
+  - SCMPosture
 
-summary: # REQUIRED - <key:value>
+summary: Trigger pipeline execution
 
 description: # REQUIRED - <key:value> - supports markdown
 

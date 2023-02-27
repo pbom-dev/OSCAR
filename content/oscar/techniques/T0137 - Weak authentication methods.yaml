@@ -1,14 +1,14 @@
-id: 137
+id: T0137
 type: Technique
 
 tactic: Initial Access
 
 realm: 
-	- CloudSecurity
-	- CodeSecurity
-	- Infrastructureascode
+  - CloudSecurity
+  - CodeSecurity
+  - Infrastructureascode
 
-summary: # REQUIRED - <key:value>
+summary: Weak authentication methods
 
 description: # REQUIRED - <key:value> - supports markdown
 

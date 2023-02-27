@@ -1,13 +1,13 @@
-id: 169
+id: T0169
 type: Technique
 
 tactic: Lateral Movement
 
 realm: 
-	- CodeSecurity
-	- SCMPosture
+  - CodeSecurity
+  - SCMPosture
 
-summary: # REQUIRED - <key:value>
+summary: Push implants across repositories 
 
 description: # REQUIRED - <key:value> - supports markdown
 

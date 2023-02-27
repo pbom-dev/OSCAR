@@ -1,14 +1,14 @@
-id: 150
+id: T0150
 type: Technique
 
 tactic: Execution
 
 realm: 
-	- CodeSecurity
-	- ContainerSecurity
-	- OpenSourceSecurity
+  - CodeSecurity
+  - ContainerSecurity
+  - OpenSourceSecurity
 
-summary: # REQUIRED - <key:value>
+summary: Runtime logic bomb
 
 description: # REQUIRED - <key:value> - supports markdown
 

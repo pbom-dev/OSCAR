@@ -1,14 +1,14 @@
-id: 100
+id: T0100
 type: Technique
 
 tactic: Reconnaissance
 
 realm: 
-	- ContainerSecurity
-	- OpenSourceSecurity
-	- SCMPosture
+  - ContainerSecurity
+  - OpenSourceSecurity
+  - SCMPosture
 
-summary: # REQUIRED - <key:value>
+summary: Discover naming conventions
 
 description: # REQUIRED - <key:value> - supports markdown
 

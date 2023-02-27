@@ -1,13 +1,13 @@
-id: 109
+id: T0109
 type: Technique
 
 tactic: Resource Development
 
 realm: 
-	- ContainerSecurity
-	- OpenSourceSecurity
+  - ContainerSecurity
+  - OpenSourceSecurity
 
-summary: # REQUIRED - <key:value>
+summary: Publish malicious artifact
 
 description: # REQUIRED - <key:value> - supports markdown
 

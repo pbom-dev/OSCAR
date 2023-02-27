@@ -1,13 +1,13 @@
-id: 108
+id: T0108
 type: Technique
 
 tactic: Resource Development
 
 realm: 
-	- OpenSourceSecurity
-	- SCMPosture
+  - OpenSourceSecurity
+  - SCMPosture
 
-summary: # REQUIRED - <key:value>
+summary: Accounts in public registry
 
 description: # REQUIRED - <key:value> - supports markdown
 

@@ -1,15 +1,15 @@
-id: 131
+id: T0131
 type: Technique
 
 tactic: Lateral Movement
 
 realm: 
-	- ArtifactSecurity
-	- CI/CDPosture
-	- CloudSecurity
-	- SCMPosture
+  - ArtifactSecurity
+  - CI/CDPosture
+  - CloudSecurity
+  - SCMPosture
 
-summary: # REQUIRED - <key:value>
+summary: Overprivileged user account
 
 description: # REQUIRED - <key:value> - supports markdown
 

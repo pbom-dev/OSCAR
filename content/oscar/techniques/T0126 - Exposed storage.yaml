@@ -1,13 +1,13 @@
-id: 126
+id: T0126
 type: Technique
 
 tactic: Initial Access
 
 realm: 
-	- CloudSecurity
-	- Infrastructureascode
+  - CloudSecurity
+  - Infrastructureascode
 
-summary: # REQUIRED - <key:value>
+summary: Exposed storage
 
 description: # REQUIRED - <key:value> - supports markdown
 

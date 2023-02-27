@@ -1,14 +1,14 @@
-id: 101
+id: T0101
 type: Technique
 
 tactic: Reconnaissance
 
 realm: 
-	- ContainerSecurity
-	- OpenSourceSecurity
-	- SCMPosture
+  - ContainerSecurity
+  - OpenSourceSecurity
+  - SCMPosture
 
-summary: # REQUIRED - <key:value>
+summary: Discover technology stacks
 
 description: # REQUIRED - <key:value> - supports markdown
 

@@ -1,16 +1,16 @@
-id: 140
+id: T0140
 type: Technique
 
 tactic: Credential Access
 
 realm: 
-	- CI/CDPosture
-	- CloudSecurity
-	- ContainerSecurity
-	- Infrastructureascode
-	- SecretsHygiene
+  - CI/CDPosture
+  - CloudSecurity
+  - ContainerSecurity
+  - Infrastructureascode
+  - SecretsHygiene
 
-summary: # REQUIRED - <key:value>
+summary: Dump tokens from the environment variable
 
 description: # REQUIRED - <key:value> - supports markdown
 

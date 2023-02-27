@@ -1,14 +1,14 @@
-id: 146
+id: T0146
 type: Technique
 
 tactic: Defense Evasion
 
 realm: 
-	- CI/CDPosture
-	- CloudSecurity
-	- SCMPosture
+  - CI/CDPosture
+  - CloudSecurity
+  - SCMPosture
 
-summary: # REQUIRED - <key:value>
+summary: Misconfigured audit logs settings
 
 description: # REQUIRED - <key:value> - supports markdown
 

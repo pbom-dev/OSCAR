@@ -1,12 +1,12 @@
-id: 105
+id: T0105
 type: Technique
 
 tactic: Reconnaissance
 
 realm: 
-	- CloudSecurity
+  - CloudSecurity
 
-summary: # REQUIRED - <key:value>
+summary: Active scanning
 
 description: # REQUIRED - <key:value> - supports markdown
 

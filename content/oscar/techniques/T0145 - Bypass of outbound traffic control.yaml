@@ -1,12 +1,12 @@
-id: 145
+id: T0145
 type: Technique
 
 tactic: Exfiltration
 
 realm: 
-	- CloudSecurity
+  - CloudSecurity
 
-summary: # REQUIRED - <key:value>
+summary: Bypass of outbound traffic control
 
 description: # REQUIRED - <key:value> - supports markdown
 

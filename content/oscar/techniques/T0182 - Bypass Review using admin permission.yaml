@@ -1,13 +1,13 @@
-id: 182
+id: T0182
 type: Technique
 
 tactic: Defense Evasion
 
 realm: 
-	- CI/CDPosture
-	- SCMPosture
+  - CI/CDPosture
+  - SCMPosture
 
-summary: # REQUIRED - <key:value>
+summary: Bypass Review using admin permission
 
 description: # REQUIRED - <key:value> - supports markdown
 

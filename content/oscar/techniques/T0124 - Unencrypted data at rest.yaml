@@ -1,13 +1,13 @@
-id: 124
+id: T0124
 type: Technique
 
 tactic: Collection
 
 realm: 
-	- CloudSecurity
-	- Infrastructureascode
+  - CloudSecurity
+  - Infrastructureascode
 
-summary: # REQUIRED - <key:value>
+summary: Unencrypted data at rest
 
 description: # REQUIRED - <key:value> - supports markdown
 

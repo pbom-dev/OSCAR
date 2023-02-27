@@ -1,13 +1,13 @@
-id: 132
+id: T0132
 type: Technique
 
 tactic: Privilege Escalation
 
 realm: 
-	- CI/CDPosture
-	- ContainerSecurity
+  - CI/CDPosture
+  - ContainerSecurity
 
-summary: # REQUIRED - <key:value>
+summary: Runnersagents running with high user privileges
 
 description: # REQUIRED - <key:value> - supports markdown
 

@@ -1,18 +1,18 @@
-id: 116
+id: T0116
 type: Technique
 
 tactic: Initial Access
 
 realm: 
-	- ArtifactSecurity
-	- CI/CDPosture
-	- CloudSecurity
-	- ContainerSecurity
-	- OpenSourceSecurity
-	- SCMPosture
-	- SecretsHygiene
+  - ArtifactSecurity
+  - CI/CDPosture
+  - CloudSecurity
+  - ContainerSecurity
+  - OpenSourceSecurity
+  - SCMPosture
+  - SecretsHygiene
 
-summary: # REQUIRED - <key:value>
+summary: Shadow IT
 
 description: # REQUIRED - <key:value> - supports markdown
 

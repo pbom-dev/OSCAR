@@ -1,13 +1,13 @@
-id: 127
+id: T0127
 type: Technique
 
 tactic: Initial Access
 
 realm: 
-	- CloudSecurity
-	- Infrastructureascode
+  - CloudSecurity
+  - Infrastructureascode
 
-summary: # REQUIRED - <key:value>
+summary: Exposed database
 
 description: # REQUIRED - <key:value> - supports markdown
 

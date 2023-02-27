@@ -1,13 +1,13 @@
-id: 106
+id: T0106
 type: Technique
 
 tactic: Reconnaissance
 
 realm: 
-	- CI/CDPosture
-	- CloudSecurity
+  - CI/CDPosture
+  - CloudSecurity
 
-summary: # REQUIRED - <key:value>
+summary: Scan configuration on public resources
 
 description: # REQUIRED - <key:value> - supports markdown
 

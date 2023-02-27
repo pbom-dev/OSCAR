@@ -1,12 +1,12 @@
-id: 175
+id: T0175
 type: Technique
 
 tactic: Persistence
 
 realm: 
-	- CloudSecurity
+  - CloudSecurity
 
-summary: # REQUIRED - <key:value>
+summary: Untagged resources
 
 description: # REQUIRED - <key:value> - supports markdown
 

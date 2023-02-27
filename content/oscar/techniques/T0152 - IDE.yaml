@@ -1,12 +1,12 @@
-id: 152
+id: T0152
 type: Technique
 
 tactic: Execution
 
 realm: 
-	- OpenSourceSecurity
+  - OpenSourceSecurity
 
-summary: # REQUIRED - <key:value>
+summary: IDE
 
 description: # REQUIRED - <key:value> - supports markdown
 

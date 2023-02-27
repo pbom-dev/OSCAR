@@ -1,12 +1,12 @@
-id: 155
+id: T0155
 type: Technique
 
 tactic: Execution
 
 realm: 
-	- CloudSecurity
+  - CloudSecurity
 
-summary: # REQUIRED - <key:value>
+summary: Cloud workload
 
 description: # REQUIRED - <key:value> - supports markdown
 

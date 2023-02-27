@@ -1,15 +1,15 @@
-id: 113
+id: T0113
 type: Technique
 
 tactic: Initial Access
 
 realm: 
-	- ArtifactSecurity
-	- CloudSecurity
-	- Infrastructureascode
-	- SCMPosture
+  - ArtifactSecurity
+  - CloudSecurity
+  - Infrastructureascode
+  - SCMPosture
 
-summary: # REQUIRED - <key:value>
+summary: Compromised user account
 
 description: # REQUIRED - <key:value> - supports markdown
 

@@ -1,16 +1,16 @@
-id: 112
+id: T0112
 type: Technique
 
 tactic: Initial Access
 
 realm: 
-	- ArtifactSecurity
-	- CI/CDPosture
-	- Infrastructureascode
-	- SCMPosture
-	- SecretsHygiene
+  - ArtifactSecurity
+  - CI/CDPosture
+  - Infrastructureascode
+  - SCMPosture
+  - SecretsHygiene
 
-summary: # REQUIRED - <key:value>
+summary: Compromised token
 
 description: # REQUIRED - <key:value> - supports markdown
 
