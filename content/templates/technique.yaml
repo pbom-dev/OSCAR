@@ -4,7 +4,7 @@
 
 
 id: # REQUIRED - <key:value> prefix with T,M,D - example T1123
-type: # REQUIRED - <key:value> choose one of the following: Techinque,Mitigation,Detection
+type: # REQUIRED - <key:value> choose one of the following: Technique,Mitigation,Detection
 tactic: # REQUIRED - <list> - choose at least one technique
   - Collection
   - Credential Access
