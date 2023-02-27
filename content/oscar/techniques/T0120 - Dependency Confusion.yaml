@@ -1,8 +1,6 @@
 id: T120
-type:
-    - Techinque
-tactic:
-    - Initial Access
+type: Techinque
+tactic: Initial Access
 realm:
     - Container Security
     - Open Source Security
