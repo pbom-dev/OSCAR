@@ -1,13 +1,16 @@
-id: id
-detection:
-  summary: summary
-  description: description
-techniques: [techniques]
+# Guidelines
+# It is recommended to append the techinque name to the filename - ex D1111: A very cool detection.yaml
+# We support markdown in description. Use pipe for multiline descriptions
+
+id: # REQUIRED - <key:value> prefix with T,M,D - example M1123
+type: Detection
+summary: # REQUIRED - <key:value>
+
+description: # REQUIRED - <key:value> - supports markdown
+
+references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
+  - 
+
 metadata:
-  version: version
-  state: state
-  created.date: created.date
-  last.updated: last.updated
-  created.by: created.by
-mitigations: [mitigations]
-contributors: [contributors]
+  state: # REQUIRED <key:value> choose  draft or release
+  version: # OPTIONAL <key:value> note a version number of this document

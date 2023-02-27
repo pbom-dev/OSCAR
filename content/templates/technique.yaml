@@ -42,8 +42,9 @@ subtechinques: # OPTIONAL <list> - reference to TechIDs
 references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
   -
 
-metadata: # REQUIRED <key:value> choose  draft or release
-version: # OPTIONAL <key:value> note a version number of this document
+metadata:
+  state: # REQUIRED <key:value> choose  draft or release
+  version: # OPTIONAL <key:value> note a version number of this document
 
 
   
