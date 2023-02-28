@@ -27,6 +27,6 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: python helpers/yaml_to_json.py content/oscar/techniques
+        run: ls -al
 
     
