@@ -1,0 +1,31 @@
+# Guidelines for contribution via templates:
+# -  Make sure that all required fields are present and have valid values.
+# - Use the appropriate data types for each field (string, number, boolean, etc.).
+# - Avoid using sensitive or confidential information in the data structure.
+# - If referencing another data structure, make sure that the reference is valid and follows the appropriate format.
+# - Include any relevant notes or comments in the data structure to provide additional context or clarification.
+# - If modifying an existing data structure, make sure to maintain backward compatibility with previous versions.
+# - Follow the predefined structure for the template and do not make changes to the template. template changes can be suggested via a different thread.
+# - Ensure that the data structure is well-formatted and easy to read, with proper indentation and spacing.
+# - Test the data structure thoroughly before submitting it to the OSC&R.
+# - If unsure about any aspect of the data structure, consult with other contributors or the project maintainers before making changes.
+# - The file name for the template shall always be in the following format: * ID: name.yaml * | In example: T1111: A very cool technique.yaml
+# - We support markdown in description. Use pipe for multiline descriptions
+# - The ID should be serialized and counting up from the last ID in the system. If you are unsure as for the correct ID to use, consult with other contributors or the project maintainers before making changes 
+
+
+id: # Defintion: Identifier of the realm | Requirement Level: MUST | Type: String | Structure: R____ | Example: R1123
+type: Realm
+summary: # Defintion: Summary of the realm | Requirement Level: MUST | Type: String | Example: The adversary is trying to gather information they can use to plan future operations
+description: # Defintion: Longer description of the realm | Requirement Level: MAY | Type: LongText
+references: # Defintion: external references to the realm | Requirement Level: MAY | Type: Array (list)
+    - reference: 
+        type:  # Defintion: The type of the reference | Requirement Level: MUST (if reference is attributed) | Type: String (with options) | Options: web.article,research,payload | Example: research
+        path:  # Defintion: link to the reference | Requirement Level: MUST (if reference is attributed) | Type: String | Example: https://www.bleepingcomputer.com/news/security/lastpass-devops-engineer-hacked-to-steal-password-vault-data-in-2022-breach/technique
+metadata:
+  state: # Defintion: release state for the realm | Requirement Level: MUST | Type: String (from options)  | Options: draft, under review, released | Example: released
+  created: # Defintion: when the realm was created | Requirement Level: MUST | Type: date/time (ISO 8601) | Example: 2023-03-05T16:31:51+00:00
+  updated: # Defintion: when the realm was last updated | Requirement Level: MUST | Type: date/time (ISO 8601) | Example: 2023-03-05T16:31:51+00:00
+  version: # Defintion: what is the current version of the realm (each change bumps a version) | Requirement Level: MUST | Type: String | Structure: Major.Minor | Example: 1.4
+  creator: # Defintion: The individual that created the record in the OSC&R system | Requirement Level: MUST | Type: String
+  attribution: # Defintion: who should be thanked to as a part of the contribution to OSC&R and in general | Requirement Level: MAY | Type: List
