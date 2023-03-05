@@ -1,4 +1,3 @@
-# Ignore everything in this directory
+# Only yamls here!
 *
-# Except this file
-!.gitignore
+!*.yaml

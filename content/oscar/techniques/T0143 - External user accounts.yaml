@@ -1,0 +1,30 @@
+id: T0143
+type: Technique
+
+tactic: Initial Access
+
+realm: 
+  - CI/CDPosture
+  - CloudSecurity
+  - SCMPosture
+
+summary: External user accounts
+
+description: # REQUIRED - <key:value> - supports markdown
+
+mitigations: # REQUIRED - <list> -reference to mitigation references
+  - 
+
+detections: # REQUIRED - <list> - reference to detection defintitions
+  - 
+
+subtechinques: # OPTIONAL <list> - reference to TechIDs
+  - 
+
+references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
+  -
+
+metadata: 
+    state: draft
+
+  
