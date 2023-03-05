@@ -1,6 +1,3 @@
-
-release-0.2
-
 # Contributing to OSC&R
 
 We would love for you to contribute to the OSC&R project and help make it even better than it is today!
