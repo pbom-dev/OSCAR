@@ -1,13 +1,13 @@
-id: 107
+id: T0107
 type: Technique
 
 tactic: Reconnaissance
 
 realm: 
-	- ContainerSecurity
-	- SCMPosture
+  - ContainerSecurity
+  - SCMPosture
 
-summary: # REQUIRED - <key:value>
+summary: Discover internal artifacts names
 
 description: # REQUIRED - <key:value> - supports markdown
 

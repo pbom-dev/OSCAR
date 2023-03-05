@@ -1,13 +1,13 @@
-id: 128
+id: T0128
 type: Technique
 
 tactic: Initial Access
 
 realm: 
-	- CloudSecurity
-	- Infrastructureascode
+  - CloudSecurity
+  - Infrastructureascode
 
-summary: # REQUIRED - <key:value>
+summary: Permissive network access
 
 description: # REQUIRED - <key:value> - supports markdown
 

@@ -1,12 +1,12 @@
-id: 176
+id: T0176
 type: Technique
 
 tactic: Defense Evasion
 
 realm: 
-	- CloudSecurity
+  - CloudSecurity
 
-summary: # REQUIRED - <key:value>
+summary: Misconfiguration of security measures
 
 description: # REQUIRED - <key:value> - supports markdown
 

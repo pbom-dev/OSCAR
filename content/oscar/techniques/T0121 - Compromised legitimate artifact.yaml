@@ -1,12 +1,13 @@
-id: T0142
+id: T0121
 type: Technique
 
-tactic: Reconnaissance
+tactic: Resource Development
 
 realm: 
-  - CloudSecurity
+  - ContainerSecurity
+  - OpenSourceSecurity
 
-summary: Accidental public disclosure of internal resources
+summary: Compromised legitimate artifact
 
 description: # REQUIRED - <key:value> - supports markdown
 

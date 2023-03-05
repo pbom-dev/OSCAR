@@ -1,13 +1,13 @@
-id: 164
+id: T0164
 type: Technique
 
 tactic: Privilege Escalation
 
 realm: 
-	- OpenSourceSecurity
-	- SCMPosture
+  - OpenSourceSecurity
+  - SCMPosture
 
-summary: # REQUIRED - <key:value>
+summary: Inject malicious dependency to privileged user repository 
 
 description: # REQUIRED - <key:value> - supports markdown
 

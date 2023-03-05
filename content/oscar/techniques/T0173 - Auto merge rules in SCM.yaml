@@ -1,12 +1,12 @@
-id: 173
+id: T0173
 type: Technique
 
 tactic: Execution
 
 realm: 
-	- SCMPosture
+  - SCMPosture
 
-summary: # REQUIRED - <key:value>
+summary: Auto merge rules in SCM
 
 description: # REQUIRED - <key:value> - supports markdown
 

@@ -1,12 +1,12 @@
-id: 149
+id: T0149
 type: Technique
 
 tactic: Impact
 
 realm: 
-	- SCMPosture
+  - SCMPosture
 
-summary: # REQUIRED - <key:value>
+summary: Delete repositories for DoS
 
 description: # REQUIRED - <key:value> - supports markdown
 

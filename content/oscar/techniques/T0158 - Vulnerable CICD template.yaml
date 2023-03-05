@@ -1,13 +1,13 @@
-id: 158
+id: T0158
 type: Technique
 
 tactic: Initial Access
 
 realm: 
-	- CI/CDPosture
-	- OpenSourceSecurity
+  - CI/CDPosture
+  - OpenSourceSecurity
 
-summary: # REQUIRED - <key:value>
+summary: Vulnerable CICD template
 
 description: # REQUIRED - <key:value> - supports markdown
 

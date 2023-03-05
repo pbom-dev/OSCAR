@@ -1,12 +1,12 @@
-id: 144
+id: T0144
 type: Technique
 
 tactic: Defense Evasion
 
 realm: 
-	- CloudSecurity
+  - CloudSecurity
 
-summary: # REQUIRED - <key:value>
+summary: Misconfigured traffic log settings
 
 description: # REQUIRED - <key:value> - supports markdown
 

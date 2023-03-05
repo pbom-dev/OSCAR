@@ -1,13 +1,13 @@
-id: 183
+id: T0183
 type: Technique
 
 tactic: Credential Access
 
 realm: 
-	- CI/CDPosture
-	- Infrastructureascode
+  - CI/CDPosture
+  - Infrastructureascode
 
-summary: # REQUIRED - <key:value>
+summary: Dumping short-lived token
 
 description: # REQUIRED - <key:value> - supports markdown
 

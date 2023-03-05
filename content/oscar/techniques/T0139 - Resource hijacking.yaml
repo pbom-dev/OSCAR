@@ -1,14 +1,14 @@
-id: 139
+id: T0139
 type: Technique
 
 tactic: Impact
 
 realm: 
-	- CI/CDPosture
-	- CloudSecurity
-	- ContainerSecurity
+  - CI/CDPosture
+  - CloudSecurity
+  - ContainerSecurity
 
-summary: # REQUIRED - <key:value>
+summary: Resource hijacking
 
 description: # REQUIRED - <key:value> - supports markdown
 

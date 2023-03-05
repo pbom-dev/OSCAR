@@ -1,12 +1,12 @@
-id: 154
+id: T0154
 type: Technique
 
 tactic: Initial Access
 
 realm: 
-	- OpenSourceSecurity
+  - OpenSourceSecurity
 
-summary: # REQUIRED - <key:value>
+summary: Malicious IDE extension
 
 description: # REQUIRED - <key:value> - supports markdown
 

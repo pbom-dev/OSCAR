@@ -1,14 +1,14 @@
-id: 143
+id: T0143
 type: Technique
 
 tactic: Initial Access
 
 realm: 
-	- CI/CDPosture
-	- CloudSecurity
-	- SCMPosture
+  - CI/CDPosture
+  - CloudSecurity
+  - SCMPosture
 
-summary: # REQUIRED - <key:value>
+summary: External user accounts
 
 description: # REQUIRED - <key:value> - supports markdown
 

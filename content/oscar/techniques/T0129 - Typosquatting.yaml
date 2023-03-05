@@ -1,13 +1,13 @@
-id: 129
+id: T0129
 type: Technique
 
 tactic: Initial Access
 
 realm: 
-	- ContainerSecurity
-	- OpenSourceSecurity
+  - ContainerSecurity
+  - OpenSourceSecurity
 
-summary: # REQUIRED - <key:value>
+summary: Typosquatting
 
 description: # REQUIRED - <key:value> - supports markdown
 

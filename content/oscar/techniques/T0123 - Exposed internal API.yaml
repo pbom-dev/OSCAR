@@ -1,13 +1,13 @@
-id: 123
+id: T0123
 type: Technique
 
 tactic: Initial Access
 
 realm: 
-	- CloudSecurity
-	- Infrastructureascode
+  - CloudSecurity
+  - Infrastructureascode
 
-summary: # REQUIRED - <key:value>
+summary: Exposed internal API
 
 description: # REQUIRED - <key:value> - supports markdown
 

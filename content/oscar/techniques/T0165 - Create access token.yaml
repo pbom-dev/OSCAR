@@ -1,32 +1,27 @@
-id: T165
-type: Techinque
-tactic: Persistance
+id: T0165
+type: Technique
+
+tactic: Persistence
 realm:
-    - Artifact Security
-    - CI/CD Posture
-    - Cloud Security
-    - SCM Posture
+  - Artifact Security
+  - CI/CD Posture
+  - Cloud Security
+  - SCM Posture
 summary: Create access token
 description: |
     Following initial access, an attacker may attempt to create alternative means of access to the system that was infiltrated. Since the initial access may use a temporary or temporary session token - a common adversary technique would be to create an access token which will persist the access to the system. For example, after getting an initail access by abusing a compromised 2FA backed session token an attacker created access tokens that allowed both persistance and lateral movement (Circle CI reference)
 mitigations:
-# reference to mitigation references
-    - Network segmentation: If possible, limit sensitive actions to specific network segments. 
-    - Follow least privelages methodology: Limit the number of users with high permissions and/or ability to perform sensitive actions
-    - Audit sensitive operations
-    - 2FA for sensitive operations: Even if a user passed 2FA, for every sensitive operation they would need to re-authenticate
+  - Network segmentation: If possible, limit sensitive actions to specific network segments. 
+  - Follow least privelages methodology: Limit the number of users with high permissions and/or ability to perform sensitive actions
+  - Audit sensitive operations
+  - 2FA for sensitive operations: Even if a user passed 2FA, for every sensitive operation they would need to re-authenticate
 
 detections: 
-# reference to detection defintitions
-    - Audit rogue creation of API credentials
-    
-subtechinques:
-# reference to TechIDs
-    - 
+  - Audit rogue creation of API credentials
 
 refrences:
-    - https://circleci.com/blog/jan-4-2023-incident-report/
+  - https://circleci.com/blog/jan-4-2023-incident-report/
 metadata:
-    version: 0.1
-    state: draft
+  version: 0.1
+  state: draft
  

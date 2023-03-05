@@ -1,13 +1,13 @@
-id: 159
+id: T0159
 type: Technique
 
 tactic: Execution
 
 realm: 
-	- ArtifactSecurity
-	- OpenSourceSecurity
+  - ArtifactSecurity
+  - OpenSourceSecurity
 
-summary: # REQUIRED - <key:value>
+summary: Malicious artifact execution
 
 description: # REQUIRED - <key:value> - supports markdown
 

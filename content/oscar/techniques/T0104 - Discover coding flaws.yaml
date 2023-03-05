@@ -1,13 +1,13 @@
-id: 104
+id: T0104
 type: Technique
 
 tactic: Reconnaissance
 
 realm: 
-	- CodeSecurity
-	- SCMPosture
+  - CodeSecurity
+  - SCMPosture
 
-summary: # REQUIRED - <key:value>
+summary: Discover coding flaws
 
 description: # REQUIRED - <key:value> - supports markdown
 

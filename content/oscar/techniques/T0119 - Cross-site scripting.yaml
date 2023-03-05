@@ -1,12 +1,12 @@
-id: 119
+id: T0119
 type: Technique
 
 tactic: Execution
 
 realm: 
-	- CodeSecurity
+  - CodeSecurity
 
-summary: # REQUIRED - <key:value>
+summary: Cross-site scripting
 
 description: # REQUIRED - <key:value> - supports markdown
 

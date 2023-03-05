@@ -28,10 +28,47 @@ references: # Defintion: external references to the technique | Requirement Leve
   - reference:
       type:  # Defintion: The type of the reference | Requirement Level: MUST (if reference is attributed) | Type: String (with options) | Options: web.article,research,payload | Example: research
       path:  # Defintion: link to the reference | Requirement Level: MUST (if reference is attributed) | Type: String | Example: https://www.bleepingcomputer.com/news/security/lastpass-devops-engineer-hacked-to-steal-password-vault-data-in-2022-breach/
-metadata:
-  state: # Defintion: release state for the technique | Requirement Level: MUST | Type: String (from options)  | Options: draft, under review, released | Example: released
-  created: # Defintion: when the technique was created | Requirement Level: MUST | Type: date/time (ISO 8601) | Example: 2023-03-05T16:31:51+00:00
-  updated: # Defintion: when the technique was last updated | Requirement Level: MUST | Type: date/time (ISO 8601) | Example: 2023-03-05T16:31:51+00:00
-  version: # Defintion: what is the current version of the technique (each change bumps a version) | Requirement Level: MUST | Type: String | Structure: Major.Minor | Example: 1.4
-  creator: # Defintion: The individual that created the record in the OSC&R system | Requirement Level: MUST | Type: String
-  attribution: # Defintion: who should be thanked to as a part of the contribution to OSC&R and in general | Requirement Level: MAY | Type: List
+=======
+# Guidelines
+# It is recommended to append the techinque name to the filename - ex T1111: A very cool technique.yaml
+# We support markdown in description. Use pipe for multiline descriptions
+
+
+id: # REQUIRED - <key:value> prefix with T,M,D - example T1123
+type: # REQUIRED - <key:value> choose one of the following: Technique,Mitigation,Detection
+tactic: # REQUIRED - <list> - choose at least one technique
+  - Collection
+  - Credential Access
+  - Defense Evasion
+  - Execution
+  - Exfiltration
+  - Impact
+  - Initial Access
+  - Lateral Movement
+  - Persistence
+  - Privilege Escalation
+  - Reconnaissance
+  - Resource Development
+realm: # REQUIRED - <list> - multiple choice
+  - Container Security
+  - Open Source Security
+  - SCM Posture
+  - Secrets Hygiene
+  - Code Security
+  - Cloud Security
+  - CI/CD Posture
+  - Artifact Security
+  - Infrastructure as code
+summary: # REQUIRED - <key:value>
+
+description: # REQUIRED - <key:value> - supports markdown
+
+mitigations: # REQUIRED - <list> -reference to mitigation references
+  - 
+detections: # REQUIRED - <list> - reference to detection defintitions
+  - 
+subtechinques: # OPTIONAL <list> - reference to TechIDs
+  - 
+
+references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
+  -

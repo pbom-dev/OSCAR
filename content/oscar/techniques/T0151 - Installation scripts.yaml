@@ -1,12 +1,12 @@
-id: 151
+id: T0151
 type: Technique
 
 tactic: Execution
 
 realm: 
-	- CloudSecurity
+  - CloudSecurity
 
-summary: # REQUIRED - <key:value>
+summary: Installation scripts
 
 description: # REQUIRED - <key:value> - supports markdown
 

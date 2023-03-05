@@ -1,12 +1,12 @@
-id: 161
+id: T0161
 type: Technique
 
 tactic: Persistence
 
 realm: 
-	- CloudSecurity
+  - CloudSecurity
 
-summary: # REQUIRED - <key:value>
+summary: Implant in zombie instance 
 
 description: # REQUIRED - <key:value> - supports markdown
 

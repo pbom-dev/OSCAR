@@ -1,12 +1,12 @@
-id: 171
+id: T0171
 type: Technique
 
 tactic: Execution
 
 realm: 
-	- OpenSourceSecurity
+  - OpenSourceSecurity
 
-summary: # REQUIRED - <key:value>
+summary: Package Manager
 
 description: # REQUIRED - <key:value> - supports markdown
 
