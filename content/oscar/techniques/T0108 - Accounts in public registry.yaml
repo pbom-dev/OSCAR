@@ -1,0 +1,29 @@
+id: T0108
+type: Technique
+
+tactic: Resource Development
+
+realm: 
+  - OpenSourceSecurity
+  - SCMPosture
+
+summary: Accounts in public registry
+
+description: # REQUIRED - <key:value> - supports markdown
+
+mitigations: # REQUIRED - <list> -reference to mitigation references
+  - 
+
+detections: # REQUIRED - <list> - reference to detection defintitions
+  - 
+
+subtechinques: # OPTIONAL <list> - reference to TechIDs
+  - 
+
+references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
+  -
+
+metadata: 
+    state: draft
+
+  

@@ -1,0 +1,74 @@
+# Guidelines for contribution via templates:
+# -  Make sure that all required fields are present and have valid values.
+# - Use the appropriate data types for each field (string, number, boolean, etc.).
+# - Avoid using sensitive or confidential information in the data structure.
+# - If referencing another data structure, make sure that the reference is valid and follows the appropriate format.
+# - Include any relevant notes or comments in the data structure to provide additional context or clarification.
+# - If modifying an existing data structure, make sure to maintain backward compatibility with previous versions.
+# - Follow the predefined structure for the template and do not make changes to the template. template changes can be suggested via a different thread.
+# - Ensure that the data structure is well-formatted and easy to read, with proper indentation and spacing.
+# - Test the data structure thoroughly before submitting it to the OSC&R.
+# - If unsure about any aspect of the data structure, consult with other contributors or the project maintainers before making changes.
+# - The file name for the template shall always be in the following format: * ID: name.yaml * | In example: T1111: A very cool technique.yaml
+# - We support markdown in description. Use pipe for multiline descriptions
+# - The ID should be serialized and counting up from the last ID in the system. If you are unsure as for the correct ID to use, consult with other contributors or the project maintainers before making changes 
+
+
+
+id:  # Defintion: Identifier of the technique | Requirement Level: MUST | Type: String | Structure: T____ | Example: T1123
+type: Technique
+tactic: # Defintion: The identifier (ID) of the tactic associated with the technique. The tactic definition must be referenced to the pre-defined tactics. | Requirement Level: MUST | Type: String | Example: TA1002
+realm: # Defintion: The identifiers (ID) of relams associated with the technique. The realms definition must be referenced to the pre-defined relams. | Requirement Level: MUST | Type: Array | Example: R1004, R1006
+summary: # Defintion: Summary of the technique | Requirement Level: MUST | Type: String | Example: Abuse of CI/CD access rights
+description: # Defintion: Longer description of the technique | Requirement Level: SHOULD | Type: LongText
+detections: # Defintion: The identifier (ID) of the detections associated with the technique. Must be referenced to the pre-defined detections; If a new detection is required, please create the detection as a part of the commit and reference it. | Requirement Level: MAY | Type: String | Example: D1022
+mitigations:  # Defintion: The identifier (ID) of the mitigations associated with the technique. Must be referenced to the pre-defined mitigations; If a new mitigation is required, please create the mitigation as a part of the commit and reference it. | Requirement Level: MAY | Type: String | Example: M1012
+subtechinques: # Defintion: The identifier (ID) of the subtechnique associated with the technique. Must be referenced to the pre-defined subtechniques; If a new subtecnique is required, please create the mitigation as a part of the commit and reference it. | Requirement Level: MAY | Type: String | Example: M1012
+references: # Defintion: external references to the technique | Requirement Level: MAY | Type: Array (list)
+  - reference:
+      type:  # Defintion: The type of the reference | Requirement Level: MUST (if reference is attributed) | Type: String (with options) | Options: web.article,research,payload | Example: research
+      path:  # Defintion: link to the reference | Requirement Level: MUST (if reference is attributed) | Type: String | Example: https://www.bleepingcomputer.com/news/security/lastpass-devops-engineer-hacked-to-steal-password-vault-data-in-2022-breach/
+=======
+# Guidelines
+# It is recommended to append the techinque name to the filename - ex T1111: A very cool technique.yaml
+# We support markdown in description. Use pipe for multiline descriptions
+
+
+id: # REQUIRED - <key:value> prefix with T,M,D - example T1123
+type: # REQUIRED - <key:value> choose one of the following: Technique,Mitigation,Detection
+tactic: # REQUIRED - <list> - choose at least one technique
+  - Collection
+  - Credential Access
+  - Defense Evasion
+  - Execution
+  - Exfiltration
+  - Impact
+  - Initial Access
+  - Lateral Movement
+  - Persistence
+  - Privilege Escalation
+  - Reconnaissance
+  - Resource Development
+realm: # REQUIRED - <list> - multiple choice
+  - Container Security
+  - Open Source Security
+  - SCM Posture
+  - Secrets Hygiene
+  - Code Security
+  - Cloud Security
+  - CI/CD Posture
+  - Artifact Security
+  - Infrastructure as code
+summary: # REQUIRED - <key:value>
+
+description: # REQUIRED - <key:value> - supports markdown
+
+mitigations: # REQUIRED - <list> -reference to mitigation references
+  - 
+detections: # REQUIRED - <list> - reference to detection defintitions
+  - 
+subtechinques: # OPTIONAL <list> - reference to TechIDs
+  - 
+
+references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
+  -

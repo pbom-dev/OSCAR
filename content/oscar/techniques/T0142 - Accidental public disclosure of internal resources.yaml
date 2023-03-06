@@ -1,0 +1,28 @@
+id: T0142
+type: Technique
+
+tactic: Reconnaissance
+
+realm: 
+  - CloudSecurity
+
+summary: Accidental public disclosure of internal resources
+
+description: # REQUIRED - <key:value> - supports markdown
+
+mitigations: # REQUIRED - <list> -reference to mitigation references
+  - 
+
+detections: # REQUIRED - <list> - reference to detection defintitions
+  - 
+
+subtechinques: # OPTIONAL <list> - reference to TechIDs
+  - 
+
+references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
+  -
+
+metadata: 
+    state: draft
+
+  
