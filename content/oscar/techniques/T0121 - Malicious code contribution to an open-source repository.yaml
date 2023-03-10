@@ -1,8 +1,6 @@
 id: T121
-type:
-    - Technique
-tactic:
-    - Initial Access
+type: Technique
+tactic: Initial Access
 realm:
     - Container Security
     - Open Source Security
