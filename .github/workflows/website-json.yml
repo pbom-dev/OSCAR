@@ -31,7 +31,10 @@ jobs:
             git config --global user.name "rubtoa"
             git add content/website/matrix.json
             git commit -m "update matrix.json"
-            git push
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+            github_token: ${{ secrets.TOKEN }}
       - uses: actions/upload-artifact@v3
         with:
           name: matrix
