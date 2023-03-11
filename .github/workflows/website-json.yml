@@ -15,12 +15,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
 
       - name: Generate json file and upload artifact
         run: python ./helpers/tech_to_json.py content/oscar/techniques
-        
+      - name: Copy matrix to folder
+        run: cp matrix.json content/website
+      - name: commit and push back to repo
+          env: GIT_AUTH_TOKEN: ${{ secrets.TOKEN }}
+        run: |
+            git config --global user.email "ronen.atias@gmail.com"
+            git config --global user.name "rubtoa"
+            git commit -m "update matrix.json"
+            git push
+          git commit ${{ secrets.SuperSecret }}
       - uses: actions/upload-artifact@v3
         with:
           name: matrix
           path: matrix.json
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          # Upload entire repository
+          path: '.'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
