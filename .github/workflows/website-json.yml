@@ -18,6 +18,9 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
+        with:
+          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
+          fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
       - name: Generate json file and upload artifact
         run: |
           ls -al
@@ -27,8 +30,8 @@ jobs:
       - name: commit and push back to repo
           
         run: |
-            git config --global user.email "ronen.atias@gmail.com"
-            git config --global user.name "rubtoa"
+            git config --global user.email "github-actions[bot]@users.noreply.github.com"
+            git config --global user.name "github-actions[bot]"
             git add content/website/matrix.json
             git commit -m "update matrix.json"
       - name: Push changes
