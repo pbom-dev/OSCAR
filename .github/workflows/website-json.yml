@@ -18,7 +18,9 @@ jobs:
     steps:
 
       - name: Generate json file and upload artifact
-        run: python ./helpers/tech_to_json.py content/oscar/techniques
+        run: |
+          ls -al
+          python ./helpers/tech_to_json.py content/oscar/techniques
       - name: Copy matrix to folder
         run: cp matrix.json content/website
       - name: commit and push back to repo
