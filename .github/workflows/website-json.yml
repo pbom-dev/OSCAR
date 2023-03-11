@@ -13,7 +13,8 @@ on:
 jobs:
   create-matrix-json:
     runs-on: ubuntu-latest
-
+    env:
+      GIT_AUTH_TOKEN: ${{ secrets.TOKEN }}
     steps:
 
       - name: Generate json file and upload artifact
@@ -21,13 +22,12 @@ jobs:
       - name: Copy matrix to folder
         run: cp matrix.json content/website
       - name: commit and push back to repo
-          env: GIT_AUTH_TOKEN: ${{ secrets.TOKEN }}
+          
         run: |
             git config --global user.email "ronen.atias@gmail.com"
             git config --global user.name "rubtoa"
             git commit -m "update matrix.json"
             git push
-          git commit ${{ secrets.SuperSecret }}
       - uses: actions/upload-artifact@v3
         with:
           name: matrix
