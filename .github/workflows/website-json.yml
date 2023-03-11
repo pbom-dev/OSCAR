@@ -16,7 +16,8 @@ jobs:
     env:
       GIT_AUTH_TOKEN: ${{ secrets.TOKEN }}
     steps:
-
+      - name: Checkout repo
+        uses: actions/checkout@v3
       - name: Generate json file and upload artifact
         run: |
           ls -al
