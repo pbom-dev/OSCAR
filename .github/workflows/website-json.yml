@@ -23,12 +23,13 @@ jobs:
           ls -al
           python ./helpers/tech_to_json.py content/oscar/techniques
       - name: Copy matrix to folder
-        run: cp matrix.json content/website
+        run: mv matrix.json content/website
       - name: commit and push back to repo
           
         run: |
             git config --global user.email "ronen.atias@gmail.com"
             git config --global user.name "rubtoa"
+            git add content/website/matrix.json
             git commit -m "update matrix.json"
             git push
       - uses: actions/upload-artifact@v3
