@@ -1,5 +1,5 @@
 
-name: Create matrix.json from yamls
+name: Create matrix.json and push to website
 
 on:
   push:
@@ -13,11 +13,12 @@ on:
 jobs:
   create-matrix-json:
     runs-on: ubuntu-latest
-    env:
-      GIT_AUTH_TOKEN: ${{ secrets.TOKEN }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
+        with:
+          persist-credentials: false 
+          fetch-depth: 0 
       - name: Generate json file and upload artifact
         run: |
           ls -al
