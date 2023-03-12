@@ -374,18 +374,6 @@
             },
             {
                 "tags": [
-                    "Container Security",
-                    "Open Source Security",
-                    "Artifact Security"
-                ],
-                "name": "Dependency Confusion",
-                "tooltip": "Dependency Confusion",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
                     "ArtifactSecurity",
                     "CI/CDPosture",
                     "CloudSecurity",
