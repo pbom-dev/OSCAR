@@ -1,7 +1,7 @@
 id: T0120
 type: Technique
 
-tactic: Initial Access
+tactic: Execution
 
 realm: 
   - ArtifactSecurity
