@@ -250,8 +250,8 @@
                 "tags": [
                     "CI/CDPosture"
                 ],
-                "name": "Scan public CICD configurations for secrets and vulnerable actions",
-                "tooltip": "Scan public CICD configurations for secrets and vulnerable actions",
+                "name": "Scan public CI/CD configurations for secrets and vulnerable actions",
+                "tooltip": "Scan public CI/CD configurations for secrets and vulnerable actions",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
@@ -313,8 +313,8 @@
                 "tags": [
                     "CI/CDPosture"
                 ],
-                "name": "Vulnerable CICD plugins",
-                "tooltip": "Vulnerable CICD plugins",
+                "name": "Vulnerable CI/CD plugins",
+                "tooltip": "Vulnerable CI/CD plugins",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
@@ -324,8 +324,8 @@
                     "CI/CDPosture",
                     "OpenSourceSecurity"
                 ],
-                "name": "Vulnerable CICD template",
-                "tooltip": "Vulnerable CICD template",
+                "name": "Vulnerable CI/CD template",
+                "tooltip": "Vulnerable CI/CD template",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
@@ -334,8 +334,8 @@
                 "tags": [
                     "CI/CDPosture"
                 ],
-                "name": "Vulnerable CICD system",
-                "tooltip": "Vulnerable CICD system",
+                "name": "Vulnerable CI/CD system",
+                "tooltip": "Vulnerable CI/CD system",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
