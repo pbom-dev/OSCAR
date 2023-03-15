@@ -6,7 +6,7 @@ tactic: Initial Access
 realm: 
   - CI/CDPosture
 
-summary: Vulnerable CICD plugins
+summary: Vulnerable CI/CD plugins
 
 description: # REQUIRED - <key:value> - supports markdown
 

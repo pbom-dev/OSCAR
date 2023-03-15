@@ -7,7 +7,7 @@ realm:
   - CI/CDPosture
   - OpenSourceSecurity
 
-summary: Vulnerable CICD template
+summary: Vulnerable CI/CD template
 
 description: # REQUIRED - <key:value> - supports markdown
 
