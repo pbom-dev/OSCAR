@@ -30,6 +30,6 @@ jobs:
           aws_key_id: ${{ secrets.AWS_KEY }}
           aws_secret_access_key: ${{ secrets.AWS_SECRET}}
           aws_bucket: pbomdata
-          source_dir: 'pbom_data.tar.gz'
+          source_dir: './pbom_data.tar.gz'
       
 
