@@ -20,7 +20,8 @@ jobs:
       - name: Create site content
         run: |
           python ./helpers/create_pbom_release.py --source content/oscar/ --dest .
-          tar cvzf pbom_data.tar.gz pbom_data/
+          mkdir data
+          tar cvzf data/pbom_data.tar.gz pbom_data/
           ls -al
      
       - uses: shallwefootball/s3-upload-action@master
@@ -30,6 +31,6 @@ jobs:
           aws_key_id: ${{ secrets.AWS_KEY }}
           aws_secret_access_key: ${{ secrets.AWS_SECRET}}
           aws_bucket: pbomdata
-          source_dir: './pbom_data.tar.gz'
+          source_dir: 'data'
       
 
