@@ -30,7 +30,7 @@ jobs:
         with:
           aws_key_id: ${{ secrets.AWS_KEY }}
           aws_secret_access_key: ${{ secrets.AWS_SECRET}}
-          aws_bucket: pbomdata
+          aws_bucket: pbomcontent
           source_dir: 'data'
       
 
