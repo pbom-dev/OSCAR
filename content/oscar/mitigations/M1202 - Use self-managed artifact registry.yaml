@@ -1,0 +1,11 @@
+id: M1202
+type: Mitigation
+summary:  Use a self-managed artifact registry
+description: |
+    A local artifact registry can be used for storing open source software packages and also store any artifact that is produced by the CI/CD system. Self-managed artifact registries provide advanced security features such as access control, encryption, and digital signatures. This ensures that your software artifacts are protected from unauthorized access, tampering, or distribution.
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft
