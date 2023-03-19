@@ -21,11 +21,7 @@ jobs:
         run: |
           python ./helpers/create_pbom_release.py --source content/oscar/ --dest .
           tar cvzf pbom_data.tar.gz pbom_data/
-      - name: Install AWS CLI
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y awscli
-
+          ls -al
      
       - uses: shallwefootball/s3-upload-action@master
         name: Upload S3
