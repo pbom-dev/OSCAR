@@ -16,11 +16,11 @@ description: |
 
 mitigations:
   - M1200
-  - Harden package mainfest. Never leave a package with no specific version
-  - Use a locally manage repository and make sure to enforece its usage
+  - M1201
+  - M1202
 
 detections: # REQUIRED - <list> - reference to detection defintitions
-  - Detect rogue outgoing traffic from CI/CD system
+  - D1001
 
 references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
   - https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610
