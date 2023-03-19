@@ -1,42 +1,14 @@
 {
-    "Execution": {
+    "Initial Access": {
         "items": [
             {
                 "tags": [
-                    "CodeSecurity"
+                    "ArtifactSecurity",
+                    "CI/CDPosture",
+                    "SCMPosture"
                 ],
-                "name": "Cross-site scripting",
-                "tooltip": "Cross-site scripting",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
-                    "CodeSecurity"
-                ],
-                "name": "SQL injection",
-                "tooltip": "SQL injection",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
-                    "CloudSecurity"
-                ],
-                "name": "Installation scripts",
-                "tooltip": "Installation scripts",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
-                    "CodeSecurity"
-                ],
-                "name": "Command injection",
-                "tooltip": "Command injection",
+                "name": "Services(Servers) compromise",
+                "tooltip": "Services(Servers) compromise",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
@@ -44,32 +16,13 @@
             {
                 "tags": [
                     "ArtifactSecurity",
-                    "ContainerSecurity",
-                    "OpenSourceSecurity"
+                    "CI/CDPosture",
+                    "Infrastructureascode",
+                    "SCMPosture",
+                    "SecretsHygiene"
                 ],
-                "name": "Dependency confusion",
-                "tooltip": "Dependency confusion",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
-                    "ArtifactSecurity",
-                    "OpenSourceSecurity"
-                ],
-                "name": "Malicious artifact execution",
-                "tooltip": "Malicious artifact execution",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
-                    "OpenSourceSecurity"
-                ],
-                "name": "Package Manager",
-                "tooltip": "Package Manager",
+                "name": "Compromised token",
+                "tooltip": "Compromised token",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
@@ -77,30 +30,34 @@
             {
                 "tags": [
                     "CI/CDPosture",
-                    "SCMPosture"
+                    "ContainerSecurity",
+                    "Infrastructureascode",
+                    "OpenSourceSecurity"
                 ],
-                "name": "Trigger pipeline execution",
-                "tooltip": "Trigger pipeline execution",
+                "name": "Vulnerability in third-party dependency",
+                "tooltip": "Vulnerability in third-party dependency",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
             },
             {
                 "tags": [
-                    "SCMPosture"
+                    "ContainerSecurity",
+                    "OpenSourceSecurity"
                 ],
-                "name": "Auto merge rules in SCM",
-                "tooltip": "Auto merge rules in SCM",
+                "name": "Combosquatting",
+                "tooltip": "Combosquatting",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
             },
             {
                 "tags": [
-                    "CloudSecurity"
+                    "CloudSecurity",
+                    "Infrastructureascode"
                 ],
-                "name": "Cloud workload",
-                "tooltip": "Cloud workload",
+                "name": "Exposed internal API",
+                "tooltip": "Exposed internal API",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
@@ -108,49 +65,221 @@
             {
                 "tags": [
                     "CodeSecurity",
+                    "SCMPosture"
+                ],
+                "name": "Compromised developer workstation",
+                "tooltip": "Compromised developer workstation",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
+            {
+                "tags": [
                     "ContainerSecurity",
                     "OpenSourceSecurity"
                 ],
-                "name": "Runtime Backdoor",
-                "tooltip": "Runtime Backdoor",
+                "name": "Brandjacking",
+                "tooltip": "Brandjacking",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
             },
             {
                 "tags": [
-                    "OpenSourceSecurity"
-                ],
-                "name": "IDE",
-                "tooltip": "IDE",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
+                    "CloudSecurity",
                     "CodeSecurity",
+                    "Infrastructureascode"
+                ],
+                "name": "Weak authentication methods",
+                "tooltip": "Weak authentication methods",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
+            {
+                "tags": [
+                    "Infrastructureascode"
+                ],
+                "name": "Malicious module injection",
+                "tooltip": "Malicious module injection",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
+            {
+                "tags": [
+                    "CI/CDPosture",
+                    "OpenSourceSecurity"
+                ],
+                "name": "Vulnerable CI/CD template",
+                "tooltip": "Vulnerable CI/CD template",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
+            {
+                "tags": [
+                    "ArtifactSecurity",
+                    "CloudSecurity",
+                    "Infrastructureascode",
+                    "SCMPosture"
+                ],
+                "name": "Compromised service account",
+                "tooltip": "Compromised service account",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
+            {
+                "tags": [
+                    "ArtifactSecurity",
+                    "CloudSecurity",
+                    "Infrastructureascode",
+                    "SCMPosture"
+                ],
+                "name": "Compromised user account",
+                "tooltip": "Compromised user account",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
+            {
+                "tags": [
+                    "CI/CDPosture"
+                ],
+                "name": "Vulnerable CI/CD plugins",
+                "tooltip": "Vulnerable CI/CD plugins",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
+            {
+                "tags": [
+                    "CI/CDPosture"
+                ],
+                "name": "Exposed WebHook",
+                "tooltip": "Exposed WebHook",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
+            {
+                "tags": [
+                    "CI/CDPosture"
+                ],
+                "name": "Vulnerable CI/CD system",
+                "tooltip": "Vulnerable CI/CD system",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
+            {
+                "tags": [
+                    "CI/CDPosture",
+                    "CloudSecurity",
+                    "SCMPosture"
+                ],
+                "name": "External user accounts",
+                "tooltip": "External user accounts",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
+            {
+                "tags": [
                     "ContainerSecurity",
                     "OpenSourceSecurity"
                 ],
-                "name": "Runtime logic bomb",
-                "tooltip": "Runtime logic bomb",
+                "name": "Repojacking",
+                "tooltip": "Repojacking",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
+            {
+                "tags": [
+                    "CloudSecurity",
+                    "Infrastructureascode"
+                ],
+                "name": "Exposed database",
+                "tooltip": "Exposed database",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
+            {
+                "tags": [
+                    "CloudSecurity",
+                    "Infrastructureascode"
+                ],
+                "name": "Permissive network access",
+                "tooltip": "Permissive network access",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
+            {
+                "tags": [
+                    "OpenSourceSecurity"
+                ],
+                "name": "Malicious IDE extension",
+                "tooltip": "Malicious IDE extension",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
+            {
+                "tags": [
+                    "ContainerSecurity",
+                    "OpenSourceSecurity"
+                ],
+                "name": "Typosquatting",
+                "tooltip": "Typosquatting",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
+            {
+                "tags": [
+                    "CloudSecurity",
+                    "Infrastructureascode"
+                ],
+                "name": "Exposed storage",
+                "tooltip": "Exposed storage",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
+            {
+                "tags": [
+                    "ArtifactSecurity",
+                    "CI/CDPosture",
+                    "CloudSecurity",
+                    "ContainerSecurity",
+                    "OpenSourceSecurity",
+                    "SCMPosture",
+                    "SecretsHygiene"
+                ],
+                "name": "Shadow IT",
+                "tooltip": "Shadow IT",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
             }
         ],
         "amount": 0,
-        "tootlip": "Execution"
+        "tootlip": "Initial Access"
     },
     "Reconnaissance": {
         "items": [
             {
                 "tags": [
-                    "CloudSecurity"
+                    "ContainerSecurity",
+                    "OpenSourceSecurity",
+                    "SCMPosture"
                 ],
-                "name": "Accidental public disclosure of internal resources",
-                "tooltip": "Accidental public disclosure of internal resources",
+                "name": "Discover naming conventions",
+                "tooltip": "Discover naming conventions",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
@@ -169,29 +298,6 @@
             },
             {
                 "tags": [
-                    "CI/CDPosture",
-                    "CloudSecurity"
-                ],
-                "name": "Scan configuration on public resources",
-                "tooltip": "Scan configuration on public resources",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
-                    "ContainerSecurity",
-                    "OpenSourceSecurity",
-                    "SCMPosture"
-                ],
-                "name": "Discover used open-source dependencies",
-                "tooltip": "Discover used open-source dependencies",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
                     "CodeSecurity",
                     "SCMPosture"
                 ],
@@ -203,22 +309,21 @@
             },
             {
                 "tags": [
-                    "ContainerSecurity",
-                    "OpenSourceSecurity",
-                    "SCMPosture"
+                    "CI/CDPosture",
+                    "CloudSecurity"
                 ],
-                "name": "Discover naming conventions",
-                "tooltip": "Discover naming conventions",
+                "name": "Scan configuration on public resources",
+                "tooltip": "Scan configuration on public resources",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
             },
             {
                 "tags": [
-                    "CloudSecurity"
+                    "CI/CDPosture"
                 ],
-                "name": "Active scanning",
-                "tooltip": "Active scanning",
+                "name": "Scan public CI/CD configurations for secrets and vulnerable actions",
+                "tooltip": "Scan public CI/CD configurations for secrets and vulnerable actions",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
@@ -248,10 +353,32 @@
             },
             {
                 "tags": [
-                    "CI/CDPosture"
+                    "CloudSecurity"
                 ],
-                "name": "Scan public CICD configurations for secrets and vulnerable actions",
-                "tooltip": "Scan public CICD configurations for secrets and vulnerable actions",
+                "name": "Accidental public disclosure of internal resources",
+                "tooltip": "Accidental public disclosure of internal resources",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
+            {
+                "tags": [
+                    "CloudSecurity"
+                ],
+                "name": "Active scanning",
+                "tooltip": "Active scanning",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
+            {
+                "tags": [
+                    "ContainerSecurity",
+                    "OpenSourceSecurity",
+                    "SCMPosture"
+                ],
+                "name": "Discover used open-source dependencies",
+                "tooltip": "Discover used open-source dependencies",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
@@ -260,342 +387,167 @@
         "amount": 0,
         "tootlip": "Reconnaissance"
     },
-    "Initial Access": {
+    "Persistence": {
         "items": [
             {
                 "tags": [
-                    "ContainerSecurity",
-                    "OpenSourceSecurity"
+                    "CI/CDPosture"
                 ],
-                "name": "Typosquatting",
-                "tooltip": "Typosquatting",
+                "name": "Recursive PR",
+                "tooltip": "Recursive PR",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
             },
             {
                 "tags": [
-                    "Infrastructureascode"
+                    "CI/CDPosture"
                 ],
-                "name": "Malicious module injection",
-                "tooltip": "Malicious module injection",
+                "name": "Scheduled TaskJob on self hosted runner",
+                "tooltip": "Scheduled TaskJob on self hosted runner",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
             },
             {
                 "tags": [
-                    "ArtifactSecurity",
-                    "CloudSecurity",
-                    "Infrastructureascode",
                     "SCMPosture"
                 ],
-                "name": "Compromised user account",
-                "tooltip": "Compromised user account",
+                "name": "Deploy keys",
+                "tooltip": "Deploy keys",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
             },
             {
                 "tags": [
-                    "CI/CDPosture",
-                    "ContainerSecurity",
-                    "Infrastructureascode",
-                    "OpenSourceSecurity"
+                    "Artifact Security",
+                    "CI/CD Posture",
+                    "Cloud Security",
+                    "SCM Posture"
                 ],
-                "name": "Vulnerability in third-party dependency",
-                "tooltip": "Vulnerability in third-party dependency",
+                "name": "Create access token",
+                "tooltip": "Create access token",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
             },
             {
                 "tags": [
-                    "CI/CDPosture"
-                ],
-                "name": "Vulnerable CI/CD plugins",
-                "tooltip": "Vulnerable CI/CD plugins",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
-                    "CI/CDPosture",
-                    "OpenSourceSecurity"
-                ],
-                "name": "Vulnerable CI/CD template",
-                "tooltip": "Vulnerable CI/CD template",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
-                    "CI/CDPosture"
-                ],
-                "name": "Vulnerable CI/CD system",
-                "tooltip": "Vulnerable CI/CD system",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
-                    "CI/CDPosture",
-                    "CloudSecurity",
-                    "SCMPosture"
-                ],
-                "name": "External user accounts",
-                "tooltip": "External user accounts",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
-                    "OpenSourceSecurity"
-                ],
-                "name": "Malicious IDE extension",
-                "tooltip": "Malicious IDE extension",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
-                    "CI/CDPosture"
-                ],
-                "name": "Exposed WebHook",
-                "tooltip": "Exposed WebHook",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
-                    "ArtifactSecurity",
-                    "CI/CDPosture",
-                    "CloudSecurity",
-                    "ContainerSecurity",
+                    "CodeSecurity",
                     "OpenSourceSecurity",
-                    "SCMPosture",
-                    "SecretsHygiene"
-                ],
-                "name": "Shadow IT",
-                "tooltip": "Shadow IT",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
-                    "CloudSecurity",
-                    "Infrastructureascode"
-                ],
-                "name": "Exposed internal API",
-                "tooltip": "Exposed internal API",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
-                    "ContainerSecurity",
-                    "OpenSourceSecurity"
-                ],
-                "name": "Brandjacking",
-                "tooltip": "Brandjacking",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
-                    "ArtifactSecurity",
-                    "CI/CDPosture",
-                    "Infrastructureascode",
-                    "SCMPosture",
-                    "SecretsHygiene"
-                ],
-                "name": "Compromised token",
-                "tooltip": "Compromised token",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
-                    "ContainerSecurity",
-                    "OpenSourceSecurity"
-                ],
-                "name": "Repojacking",
-                "tooltip": "Repojacking",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
-                    "ContainerSecurity",
-                    "OpenSourceSecurity"
-                ],
-                "name": "Combosquatting",
-                "tooltip": "Combosquatting",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
-                    "CodeSecurity",
                     "SCMPosture"
                 ],
-                "name": "Compromised developer workstation",
-                "tooltip": "Compromised developer workstation",
+                "name": "Backdoor in code",
+                "tooltip": "Backdoor in code",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
             },
             {
                 "tags": [
-                    "CloudSecurity",
-                    "Infrastructureascode"
+                    "CloudSecurity"
                 ],
-                "name": "Exposed database",
-                "tooltip": "Exposed database",
+                "name": "Untagged resources",
+                "tooltip": "Untagged resources",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
             },
             {
                 "tags": [
-                    "CloudSecurity",
-                    "Infrastructureascode"
+                    "CloudSecurity"
                 ],
-                "name": "Exposed storage",
-                "tooltip": "Exposed storage",
+                "name": "Implant in zombie instance",
+                "tooltip": "Implant in zombie instance",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
             },
             {
                 "tags": [
-                    "ArtifactSecurity",
-                    "CloudSecurity",
-                    "Infrastructureascode",
-                    "SCMPosture"
-                ],
-                "name": "Compromised service account",
-                "tooltip": "Compromised service account",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
-                    "CloudSecurity",
-                    "Infrastructureascode"
-                ],
-                "name": "Permissive network access",
-                "tooltip": "Permissive network access",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
-                    "ArtifactSecurity",
                     "CI/CDPosture",
                     "SCMPosture"
                 ],
-                "name": "Services(Servers) compromise",
-                "tooltip": "Services(Servers) compromise",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
-                    "CloudSecurity",
-                    "CodeSecurity",
-                    "Infrastructureascode"
-                ],
-                "name": "Weak authentication methods",
-                "tooltip": "Weak authentication methods",
+                "name": "Add user",
+                "tooltip": "Add user",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
             }
         ],
         "amount": 0,
-        "tootlip": "Initial Access"
+        "tootlip": "Persistence"
     },
-    "Lateral Movement": {
-        "items": [
-            {
-                "tags": [
-                    "CodeSecurity",
-                    "SCMPosture"
-                ],
-                "name": "Push implants across repositories",
-                "tooltip": "Push implants across repositories",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
-                    "ArtifactSecurity",
-                    "CI/CDPosture",
-                    "CloudSecurity",
-                    "SCMPosture"
-                ],
-                "name": "Overprivileged user account",
-                "tooltip": "Overprivileged user account",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            }
-        ],
-        "amount": 0,
-        "tootlip": "Lateral Movement"
-    },
-    "Exfiltration": {
+    "Defense Evasion": {
         "items": [
             {
                 "tags": [
                     "CloudSecurity"
                 ],
-                "name": "Bypass of outbound traffic control",
-                "tooltip": "Bypass of outbound traffic control",
+                "name": "Misconfigured traffic log settings",
+                "tooltip": "Misconfigured traffic log settings",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
             },
             {
                 "tags": [
+                    "CI/CDPosture",
                     "SCMPosture"
                 ],
-                "name": "Source code",
-                "tooltip": "Source code",
+                "name": "Bypass Review using admin permission",
+                "tooltip": "Bypass Review using admin permission",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
             },
             {
                 "tags": [
+                    "CloudSecurity"
+                ],
+                "name": "SaaS sprawl",
+                "tooltip": "SaaS sprawl",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
+            {
+                "tags": [
+                    "CloudSecurity"
+                ],
+                "name": "Misconfiguration of security measures",
+                "tooltip": "Misconfiguration of security measures",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
+            {
+                "tags": [
+                    "CI/CDPosture",
+                    "CloudSecurity",
                     "SCMPosture"
                 ],
-                "name": "Webhook",
-                "tooltip": "Webhook",
+                "name": "Misconfigured audit logs settings",
+                "tooltip": "Misconfigured audit logs settings",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
+            {
+                "tags": [
+                    "CloudSecurity",
+                    "ContainerSecurity"
+                ],
+                "name": "Malicious CompilerInterpreter",
+                "tooltip": "Malicious CompilerInterpreter",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
             }
         ],
         "amount": 0,
-        "tootlip": "Exfiltration"
+        "tootlip": "Defense Evasion"
     },
     "Resource Development": {
         "items": [
@@ -625,17 +577,6 @@
                     "ContainerSecurity",
                     "OpenSourceSecurity"
                 ],
-                "name": "Publish malicious artifact",
-                "tooltip": "Publish malicious artifact",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
-                    "ContainerSecurity",
-                    "OpenSourceSecurity"
-                ],
                 "name": "Compromised legitimate artifact",
                 "tooltip": "Compromised legitimate artifact",
                 "url": "https://pbom.dev/",
@@ -655,6 +596,17 @@
             },
             {
                 "tags": [
+                    "ContainerSecurity",
+                    "OpenSourceSecurity"
+                ],
+                "name": "Publish malicious artifact",
+                "tooltip": "Publish malicious artifact",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
+            {
+                "tags": [
                     "OpenSourceSecurity",
                     "SCMPosture"
                 ],
@@ -668,96 +620,18 @@
         "amount": 0,
         "tootlip": "Resource Development"
     },
-    "Defense Evasion": {
-        "items": [
-            {
-                "tags": [
-                    "CloudSecurity",
-                    "ContainerSecurity"
-                ],
-                "name": "Malicious CompilerInterpreter",
-                "tooltip": "Malicious CompilerInterpreter",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
-                    "CloudSecurity"
-                ],
-                "name": "Misconfigured traffic log settings",
-                "tooltip": "Misconfigured traffic log settings",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
-                    "CloudSecurity"
-                ],
-                "name": "Misconfiguration of security measures",
-                "tooltip": "Misconfiguration of security measures",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
-                    "CI/CDPosture",
-                    "CloudSecurity",
-                    "SCMPosture"
-                ],
-                "name": "Misconfigured audit logs settings",
-                "tooltip": "Misconfigured audit logs settings",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
-                    "CI/CDPosture",
-                    "SCMPosture"
-                ],
-                "name": "Bypass Review using admin permission",
-                "tooltip": "Bypass Review using admin permission",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
-                    "CloudSecurity"
-                ],
-                "name": "SaaS sprawl",
-                "tooltip": "SaaS sprawl",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            }
-        ],
-        "amount": 0,
-        "tootlip": "Defense Evasion"
-    },
     "Credential Access": {
         "items": [
             {
                 "tags": [
                     "CI/CDPosture",
-                    "Infrastructureascode"
-                ],
-                "name": "Dumping credentials from files",
-                "tooltip": "Dumping credentials from files",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
-                    "CI/CDPosture",
+                    "CloudSecurity",
+                    "ContainerSecurity",
+                    "Infrastructureascode",
                     "SecretsHygiene"
                 ],
-                "name": "Harvest secrets from logs",
-                "tooltip": "Harvest secrets from logs",
+                "name": "Dump tokens from the environment variable",
+                "tooltip": "Dump tokens from the environment variable",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
@@ -775,10 +649,23 @@
             },
             {
                 "tags": [
-                    "ArtifactSecurity"
+                    "CI/CDPosture",
+                    "Infrastructureascode"
                 ],
-                "name": "Steal credentials in container artifacts",
-                "tooltip": "Steal credentials in container artifacts",
+                "name": "Dumping short-lived token",
+                "tooltip": "Dumping short-lived token",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
+            {
+                "tags": [
+                    "CloudSecurity",
+                    "ContainerSecurity",
+                    "SecretsHygiene"
+                ],
+                "name": "Passwords in application logs",
+                "tooltip": "Passwords in application logs",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
@@ -786,10 +673,20 @@
             {
                 "tags": [
                     "CI/CDPosture",
-                    "Infrastructureascode"
+                    "SecretsHygiene"
                 ],
-                "name": "Dumping short-lived token",
-                "tooltip": "Dumping short-lived token",
+                "name": "Harvest secrets from logs",
+                "tooltip": "Harvest secrets from logs",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
+            {
+                "tags": [
+                    "ArtifactSecurity"
+                ],
+                "name": "Steal credentials in container artifacts",
+                "tooltip": "Steal credentials in container artifacts",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
@@ -809,25 +706,10 @@
             {
                 "tags": [
                     "CI/CDPosture",
-                    "CloudSecurity",
-                    "ContainerSecurity",
-                    "Infrastructureascode",
-                    "SecretsHygiene"
+                    "Infrastructureascode"
                 ],
-                "name": "Dump tokens from the environment variable",
-                "tooltip": "Dump tokens from the environment variable",
-                "url": "https://pbom.dev/",
-                "subTechniques": [],
-                "subTechniuqesAmount": 0
-            },
-            {
-                "tags": [
-                    "CloudSecurity",
-                    "ContainerSecurity",
-                    "SecretsHygiene"
-                ],
-                "name": "Passwords in application logs",
-                "tooltip": "Passwords in application logs",
+                "name": "Dumping credentials from files",
+                "tooltip": "Dumping credentials from files",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
@@ -836,55 +718,65 @@
         "amount": 0,
         "tootlip": "Credential Access"
     },
-    "Impact": {
+    "Execution": {
         "items": [
+            {
+                "tags": [
+                    "CodeSecurity"
+                ],
+                "name": "SQL injection",
+                "tooltip": "SQL injection",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
             {
                 "tags": [
                     "CloudSecurity"
                 ],
-                "name": "Misconfiguration of serverless workloads",
-                "tooltip": "Misconfiguration of serverless workloads",
+                "name": "Installation scripts",
+                "tooltip": "Installation scripts",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
             },
             {
                 "tags": [
-                    "SCMPosture"
+                    "CodeSecurity"
                 ],
-                "name": "Delete repositories for DoS",
-                "tooltip": "Delete repositories for DoS",
+                "name": "Cross-site scripting",
+                "tooltip": "Cross-site scripting",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
             },
             {
                 "tags": [
-                    "CI/CDPosture",
-                    "CloudSecurity",
-                    "ContainerSecurity"
+                    "ArtifactSecurity",
+                    "OpenSourceSecurity"
                 ],
-                "name": "Resource hijacking",
-                "tooltip": "Resource hijacking",
+                "name": "Malicious artifact execution",
+                "tooltip": "Malicious artifact execution",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
-            }
-        ],
-        "amount": 0,
-        "tootlip": "Impact"
-    },
-    "Persistence": {
-        "items": [
+            },
             {
                 "tags": [
-                    "Artifact Security",
-                    "CI/CD Posture",
-                    "Cloud Security",
-                    "SCM Posture"
+                    "OpenSourceSecurity"
                 ],
-                "name": "Create access token",
-                "tooltip": "Create access token",
+                "name": "IDE",
+                "tooltip": "IDE",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
+            {
+                "tags": [
+                    "OpenSourceSecurity"
+                ],
+                "name": "Package Manager",
+                "tooltip": "Package Manager",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
@@ -892,11 +784,65 @@
             {
                 "tags": [
                     "CodeSecurity",
-                    "OpenSourceSecurity",
+                    "ContainerSecurity",
+                    "OpenSourceSecurity"
+                ],
+                "name": "Runtime Backdoor",
+                "tooltip": "Runtime Backdoor",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
+            {
+                "tags": [
+                    "CloudSecurity"
+                ],
+                "name": "Cloud workload",
+                "tooltip": "Cloud workload",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
+            {
+                "tags": [
                     "SCMPosture"
                 ],
-                "name": "Backdoor in code",
-                "tooltip": "Backdoor in code",
+                "name": "Auto merge rules in SCM",
+                "tooltip": "Auto merge rules in SCM",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
+            {
+                "tags": [
+                    "CodeSecurity"
+                ],
+                "name": "Command injection",
+                "tooltip": "Command injection",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
+            {
+                "tags": [
+                    "CodeSecurity",
+                    "ContainerSecurity",
+                    "OpenSourceSecurity"
+                ],
+                "name": "Runtime logic bomb",
+                "tooltip": "Runtime logic bomb",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
+            {
+                "tags": [
+                    "ArtifactSecurity",
+                    "ContainerSecurity",
+                    "OpenSourceSecurity"
+                ],
+                "name": "Dependency confusion",
+                "tooltip": "Dependency confusion",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
@@ -906,38 +852,82 @@
                     "CI/CDPosture",
                     "SCMPosture"
                 ],
-                "name": "Add user",
-                "tooltip": "Add user",
+                "name": "Trigger pipeline execution",
+                "tooltip": "Trigger pipeline execution",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            }
+        ],
+        "amount": 0,
+        "tootlip": "Execution"
+    },
+    "Collection": {
+        "items": [
+            {
+                "tags": [
+                    "CloudSecurity",
+                    "Infrastructureascode"
+                ],
+                "name": "Unencrypted data at transit",
+                "tooltip": "Unencrypted data at transit",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
             },
             {
                 "tags": [
-                    "CloudSecurity"
+                    "CloudSecurity",
+                    "Infrastructureascode"
                 ],
-                "name": "Implant in zombie instance",
-                "tooltip": "Implant in zombie instance",
+                "name": "Unencrypted data at rest",
+                "tooltip": "Unencrypted data at rest",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            }
+        ],
+        "amount": 0,
+        "tootlip": "Collection"
+    },
+    "Lateral Movement": {
+        "items": [
+            {
+                "tags": [
+                    "ArtifactSecurity",
+                    "CI/CDPosture",
+                    "CloudSecurity",
+                    "SCMPosture"
+                ],
+                "name": "Overprivileged user account",
+                "tooltip": "Overprivileged user account",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
             },
             {
                 "tags": [
-                    "CloudSecurity"
+                    "CodeSecurity",
+                    "SCMPosture"
                 ],
-                "name": "Untagged resources",
-                "tooltip": "Untagged resources",
+                "name": "Push implants across repositories",
+                "tooltip": "Push implants across repositories",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
-            },
+            }
+        ],
+        "amount": 0,
+        "tootlip": "Lateral Movement"
+    },
+    "Exfiltration": {
+        "items": [
             {
                 "tags": [
-                    "CI/CDPosture"
+                    "SCMPosture"
                 ],
-                "name": "Scheduled TaskJob on self hosted runner",
-                "tooltip": "Scheduled TaskJob on self hosted runner",
+                "name": "Source code",
+                "tooltip": "Source code",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
@@ -946,25 +936,25 @@
                 "tags": [
                     "SCMPosture"
                 ],
-                "name": "Deploy keys",
-                "tooltip": "Deploy keys",
+                "name": "Webhook",
+                "tooltip": "Webhook",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
             },
             {
                 "tags": [
-                    "CI/CDPosture"
+                    "CloudSecurity"
                 ],
-                "name": "Recursive PR",
-                "tooltip": "Recursive PR",
+                "name": "Bypass of outbound traffic control",
+                "tooltip": "Bypass of outbound traffic control",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
             }
         ],
         "amount": 0,
-        "tootlip": "Persistence"
+        "tootlip": "Exfiltration"
     },
     "Privilege Escalation": {
         "items": [
@@ -994,32 +984,42 @@
         "amount": 0,
         "tootlip": "Privilege Escalation"
     },
-    "Collection": {
+    "Impact": {
         "items": [
             {
                 "tags": [
+                    "CI/CDPosture",
                     "CloudSecurity",
-                    "Infrastructureascode"
+                    "ContainerSecurity"
                 ],
-                "name": "Unencrypted data at transit",
-                "tooltip": "Unencrypted data at transit",
+                "name": "Resource hijacking",
+                "tooltip": "Resource hijacking",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
             },
             {
                 "tags": [
-                    "CloudSecurity",
-                    "Infrastructureascode"
+                    "SCMPosture"
                 ],
-                "name": "Unencrypted data at rest",
-                "tooltip": "Unencrypted data at rest",
+                "name": "Delete repositories for DoS",
+                "tooltip": "Delete repositories for DoS",
+                "url": "https://pbom.dev/",
+                "subTechniques": [],
+                "subTechniuqesAmount": 0
+            },
+            {
+                "tags": [
+                    "CloudSecurity"
+                ],
+                "name": "Misconfiguration of serverless workloads",
+                "tooltip": "Misconfiguration of serverless workloads",
                 "url": "https://pbom.dev/",
                 "subTechniques": [],
                 "subTechniuqesAmount": 0
             }
         ],
         "amount": 0,
-        "tootlip": "Collection"
+        "tootlip": "Impact"
     }
 }
