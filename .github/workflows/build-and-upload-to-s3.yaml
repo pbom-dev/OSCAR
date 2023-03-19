@@ -26,22 +26,14 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y awscli
 
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v1
+     
+      - uses: shallwefootball/s3-upload-action@master
+        name: Upload S3
+        id: S3
         with:
-          aws-access-key-id: ${{ secrets.AWS_KEY }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET }}
-          aws-region: eu-west-2
-
-      - name: Upload to S3
-        uses: aws-actions/amazon-s3-upload@v2
-        with:
-          bucket-name: pbomcontent
-          object-name: pbom_data.tar.gz
-          path: pbom_data/pbom_data.tar.gz
-          acl: public-read
-
-      - name: Get S3 URL
-        id: s3url
-        run: echo "::set-output name=url::https://my-bucket.s3.amazonaws.com/pbom_data.tar.gz"
+          aws_key_id: ${{ secrets.AWS_KEY }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET}}
+          aws_bucket: pbomdata
+          source_dir: 'pbom_data/pbom_data.tar.gz'
+      
 
