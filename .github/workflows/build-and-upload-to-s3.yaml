@@ -1,0 +1,47 @@
+# Simple workflow for deploying static content to GitHub Pages
+name: Build and Upload to S3
+
+on:
+  # Runs on pushes targeting the default branch
+  #push:
+  #  branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+
+jobs:
+  # Single deploy job since we're just deploying
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Create site content
+        run: |
+          python ./helpers/create_pbom_release.py --source content/oscar/ --dest .
+          tar cvzf pbom_data.tar.gz pbom_data/
+      - name: Install AWS CLI
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y awscli
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_KEY }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET }}
+          aws-region: eu-west-2
+
+      - name: Upload to S3
+        uses: aws-actions/amazon-s3-upload@v2
+        with:
+          bucket-name: pbomcontent
+          object-name: pbom_data.tar.gz
+          path: pbom_data/pbom_data.tar.gz
+          acl: public-read
+
+      - name: Get S3 URL
+        id: s3url
+        run: echo "::set-output name=url::https://my-bucket.s3.amazonaws.com/pbom_data.tar.gz"
+
