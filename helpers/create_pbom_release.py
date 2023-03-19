@@ -5,14 +5,20 @@ import os
 import logging
 import argparse
 
+logger = logging.getLogger(__name__)
+formatter = logging.Formatter('%(asctime)s - %(funcName)s:%(lineno)d - %(levelname)s - %(message)s')
+ch = logging.StreamHandler()
+logger.setLevel(logging.INFO)
+ch.setFormatter(formatter)
+logger.addHandler(ch)
+
 
 class PageGenerator(object):
     '''
     This class will generate the full page for a technique with all the mitigations and detections
     '''
-    def __init__(self, mitigation_path, detection_path, copy_all_files=True):
+    def __init__(self, mitigation_path, detection_path):
         self.mitigation_path = mitigation_path
-        self.copy_all_files = copy_all_files
         self.detection_path = detection_path
         self.detections = self.read_detection()
         self.mitigations = self.read_mitigation()
@@ -23,9 +29,6 @@ class PageGenerator(object):
         for fname in files_glob:
             j = self.yaml_to_json(fname)
             d[j['id']] = j
-            if self.copy_all_files:
-                with open(os.path.join(self.mitigation_path, j['id'] + '.json'), 'w') as f:
-                    json.dump(j, f, indent=4)
         return d
     
     def read_detection(self):
@@ -34,9 +37,7 @@ class PageGenerator(object):
         for fname in files_glob:
             j = self.yaml_to_json(fname)
             d[j['id']] = j
-            if self.copy_all_files:
-                with open(os.path.join(self.detection_path, j['id'] + '.json'), 'w') as f:
-                    json.dump(j, f, indent=4)
+
         return d
     
     def yaml_to_json(self,yaml_file):
@@ -105,9 +106,10 @@ def create_release(oscar_source_path, pbom_data_path):
     # setup directories
     setup_directory(pbom_data_path)
 
-    logger.error("Generating matrix.json")
+    logger.info("Generating matrix.json")
     generate_matrix(oscar_source_path, pbom_data_path)
     # transform mitigations and detections to json and save to the pbom_data directory
+    logger.info("Copying mitigations and detections to pbom_data directory")
 
     for fname in glob.glob(os.path.join(oscar_source_path, "mitigations","*.yaml")):
         with open(os.path.join(pbom_data_path, 'pbom_data', 'mitigations', fname.split('/')[-1].replace('.yaml', '.json')), 'w') as f:
@@ -132,7 +134,7 @@ def generate_matrix(oscar_source_path, pbom_data_path):
     tech_path = os.path.join(oscar_source_path, 'techniques')
     # read all yamls from path  
     for filename in glob.glob(tech_path + '/*.yaml'):
-        print('Reading file: %s', filename)
+        logger.debug('Reading file: %s', filename)
         with open(filename, 'r') as f:
             # read yaml file
             y = yaml.load(f, Loader=yaml.SafeLoader)
@@ -156,21 +158,14 @@ def generate_matrix(oscar_source_path, pbom_data_path):
             j[y['tactic']]['items'].append(item)
     
     with open(os.path.join(pbom_data_path, 'pbom_data', 'matrix.json'), 'w') as f:
-        print("Saving matrix.json to %s", os.path.join(pbom_data_path, 'matrix.json'))
+        logger.info("Saving matrix.json to %s", os.path.join(pbom_data_path, 'matrix.json'))
         f.write(json.dumps(j, indent=4))
 
 if __name__ == '__main__':
-    global logger
-    logger = logging.getLogger(__name__)
-    formatter = logging.Formatter('%(asctime)s - %(funcName)s:%(lineno)d - %(levelname)s - %(message)s')
-    ch = logging.StreamHandler()
-    ch.setLevel(logging.INFO)
-    ch.setFormatter(formatter)
-    logger.addHandler(ch)
 
     args = parse_args()
     pbom_data_path = args.dest
     oscar_source_path = args.source
-    logger.error("Creating PBOM release")
+    logger.info("Creating PBOM release")
     create_release(oscar_source_path, pbom_data_path)
-
+    logger.info("Done")
