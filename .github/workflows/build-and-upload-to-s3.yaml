@@ -27,7 +27,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: pbom_data.tar.gz
-          path:./pbom_data.tar.gz
+          path: ./pbom_data.tar.gz
   release:
     needs: build
     runs-on: ubuntu-latest
