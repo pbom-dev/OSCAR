@@ -27,11 +27,7 @@ jobs:
         with:
           name: pbom_data.tar.gz
           path: ./pbom_data.tar.gz
-  release:
-    needs: build
-    runs-on: ubuntu-latest
-
-    steps:
+  
       - name: Generate release tag
         id: tag
         run: |
