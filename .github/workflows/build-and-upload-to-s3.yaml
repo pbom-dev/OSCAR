@@ -12,7 +12,7 @@ on:
 
 jobs:
   # Single deploy job since we're just deploying
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -20,17 +20,37 @@ jobs:
       - name: Create site content
         run: |
           python ./helpers/create_pbom_release.py --source content/oscar/ --dest .
-          mkdir data
-          tar cvzf data/pbom_data.tar.gz pbom_data/
+          tar cvzf pbom_data.tar.gz pbom_data/
           ls -al
      
-      - uses: shallwefootball/s3-upload-action@master
-        name: Upload S3
-        id: S3
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
         with:
-          aws_key_id: ${{ secrets.AWS_KEY }}
-          aws_secret_access_key: ${{ secrets.AWS_SECRET}}
-          aws_bucket: pbomcontent
-          source_dir: 'data'
-      
+          name: pbom_data.tar.gz
+          path:./pbom_data.tar.gz
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Create release
+        uses: actions/create-release@v1
+        with:
+          tag_name: v1.0.0
+          release_name: Release v1.0.0
+          body: Release notes go here
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload release asset
+        uses: actions/upload-release-asset@v1
+        with:
+          asset_path: ${{ github.workspace }}/pbom_data.tar.gz
+          asset_name: binary
+          asset_content_type: application/octet-stream
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
