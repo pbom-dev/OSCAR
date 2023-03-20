@@ -33,11 +33,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Generate release tag
+      - name: Generate release tag
       id: tag
       run: |
-        echo "::set-output name=release_tag::UserBuild_$(date +"%Y.%m.%d_%H-%M")"
-    - name: Create release
+        echo "::set-output name=release_tag::OSCAR_$(date +"%Y.%m.%d_%H-%M")"
+    - name: Release user firmware
       uses: softprops/action-gh-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -45,8 +45,6 @@ jobs:
         tag_name: ${{ steps.tag.outputs.release_tag }}
         files: |
           pbom_data.tar.gz
-      
-      - name: Upload release asset
-        uses: softprops/action-gh-release@v1
-        with:
-          files: pbom_data.tar.gzs
+
+
+     
