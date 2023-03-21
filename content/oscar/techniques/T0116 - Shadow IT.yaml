@@ -1,0 +1,34 @@
+id: T0116
+type: Technique
+
+tactic: Initial Access
+
+realm: 
+  - ArtifactSecurity
+  - CI/CDPosture
+  - CloudSecurity
+  - ContainerSecurity
+  - OpenSourceSecurity
+  - SCMPosture
+  - SecretsHygiene
+
+summary: Shadow IT
+
+description: # REQUIRED - <key:value> - supports markdown
+
+mitigations: # REQUIRED - <list> -reference to mitigation references
+  - 
+
+detections: # REQUIRED - <list> - reference to detection defintitions
+  - 
+
+subtechinques: # OPTIONAL <list> - reference to TechIDs
+  - 
+
+references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
+  -
+
+metadata: 
+    state: draft
+
+  

@@ -1,0 +1,32 @@
+id: T0120
+type: Technique
+
+tactic: Execution
+
+realm: 
+  - ArtifactSecurity
+  - ContainerSecurity
+  - OpenSourceSecurity
+
+summary: Dependency confusion
+
+description: |
+    Dependency confusion is a type of supply chain attack that occurs when an attacker exploits the way some package managers, such as npm and PyPI, resolve dependencies when installing software libraries.
+    In a typical software development project, developers rely on a variety of external libraries, often referred to as dependencies, to build their applications. These libraries are typically stored in a remote repository, and developers use a package manager to install and manage them. An attacker will utilize prior knowledge of usage of dependencies (*Discover used open-source dependencies*) to upload a malicious package with the same name to a public repository. This might "confuse" package managers to use to public resource instead of the local one - thus executing or infecting the CI/CD. This can happen on the developer's machine or the build system and has the potential to further steps of an attack - for example, if the malicious code exfiltrate an access token to production environment
+
+mitigations:
+  - M1200
+  - Harden package mainfest. Never leave a package with no specific version
+  - Use a locally manage repository and make sure to enforece its usage
+
+detections: # REQUIRED - <list> - reference to detection defintitions
+  - Detect rogue outgoing traffic from CI/CD system
+
+references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
+  - https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610
+  - https://pytorch.org/blog/compromised-nightly-dependency/
+
+metadata: 
+    state: draft
+
+  

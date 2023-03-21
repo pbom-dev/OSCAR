@@ -1,0 +1,17 @@
+id: M1190
+type: Mitigation
+summary: Use framework security mechanisms
+description: |
+  Fewer XSS bugs appear in applications built with modern web frameworks. 
+  These frameworks steer developers towards good security practices and help mitigate XSS by using templating, auto-escaping, and more.
+  Understand how your framework prevents XSS and where it has gaps. 
+  There will be times where you need to do something outside the protection provided by your framework. 
+  This is where Output Encoding and HTML Sanitization are critical.
+
+
+references:
+  - https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html#framework-security
+
+metadata:
+  - version: 0.1
+  - state: draft

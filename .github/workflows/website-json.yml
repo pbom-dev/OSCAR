@@ -1,0 +1,52 @@
+
+name: Create matrix.json and push to website
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - content/**
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  create-matrix-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false 
+          fetch-depth: 0 
+      - name: Generate json file and upload artifact
+        run: |
+          ls -al
+          python ./helpers/tech_to_json.py content/oscar/techniques
+      - name: Copy matrix to folder
+        run: mv matrix.json content/website
+      - name: commit and push back to repo
+          
+        run: |
+            git config --global user.email "github-actions[bot]@users.noreply.github.com"
+            git config --global user.name "github-actions[bot]"
+            git add content/website/matrix.json
+            git commit -m "update matrix.json"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+            github_token: ${{ secrets.TOKEN }}
+      - uses: actions/upload-artifact@v3
+        with:
+          name: matrix
+          path: matrix.json
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          # Upload entire repository
+          path: '.'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1

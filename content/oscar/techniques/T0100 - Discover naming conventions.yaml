@@ -1,0 +1,30 @@
+id: T0100
+type: Technique
+
+tactic: Reconnaissance
+
+realm: 
+  - ContainerSecurity
+  - OpenSourceSecurity
+  - SCMPosture
+
+summary: Discover naming conventions
+
+description: # REQUIRED - <key:value> - supports markdown
+
+mitigations: # REQUIRED - <list> -reference to mitigation references
+  - 
+
+detections: # REQUIRED - <list> - reference to detection defintitions
+  - 
+
+subtechinques: # OPTIONAL <list> - reference to TechIDs
+  - 
+
+references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
+  -
+
+metadata: 
+    state: draft
+
+  

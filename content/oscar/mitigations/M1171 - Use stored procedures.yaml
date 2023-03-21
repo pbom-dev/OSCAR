@@ -1,0 +1,16 @@
+id: M1171
+type: Mitigation
+summary: Use stored procedures
+description: |
+  A stored procedure is a set of Structured Query Language (SQL) statements with an assigned name, which are stored in a database, so it can be reused and shared by multiple applications.
+  A stored procedure provides an important layer of security between the user interface and the database. 
+  It supports security through data access controls because end users may enter or change data, but do not write procedures. 
+  A stored procedure preserves data integrity because information is entered in a consistent manner. 
+  Note that safely implemented stored procedure does not include any unsafe dynamic SQL generation.
+
+references:
+  - https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html#defense-option-2-stored-procedures
+
+metadata:
+  - version: 0.1
+  - state: draft

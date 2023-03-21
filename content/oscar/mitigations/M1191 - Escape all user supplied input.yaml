@@ -1,0 +1,15 @@
+id: M1191
+type: Mitigation
+summary: Escape all user supplied input
+description: |
+  All user data controlled must be encoded when returned in the HTML page to prevent the execution of malicious data.
+  The type of encoding is specific to the context of the page where the user controlled data is inserted. 
+  For example, HTML entity encoding is appropriate for data placed into the HTML body. 
+  However, user data placed into a script would need JavaScript specific output encoding.
+
+references:
+  - https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html#preventing-xss-and-content-security-policy
+
+metadata:
+  - version: 0.1
+  - state: draft

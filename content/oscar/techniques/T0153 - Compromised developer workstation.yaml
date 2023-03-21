@@ -1,0 +1,29 @@
+id: T0153
+type: Technique
+
+tactic: Initial Access
+
+realm: 
+  - CodeSecurity
+  - SCMPosture
+
+summary: Compromised developer workstation
+
+description: # REQUIRED - <key:value> - supports markdown
+
+mitigations: # REQUIRED - <list> -reference to mitigation references
+  - 
+
+detections: # REQUIRED - <list> - reference to detection defintitions
+  - 
+
+subtechinques: # OPTIONAL <list> - reference to TechIDs
+  - 
+
+references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
+  -
+
+metadata: 
+    state: draft
+
+  
