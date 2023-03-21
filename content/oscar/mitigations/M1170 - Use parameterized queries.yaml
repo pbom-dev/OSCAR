@@ -1,0 +1,16 @@
+id: M1170
+type: Mitigation
+summary: Use parameterized queries
+description: |
+  A parameterized query is a query in which placeholders are used for parameters and the parameter values are supplied at execution time. 
+  Parameterized queries ensure that an attacker is not able to change the intent of a query, even if SQL commands are inserted by an attacker.
+  Note that parametrized queries should be done on the server-side.
+  Every language supports their own constructions, please use the references to find appropriate mechanism for your technologies.
+
+references:
+  - https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html#defense-option-1-prepared-statements-with-parameterized-queries
+  - https://cheatsheetseries.owasp.org/cheatsheets/Query_Parameterization_Cheat_Sheet.html
+
+metadata:
+  - version: 0.1
+  - state: draft

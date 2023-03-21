@@ -1,0 +1,14 @@
+id: M1194
+type: Mitigation
+summary: Use content security policy
+description: |
+  Set up CSP directives in order to protect against Cross-site scripting.
+  CSP headers used by the clients browser and protects the user from dynamic calls that will load content into the page currently being visited.
+  A strong CSP provides an effective second layer of protection against various types of vulnerabilities, especially XSS. Although CSP doesn't prevent web applications from containing vulnerabilities, it can make those vulnerabilities significantly more difficult for an attacker to exploit.
+
+references:
+  - https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html
+
+metadata:
+  - version: 0.1
+  - state: draft

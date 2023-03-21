@@ -1,0 +1,14 @@
+id: D1190
+type: Detection
+summary: Configure audit logs to detect Cross-site scripting
+description: |
+  Audit logs can help you to monitor application traffic in order to detect Cross-site scripting.
+  Audit logs can be configured on multiple layers, for example you can enable access logging for a web server or use your custom application events.
+  Monitor for javascript code constructions inside the application requests, also check for multiple error events in application logs.
+
+references:
+  - https://www.elastic.co/guide/en/kibana/master/security-best-practices.html#_cross_site_scripting_xss
+
+metadata:
+  - version: 0.1
+  - state: draft

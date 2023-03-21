@@ -1,0 +1,15 @@
+id: M1173
+type: Mitigation
+summary: Escape all user supplied input
+description: |
+  This technique should only be used as a last resort, when none of the above are feasible. 
+  Escape user input before putting it in a query.
+  Each DBMS supports one or more character escaping schemes specific to certain kinds of queries. 
+  If you then escape all user supplied input using the proper escaping scheme for the database you are using, the DBMS will not confuse that input with SQL code written by the developer, thus avoiding any possible SQL injection vulnerabilities.
+
+references:
+  - https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html#defense-option-4-escaping-all-user-supplied-input
+
+metadata:
+  - version: 0.1
+  - state: draft

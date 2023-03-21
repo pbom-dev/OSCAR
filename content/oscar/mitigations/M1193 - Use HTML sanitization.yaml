@@ -1,0 +1,13 @@
+id: M1193
+type: Mitigation
+summary: Use HTML sanitization
+description: |
+  HTML Sanitization will strip dangerous HTML from a variable and return a safe string of HTML. 
+  OWASP recommends DOMPurify for HTML Sanitization.
+
+references:
+  - https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html#html-sanitization
+
+metadata:
+  - version: 0.1
+  - state: draft
