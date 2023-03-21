@@ -32,7 +32,7 @@ jobs:
         id: tag
         run: |
           echo "::set-output name=release_tag::OSCAR_$(date +"%Y.%m.%d_%H-%M")"
-      - name: Release user firmware
+      - name: Release and add tar
         uses: softprops/action-gh-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
