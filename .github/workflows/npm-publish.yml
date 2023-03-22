@@ -19,9 +19,10 @@ jobs:
       - uses: "phips28/gh-action-bump-version@master"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          INPUT_PACKAGEJSON_DIR: 'npm-package'
+          PACKAGEJSON_DIR: 'npm-package'
         with:
           commit-message: 'CI: bumps version to {{version}} [skip ci]'
+          target-branch: 'main'
       
 
   build:
