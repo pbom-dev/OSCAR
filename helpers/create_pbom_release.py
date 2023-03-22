@@ -147,15 +147,15 @@ def generate_matrix(oscar_source_path, pbom_data_path):
 
             # default subtechniques
             
-            y.setdefault('subTechniques', [])
+            y.setdefault('subtechniques', [])
 
             item = {"tags": y['realm'],
                 "id": y['id'],
                 "name": y['summary'],
                 "tooltip": y['summary'],
                 "url": "https://pbom.dev/",
-                "subTechniques": [] if y['subtechinques']==[None] else y['subtechinques'],
-                "subTechniuqesAmount": len([] if y['subtechinques']==[None] else y['subtechinques'])}
+                "subTechniques": [] if y['subtechniques']==[None] else y['subtechniques'],
+                "subTechniuqesAmount": len([] if y['subtechniques']==[None] else y['subtechniques'])}
             j[y['tactic']]['items'].append(item)
     
     with open(os.path.join(pbom_data_path, 'pbom_data', 'matrix.json'), 'w') as f:
