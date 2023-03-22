@@ -12,18 +12,7 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-jobs:
-  bump-version:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: "phips28/gh-action-bump-version@master"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          commit-message: 'CI: bumps version to {{version}} [skip ci]'
-          target-branch: 'main'
-      
-
+jobs:   
   build:
     needs: bump-version
     runs-on: ubuntu-latest
@@ -46,7 +35,10 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-      - run: npm i
-      # - run: npm publish
+      - run: | 
+          npm i
+          cd ./npm-package
+          npm version minor
+          npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
