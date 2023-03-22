@@ -25,6 +25,15 @@ jobs:
           cd ./npm-package
           npm i
 
+  bump-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: "phips28/gh-action-bump-version@master"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          default: prerelease
+
   publish-npm:
     needs: build
     runs-on: ubuntu-latest
@@ -34,7 +43,7 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-      - run: npm ci
+      - run: npm i
       # - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
