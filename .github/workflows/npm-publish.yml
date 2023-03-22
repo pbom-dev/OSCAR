@@ -14,9 +14,9 @@ on:
 
 jobs:
   bump-version:
-    working-directory: npm-package
     runs-on: ubuntu-latest
     steps:
+        working-directory: ./npm-package
       - uses: "phips28/gh-action-bump-version@master"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
