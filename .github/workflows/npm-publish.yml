@@ -21,9 +21,10 @@ jobs:
         with:
           node-version: 16
       - run: python ./helpers/create_pbom_release.py --source content/oscar/ --dest ./npm-package
-      - run: cd ./npm-package
-      - run: ls
-      - run: npm ci
+      - run: | 
+          cd ./npm-package
+          ls
+          npm ci
 
   publish-npm:
     needs: build
