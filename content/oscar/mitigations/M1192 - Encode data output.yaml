@@ -1,0 +1,16 @@
+id: M1192
+type: Mitigation
+summary: Encode data output
+description: |
+  Output Encoding is recommended when you need to safely display data exactly as a user typed it in. 
+  Variables should not be interpreted as code instead of text.
+  Use default output encoding protection when you wish to display data as the user typed it in. Automatic encoding and escaping functions are built into most frameworks.
+  If you are not using a framework or need to cover gaps in the framework then you should use an output encoding library. 
+  Each variable used in the user interface should be passed through an output encoding function.
+
+references:
+  - https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html#output-encoding
+
+metadata:
+  - version: 0.1
+  - state: draft

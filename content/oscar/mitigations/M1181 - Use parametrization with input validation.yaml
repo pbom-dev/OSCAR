@@ -1,0 +1,16 @@
+id: M1181
+type: Mitigation
+summary: Use parametrization with input validation
+description: |
+  If calling a system command that incorporates user-supplied cannot be avoided, the following two layers of defense should be used within software to prevent attacks.
+  1. Parametrization: If available, use structured mechanisms that automatically enforce the separation between data and command. These mechanisms can help provide the relevant quoting and encoding.
+  2. Input validation: The values for commands and the relevant arguments should be both validated. There are different degrees of validation for the actual command and its arguments.
+  When it comes to the commands used, these must be validated against a list of allowed commands.
+
+
+references:
+  - https://cheatsheetseries.owasp.org/cheatsheets/OS_Command_Injection_Defense_Cheat_Sheet.html#defense-option-3-parameterization-in-conjunction-with-input-validation
+
+metadata:
+  - version: 0.1
+  - state: draft

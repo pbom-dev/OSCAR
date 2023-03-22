@@ -1,0 +1,15 @@
+id: M1172
+type: Mitigation
+summary: Use allow-list input validation
+description: |
+  Input validation is performed to ensure only properly formed data is entering the workflow in an information system, preventing malformed data from persisting in the database and triggering malfunction of various downstream components. 
+  Input validation should happen as early as possible in the data flow, preferably as soon as the data is received from the external party.
+  Allow list validation is appropriate for all input fields provided by the user. Allow list validation involves defining exactly what IS authorized, and by definition, everything else is not authorized.
+
+references:
+  - https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html#defense-option-3-allow-list-input-validation
+  - https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html
+
+metadata:
+  - version: 0.1
+  - state: draft

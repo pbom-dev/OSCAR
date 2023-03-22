@@ -8,21 +8,28 @@ realm:
 
 summary: Cross-site scripting
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+    Cross-site scripting (XSS) is a web security vulnerability that allows an attacker to compromise the interactions that users have with a vulnerable applications.
+    XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser side script, to a different end user. 
+    An attacker can use XSS to send a malicious script to an unsuspecting user. 
+    The end user browser has no way to know that the script should not be trusted, and will execute the script. Because it thinks the script came from a trusted source, the malicious script can access any cookies, session tokens, or other sensitive information retained by the browser and used with that site. 
+    These scripts can even rewrite the content of the HTML page.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations:
+  - M1190
+  - M1191
+  - M1192
+  - M1193
+  - M1194
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections:
+  - D1170
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references:
+  - https://owasp.org/www-community/attacks/xss/
+  - https://www.splunk.com/en_us/blog/learn/cross-site-scripting-xss-attacks.html
+  - https://portswigger.net/web-security/cross-site-scripting
 
 metadata: 
     state: draft
-
-  
+    version: 0.1

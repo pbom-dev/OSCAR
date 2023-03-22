@@ -1,0 +1,14 @@
+id: M1180
+type: Mitigation
+summary: Avoid calling OS commands directly
+description: |
+  Built-in library functions are a very good alternative to OS Commands, as they cannot be manipulated to perform tasks other than those it is intended to do.
+  For example use mkdir() instead of system("mkdir /dir_name").
+  If there are available libraries or APIs for the language you use, this is the preferred method.
+
+references:
+  - https://cheatsheetseries.owasp.org/cheatsheets/OS_Command_Injection_Defense_Cheat_Sheet.html#defense-option-1-avoid-calling-os-commands-directly
+
+metadata:
+  - version: 0.1
+  - state: draft

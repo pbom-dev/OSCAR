@@ -1,0 +1,20 @@
+id: D1170
+type: Detection
+summary: Configure application audit logs to detect injection attacks
+description: |
+  Audit logs can help you to monitor application traffic in order to detect injection attacks.
+  Audit logs can be configured on multiple layers, for example you can enable access logging for a web server or use your custom application events.
+  Monitor for SQL-like, javascript code, shell command constructions inside the application requests, also check for multiple error events in application logs.
+  Create an allow-list of commands and monitor for the attempts of using the commands out of this list.
+
+references:
+  - https://www.splunk.com/en_us/blog/security/sql-injections-the-splunk-method-for-auditing-your-application-security-model.html
+  - https://www.acunetix.com/blog/articles/using-logs-to-investigate-a-web-application-attack/
+  - https://documentation.wazuh.com/current/proof-of-concept-guide/detect-web-attack-sql-injection.html
+  - https://www.elastic.co/guide/en/kibana/master/security-best-practices.html#_cross_site_scripting_xss
+  - https://www.cobalt.io/blog/a-pentesters-guide-to-command-injection
+  - https://docs.rapid7.com/tcell/command-injection/
+
+metadata:
+  - version: 0.1
+  - state: draft

@@ -8,21 +8,25 @@ realm:
 
 summary: SQL injection
 
-description: # REQUIRED - <key:value> - supports markdown
+description: | 
+    SQL injection is a web security vulnerability that allows an attacker to interfere with the queries that an application makes to its database. 
+    A SQL injection attack consists of insertion or “injection” of a SQL query via the input data from the client to the application. 
+    Successful SQL injection exploit can read sensitive data from the database, modify database data (Insert/Update/Delete), execute administration operations on the database (such as shutdown the DBMS), recover the content of a given file present on the DBMS file system and in some cases issue commands to the operating system.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations:
+  - M1170
+  - M1171
+  - M1172
+  - M1173
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections:
+  - D1170
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references:
+  - https://www.spiceworks.com/it-security/application-security/articles/what-is-sql-injection/
+  - https://owasp.org/www-community/attacks/SQL_Injection
+  - https://portswigger.net/web-security/sql-injection
 
 metadata: 
     state: draft
-
-  
+    version: 0.1
