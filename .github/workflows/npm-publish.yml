@@ -11,13 +11,15 @@ on:
       - content/**
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+defaults:
+  run:
+    working-directory: npm-package
 
 jobs:
   bump-version:
     runs-on: ubuntu-latest
     steps:
       - uses: "phips28/gh-action-bump-version@master"
-        working-directory: ./npm-package
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
