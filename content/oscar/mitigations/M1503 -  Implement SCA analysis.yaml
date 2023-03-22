@@ -1,0 +1,13 @@
+id: M1503
+type: Mitigation
+summary: Implement SCA analysis
+description: |
+  Component Analysis is the process of identifying potential areas of risk from the use of third-party and open-source software and hardware components.
+  The best option for implementing SCA analysis is integration of SCA analysis tools into your CI/CD environment in order to scan your source code dependencies before the release.
+
+references:
+  - https://owasp.org/www-community/Component_Analysis
+
+metadata:
+  - version: 0.1
+  - state: draft

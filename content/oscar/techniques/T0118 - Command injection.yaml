@@ -21,7 +21,7 @@ mitigations:
   - If possible, create isolated accounts with limited privileges that are only used for a single task
 
 detections:
-  - D1180
+  - D1170
 
 references:
   - https://owasp.org/www-community/attacks/Command_Injection

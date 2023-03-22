@@ -10,21 +10,34 @@ realm:
 
 summary: Runtime logic bomb
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  A logic bomb is a snippet of malicious code that is intentionally inserted into other software. 
+  Logic bombs are triggered when a certain condition is met.
+  The code may lie dormant for a long time and remain undetected until the bomb is triggered.
+  When the bomb is activated, it can have devastating effects on the software, causing it to malfunction, delete data, or even grant unauthorized access to sensitive information.
+  The attack can also be designed to spread to other systems or cause damage to a wider network.
+  The malicious code is hidden within an otherwise legitimate software package.
+  It can be introduced at any point in the software supply chain.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+mitigations:
+  - M1500
+  - M1501
+  - M1502
+  - M1503
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
+detections:
+  - D1500
 
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references:
+  - https://www.csoonline.com/article/2115905/logic-bomb.html
+  - https://threatpost.com/discord-stealing-malware-npm-packages/163265/
+  - https://threatpost.com/malicious-code-bombs-amazon-lyft-slack-zillow/164455/
+  - https://threatpost.com/php-infiltrated-backdoor-malware/165061/
+  - https://threatpost.com/cryptominers-python-supply-chain/167135/
 
 metadata: 
     state: draft
+    version: 0.1
 
   

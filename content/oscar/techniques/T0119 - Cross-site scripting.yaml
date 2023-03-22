@@ -23,7 +23,7 @@ mitigations:
   - M1194
 
 detections:
-  - D1190
+  - D1170
 
 references:
   - https://owasp.org/www-community/attacks/xss/

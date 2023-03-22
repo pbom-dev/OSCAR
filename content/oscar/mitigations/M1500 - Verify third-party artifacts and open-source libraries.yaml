@@ -1,0 +1,15 @@
+id: M1500
+type: Mitigation
+summary: Verify third-party artifacts and open-source libraries
+description: |
+  Verify third-party artifacts used in code are trusted and have not been infected by a malicious actor before use. 
+  This can be accomplished, for example, by comparing the checksum of the dependency to its checksum in a trusted source. 
+  If a difference arises, this may be a sign that someone interfered and added malicious code. 
+  If this dependency is used, it will infect the environment and could end in a massive breach, leaving the organization exposed to data leaks and more.
+
+references:
+  - https://cloud.google.com/software-supply-chain-security/docs/dependencies
+
+metadata:
+  - version: 0.1
+  - state: draft

@@ -1,0 +1,14 @@
+id: M1502
+type: Mitigation
+summary: Define trusted package managers and repositories
+description: |
+  When pulling a package by name, the package manager might look for it in several package registries, some of which may be untrusted or badly configured. 
+  If the package is pulled from such a registry, there is a higher likelihood that it could prove malicious. 
+  In order to avoid this, configure packages to be pulled from trusted package registries.
+
+references:
+  - https://jfrog.com/whitepaper/devops-8-reasons-for-devops-to-use-a-binary-repository-manager/
+
+metadata:
+  - version: 0.1
+  - state: draft
