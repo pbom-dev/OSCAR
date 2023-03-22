@@ -15,11 +15,11 @@ on:
 jobs:
   bump-version:
     runs-on: ubuntu-latest
-    working-directory: npm-package
     steps:
       - uses: "phips28/gh-action-bump-version@master"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PACKAGEJSON_DIR: 'npm-package'
         with:
           commit-message: 'CI: bumps version to {{version}} [skip ci]'
       
