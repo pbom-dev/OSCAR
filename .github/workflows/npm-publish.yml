@@ -13,7 +13,18 @@ on:
   workflow_dispatch:
 
 jobs:
+  bump-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: "phips28/gh-action-bump-version@master"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          commit-message: 'CI: bumps version to {{version}} [skip ci]'
+          PACKAGEJSON_DIR: './npm-package'
+
   build:
+    needs: bump-version
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -24,15 +35,6 @@ jobs:
       - run: | 
           cd ./npm-package
           npm i
-
-  bump-version:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: "phips28/gh-action-bump-version@master"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          default: prerelease
 
   publish-npm:
     needs: build
