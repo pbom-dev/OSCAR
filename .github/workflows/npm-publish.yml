@@ -35,8 +35,8 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: | 
-          npm i
           cd ./npm-package
+          npm i
           npm version minor
           npm publish
         env:
