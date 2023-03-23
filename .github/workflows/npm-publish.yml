@@ -34,7 +34,7 @@ jobs:
 
       - name: Push changes
         run: |
-          git add /npm-package/package.json
+          git add ./npm-package/package.json
           git commit -m "CI: bumps version and push content to package.json [skip ci]"
           git push origin main --follow-tags --force
 
