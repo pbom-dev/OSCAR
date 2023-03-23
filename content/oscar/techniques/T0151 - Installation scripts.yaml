@@ -5,24 +5,32 @@ tactic: Execution
 
 realm: 
   - CloudSecurity
+  - CodeSecurity
+  - OpenSourceSecurity
 
 summary: Installation scripts
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  A package installation script injection attack is a type of security exploit that involves an attacker injecting malicious code into a legitimate software package installation script.
+  The attack typically occurs when an attacker gains access to the distribution network of a software vendor or package manager, and injects malicious code into the package installation script. 
+  This code may be designed to carry out a range of nefarious activities, such as stealing sensitive information, creating backdoors, or executing arbitrary code on the victim's system.
+  Once the victim downloads and installs the compromised software package, the injected code is executed, giving the attacker access to the victim's system.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations:
+  - M1500
+  - M1502
+  - M1503
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections:
+  - D1510
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
+references:
+  - https://www.fortinet.com/blog/threat-research/more-supply-chain-attacks-via-new-malicious-python-packages-in-pypi
+  - https://medium.com/checkmarx-security/the-skeleton-squad-tracing-the-origins-and-scope-of-5000-malicious-packages-on-pypi-7516c16e4da9
+  - https://medium.com/checkmarx-security/automatic-execution-of-code-upon-package-download-on-python-package-manager-cd6ed9e366a8
 
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
-
-metadata: 
+metadata:
+    version: 0.1 
     state: draft
 
   

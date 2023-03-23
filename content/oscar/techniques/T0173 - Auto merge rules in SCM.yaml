@@ -8,21 +8,28 @@ realm:
 
 summary: Auto merge rules in SCM
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Auto merge rules in SCM (Source Code Management) are rules that determine how code changes should be merged automatically into a main code repository or branch.
+  While auto merge rules in SCM can help to streamline the code review and merge process, there are several security risks to consider, including:
+  1. Malicious code injection: Auto merge rules may allow malicious code changes to be merged into the code repository, compromising the security of the system.
+  2. Vulnerability propagation: Automatic merges can propagate security vulnerabilities to the main code repository or branch, allowing attackers to exploit these vulnerabilities to gain unauthorized access to the system.
+  3. Human error: Auto merge rules can lead to errors in the code repository, such as overwriting critical code or merging code that has not been properly reviewed.
+  4. Compliance violations: Auto merge rules can violate compliance requirements, such as failing to properly audit code changes or not properly segregating code changes between different teams.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations:
+  - M1730
+  - M1731
+  - M1732
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections:
+  - D1500
+  - D1510
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references:
+  - https://securityintelligence.com/posts/abusing-source-code-management-systems/
 
 metadata: 
+    version: 0.1
     state: draft
 
   

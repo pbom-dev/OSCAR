@@ -8,21 +8,25 @@ realm:
 
 summary: IDE
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Malicous code can be injected into build commands, build scripts or project files. 
+  These commands and scripts can be executed upon IDE project build and run.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations:
+  - M1200
+  - M1500
+  - M1502
+  - M1503
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections:
+  - D1510
+  - D1512
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references:
+  - https://www.trendmicro.com/en_us/research/23/a/attacking-the-supply-chain-developer.html
 
 metadata: 
+    version: 0.1
     state: draft
 
   
