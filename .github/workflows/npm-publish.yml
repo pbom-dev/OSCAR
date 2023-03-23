@@ -32,7 +32,7 @@ jobs:
           cd ./npm-package
           npm version minor
           cd ..
-          git add .
+          git add /npm-package/package.json
           git commit -m "CI: bumps version to {{version}} [skip ci]"
           git push origin main --follow-tags --force
 
