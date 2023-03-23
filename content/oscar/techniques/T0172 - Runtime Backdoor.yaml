@@ -10,21 +10,30 @@ realm:
 
 summary: Runtime Backdoor
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  A runtime backdoor attack is a type of cyber attack where an attacker gains unauthorized access to a computer system or network and installs a malicious software or code that allows them to control the system or steal sensitive information.
+  This type of attack is called a "runtime" backdoor attack because it involves manipulating the system at runtime, while it is running, rather than during the development or deployment stages.
+  The attacker typically gains access to the system through a vulnerability, such as an unpatched software flaw or weak authentication mechanism. 
+  Once inside, the attacker can install a backdoor that provides them with persistent access to the system, even after the initial entry point has been closed.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations:
+  - M1720
+  - M1500
+  - M1501
+  - M1502
+  - M1503
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections:
+  - D1510
+  - D1520
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references:
+  - https://www.cyberark.com/resources/blog/the-anatomy-of-the-solarwinds-attack-chain
+  - https://portswigger.net/daily-swig/software-supply-chain-attacks-everything-you-need-to-know
+  - https://www.littlefish.co.uk/insights/backdoor-vulnerability-supply-chain-attacks/
 
 metadata: 
+    version: 0.1
     state: draft
 
   

@@ -1,0 +1,13 @@
+id: M1732
+type: Mitigation
+summary: Implement code scanning for security risks
+description: |
+  Scanning pull requests to detect risks allows for early detection of vulnerable code and/or dependencies and helps mitigate potentially malicious code.
+  For every repository in use, enforce risk scanning on every pull request.
+
+references:
+  - https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/triaging-code-scanning-alerts-in-pull-requests
+
+metadata:
+  - version: 0.1
+  - state: draft

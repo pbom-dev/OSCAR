@@ -31,5 +31,6 @@ references:
   - https://portswigger.net/web-security/cross-site-scripting
 
 metadata: 
-    state: draft
     version: 0.1
+    state: draft
+
