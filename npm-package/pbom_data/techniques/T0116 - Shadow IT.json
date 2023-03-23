@@ -1,0 +1,27 @@
+{
+    "id": "T0116",
+    "type": "Technique",
+    "tactic": "Initial Access",
+    "realm": [
+        "ArtifactSecurity",
+        "CI/CDPosture",
+        "CloudSecurity",
+        "ContainerSecurity",
+        "OpenSourceSecurity",
+        "SCMPosture",
+        "SecretsHygiene"
+    ],
+    "summary": "Shadow IT",
+    "description": null,
+    "mitigations": [],
+    "detections": [],
+    "subtechinques": [
+        null
+    ],
+    "references": [
+        null
+    ],
+    "metadata": {
+        "state": "draft"
+    }
+}

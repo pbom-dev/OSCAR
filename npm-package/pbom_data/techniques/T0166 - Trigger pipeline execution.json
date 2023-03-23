@@ -1,0 +1,22 @@
+{
+    "id": "T0166",
+    "type": "Technique",
+    "tactic": "Execution",
+    "realm": [
+        "CI/CDPosture",
+        "SCMPosture"
+    ],
+    "summary": "Trigger pipeline execution",
+    "description": null,
+    "mitigations": [],
+    "detections": [],
+    "subtechinques": [
+        null
+    ],
+    "references": [
+        null
+    ],
+    "metadata": {
+        "state": "draft"
+    }
+}

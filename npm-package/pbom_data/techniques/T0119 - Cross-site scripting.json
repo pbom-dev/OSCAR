@@ -1,0 +1,130 @@
+{
+    "id": "T0119",
+    "type": "Technique",
+    "tactic": "Execution",
+    "realm": [
+        "CodeSecurity"
+    ],
+    "summary": "Cross-site scripting",
+    "description": "Cross-site scripting (XSS) is a web security vulnerability that allows an attacker to compromise the interactions that users have with a vulnerable applications.\nXSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser side script, to a different end user. \nAn attacker can use XSS to send a malicious script to an unsuspecting user. \nThe end user browser has no way to know that the script should not be trusted, and will execute the script. Because it thinks the script came from a trusted source, the malicious script can access any cookies, session tokens, or other sensitive information retained by the browser and used with that site. \nThese scripts can even rewrite the content of the HTML page.\n",
+    "mitigations": [
+        {
+            "id": "M1190",
+            "type": "Mitigation",
+            "summary": "Use framework security mechanisms",
+            "description": "Fewer XSS bugs appear in applications built with modern web frameworks. \nThese frameworks steer developers towards good security practices and help mitigate XSS by using templating, auto-escaping, and more.\nUnderstand how your framework prevents XSS and where it has gaps. \nThere will be times where you need to do something outside the protection provided by your framework. \nThis is where Output Encoding and HTML Sanitization are critical.\n",
+            "references": [
+                "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html#framework-security"
+            ],
+            "metadata": [
+                {
+                    "version": 0.1
+                },
+                {
+                    "state": "draft"
+                }
+            ]
+        },
+        {
+            "id": "M1191",
+            "type": "Mitigation",
+            "summary": "Escape all user supplied input",
+            "description": "All user data controlled must be encoded when returned in the HTML page to prevent the execution of malicious data.\nThe type of encoding is specific to the context of the page where the user controlled data is inserted. \nFor example, HTML entity encoding is appropriate for data placed into the HTML body. \nHowever, user data placed into a script would need JavaScript specific output encoding.\n",
+            "references": [
+                "https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html#preventing-xss-and-content-security-policy"
+            ],
+            "metadata": [
+                {
+                    "version": 0.1
+                },
+                {
+                    "state": "draft"
+                }
+            ]
+        },
+        {
+            "id": "M1192",
+            "type": "Mitigation",
+            "summary": "Encode data output",
+            "description": "Output Encoding is recommended when you need to safely display data exactly as a user typed it in. \nVariables should not be interpreted as code instead of text.\nUse default output encoding protection when you wish to display data as the user typed it in. Automatic encoding and escaping functions are built into most frameworks.\nIf you are not using a framework or need to cover gaps in the framework then you should use an output encoding library. \nEach variable used in the user interface should be passed through an output encoding function.\n",
+            "references": [
+                "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html#output-encoding"
+            ],
+            "metadata": [
+                {
+                    "version": 0.1
+                },
+                {
+                    "state": "draft"
+                }
+            ]
+        },
+        {
+            "id": "M1193",
+            "type": "Mitigation",
+            "summary": "Use HTML sanitization",
+            "description": "HTML Sanitization will strip dangerous HTML from a variable and return a safe string of HTML. \nOWASP recommends DOMPurify for HTML Sanitization.\n",
+            "references": [
+                "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html#html-sanitization"
+            ],
+            "metadata": [
+                {
+                    "version": 0.1
+                },
+                {
+                    "state": "draft"
+                }
+            ]
+        },
+        {
+            "id": "M1194",
+            "type": "Mitigation",
+            "summary": "Use content security policy",
+            "description": "Set up CSP directives in order to protect against Cross-site scripting.\nCSP headers used by the clients browser and protects the user from dynamic calls that will load content into the page currently being visited.\nA strong CSP provides an effective second layer of protection against various types of vulnerabilities, especially XSS. Although CSP doesn't prevent web applications from containing vulnerabilities, it can make those vulnerabilities significantly more difficult for an attacker to exploit.\n",
+            "references": [
+                "https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html"
+            ],
+            "metadata": [
+                {
+                    "version": 0.1
+                },
+                {
+                    "state": "draft"
+                }
+            ]
+        }
+    ],
+    "detections": [
+        {
+            "id": "D1170",
+            "type": "Detection",
+            "summary": "Configure application audit logs to detect injection attacks",
+            "description": "Audit logs can help you to monitor application traffic in order to detect injection attacks.\nAudit logs can be configured on multiple layers, for example you can enable access logging for a web server or use your custom application events.\nMonitor for SQL-like, javascript code, shell command constructions inside the application requests, also check for multiple error events in application logs.\nCreate an allow-list of commands and monitor for the attempts of using the commands out of this list.\n",
+            "references": [
+                "https://www.splunk.com/en_us/blog/security/sql-injections-the-splunk-method-for-auditing-your-application-security-model.html",
+                "https://www.acunetix.com/blog/articles/using-logs-to-investigate-a-web-application-attack/",
+                "https://documentation.wazuh.com/current/proof-of-concept-guide/detect-web-attack-sql-injection.html",
+                "https://www.elastic.co/guide/en/kibana/master/security-best-practices.html#_cross_site_scripting_xss",
+                "https://www.cobalt.io/blog/a-pentesters-guide-to-command-injection",
+                "https://docs.rapid7.com/tcell/command-injection/"
+            ],
+            "metadata": [
+                {
+                    "version": 0.1
+                },
+                {
+                    "state": "draft"
+                }
+            ]
+        }
+    ],
+    "references": [
+        "https://owasp.org/www-community/attacks/xss/",
+        "https://www.splunk.com/en_us/blog/learn/cross-site-scripting-xss-attacks.html",
+        "https://portswigger.net/web-security/cross-site-scripting"
+    ],
+    "metadata": {
+        "state": "draft",
+        "version": 0.1
+    }
+}

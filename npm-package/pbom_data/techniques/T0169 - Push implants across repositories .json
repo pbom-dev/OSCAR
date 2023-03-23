@@ -1,0 +1,22 @@
+{
+    "id": "T0169",
+    "type": "Technique",
+    "tactic": "Lateral Movement",
+    "realm": [
+        "CodeSecurity",
+        "SCMPosture"
+    ],
+    "summary": "Push implants across repositories",
+    "description": null,
+    "mitigations": [],
+    "detections": [],
+    "subtechinques": [
+        null
+    ],
+    "references": [
+        null
+    ],
+    "metadata": {
+        "state": "draft"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "id": "T0100",
+    "type": "Technique",
+    "tactic": "Reconnaissance",
+    "realm": [
+        "ContainerSecurity",
+        "OpenSourceSecurity",
+        "SCMPosture"
+    ],
+    "summary": "Discover naming conventions",
+    "description": null,
+    "mitigations": [],
+    "detections": [],
+    "subtechinques": [
+        null
+    ],
+    "references": [
+        null
+    ],
+    "metadata": {
+        "state": "draft"
+    }
+}

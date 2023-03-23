@@ -1,0 +1,112 @@
+{
+    "id": "T0150",
+    "type": "Technique",
+    "tactic": "Execution",
+    "realm": [
+        "CodeSecurity",
+        "ContainerSecurity",
+        "OpenSourceSecurity"
+    ],
+    "summary": "Runtime logic bomb",
+    "description": "A logic bomb is a snippet of malicious code that is intentionally inserted into other software. \nLogic bombs are triggered when a certain condition is met.\nThe code may lie dormant for a long time and remain undetected until the bomb is triggered.\nWhen the bomb is activated, it can have devastating effects on the software, causing it to malfunction, delete data, or even grant unauthorized access to sensitive information.\nThe attack can also be designed to spread to other systems or cause damage to a wider network.\nThe malicious code is hidden within an otherwise legitimate software package.\nIt can be introduced at any point in the software supply chain.\n",
+    "mitigations": [
+        {
+            "id": "M1500",
+            "type": "Mitigation",
+            "summary": "Verify third-party artifacts and open-source libraries",
+            "description": "Verify third-party artifacts used in code are trusted and have not been infected by a malicious actor before use. \nThis can be accomplished, for example, by comparing the checksum of the dependency to its checksum in a trusted source. \nIf a difference arises, this may be a sign that someone interfered and added malicious code. \nIf this dependency is used, it will infect the environment and could end in a massive breach, leaving the organization exposed to data leaks and more.\n",
+            "references": [
+                "https://cloud.google.com/software-supply-chain-security/docs/dependencies"
+            ],
+            "metadata": [
+                {
+                    "version": 0.1
+                },
+                {
+                    "state": "draft"
+                }
+            ]
+        },
+        {
+            "id": "M1501",
+            "type": "Mitigation",
+            "summary": "Require SBOM from all third-party suppliers",
+            "description": "An SBOM for every third-party artifact helps to ensure an artifact is safe to use and fully compliant. \nThis file lists all important metadata, especially all the dependencies of an artifact, and allows for verification of each dependency. \nIf one of the dependencies/artifacts is attacked or has a new vulnerability (e.g., the \u201cSolarWinds\u201d or even \u201clog4j\u201d attack), it is easier to detect what has been affected by this incident because dependencies in use are listed in the SBOM file\n",
+            "references": [
+                "https://snyk.io/blog/building-sbom-open-source-supply-chain-security/"
+            ],
+            "metadata": [
+                {
+                    "version": 0.1
+                },
+                {
+                    "state": "draft"
+                }
+            ]
+        },
+        {
+            "id": "M1502",
+            "type": "Mitigation",
+            "summary": "Define trusted package managers and repositories",
+            "description": "When pulling a package by name, the package manager might look for it in several package registries, some of which may be untrusted or badly configured. \nIf the package is pulled from such a registry, there is a higher likelihood that it could prove malicious. \nIn order to avoid this, configure packages to be pulled from trusted package registries.\n",
+            "references": [
+                "https://jfrog.com/whitepaper/devops-8-reasons-for-devops-to-use-a-binary-repository-manager/"
+            ],
+            "metadata": [
+                {
+                    "version": 0.1
+                },
+                {
+                    "state": "draft"
+                }
+            ]
+        },
+        {
+            "id": "M1503",
+            "type": "Mitigation",
+            "summary": "Implement SCA analysis",
+            "description": "Component Analysis is the process of identifying potential areas of risk from the use of third-party and open-source software and hardware components.\nThe best option for implementing SCA analysis is integration of SCA analysis tools into your CI/CD environment in order to scan your source code dependencies before the release.\n",
+            "references": [
+                "https://owasp.org/www-community/Component_Analysis"
+            ],
+            "metadata": [
+                {
+                    "version": 0.1
+                },
+                {
+                    "state": "draft"
+                }
+            ]
+        }
+    ],
+    "detections": [
+        {
+            "id": "D1500",
+            "type": "Detection",
+            "summary": "Configure monitoring of used artifacts and open-source libraries",
+            "description": "Implement regular scanning of used artifacts and open-source libraries for known vulnerabilities.\nSet up monitoring of reported issues based on regular scanning results.\n",
+            "references": [
+                "https://owasp.org/www-community/Component_Analysis"
+            ],
+            "metadata": [
+                {
+                    "version": 0.1
+                },
+                {
+                    "state": "draft"
+                }
+            ]
+        }
+    ],
+    "references": [
+        "https://www.csoonline.com/article/2115905/logic-bomb.html",
+        "https://threatpost.com/discord-stealing-malware-npm-packages/163265/",
+        "https://threatpost.com/malicious-code-bombs-amazon-lyft-slack-zillow/164455/",
+        "https://threatpost.com/php-infiltrated-backdoor-malware/165061/",
+        "https://threatpost.com/cryptominers-python-supply-chain/167135/"
+    ],
+    "metadata": {
+        "state": "draft",
+        "version": 0.1
+    }
+}
