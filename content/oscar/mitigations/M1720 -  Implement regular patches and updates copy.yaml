@@ -1,0 +1,15 @@
+id: M1720
+type: Mitigation
+summary: Implement regular patches and updates
+description: |
+  Regular patches and updates are necessary to improve the security, performance, and reliability of software and systems. 
+  They include bug fixes, security updates, and performance improvements. 
+  Regular patches and updates also ensure compatibility with new technologies and can help maintain compliance with regulatory standards. 
+  Failure to install patches and updates can leave systems vulnerable to security threats, cause system failures or crashes, and limit the functionality of software and systems.
+
+references:
+  - https://blog.sonatype.com/going-online-with-the-owasp-vulnerability-management-guide-working-group
+
+metadata:
+  - version: 0.1
+  - state: draft

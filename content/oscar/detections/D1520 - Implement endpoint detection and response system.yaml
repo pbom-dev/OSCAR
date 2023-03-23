@@ -1,0 +1,17 @@
+id: D1520
+type: Detection
+summary: Implement endpoint detection and response system
+description: |
+  An endpoint detection and response (EDR) system is a security tool designed to detect and respond to security incidents on endpoints, such as desktops, laptops, servers, and mobile devices. 
+  There are several reasons why an EDR system is essential for maintaining the security of endpoints:
+  1. Threat Detection: EDR can detect and alert on a wide range of threats, including malware, ransomware, and other types of attacks that may not be detected by traditional antivirus software.
+  2. Rapid Incident Response: EDR can help security teams to rapidly detect, investigate, and respond to security incidents on endpoints. EDR systems can provide detailed information about the scope and impact of an attack, enabling security personnel to respond quickly and effectively.
+  3. Behavioral Analysis: EDR can monitor endpoint behavior to detect and alert on suspicious or anomalous activity. This helps security teams to identify and respond to threats that may be missed by traditional signature-based detection.
+  4. Endpoint Visibility: EDR provides visibility into endpoint activity, including processes, network connections, and file activity. This helps security teams to identify potential attack vectors and take proactive measures to prevent future incidents.
+
+references:
+  - https://www.crowdstrike.com/cybersecurity-101/endpoint-security/endpoint-detection-and-response-edr/
+
+metadata:
+  - version: 0.1
+  - state: draft
