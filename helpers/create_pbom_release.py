@@ -157,6 +157,7 @@ def generate_matrix(oscar_source_path, pbom_data_path):
                 "subTechniques": [] if y['subtechniques']==[None] else y['subtechniques'],
                 "subTechniuqesAmount": len([] if y['subtechniques']==[None] else y['subtechniques'])}
             j[y['tactic']]['items'].append(item)
+            j[y['tactic']]['amount'] += 1
     
     with open(os.path.join(pbom_data_path, 'pbom_data', 'matrix.json'), 'w') as f:
         logger.info("Saving matrix.json to %s", os.path.join(pbom_data_path, 'matrix.json'))
