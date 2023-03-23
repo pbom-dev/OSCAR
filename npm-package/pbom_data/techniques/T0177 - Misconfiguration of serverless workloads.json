@@ -1,0 +1,21 @@
+{
+    "id": "T0177",
+    "type": "Technique",
+    "tactic": "Impact",
+    "realm": [
+        "CloudSecurity"
+    ],
+    "summary": "Misconfiguration of serverless workloads",
+    "description": null,
+    "mitigations": [],
+    "detections": [],
+    "subtechinques": [
+        null
+    ],
+    "references": [
+        null
+    ],
+    "metadata": {
+        "state": "draft"
+    }
+}

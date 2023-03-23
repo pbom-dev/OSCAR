@@ -1,0 +1,23 @@
+{
+    "id": "T0143",
+    "type": "Technique",
+    "tactic": "Initial Access",
+    "realm": [
+        "CI/CDPosture",
+        "CloudSecurity",
+        "SCMPosture"
+    ],
+    "summary": "External user accounts",
+    "description": null,
+    "mitigations": [],
+    "detections": [],
+    "subtechinques": [
+        null
+    ],
+    "references": [
+        null
+    ],
+    "metadata": {
+        "state": "draft"
+    }
+}

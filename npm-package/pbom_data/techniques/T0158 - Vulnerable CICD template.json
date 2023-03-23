@@ -1,0 +1,22 @@
+{
+    "id": "T0158",
+    "type": "Technique",
+    "tactic": "Initial Access",
+    "realm": [
+        "CI/CDPosture",
+        "OpenSourceSecurity"
+    ],
+    "summary": "Vulnerable CICD template",
+    "description": null,
+    "mitigations": [],
+    "detections": [],
+    "subtechinques": [
+        null
+    ],
+    "references": [
+        null
+    ],
+    "metadata": {
+        "state": "draft"
+    }
+}

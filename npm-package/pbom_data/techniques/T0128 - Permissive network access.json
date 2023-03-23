@@ -1,0 +1,22 @@
+{
+    "id": "T0128",
+    "type": "Technique",
+    "tactic": "Initial Access",
+    "realm": [
+        "CloudSecurity",
+        "Infrastructureascode"
+    ],
+    "summary": "Permissive network access",
+    "description": null,
+    "mitigations": [],
+    "detections": [],
+    "subtechinques": [
+        null
+    ],
+    "references": [
+        null
+    ],
+    "metadata": {
+        "state": "draft"
+    }
+}

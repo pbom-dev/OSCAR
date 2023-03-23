@@ -1,0 +1,22 @@
+{
+    "id": "T0165",
+    "type": "Technique",
+    "tactic": "Persistence",
+    "realm": [
+        "Artifact Security",
+        "CI/CD Posture",
+        "Cloud Security",
+        "SCM Posture"
+    ],
+    "summary": "Create access token",
+    "description": "Following initial access, an attacker may attempt to create alternative means of access to the system that was infiltrated. Since the initial access may use a temporary or temporary session token - a common adversary technique would be to create an access token which will persist the access to the system. For example, after getting an initail access by abusing a compromised 2FA backed session token an attacker created access tokens that allowed both persistance and lateral movement (Circle CI reference)\n",
+    "mitigations": [],
+    "detections": [],
+    "refrences": [
+        "https://circleci.com/blog/jan-4-2023-incident-report/"
+    ],
+    "metadata": {
+        "version": 0.1,
+        "state": "draft"
+    }
+}

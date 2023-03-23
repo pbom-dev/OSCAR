@@ -1,0 +1,17 @@
+{
+    "id": "D1500",
+    "type": "Detection",
+    "summary": "Configure monitoring of used artifacts and open-source libraries",
+    "description": "Implement regular scanning of used artifacts and open-source libraries for known vulnerabilities.\nSet up monitoring of reported issues based on regular scanning results.\n",
+    "references": [
+        "https://owasp.org/www-community/Component_Analysis"
+    ],
+    "metadata": [
+        {
+            "version": 0.1
+        },
+        {
+            "state": "draft"
+        }
+    ]
+}

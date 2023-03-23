@@ -1,0 +1,24 @@
+{
+    "id": "T0131",
+    "type": "Technique",
+    "tactic": "Lateral Movement",
+    "realm": [
+        "ArtifactSecurity",
+        "CI/CDPosture",
+        "CloudSecurity",
+        "SCMPosture"
+    ],
+    "summary": "Overprivileged user account",
+    "description": null,
+    "mitigations": [],
+    "detections": [],
+    "subtechinques": [
+        null
+    ],
+    "references": [
+        null
+    ],
+    "metadata": {
+        "state": "draft"
+    }
+}
