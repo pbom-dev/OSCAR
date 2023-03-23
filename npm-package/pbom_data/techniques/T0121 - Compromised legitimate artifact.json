@@ -1,0 +1,22 @@
+{
+    "id": "T0121",
+    "type": "Technique",
+    "tactic": "Resource Development",
+    "realm": [
+        "ContainerSecurity",
+        "OpenSourceSecurity"
+    ],
+    "summary": "Compromised legitimate artifact",
+    "description": null,
+    "mitigations": [],
+    "detections": [],
+    "subtechinques": [
+        null
+    ],
+    "references": [
+        null
+    ],
+    "metadata": {
+        "state": "draft"
+    }
+}

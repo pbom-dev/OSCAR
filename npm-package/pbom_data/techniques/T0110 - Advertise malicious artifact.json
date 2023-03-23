@@ -1,0 +1,22 @@
+{
+    "id": "T0110",
+    "type": "Technique",
+    "tactic": "Resource Development",
+    "realm": [
+        "ContainerSecurity",
+        "OpenSourceSecurity"
+    ],
+    "summary": "Advertise malicious artifact",
+    "description": null,
+    "mitigations": [],
+    "detections": [],
+    "subtechinques": [
+        null
+    ],
+    "references": [
+        null
+    ],
+    "metadata": {
+        "state": "draft"
+    }
+}

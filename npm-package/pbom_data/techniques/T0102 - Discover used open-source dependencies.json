@@ -1,0 +1,23 @@
+{
+    "id": "T0102",
+    "type": "Technique",
+    "tactic": "Reconnaissance",
+    "realm": [
+        "ContainerSecurity",
+        "OpenSourceSecurity",
+        "SCMPosture"
+    ],
+    "summary": "Discover used open-source dependencies",
+    "description": null,
+    "mitigations": [],
+    "detections": [],
+    "subtechinques": [
+        null
+    ],
+    "references": [
+        null
+    ],
+    "metadata": {
+        "state": "draft"
+    }
+}

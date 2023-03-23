@@ -1,0 +1,21 @@
+{
+    "id": "T0151",
+    "type": "Technique",
+    "tactic": "Execution",
+    "realm": [
+        "CloudSecurity"
+    ],
+    "summary": "Installation scripts",
+    "description": null,
+    "mitigations": [],
+    "detections": [],
+    "subtechinques": [
+        null
+    ],
+    "references": [
+        null
+    ],
+    "metadata": {
+        "state": "draft"
+    }
+}

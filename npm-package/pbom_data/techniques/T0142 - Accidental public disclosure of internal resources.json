@@ -1,0 +1,21 @@
+{
+    "id": "T0142",
+    "type": "Technique",
+    "tactic": "Reconnaissance",
+    "realm": [
+        "CloudSecurity"
+    ],
+    "summary": "Accidental public disclosure of internal resources",
+    "description": null,
+    "mitigations": [],
+    "detections": [],
+    "subtechinques": [
+        null
+    ],
+    "references": [
+        null
+    ],
+    "metadata": {
+        "state": "draft"
+    }
+}
