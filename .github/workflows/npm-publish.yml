@@ -26,6 +26,9 @@ jobs:
         run: python ./helpers/create_pbom_release.py --source content/oscar/ --dest ./npm-package
 
       - name: Bump version minor
+        run: |
+          git config user.email "you@ox.security"
+          git config user.name "OX npm bump"
         run: | 
           cd ./npm-package
           npm version minor
