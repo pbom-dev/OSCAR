@@ -31,9 +31,11 @@ jobs:
           git config user.name "OX npm bump"
           cd ./npm-package
           npm version minor
-          cd ..
+
+      - name: Push changes
+        run: |
           git add /npm-package/package.json
-          git commit -m "CI: bumps version to {{version}} [skip ci]"
+          git commit -m "CI: bumps version and push content to package.json [skip ci]"
           git push origin main --follow-tags --force
 
       - name: Publish to npm Registry
