@@ -1,5 +1,5 @@
 {
-  "name": "ox-oscar",
+  "name": "ox-oscar-test",
   "version": "1.0.0",
   "description": "A comprehensive, systematic and actionable way to understand attacker behaviors and techniques with respect to the software supply chain",
   "main": "index.js",
