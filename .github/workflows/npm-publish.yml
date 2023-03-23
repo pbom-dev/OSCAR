@@ -27,12 +27,13 @@ jobs:
 
       - name: Bump version minor
         run: | 
+          cd ./npm-package
           npm version minor
           cd ..
           git add .
           git commit -m "CI: bumps version to {{version}} [skip ci]"
           git push origin main --follow-tags --force
-          
+
       - name: Publish to npm Registry
         run: | 
           cd ./npm-package
