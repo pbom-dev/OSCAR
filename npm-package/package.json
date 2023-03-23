@@ -1,6 +1,6 @@
 {
-  "name": "ox-oscar",
-  "version": "1.1.0",
+  "name": "@oxappsec/oscar",
+  "version": "1.0.0",
   "description": "A comprehensive, systematic and actionable way to understand attacker behaviors and techniques with respect to the software supply chain",
   "main": "index.js",
   "scripts": {
