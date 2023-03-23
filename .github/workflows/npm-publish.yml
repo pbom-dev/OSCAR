@@ -30,16 +30,10 @@ jobs:
 
       - name: Bump version minor
         run: | 
-          git config user.email "you@ox.security"
-          git config user.name "OX npm bump"
           cd ./npm-package
           npm version minor
 
-      - name: Push changes
-        run: |
-          git add .
-          git commit -m "CI: bumps version and push content to package.json [skip ci]"
-          git push origin main --follow-tags --force
+
 
       - name: Publish to npm Registry
         run: | 
