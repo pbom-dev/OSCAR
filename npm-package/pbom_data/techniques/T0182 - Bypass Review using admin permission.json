@@ -1,0 +1,22 @@
+{
+    "id": "T0182",
+    "type": "Technique",
+    "tactic": "Defense Evasion",
+    "realm": [
+        "CI/CDPosture",
+        "SCMPosture"
+    ],
+    "summary": "Bypass Review using admin permission",
+    "description": null,
+    "mitigations": [],
+    "detections": [],
+    "subtechinques": [
+        null
+    ],
+    "references": [
+        null
+    ],
+    "metadata": {
+        "state": "draft"
+    }
+}

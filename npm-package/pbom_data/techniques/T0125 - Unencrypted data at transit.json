@@ -1,0 +1,22 @@
+{
+    "id": "T0125",
+    "type": "Technique",
+    "tactic": "Collection",
+    "realm": [
+        "CloudSecurity",
+        "Infrastructureascode"
+    ],
+    "summary": "Unencrypted data at transit",
+    "description": null,
+    "mitigations": [],
+    "detections": [],
+    "subtechinques": [
+        null
+    ],
+    "references": [
+        null
+    ],
+    "metadata": {
+        "state": "draft"
+    }
+}

@@ -1,0 +1,106 @@
+{
+    "id": "T0152",
+    "type": "Technique",
+    "tactic": "Execution",
+    "realm": [
+        "OpenSourceSecurity"
+    ],
+    "summary": "IDE",
+    "description": "Malicous code can be injected into build commands, build scripts or project files. \nThese commands and scripts can be executed upon IDE project build and run.\n",
+    "mitigations": [
+        {
+            "id": "M1200",
+            "type": "Mitigation",
+            "summary": "Verify package authenticity",
+            "description": "Before installing any package, it's important to verify its authenticity. This can include checking the package's digital signature or using a package manager that supports package verification.\n",
+            "references": [
+                "https://pip.pypa.io/en/stable/topics/secure-installs/"
+            ],
+            "metadata": [
+                {
+                    "version": 0.1
+                },
+                {
+                    "state": "draft"
+                }
+            ]
+        },
+        {
+            "id": "M1500",
+            "type": "Mitigation",
+            "summary": "Verify third-party artifacts and open-source libraries",
+            "description": "Verify third-party artifacts used in code are trusted and have not been infected by a malicious actor before use. \nThis can be accomplished, for example, by comparing the checksum of the dependency to its checksum in a trusted source. \nIf a difference arises, this may be a sign that someone interfered and added malicious code. \nIf this dependency is used, it will infect the environment and could end in a massive breach, leaving the organization exposed to data leaks and more.\n",
+            "references": [
+                "https://cloud.google.com/software-supply-chain-security/docs/dependencies"
+            ],
+            "metadata": [
+                {
+                    "version": 0.1
+                },
+                {
+                    "state": "draft"
+                }
+            ]
+        },
+        {
+            "id": "M1502",
+            "type": "Mitigation",
+            "summary": "Define trusted package managers and repositories",
+            "description": "When pulling a package by name, the package manager might look for it in several package registries, some of which may be untrusted or badly configured. \nIf the package is pulled from such a registry, there is a higher likelihood that it could prove malicious. \nIn order to avoid this, configure packages to be pulled from trusted package registries.\n",
+            "references": [
+                "https://jfrog.com/whitepaper/devops-8-reasons-for-devops-to-use-a-binary-repository-manager/"
+            ],
+            "metadata": [
+                {
+                    "version": 0.1
+                },
+                {
+                    "state": "draft"
+                }
+            ]
+        },
+        {
+            "id": "M1503",
+            "type": "Mitigation",
+            "summary": "Implement SCA analysis",
+            "description": "Component Analysis is the process of identifying potential areas of risk from the use of third-party and open-source software and hardware components.\nThe best option for implementing SCA analysis is integration of SCA analysis tools into your CI/CD environment in order to scan your source code dependencies before the release.\n",
+            "references": [
+                "https://owasp.org/www-community/Component_Analysis"
+            ],
+            "metadata": [
+                {
+                    "version": 0.1
+                },
+                {
+                    "state": "draft"
+                }
+            ]
+        }
+    ],
+    "detections": [
+        {
+            "id": "D1510",
+            "type": "Detection",
+            "summary": "Implement Intrusion Detection System and anti-malware",
+            "description": "An intrusion detection system (IDS) is a security tool designed to detect and alert on unauthorized access to a computer system or network.\nImplementing intrusion detection systems (IDS) and anti-malware software can help to identify and block malicious activity.\nIDS is a critical security tool that helps organizations to detect and respond to security incidents in a timely manner. \nBy providing real-time monitoring and analysis of network traffic, IDS can help organizations to stay ahead of potential threats and reduce the risk of a security breach.\n",
+            "references": [
+                "https://www.checkpoint.com/cyber-hub/network-security/what-is-an-intrusion-detection-system-ids/"
+            ],
+            "metadata": [
+                {
+                    "version": 0.1
+                },
+                {
+                    "state": "draft"
+                }
+            ]
+        }
+    ],
+    "references": [
+        "https://www.trendmicro.com/en_us/research/23/a/attacking-the-supply-chain-developer.html"
+    ],
+    "metadata": {
+        "version": 0.1,
+        "state": "draft"
+    }
+}

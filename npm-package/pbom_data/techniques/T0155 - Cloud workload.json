@@ -1,0 +1,21 @@
+{
+    "id": "T0155",
+    "type": "Technique",
+    "tactic": "Execution",
+    "realm": [
+        "CloudSecurity"
+    ],
+    "summary": "Cloud workload",
+    "description": null,
+    "mitigations": [],
+    "detections": [],
+    "subtechinques": [
+        null
+    ],
+    "references": [
+        null
+    ],
+    "metadata": {
+        "state": "draft"
+    }
+}

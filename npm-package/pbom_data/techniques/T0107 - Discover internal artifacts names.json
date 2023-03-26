@@ -1,0 +1,22 @@
+{
+    "id": "T0107",
+    "type": "Technique",
+    "tactic": "Reconnaissance",
+    "realm": [
+        "ContainerSecurity",
+        "SCMPosture"
+    ],
+    "summary": "Discover internal artifacts names",
+    "description": null,
+    "mitigations": [],
+    "detections": [],
+    "subtechinques": [
+        null
+    ],
+    "references": [
+        null
+    ],
+    "metadata": {
+        "state": "draft"
+    }
+}

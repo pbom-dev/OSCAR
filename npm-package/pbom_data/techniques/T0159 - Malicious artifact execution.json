@@ -1,0 +1,22 @@
+{
+    "id": "T0159",
+    "type": "Technique",
+    "tactic": "Execution",
+    "realm": [
+        "ArtifactSecurity",
+        "OpenSourceSecurity"
+    ],
+    "summary": "Malicious artifact execution",
+    "description": null,
+    "mitigations": [],
+    "detections": [],
+    "subtechinques": [
+        null
+    ],
+    "references": [
+        null
+    ],
+    "metadata": {
+        "state": "draft"
+    }
+}

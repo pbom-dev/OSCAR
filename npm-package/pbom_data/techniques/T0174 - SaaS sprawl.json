@@ -1,0 +1,21 @@
+{
+    "id": "T0174",
+    "type": "Technique",
+    "tactic": "Defense Evasion",
+    "realm": [
+        "CloudSecurity"
+    ],
+    "summary": "SaaS sprawl",
+    "description": null,
+    "mitigations": [],
+    "detections": [],
+    "subtechinques": [
+        null
+    ],
+    "references": [
+        null
+    ],
+    "metadata": {
+        "state": "draft"
+    }
+}

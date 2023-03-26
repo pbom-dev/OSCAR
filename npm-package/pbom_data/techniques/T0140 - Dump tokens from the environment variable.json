@@ -1,0 +1,25 @@
+{
+    "id": "T0140",
+    "type": "Technique",
+    "tactic": "Credential Access",
+    "realm": [
+        "CI/CDPosture",
+        "CloudSecurity",
+        "ContainerSecurity",
+        "Infrastructureascode",
+        "SecretsHygiene"
+    ],
+    "summary": "Dump tokens from the environment variable",
+    "description": null,
+    "mitigations": [],
+    "detections": [],
+    "subtechinques": [
+        null
+    ],
+    "references": [
+        null
+    ],
+    "metadata": {
+        "state": "draft"
+    }
+}

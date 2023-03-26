@@ -1,0 +1,22 @@
+{
+    "id": "T0136",
+    "type": "Technique",
+    "tactic": "Initial Access",
+    "realm": [
+        "ContainerSecurity",
+        "OpenSourceSecurity"
+    ],
+    "summary": "Brandjacking",
+    "description": null,
+    "mitigations": [],
+    "detections": [],
+    "subtechinques": [
+        null
+    ],
+    "references": [
+        null
+    ],
+    "metadata": {
+        "state": "draft"
+    }
+}

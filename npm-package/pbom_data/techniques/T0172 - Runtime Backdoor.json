@@ -1,0 +1,144 @@
+{
+    "id": "T0172",
+    "type": "Technique",
+    "tactic": "Execution",
+    "realm": [
+        "CodeSecurity",
+        "ContainerSecurity",
+        "OpenSourceSecurity"
+    ],
+    "summary": "Runtime Backdoor",
+    "description": "A runtime backdoor attack is a type of cyber attack where an attacker gains unauthorized access to a computer system or network and installs a malicious software or code that allows them to control the system or steal sensitive information.\nThis type of attack is called a \"runtime\" backdoor attack because it involves manipulating the system at runtime, while it is running, rather than during the development or deployment stages.\nThe attacker typically gains access to the system through a vulnerability, such as an unpatched software flaw or weak authentication mechanism. \nOnce inside, the attacker can install a backdoor that provides them with persistent access to the system, even after the initial entry point has been closed.\n",
+    "mitigations": [
+        {
+            "id": "M1720",
+            "type": "Mitigation",
+            "summary": "Implement regular patches and updates",
+            "description": "Regular patches and updates are necessary to improve the security, performance, and reliability of software and systems. \nThey include bug fixes, security updates, and performance improvements. \nRegular patches and updates also ensure compatibility with new technologies and can help maintain compliance with regulatory standards. \nFailure to install patches and updates can leave systems vulnerable to security threats, cause system failures or crashes, and limit the functionality of software and systems.\n",
+            "references": [
+                "https://blog.sonatype.com/going-online-with-the-owasp-vulnerability-management-guide-working-group"
+            ],
+            "metadata": [
+                {
+                    "version": 0.1
+                },
+                {
+                    "state": "draft"
+                }
+            ]
+        },
+        {
+            "id": "M1500",
+            "type": "Mitigation",
+            "summary": "Verify third-party artifacts and open-source libraries",
+            "description": "Verify third-party artifacts used in code are trusted and have not been infected by a malicious actor before use. \nThis can be accomplished, for example, by comparing the checksum of the dependency to its checksum in a trusted source. \nIf a difference arises, this may be a sign that someone interfered and added malicious code. \nIf this dependency is used, it will infect the environment and could end in a massive breach, leaving the organization exposed to data leaks and more.\n",
+            "references": [
+                "https://cloud.google.com/software-supply-chain-security/docs/dependencies"
+            ],
+            "metadata": [
+                {
+                    "version": 0.1
+                },
+                {
+                    "state": "draft"
+                }
+            ]
+        },
+        {
+            "id": "M1501",
+            "type": "Mitigation",
+            "summary": "Require SBOM from all third-party suppliers",
+            "description": "An SBOM for every third-party artifact helps to ensure an artifact is safe to use and fully compliant. \nThis file lists all important metadata, especially all the dependencies of an artifact, and allows for verification of each dependency. \nIf one of the dependencies/artifacts is attacked or has a new vulnerability (e.g., the \u201cSolarWinds\u201d or even \u201clog4j\u201d attack), it is easier to detect what has been affected by this incident because dependencies in use are listed in the SBOM file\n",
+            "references": [
+                "https://snyk.io/blog/building-sbom-open-source-supply-chain-security/"
+            ],
+            "metadata": [
+                {
+                    "version": 0.1
+                },
+                {
+                    "state": "draft"
+                }
+            ]
+        },
+        {
+            "id": "M1502",
+            "type": "Mitigation",
+            "summary": "Define trusted package managers and repositories",
+            "description": "When pulling a package by name, the package manager might look for it in several package registries, some of which may be untrusted or badly configured. \nIf the package is pulled from such a registry, there is a higher likelihood that it could prove malicious. \nIn order to avoid this, configure packages to be pulled from trusted package registries.\n",
+            "references": [
+                "https://jfrog.com/whitepaper/devops-8-reasons-for-devops-to-use-a-binary-repository-manager/"
+            ],
+            "metadata": [
+                {
+                    "version": 0.1
+                },
+                {
+                    "state": "draft"
+                }
+            ]
+        },
+        {
+            "id": "M1503",
+            "type": "Mitigation",
+            "summary": "Implement SCA analysis",
+            "description": "Component Analysis is the process of identifying potential areas of risk from the use of third-party and open-source software and hardware components.\nThe best option for implementing SCA analysis is integration of SCA analysis tools into your CI/CD environment in order to scan your source code dependencies before the release.\n",
+            "references": [
+                "https://owasp.org/www-community/Component_Analysis"
+            ],
+            "metadata": [
+                {
+                    "version": 0.1
+                },
+                {
+                    "state": "draft"
+                }
+            ]
+        }
+    ],
+    "detections": [
+        {
+            "id": "D1510",
+            "type": "Detection",
+            "summary": "Implement Intrusion Detection System and anti-malware",
+            "description": "An intrusion detection system (IDS) is a security tool designed to detect and alert on unauthorized access to a computer system or network.\nImplementing intrusion detection systems (IDS) and anti-malware software can help to identify and block malicious activity.\nIDS is a critical security tool that helps organizations to detect and respond to security incidents in a timely manner. \nBy providing real-time monitoring and analysis of network traffic, IDS can help organizations to stay ahead of potential threats and reduce the risk of a security breach.\n",
+            "references": [
+                "https://www.checkpoint.com/cyber-hub/network-security/what-is-an-intrusion-detection-system-ids/"
+            ],
+            "metadata": [
+                {
+                    "version": 0.1
+                },
+                {
+                    "state": "draft"
+                }
+            ]
+        },
+        {
+            "id": "D1520",
+            "type": "Detection",
+            "summary": "Implement endpoint detection and response system",
+            "description": "An endpoint detection and response (EDR) system is a security tool designed to detect and respond to security incidents on endpoints, such as desktops, laptops, servers, and mobile devices. \nThere are several reasons why an EDR system is essential for maintaining the security of endpoints:\n1. Threat Detection: EDR can detect and alert on a wide range of threats, including malware, ransomware, and other types of attacks that may not be detected by traditional antivirus software.\n2. Rapid Incident Response: EDR can help security teams to rapidly detect, investigate, and respond to security incidents on endpoints. EDR systems can provide detailed information about the scope and impact of an attack, enabling security personnel to respond quickly and effectively.\n3. Behavioral Analysis: EDR can monitor endpoint behavior to detect and alert on suspicious or anomalous activity. This helps security teams to identify and respond to threats that may be missed by traditional signature-based detection.\n4. Endpoint Visibility: EDR provides visibility into endpoint activity, including processes, network connections, and file activity. This helps security teams to identify potential attack vectors and take proactive measures to prevent future incidents.\n",
+            "references": [
+                "https://www.crowdstrike.com/cybersecurity-101/endpoint-security/endpoint-detection-and-response-edr/"
+            ],
+            "metadata": [
+                {
+                    "version": 0.1
+                },
+                {
+                    "state": "draft"
+                }
+            ]
+        }
+    ],
+    "references": [
+        "https://www.cyberark.com/resources/blog/the-anatomy-of-the-solarwinds-attack-chain",
+        "https://portswigger.net/daily-swig/software-supply-chain-attacks-everything-you-need-to-know",
+        "https://www.littlefish.co.uk/insights/backdoor-vulnerability-supply-chain-attacks/"
+    ],
+    "metadata": {
+        "version": 0.1,
+        "state": "draft"
+    }
+}

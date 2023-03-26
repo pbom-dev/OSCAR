@@ -1,0 +1,21 @@
+{
+    "id": "T0144",
+    "type": "Technique",
+    "tactic": "Defense Evasion",
+    "realm": [
+        "CloudSecurity"
+    ],
+    "summary": "Misconfigured traffic log settings",
+    "description": null,
+    "mitigations": [],
+    "detections": [],
+    "subtechinques": [
+        null
+    ],
+    "references": [
+        null
+    ],
+    "metadata": {
+        "state": "draft"
+    }
+}
