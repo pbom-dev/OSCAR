@@ -143,7 +143,7 @@ def generate_matrix(oscar_source_path, pbom_data_path):
             if y['tactic'] not in j:
                 j[y['tactic']] = {"items": [],
                                   "amount": 0,
-                                  "tootlip": y['tactic']}
+                                  "tooltip": y['tactic']}
 
             # default subtechniques
             
