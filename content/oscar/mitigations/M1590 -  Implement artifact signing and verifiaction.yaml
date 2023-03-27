@@ -1,0 +1,13 @@
+id: M1590
+type: Mitigation
+summary: Implement artifact signing and verification
+description: |
+  Implementing artifact signing and verification can help prevent malicious actors from injecting or modifying software components with malicious code in the software supply chain. 
+  Only components that are signed and verified are allowed to proceed to the next stage of the CI/CD process, ensuring that only trusted components are used in the development and delivery of software applications.
+
+references:
+  - https://owasp.org/www-project-top-10-ci-cd-security-risks/CICD-SEC-09-Improper-Artifact-Integrity-Validation
+
+metadata:
+  - version: 0.1
+  - state: draft

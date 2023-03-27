@@ -9,21 +9,31 @@ realm:
 
 summary: Trigger pipeline execution
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  The Trigger pipeline execution (Poisoned pipeline execution) attack abuses permissions against an SCM repository, in a way that causes a CI pipeline to execute malicious commands.
+  Users that have permissions to manipulate the CI configuration files, or other files which the CI pipeline job relies on, can modify them to contain malicious commands, ultimately poisoning the CI pipeline executing these commands.
+  Pipelines executing unreviewed code, for example those which are triggered directly off of pull requests or commits to arbitrary repository branches, are more susceptible to Trigger pipeline exectuion. 
+  The reason is that these scenarios, by design, contain code which has not undergone any reviews or approvals.
+  Once able to execute malicious code within the CI pipeline, the attacker can conduct a wide array of malicious operations, all within the context of the pipelines identity.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1660
+  - M1661
+  - M1662
+  - M1730
+  - M1732
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1590
+  - D1510
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://medium.com/cider-sec/ppe-poisoned-pipeline-execution-34f4e8d0d4e9
+  - https://www.legitsecurity.com/blog/artifact-poisoning-vulnerability-discovered-in-rust
+  - https://owasp.org/www-project-top-10-ci-cd-security-risks/CICD-SEC-04-Poisoned-Pipeline-Execution
 
 metadata: 
+    version: 0.1
     state: draft
 
   

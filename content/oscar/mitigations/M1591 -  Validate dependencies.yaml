@@ -1,0 +1,16 @@
+id: M1591
+type: Mitigation
+summary: Validate dependencies
+description: |
+  Validate every dependency of the pipeline before use.
+  To ensure that a dependency used in a pipeline is trusted and has not been infected by a malicious actor (e.g., the Codecov incident), validate dependencies before using them. 
+  This can be accomplished by comparing the checksum of the dependency to its checksum in a trusted source. 
+  If a difference arises, this is a sign that an unknown actor has interfered and may have added malevolent code. 
+  If this dependency is used, it will infect the environment, which could end in a massive breach and leave the organization exposed to data leaks, etc.
+
+references:
+  - https://medium.com/netcracker/dependency-verification-checksum-vs-pgp-582e76207019
+
+metadata:
+  - version: 0.1
+  - state: draft
