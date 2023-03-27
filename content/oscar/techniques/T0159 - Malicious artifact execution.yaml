@@ -9,21 +9,29 @@ realm:
 
 summary: Malicious artifact execution
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Malicious artifact execution refers to an attack where an attacker injects or modifies a software component with malicious code that is executed when the component is used by a downstream system in the CI/CD process. 
+  When a CI/CD process lacks sufficient mechanisms to validate the integrity of code and artifacts, attackers can insert malicious code that appears to be harmless. 
+  This allows the malicious code to pass through the pipeline undetected, potentially causing harm in the CI/CD process or in production.
+  The malicious code can be executed in the CI/CD process or even in production.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1590
+  - M1591
+  - M1660
+  - M1662
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
+  - D1590
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://about.codecov.io/security-update/
+  - https://www.legitsecurity.com/blog/artifact-poisoning-vulnerability-discovered-in-rust
+  - https://owasp.org/www-project-top-10-ci-cd-security-risks/CICD-SEC-09-Improper-Artifact-Integrity-Validation
 
 metadata: 
+    version: 0.1
     state: draft
 
   

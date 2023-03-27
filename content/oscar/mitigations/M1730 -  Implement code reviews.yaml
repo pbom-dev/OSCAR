@@ -5,6 +5,7 @@ description: |
   Code reviews are a valuable tool for improving code quality, reducing technical debt, and ensuring the security and reliability of software applications.
   Most crucial changes should be reviewed and validated to ensure there are no any security risks.
   Code reviews can identify defects and vulnerabilities in the code before it's deployed, reducing the likelihood of security breaches, system failures, and other issues.
+  Require code reviews for any changes to source code or configuration files, especially for those affecting the CI/CD pipeline.
 
 references:
   - https://medium.com/@paul_io/security-code-review-101-a3c593dc6854

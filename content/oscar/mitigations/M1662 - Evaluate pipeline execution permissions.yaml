@@ -1,0 +1,13 @@
+id: M1662
+type: Mitigation
+summary: Evaluate pipeline execution permissions
+description: |
+  Evaluate the need for triggering pipelines on public repositories from external contributors. 
+  Where possible, refrain from running pipelines originating from forks, and consider adding controls such as requiring manual approval for pipeline execution.
+
+references:
+  - https://owasp.org/www-project-top-10-ci-cd-security-risks/CICD-SEC-04-Poisoned-Pipeline-Execution
+
+metadata:
+  - version: 0.1
+  - state: draft

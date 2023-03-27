@@ -1,0 +1,14 @@
+id: M1660
+type: Mitigation
+summary: Isolate pipeline for unreviewed code
+description: |
+  Ensure that pipelines running unreviewed code are executed on isolated nodes, not exposed to secrets and sensitive environments.
+  For sensitive pipelines, for example those that are exposed to secrets, ensure that each branch that is configured to trigger a pipeline in the CI system has a correlating branch protection rule in the SCM.
+  Each pipeline should only have access to the credentials it needs to fulfill its purpose. The credentials should have the minimum required privileges.
+
+references:
+  - https://owasp.org/www-project-top-10-ci-cd-security-risks/CICD-SEC-04-Poisoned-Pipeline-Execution
+
+metadata:
+  - version: 0.1
+  - state: draft

@@ -1,0 +1,13 @@
+id: M1661
+type: Mitigation
+summary: Revoke user permissions
+description: |
+  Remove permissions granted on the SCM repository from users that do not need them.
+  Limit access to configuration files. Only grant access to users who need it to modify the configuration files.
+
+references:
+  - https://owasp.org/www-project-top-10-ci-cd-security-risks/CICD-SEC-04-Poisoned-Pipeline-Execution
+
+metadata:
+  - version: 0.1
+  - state: draft

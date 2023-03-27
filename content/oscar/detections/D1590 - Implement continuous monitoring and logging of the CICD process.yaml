@@ -1,0 +1,15 @@
+id: D1590
+type: Detection
+summary: Implement continuous monitoring and logging of the CI/CD process
+description: |
+  Continuous monitoring and logging of the CI/CD process can help organizations detect any unusual activities or deviations from the standard workflow. 
+  This can include monitoring the pipeline for unusual resource requests or unauthorized access attempts, as well as analyzing logs for unusual activity that may indicate a potential security breach. 
+  By establishing a baseline of normal behavior and regularly comparing it to current activity, organizations can quickly identify and respond to any anomalous behavior. 
+  Implementing automated alerts and notifications for suspicious activity can also help security teams respond promptly to potential threats.
+
+references:
+  - https://owasp.org/www-project-top-10-ci-cd-security-risks/CICD-SEC-10-Insufficient-Logging-And-Visibility
+
+metadata:
+  - version: 0.1
+  - state: draft
