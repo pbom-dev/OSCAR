@@ -147,16 +147,22 @@ def generate_matrix(oscar_source_path, pbom_data_path):
 
             # default subtechniques
             
-            y.setdefault('subtechniques', [])
+            y.setdefault('subtechinques', [])
 
             item = {"tags": y['realm'],
                 "id": y['id'],
                 "name": y['summary'],
                 "tooltip": y['summary'],
                 "url": "https://pbom.dev/",
-                "subTechniques": [] if y['subtechniques']==[None] else y['subtechniques'],
-                "subTechniuqesAmount": len([] if y['subtechniques']==[None] else y['subtechniques'])}
+                "subTechniques": [] if y['subtechinques']==[None] else y['subtechinques'],
+                "subTechniuqesAmount": len([] if y['subtechinques']==[None] else y['subtechinques']),
+                "version": "1.0",
+                "created": "1970-01-01T00:00:00",
+                "updated": "1970-01-01T00:00:00",
+                "contributors": ["OscarTheGrouch"]
+                }
             j[y['tactic']]['items'].append(item)
+            j[y['tactic']]['amount'] += 1
     
     with open(os.path.join(pbom_data_path, 'pbom_data', 'matrix.json'), 'w') as f:
         logger.info("Saving matrix.json to %s", os.path.join(pbom_data_path, 'matrix.json'))
