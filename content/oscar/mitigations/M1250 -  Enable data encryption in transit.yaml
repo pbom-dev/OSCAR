@@ -1,0 +1,18 @@
+id: M1250
+type: Mitigation
+summary: Enable data sencryption in transit
+description: |
+  Data encryption in transit is a critical security control in cloud computing that involves encrypting data as it moves between two points over a network or the internet. This is important to prevent data breaches, protect sensitive data, and comply with data privacy regulations. 
+  Cloud service providers use various encryption protocols to establish a secure communication channel, and organizations should ensure that encryption is properly implemented and verified.
+  To implement data encryption in transit, cloud service providers use various encryption protocols such as Transport Layer Security (TLS), Secure Sockets Layer (SSL), and Internet Protocol Security (IPsec). 
+  These protocols use encryption keys and digital certificates to establish a secure communication channel between the sender and receiver. 
+  The encryption process ensures that data is scrambled and unreadable to anyone without the proper decryption key.
+  Check your cloud provider documentation for more details on how to enable data encryption in transit.
+
+references:
+  - https://docs.aws.amazon.com/whitepapers/latest/efs-encrypted-file-systems/encryption-of-data-in-transit.html
+  - https://cloud.google.com/docs/security/encryption-in-transit
+
+metadata:
+  - version: 0.1
+  - state: draft

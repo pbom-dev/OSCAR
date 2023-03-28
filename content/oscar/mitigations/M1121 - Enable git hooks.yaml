@@ -1,0 +1,18 @@
+id: M1121
+type: Mitigation
+summary: Enable git hooks to find source code related issues early
+description: |
+  Enable git hooks to automate the scanning of source code before it is published via git commits.  
+  All Git implementations include a hooks directory inthe .git base directory.  
+  In that directory are several git automations called "hooks".  
+  These hooks will automatically run scripts when certain actions happen.  
+  The best example of this is the pre-commit hook that runs before a git commit is successful. 
+   If the script has actions inside it to run things like software composition (SCA) or static analysis tooling (SAST), then those tests must pass before the commit will succeed. 
+  
+references:
+  - https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks
+  - https://pre-commit.com/
+
+metadata:
+  - version: 0.1
+  - state: draft

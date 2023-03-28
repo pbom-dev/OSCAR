@@ -1,0 +1,16 @@
+id: M1240
+type: Mitigation
+summary: Enable data encryption at rest
+description: |
+    Encryption at rest is essential for preventing data breaches, complying with data privacy regulations, and protecting sensitive data. 
+    Organizations must identify which data needs encryption, select appropriate encryption algorithms and key management strategies, and regularly audit and assess their encryption at rest implementation.
+    Check your cloud provider documentation for more details on how to enable data encryption at rest.
+
+references:
+  - https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/protecting-data-at-rest.html
+  - https://cloud.google.com/docs/security/encryption/default-encryption
+  - https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-atrest
+
+metadata:
+  - version: 0.1
+  - state: draft
