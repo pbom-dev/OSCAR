@@ -8,21 +8,26 @@ realm:
 
 summary: Misconfiguration of serverless workloads
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Misconfiguration of serverless workloads is a significant security risk in cloud environments. 
+  Excessive permissions granted to serverless functions, lack of security controls around functions, and misconfigured third-party services are common misconfigurations that can lead to data breaches and other security incidents.
+  One of the most common misconfigurations in serverless workloads is excessive permissions granted to functions. 
+  Serverless functions typically require specific permissions to access resources in the cloud environment, such as databases or object storage. 
+  If these permissions are misconfigured or overly permissive, an attacker can gain access to sensitive data or even take control of the entire environment.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1550
+  - M1720
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections:
+  - D1500
+  - D1510
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://cloudsecurityalliance.org/blog/2022/11/20/top-threat-9-to-cloud-computing-misconfiguration-and-exploitation-of-serverless-and-container-workloads/
 
 metadata: 
+    version: 0.1
     state: draft
 
   
