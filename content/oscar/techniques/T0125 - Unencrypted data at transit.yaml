@@ -9,21 +9,24 @@ realm:
 
 summary: Unencrypted data at transit
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Data encryption in transit refers to the process of encrypting data as it moves between two points over a network or the internet. 
+  In cloud security, this involves encrypting data as it travels between a user's device and the cloud server or between different cloud servers.
+  Encryption in transit is important because data transmitted over networks can be intercepted and read by attackers. 
+  Without encryption, sensitive data such as login credentials, financial information, or personal data can be easily accessed by attackers, putting the data and the users at risk.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1250
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://docs.aws.amazon.com/whitepapers/latest/efs-encrypted-file-systems/encryption-of-data-in-transit.html
+  - https://cloud.google.com/docs/security/encryption-in-transit
 
 metadata: 
+    version: 0.1
     state: draft
 
   

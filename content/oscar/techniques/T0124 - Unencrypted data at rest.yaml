@@ -9,21 +9,27 @@ realm:
 
 summary: Unencrypted data at rest
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Encryption at rest is a critical security control in cloud computing that involves encrypting data when it is stored on different cloud storage entities. 
+  This type of encryption is designed to protect data from unauthorized access.
+  In cloud environments, encryption at rest is typically implemented using encryption keys that are managed by the cloud provider or by the customer. 
+  The cloud provider may provide encryption services as part of their cloud offering, or customers may choose to use their own encryption tools or services to encrypt their data before storing it in the cloud.
+  The risks of not having encryption at rest in a cloud environment can lead to data theft, data loss, regulatory non-compliance, reputation damage, and legal liability. 
+  It is important for organizations to implement encryption at rest to protect their sensitive data and comply with regulatory requirements.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1240
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/protecting-data-at-rest.html
+  - https://cloud.google.com/docs/security/encryption/default-encryption
+  - https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-atrest
 
 metadata: 
+    version: 0.1
     state: draft
 
   
