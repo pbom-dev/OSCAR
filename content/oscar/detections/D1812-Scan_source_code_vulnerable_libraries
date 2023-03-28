@@ -1,0 +1,13 @@
+id: D1812
+type: Detection
+summary: Scan source code for vulnerable 3rd party libraries
+description: |
+  Scan source code for vulnerable open source and third-party libraries. Software composition analysis (SCA) is the task of identifying open source or third party software in a project that are out of date or have known, existing vulnerabilities.  Not using these vulnerable libraries increases the robustness and security of your applications.  
+  
+references:
+  - https://en.wikipedia.org/wiki/Software_composition_analysis
+  - https://owasp.org/www-community/Component_Analysis
+
+metadata:
+  - version: 0.1
+  - state: draft
