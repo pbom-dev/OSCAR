@@ -8,21 +8,24 @@ realm:
 
 summary: Cloud workload
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Adversaries can exploit serverless computing, integration, and automation services in cloud environments to execute arbitrary code. 
+  This can be done through serverless functions, compute engines, application integration, and web servers. 
+  The attackers can use these resources to run malicious code, such as crypto-mining malware or create functions that enable further compromise of the cloud environment. 
+  Attackers may also use event-triggered execution to persistently execute serverless functions over time, such as creating Lambda functions in AWS environments that add additional cloud credentials to a user.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1550
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510 
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://www.cadosecurity.com/cado-discovers-denonia-the-first-malware-specifically-targeting-lambda/
+  - https://blog.morphisec.com/what-is-cloud-workload-security
 
 metadata: 
+    version: 0.1
     state: draft
 
   

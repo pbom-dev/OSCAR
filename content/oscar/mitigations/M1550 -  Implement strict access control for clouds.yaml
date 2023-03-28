@@ -1,0 +1,11 @@
+id: M1550
+type: Mitigation
+summary: Implement strict access control for clouds
+description: |
+  Limit access to cloud resources to only authorized users and ensure that proper authentication and authorization mechanisms are in place.
+references:
+  - https://cloudsecdocs.com/aws/services/iam/organizations/
+
+metadata:
+  - version: 0.1
+  - state: draft

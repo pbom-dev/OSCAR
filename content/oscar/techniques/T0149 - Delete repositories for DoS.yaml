@@ -8,21 +8,21 @@ realm:
 
 summary: Delete repositories for DoS
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  A delete repository attack technique in a CI/CD pipeline is a type of denial-of-service (DoS) attack that targets the code repositories used by the pipeline. 
+  The goal of the attack is to delete the repositories or make them unavailable, thus disrupting the pipeline's ability to build and deploy software.
+  In a typical CI/CD pipeline, code repositories are an essential component as they contain the source code for the application that is being built and deployed. 
+  In a delete repository attack, an attacker gains unauthorized access to the repositories and deletes the source code. 
+  This can cause significant disruptions to the pipeline, leading to delays in software releases or even complete downtime of the system.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1490
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
-
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+detections: 
+  - D1590
 
 metadata: 
+    version: 0.1
     state: draft
 
   

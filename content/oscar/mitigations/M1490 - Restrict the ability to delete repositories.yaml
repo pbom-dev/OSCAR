@@ -1,0 +1,14 @@
+id: M1490
+type: Mitigation
+summary: Restrict the ability to delete repositories
+description: |
+  Restricting the ability to delete repositories protects the organization from intentional and unintentional data loss. 
+  This ensures that users cannot delete repositories or cause other potential damage — whether by accident or due to their account being hacked — unless they have the correct privileges.
+  Enforce repository deletion by a few trusted and responsible users only.
+
+references:
+  - https://docs.github.com/en/organizations/managing-organization-settings/setting-permissions-for-deleting-or-transferring-repositories
+
+metadata:
+  - version: 0.1
+  - state: draft
