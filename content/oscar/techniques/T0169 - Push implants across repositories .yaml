@@ -9,21 +9,28 @@ realm:
 
 summary: Push implants across repositories 
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  The Push Implants across Repositories attack technique is a type of lateral movement tactic where an attacker gains access to a victim's code repository, modifies the code by implanting malicious code or backdoors, and pushes the modified code back to the repository.
+  This technique often involves the attacker stealing valid credentials, such as login credentials or SSH keys, to gain access to the victim's code repository. 
+  They then modify the code, implanting the malicious code or backdoors, and push the modified code back to the repository. 
+  The victim then unknowingly deploys the modified code, resulting in the compromise of their systems.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1661
+  - M1730
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
+  - D1590
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://owasp.org/www-project-top-10-ci-cd-security-risks/CICD-SEC-01-Insufficient-Flow-Control-Mechanisms
+  - https://news-web.php.net/php.internals/113981
+  - https://brew.sh/2021/04/21/security-incident-disclosure/
+  - https://www.cidersecurity.io/blog/research/bypassing-required-reviews-using-github-actions/
 
 metadata: 
+    version: 0.1
     state: draft
 
   

@@ -11,21 +11,25 @@ realm:
 
 summary: Overprivileged user account
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  The overprivileged user account attack is a technique of lateral movement tactic in which an attacker gains access to a user account with excessive privileges and uses that account to move laterally within a network, accessing resources and systems that they are not authorized to access.
+  It may affects Cloud, CI/CD accounts, an attacker can potentially manipulate the CI/CD pipeline or Cloud configuration to introduce malicious code into the software build or deployment process. 
+  This could lead to the deployment of compromised software, which can result in data breaches, malware infections, or other security incidents.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1550
+  - M1661
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
+  - D1590
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://learn.microsoft.com/en-us/security/zero-trust/develop/overprivileged-permissions
+  - https://www.cyberark.com/what-is/privileged-access-management/
 
 metadata: 
+    version: 0.1
     state: draft
 
   
