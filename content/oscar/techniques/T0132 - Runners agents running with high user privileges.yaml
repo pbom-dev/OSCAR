@@ -1,0 +1,35 @@
+id: T0132
+type: Technique
+
+tactic: Privilege Escalation
+
+realm: 
+  - CI/CDPosture
+  - ContainerSecurity
+
+summary: Runners agents running with high user privileges
+
+description: |
+   A container/runner agent privilege escalation attack is a security threat where an attacker exploits vulnerabilities in a container/runner agent to gain elevated privileges or access to sensitive resources they are not authorized to have. 
+   Attackers may exploit software vulnerabilities or weaknesses in container security controls to gain access to privileged resources, execute arbitrary code, or escape the container/runner agent and gain access to the host system. 
+
+mitigations: 
+  - M1732
+
+detections: 
+  - D1510
+  - D1520
+  - D1590
+
+references: 
+  - https://www.legitsecurity.com/blog/github-privilege-escalation-vulnerability
+  - https://dl.acm.org/doi/fullHtml/10.1145/3529320.3529325
+  - https://blog.lightspin.io/kubernetes-pod-privilege-escalation
+  - https://learn.snyk.io/lessons/container-runs-in-privileged-mode/kubernetes/
+  - https://sysdig.com/blog/detecting-mitigating-cve-2022-0492-sysdig/
+
+metadata: 
+    version: 0.1
+    state: draft
+
+  
