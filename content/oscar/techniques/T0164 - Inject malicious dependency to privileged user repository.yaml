@@ -1,0 +1,34 @@
+id: T0164
+type: Technique
+
+tactic: Privilege Escalation
+
+realm: 
+  - OpenSourceSecurity
+  - SCMPosture
+
+summary: Inject malicious dependency to privileged user repository 
+
+description: |
+  Injecting a malicious dependency into a privileged user repository is a software supply chain attack where an attacker adds malicious code to a legitimate open-source library or package used as a dependency by a privileged user repository. 
+  By doing so, they can gain access to the privileged resources or data associated with the repository and execute arbitrary code with elevated privileges.
+
+mitigations: 
+  - M1500
+  - M1502
+  - M1503
+  - M1591
+  - M1732
+
+detections: 
+  - D1500
+  - D1510
+
+references: 
+  - https://owasp.org/www-project-top-10-ci-cd-security-risks/CICD-SEC-03-Dependency-Chain-Abuse
+
+metadata: 
+    version: 0.1
+    state: draft
+
+  
