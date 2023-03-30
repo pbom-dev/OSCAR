@@ -2,8 +2,8 @@
 
 ## Our Pledge
 
-In the interest of fostering a safe and welcoming environment, we as
-the OSC&R team pledge to make participation in our project and
+In the interest of fostering a safe and welcoming environment, we, as
+the OSC&R team, pledge to make participation in our project and
 our community a harassment-free experience for everyone, regardless of age, body
 size, disability, ethnicity, sex characteristics, gender identity, gender expression,
 level of experience, education, socio-economic status, nationality, personal
@@ -67,5 +67,5 @@ members of the project's leadership.
 
 ## Attribution
 
-This Code of Conduct is adapted from th [Contributor Covenant](https://www.contributor-covenant.org), version 1.4,
+This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org), version 1.4,
 available at https://www.contributor-covenant.org/version/1/4/code-of-conduct.html
