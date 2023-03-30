@@ -8,21 +8,27 @@ realm:
 
 summary: Bypass of outbound traffic control
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Bypass of outbound traffic control in cloud security refers to an attack technique used by threat actors to bypass the security controls implemented by cloud service providers to prevent unauthorized exfiltration of data from their networks.
+  Threat actors can use various tactics to bypass these outbound traffic controls and exfiltrate data from the cloud network. 
+  For example, they may use encrypted channels such as VPNs or SSL/TLS to hide the data being transferred and make it difficult for the traffic control measures to detect it.
+  Another tactic that threat actors may use to bypass outbound traffic control is to blend in their data with legitimate traffic, making it harder to detect.
+  For example attacker may use Webhooks, Code repositories, Cloud storage that are legitimate to bypass outbound traffic control.
+  They may also use steganography techniques to conceal their data within seemingly innocuous files or images.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1250
+  - M1450
+  - M1451
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://www.xorlab.com/en/blog/data-exfiltration-most-common-techniques-and-best-prevention-tactics
 
 metadata: 
+    version: 0.1
     state: draft
 
   

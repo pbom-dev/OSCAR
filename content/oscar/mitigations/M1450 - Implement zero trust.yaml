@@ -1,0 +1,13 @@
+id: M1450
+type: Mitigation
+summary: Implement zero trust
+description: |
+  Implementing a zero-trust security model can help organizations mitigate the risk of data exfiltration by ensuring that all traffic leaving the network is authenticated, authorized, and encrypted. 
+  This model involves a layered approach to security that requires users and devices to be verified before accessing any resources.
+
+references:
+  - https://www.crowdstrike.com/cybersecurity-101/zero-trust-security/
+
+metadata:
+  - version: 0.1
+  - state: draft

@@ -1,0 +1,13 @@
+id: M1451
+type: Mitigation
+summary: Use network segmentation
+description: |
+  Network segmentation is a technique that involves dividing a network into smaller segments or subnets to limit the spread of an attack if it occurs. 
+  By segmenting the network and restricting communication between segments, organizations can minimize the impact of data exfiltration.
+
+references:
+  - https://www.hashicorp.com/blog/network-segmentation-in-modern-environments
+
+metadata:
+  - version: 0.1
+  - state: draft
