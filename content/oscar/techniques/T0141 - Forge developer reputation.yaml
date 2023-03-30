@@ -8,21 +8,23 @@ realm:
 
 summary: Forge developer reputation
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  A forge developer reputation attack is a type of cyber attack that involves an attacker posing as a trusted developer to gain access to a software repository or community. In this attack, the attacker creates a fake account that impersonates a legitimate developer or organization, often using similar or identical usernames and avatars. 
+  The attacker then uses this fake account to gain access to a software repository or community, where they may be able to contribute or distribute malicious code.
+  The goal of the forge developer reputation attack is to exploit the trust that users place in the legitimate developer or organization to gain access to sensitive information or to distribute malware or other harmful code. 
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1731
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
+  - D1520
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://thenewstack.io/php-supply-chain-attack-shows-open-sources-virtues-and-vices/
 
 metadata: 
+    version: 0.1
     state: draft
 
   

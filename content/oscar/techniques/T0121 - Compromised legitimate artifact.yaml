@@ -9,21 +9,30 @@ realm:
 
 summary: Compromised legitimate artifact
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  A compromised legitimate artifact attack is a type of cyber attack in which an attacker replaces a legitimate package or container image with a malicious version, often without the knowledge of the original developer or distributor. 
+  This attack takes advantage of the trust that users place in legitimate packages or container images, which are often used to deploy software across multiple environments.
+  In this attack, the attacker may gain access to the repository or registry where the legitimate artifact is stored, either by exploiting a vulnerability or through social engineering tactics. 
+  The attacker then replaces the legitimate artifact with a malicious version that contains malware or other harmful code. 
+  Once the compromised artifact is downloaded and deployed, it can compromise the system and potentially cause significant harm, such as stealing sensitive data or taking control of the system.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1500
+  - M1502
+  - M1503
+  - M1730
+  - M1732
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1500
+  - D1510
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://www.legitsecurity.com/blog/why-you-can-still-get-hacked-even-after-signing-your-software-artifacts
+  - https://owasp.org/www-project-top-10-ci-cd-security-risks/CICD-SEC-09-Improper-Artifact-Integrity-Validation
 
 metadata: 
+    version: 0.1
     state: draft
 
   

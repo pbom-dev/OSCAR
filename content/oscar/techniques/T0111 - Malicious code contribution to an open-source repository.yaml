@@ -9,21 +9,30 @@ realm:
 
 summary: Malicious code contribution to an open-source repository
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  A malicious code contribution to an open-source repository attack is a type of cyber attack that involves an attacker submitting code with malicious intent to an open-source repository. 
+  Open-source repositories are used to store and manage code for open-source software projects, and they rely on community contributions to improve and maintain the codebase. 
+  In this attack, the attacker may submit a seemingly harmless code contribution to the repository. However, the code contains a hidden malware payload that can be triggered later to cause damage. 
+  Alternatively, the code may include a backdoor that allows the attacker to gain unauthorized access to the system running the open-source software.
+  Once the code is accepted into the repository, it can be difficult to detect the presence of the malicious payload.
+  The code may be integrated into the open-source project, distributed to other projects that depend on it, and even included in software distributions used by many people. 
+  This can result in a wide-scale compromise of systems that use the affected code.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1503
+  - M1730
+  - M1732
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://thenewstack.io/php-supply-chain-attack-shows-open-sources-virtues-and-vices/
+  - https://www.darkreading.com/vulnerabilities-threats/35k-malicious-code-insertions-in-github-attack-bug-bounty
+  - https://www.legitsecurity.com/blog/how-a-massive-widespread-malware-attack-almost-occurred-on-github
 
 metadata: 
+    version: 0.1
     state: draft
 
   
