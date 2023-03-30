@@ -8,21 +8,24 @@ realm:
 
 summary: Source code
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Adversaries may exfiltrate data to a code repository rather than over their primary command and control channel. 
+  Code repositories are often accessible via an API (ex: https://api.github.com, https://gitlab.com/api). Access to these APIs are often over HTTPS, which gives the adversary an additional level of protection.
+  Exfiltration to a code repository can also provide a significant amount of cover to the adversary if it is a popular service already used by hosts within the network.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1550
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
+  - D1590
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://attack.mitre.org/techniques/T1567/001/
+  - https://www.optimizationcore.com/security/github-exfiltration-indicators-threat-hunt-monitor-block/
 
 metadata: 
+    version: 0.1
     state: draft
 
   
