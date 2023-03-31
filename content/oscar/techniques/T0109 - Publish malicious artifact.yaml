@@ -9,21 +9,30 @@ realm:
 
 summary: Publish malicious artifact
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Public registries are widely used by developers and organizations to download and distribute software packages and container images, making them an attractive target for attackers.
+  In this type of attack, the attacker creates a package or container image that contains malicious code or files, such as a backdoor or other malware. 
+  The attacker then uploads the package or image to PyPI, DockerHub or other registry, posing as a legitimate user or creating a fake account. 
+  Once the package or image is uploaded, it becomes available for download by other users who may unsuspectingly use it in their projects.
+  The supply chain attack can have far-reaching consequences as it can affect all systems that rely on the malicious package or image. 
+  For example, a Python package that is downloaded from PyPI may be used by multiple applications and libraries, potentially compromising all systems that use it.
+  Similarly, a container image with a malicious payload may be used to deploy an application across multiple environments, leading to a widespread compromise.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1503
+  - M1732
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1500
+  - D1510
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://sysdig.com/blog/analysis-of-supply-chain-attacks-through-public-docker-images/
+  - https://blog.sonatype.com/malware-monthly-january-2023
+  - https://owasp.org/www-project-top-10-ci-cd-security-risks/CICD-SEC-09-Improper-Artifact-Integrity-Validation
 
 metadata: 
+    version: 0.1
     state: draft
 
   
