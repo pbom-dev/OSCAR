@@ -9,21 +9,23 @@ realm:
 
 summary: Dumping short-lived token
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  This attack technique involves searching for short-lived tokens that are used during the CI/CD process and extracting them for later use in unauthorized activities.
+  Short-lived tokens are often used in CI/CD systems to authenticate communication between different components, such as the build server and the deployment server.
+  An attacker can obtain these tokens from CI/CD logs, variable groups, secure files, etc.
+  These tokens typically have a limited lifespan, but if an attacker is able to capture them, they can use them to gain unauthorized access to the system or associated resources.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1120
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1590
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://www.synacktiv.com/en/publications/cicd-secrets-extraction-tips-and-tricks.html
 
 metadata: 
+    version: 0.1
     state: draft
 
   

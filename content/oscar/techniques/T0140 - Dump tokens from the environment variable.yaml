@@ -12,21 +12,24 @@ realm:
 
 summary: Dump tokens from the environment variable
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  This type of attack involves searching for environment variables that may contain sensitive information and dumping their values to gain access to the associated resources.
+  In cloud and container environments, environment variables are often used to store configuration data, including sensitive information such as passwords, tokens and API keys. 
+  Attackers can exploit this by searching through the environment variables of running containers or cloud instances to find any sensitive information that has been inadvertently exposed. 
+  Once the sensitive information has been obtained, attackers can use it to access and compromise the associated resources.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1120
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://www.trendmicro.com/en_ie/research/22/h/analyzing-hidden-danger-of-environment-variables-for-keeping-secrets.html
+  - https://developer.hashicorp.com/vault/docs/what-is-vault
 
 metadata: 
+    version: 0.1
     state: draft
 
   
