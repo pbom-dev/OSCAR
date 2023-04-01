@@ -8,21 +8,22 @@ realm:
 
 summary: Scheduled TaskJob on self hosted runner
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  In this attack, the attacker gains access to a self-hosted runner, which is a server or a virtual machine that runs the CI/CD pipelines for an organization. 
+  Once access is gained, the attacker creates a scheduled task or job that runs at regular intervals, even after the initial attack has been detected and removed.
+  The scheduled task or job can be programmed to perform a variety of malicious activities, such as downloading and executing additional malware or maintaining a persistent backdoor for future attacks. 
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1720
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://www.praetorian.com/blog/introducing-gato-for-ci-cd-exploitation/
 
 metadata: 
+    version: 0.1
     state: draft
 
   

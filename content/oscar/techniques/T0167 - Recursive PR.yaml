@@ -8,21 +8,25 @@ realm:
 
 summary: Recursive PR
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  The Recursive PR attack technique is a persistence tactic that involves an attacker submitting a pull request to a repository that contains a malicious code change. 
+  Once the pull request is merged and the code change is deployed, the malicious code is executed and establishes a persistent presence in the CI/CD pipeline.
+  The attack works by creating a chain of pull requests where each subsequent pull request is used to modify the code introduced in the previous pull request.
+  This creates a recursive loop where the pipeline will continuously build and deploy new versions of the code that contain the attacker's modifications. 
+  By doing so, the attacker can maintain a persistent presence in the CI/CD pipeline and potentially use it to execute further attacks.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1730
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
+  - D1590
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://nathandavison.com/blog/github-actions-and-the-threat-of-malicious-pull-requests
 
 metadata: 
+    version: 0.1
     state: draft
 
   
