@@ -1,0 +1,37 @@
+id: T0170
+type: Technique
+
+tactic: Defense Evasion
+
+realm: 
+  - CloudSecurity
+  - ContainerSecurity
+
+summary: Malicious Compiler or Interpreter
+
+description: |
+  The malicious compiler or interpreter attack is a defense evasion technique where an attacker modifies the software development tools to insert malicious code into the final product. 
+  This allows attackers to bypass security controls and gain access to systems or data. 
+  The attack involves replacing a legitimate compiler or interpreter with a malicious version that can execute malicious instructions or hide the attacker's activities. 
+  This technique is often used to insert backdoors into software and bypass security controls designed to prevent the execution of malicious code.
+
+mitigations:
+  - M1500
+  - M1502
+  - M1590
+  - M1730
+  - M1731
+  - M1732
+
+detections: 
+  - M1510
+
+references: 
+  - https://jfrog.com/blog/detecting-known-and-unknown-malicious-packages-and-how-they-obfuscate-their-malicious-code/
+  - https://network-king.net/compiler-flaw-facilitates-supply-chain-attacks/
+
+metadata: 
+    version: 0.1
+    state: draft
+
+  

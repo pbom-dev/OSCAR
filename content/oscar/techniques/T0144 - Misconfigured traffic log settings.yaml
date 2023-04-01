@@ -8,21 +8,25 @@ realm:
 
 summary: Misconfigured traffic log settings
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  If the logging settings are misconfigured or disabled, attackers can evade attack detection and hide their malicious activities in the network. 
+  For example, an attacker can exploit misconfigured traffic log settings to delete or modify log files, preventing security teams from detecting their activities.
+  Attackers can also use traffic obfuscation techniques to hide their activities, such as using encryption or tunneling to bypass network security controls and avoid detection. 
+  If the logging settings are misconfigured, security teams may not have visibility into these types of network activities, making it easier for attackers to evade detection.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1550
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
+  - D1520
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://blog.marcolancini.it/2021/blog-security-logging-cloud-environments-gcp/
+  - https://blog.marcolancini.it/continuous-cloud-visibility/
 
 metadata: 
+    version: 0.1
     state: draft
 
   

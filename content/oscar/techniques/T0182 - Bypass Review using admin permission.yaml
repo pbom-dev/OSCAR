@@ -9,21 +9,27 @@ realm:
 
 summary: Bypass Review using admin permission
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  The Bypass Review using admin permission attack technique refers to a defense evasion tactic where an attacker gains administrative access to a CI/CD pipeline and uses that access to bypass security reviews of code changes.
+  Typically, in a CI/CD pipeline, code changes are subjected to automated and manual reviews before they are deployed. 
+  These reviews help to detect and prevent the introduction of vulnerabilities or malicious code into the production environment. 
+  However, if an attacker is able to gain administrative access to the pipeline, they can bypass these reviews and directly inject malicious code into the final product.
+  This attack technique can be particularly dangerous because it allows an attacker to bypass critical security controls and deploy malicious code directly to the production environment. 
+  Additionally, since the code is not subject to the normal review process, it may not be detected by traditional security controls.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1661
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
+  - D1590
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://docs.gitlab.com/ee/user/permissions.html
+  - https://www.cidersecurity.io/blog/research/bypassing-required-reviews-using-github-actions/
 
 metadata: 
+    version: 0.1
     state: draft
 
   

@@ -10,21 +10,25 @@ realm:
 
 summary: Misconfigured audit logs settings
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Misconfigured audit logs are a type of attack where an attacker modifies or disables audit logs to hide their malicious activities. 
+  This technique is commonly used in cloud, CI/CD, and SCM environments. 
+  In these environments, misconfigured audit logs can allow an attacker to modify or delete logs, making it difficult for security teams to detect and investigate the attack. 
+  The attacker can also disable audit logging to evade detection. 
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1550
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
+  - D1520
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://blog.marcolancini.it/2019/blog-cross-account-auditing/
+  - https://blog.marcolancini.it/continuous-cloud-visibility/
 
 metadata: 
+    version: 0.1
     state: draft
 
   
