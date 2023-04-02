@@ -8,21 +8,21 @@ realm:
 
 summary: Implant in zombie instance 
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Implant in zombie instance is a persistence tactic used in cloud security to maintain unauthorized access to a compromised instance. 
+  This technique involves planting malicious code or a backdoor into a compromised instance and using it as a "zombie" or "bot" to perform further malicious actions.
+  Once an instance is compromised, the attacker can implant a backdoor to ensure future access even if the original vulnerability is fixed or the stolen credentials are changed.
+  The implanted code can be designed to run persistently in the background, making it difficult to detect. 
+  Attackers can use the zombie instance to perform various malicious actions, such as stealing sensitive data, launching DDoS attacks, or using the instance for cryptocurrency mining.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1550
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
-
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+detections: 
+  - D1510
 
 metadata: 
+    version: 0.1
     state: draft
 
   

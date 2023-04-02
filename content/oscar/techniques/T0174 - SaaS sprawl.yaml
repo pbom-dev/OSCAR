@@ -8,21 +8,24 @@ realm:
 
 summary: SaaS sprawl
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  SaaS (Software as a Service) sprawl refers to a defense evasion tactic where an attacker takes advantage of the lack of visibility and control in a cloud environment to spread the use of unauthorized SaaS applications across an organization.
+  In this attack, an attacker might use a compromised user account or exploit a vulnerability to gain access to a cloud environment, then begin to sign up for and use various SaaS applications without the knowledge or approval of the organization's IT and security teams. 
+  This can lead to a "sprawl" of unapproved SaaS applications being used throughout the organization, creating security risks and potentially violating compliance regulations.
+  The use of unauthorized SaaS applications can increase the attack surface and make it more difficult for security teams to monitor and protect the organization's data and systems. 
+  Additionally, the use of these applications may introduce security vulnerabilities that can be exploited by attackers.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1550
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://www.beamy.io/resources/blog/what-is-saas-sprawl/
 
 metadata: 
+    version: 0.1
     state: draft
 
   

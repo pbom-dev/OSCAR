@@ -8,21 +8,25 @@ realm:
 
 summary: Untagged resources
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  In this technique, the attacker first gains access to the cloud environment, either through a vulnerability or by compromising user credentials. 
+  Once they have access, they search for resources that are not properly tagged or have incomplete tagging, which can make them harder to track and identify.
+  The attacker then creates an untagged resource, such as an instance or a volume, and uses it to store and maintain persistent access to the compromised environment. 
+  Since the resource is not properly tagged, it is harder for the cloud provider or the victim to detect and identify it as a potential threat.
+  This technique can be used to maintain access to the cloud environment even after the original point of entry has been remediated or patched. 
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
+mitigations: 
   - 
 
-detections: # REQUIRED - <list> - reference to detection defintitions
+detections: 
   - 
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://ismsguy.medium.com/treating-the-mishmash-of-missing-tag-resources-in-aws-using-the-cloud-custodian-part-1-63ca506f12f2
+  - https://www.infoworld.com/article/3246986/better-cloud-management-through-cloud-resource-tagging.html
 
 metadata: 
+    version: 0.1
     state: draft
 
   

@@ -10,21 +10,25 @@ realm:
 
 summary: Backdoor in code
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Backdoor in code attack technique involves inserting a malicious code segment or backdoor into the software codebase, which allows the attacker to maintain access and control over the system even after their initial access has been removed or blocked.
+  In this attack, the attacker gains access to the codebase through various means, such as exploiting vulnerabilities or stealing credentials. 
+  Once they have gained access, the attacker inserts a malicious code segment or backdoor into the codebase. 
+  This code segment may be designed to execute specific malicious activities, such as stealing sensitive information, or to provide the attacker with continued access and control over the system.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1550
+  - M1731
+  - M1732
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://kerkour.com/supply-chain-attacks-and-backdoored-dependencies
 
 metadata: 
+    version: 0.1
     state: draft
 
   

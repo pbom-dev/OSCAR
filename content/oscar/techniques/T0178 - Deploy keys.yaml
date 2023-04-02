@@ -8,21 +8,24 @@ realm:
 
 summary: Deploy keys
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Deploy keys are SSH keys that are used to authenticate a specific machine or service to access a repository or codebase in a SCM system like Git. 
+  They are typically used to automate deployments or integrations between services and repositories.
+  In this attack technique, an attacker gains access to a machine that has deploy keys configured for access to a repository or codebase. 
+  Once they have access, they can obtain the private key of the deploy key and use it to gain access to the repository or codebase from other machines or services, even if the original machine is no longer accessible.
+  By doing so, the attacker can maintain persistent access to the repository or codebase, allowing them to steal sensitive information, introduce malicious code or manipulate the codebase to conduct further attacks.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1661
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://www.ibm.com/downloads/cas/OG6KNX1E
 
 metadata: 
+    version: 0.1
     state: draft
 
   

@@ -8,21 +8,30 @@ realm:
 
 summary: Misconfiguration of security measures
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Misconfiguration of security measures refers to an attack technique where an attacker takes advantage of misconfigured security settings in cloud environments to evade detection and launch further attacks. 
+  This technique is commonly used by attackers to gain unauthorized access to cloud resources, exfiltrate data, or launch other types of attacks.
+  In cloud environments, misconfigured security measures can occur due to various reasons such as incomplete security configurations, outdated software, or a lack of security controls. 
+  Attackers can exploit these misconfigurations to gain access to sensitive information, resources, or systems. 
+  For example, an attacker can take advantage of misconfigured security groups or firewall rules to bypass security controls and access sensitive data or resources.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1550
+  - M1720
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections:
+  - D1510
+  - D1520
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
+subtechinques:
+  - T0144
+  - T0146
 
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://www.upguard.com/blog/cloud-misconfiguration
 
 metadata: 
+    version: 0.1
     state: draft
 
   
