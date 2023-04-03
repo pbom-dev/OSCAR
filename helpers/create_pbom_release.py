@@ -157,7 +157,8 @@ def generate_matrix(oscar_source_path, pbom_data_path):
             if y['tactic'] not in j:
                 j[y['tactic']] = {"items": [],
                                   "amount": 0,
-                                  "tooltip": y['tactic']}
+                                  "tooltip": y['tactic'],
+                                  "tacticid": TACTICS_ENUM[y['tactic']]}
 
             # default subtechniques
             
