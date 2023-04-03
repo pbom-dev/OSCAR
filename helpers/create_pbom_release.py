@@ -12,6 +12,20 @@ logger.setLevel(logging.INFO)
 ch.setFormatter(formatter)
 logger.addHandler(ch)
 
+TACTICS_ENUM = {
+    "Reconnaissance": "TA01",
+    "Resource Development": "TA02",
+    "Initial Access": "TA03",
+    "Execution": "TA04",
+    "Persistence": "TA05",
+    "Privilege Escalation": "TA06",
+    "Defense Evasion": "TA07",
+    "Credential Access": "TA08",
+    "Lateral Movement": "TA09",
+    "Collection": "TA10",
+    "Exfiltration": "TA11",
+    "Impact": "TA12"
+ }
 
 class PageGenerator(object):
     '''
@@ -163,7 +177,15 @@ def generate_matrix(oscar_source_path, pbom_data_path):
                 }
             j[y['tactic']]['items'].append(item)
             j[y['tactic']]['amount'] += 1
-    
+
+    # sort matrix by tacticid
+    j = dict(sorted(j.items(), key=lambda item: item[1]['tacticid']))
+
+    # sort items by id
+    for tactic in j:
+        j[tactic]['items'] = sorted(j[tactic]['items'], key=lambda k: k['id'])
+        j[tactic]['amount'] = len(j[tactic]['items'])
+
     with open(os.path.join(pbom_data_path, 'pbom_data', 'matrix.json'), 'w') as f:
         logger.info("Saving matrix.json to %s", os.path.join(pbom_data_path, 'matrix.json'))
         f.write(json.dumps(j, indent=4))
