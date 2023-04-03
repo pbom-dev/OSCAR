@@ -11,7 +11,20 @@ ch = logging.StreamHandler()
 logger.setLevel(logging.INFO)
 ch.setFormatter(formatter)
 logger.addHandler(ch)
-
+TACTICS_ENUM = {
+    "Reconnaissance": "TA01",
+    "Resource Development": "TA02",
+    "Initial Access": "TA03",
+    "Execution": "TA04",
+    "Persistence": "TA05",
+    "Privilege Escalation": "TA06",
+    "Defense Evasion": "TA07",
+    "Credential Access": "TA08",
+    "Lateral Movement": "TA09",
+    "Collection": "TA10",
+    "Exfiltration": "TA11",
+    "Impact": "TA12"
+ }
 
 class PageGenerator(object):
     '''
@@ -78,6 +91,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description='Create PBOM release')
     parser.add_argument('-s', '--source', help='OSCAR source path', required=True)
     parser.add_argument('-d', '--dest', help='PBOM data destination path', required=True)
+    parser.add_argument('-t', '--techinques', help='overide na', default='matrix.json', required=False)
     return parser.parse_args()
 
 def setup_directory(pbom_data_path):
@@ -96,7 +110,7 @@ def yaml_to_json(yaml_file):
     return data
 
 
-def create_release(oscar_source_path, pbom_data_path):
+def create_release(oscar_source_path, pbom_data_path, items_str="items"):
     '''
     This function will create the release for PBOM
       - it will create the json files for the techniques, mitigations and detections
@@ -107,7 +121,7 @@ def create_release(oscar_source_path, pbom_data_path):
     setup_directory(pbom_data_path)
 
     logger.info("Generating matrix.json")
-    generate_matrix(oscar_source_path, pbom_data_path)
+    generate_matrix(oscar_source_path, pbom_data_path, items_str = items_str)
     # transform mitigations and detections to json and save to the pbom_data directory
     logger.info("Copying mitigations and detections to pbom_data directory")
 
@@ -129,8 +143,9 @@ def create_release(oscar_source_path, pbom_data_path):
 
 
 
-def generate_matrix(oscar_source_path, pbom_data_path):
+def generate_matrix(oscar_source_path, pbom_data_path, matrix_file='matrix.json', items_str="items"):
     j = {}
+    
     tech_path = os.path.join(oscar_source_path, 'techniques')
     # read all yamls from path  
     for filename in glob.glob(tech_path + '/*.yaml'):
@@ -143,8 +158,8 @@ def generate_matrix(oscar_source_path, pbom_data_path):
             if y['tactic'] not in j:
                 j[y['tactic']] = {"items": [],
                                   "amount": 0,
-                                  "tootlip": y['tactic']}
-
+                                  "tootlip": y['tactic'],
+                                  "tacticid": TACTICS_ENUM[y['tactic']]}
             # default subtechniques
             
             y.setdefault('subtechinques', [])
@@ -158,6 +173,14 @@ def generate_matrix(oscar_source_path, pbom_data_path):
                 "subTechniuqesAmount": len([] if y['subtechinques']==[None] else y['subtechinques'])}
             j[y['tactic']]['items'].append(item)
     
+    # sort matrix by tacticid
+    j = dict(sorted(j.items(), key=lambda item: item[1]['tacticid']))
+
+    # sort items by id
+    for tactic in j:
+        j[tactic]['items'] = sorted(j[tactic]['items'], key=lambda k: k['id'])
+        j[tactic]['amount'] = len(j[tactic]['items'])
+        
     with open(os.path.join(pbom_data_path, 'pbom_data', 'matrix.json'), 'w') as f:
         logger.info("Saving matrix.json to %s", os.path.join(pbom_data_path, 'matrix.json'))
         f.write(json.dumps(j, indent=4))
@@ -168,5 +191,7 @@ if __name__ == '__main__':
     pbom_data_path = args.dest
     oscar_source_path = args.source
     logger.info("Creating PBOM release")
-    create_release(oscar_source_path, pbom_data_path)
+    create_release(oscar_source_path, pbom_data_path, )
+    
+    generate_matrix(oscar_source_path, pbom_data_path, matrix_file='matrix.json', items_str="techniques")
     logger.info("Done")
