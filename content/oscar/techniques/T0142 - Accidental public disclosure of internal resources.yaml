@@ -8,21 +8,28 @@ realm:
 
 summary: Accidental public disclosure of internal resources
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  This technique involves searching for internal resources that have been inadvertently made public and are accessible to anyone on the internet.
+  An attacker can use this technique to identify internal resources that may contain sensitive information such as passwords, API keys, or other credentials. 
+  They can also use this technique to identify other internal resources that may be of interest, such as databases or servers.
+  There are several ways that internal resources can be accidentally made public, including misconfigured security settings, unintentional exposure of credentials, or through the use of unsecured storage buckets. 
+  When resources are accidentally made public, it can be easy for an attacker to locate and access them.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1240
+  - M1250
+  - M1550
+  - M1720
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
+  - D1520
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://duo.com/blog/beyond-s3-exposed-resources-on-aws
 
 metadata: 
+    version: 0.1
     state: draft
 
   
