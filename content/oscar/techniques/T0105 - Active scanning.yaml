@@ -8,21 +8,26 @@ realm:
 
 summary: Active scanning
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  This technique involves actively scanning an organization's cloud infrastructure for vulnerabilities and misconfigurations that can be exploited by attackers to gain unauthorized access or cause system disruption.
+  An attacker can use this technique to identify vulnerable assets within an organization's cloud infrastructure and develop an understanding of the target's attack surface. 
+  By conducting active scanning, an attacker can gather information about an organization's network topology, application architecture, and security controls, and use this information to plan and execute more effective attacks.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1450
+  - M1451
+  - M1550
+  - M1720
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://www.aquasec.com/cloud-native-academy/cspm/cloud-security-scanner/
+  - https://github.com/prowler-cloud/prowler
 
 metadata: 
+    version: 0.1
     state: draft
 
   

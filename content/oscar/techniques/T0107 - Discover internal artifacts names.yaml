@@ -9,21 +9,22 @@ realm:
 
 summary: Discover internal artifacts names
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  This technique involves searching for internal artifact names used in an organization's container images and SCM repositories. 
+  Internal artifact names may include names of applications, libraries, and components used in the organization's container images or code repositories.
+  An attacker can use this technique to identify the types of technologies and software components used by an organization, which can help them to identify potential vulnerabilities and attack vectors. 
+  By discovering internal artifact names, an attacker can also gain insight into the organization's software development practices, and potentially identify development teams or individuals that are responsible for creating and maintaining specific applications or components.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1503
+  - M1732
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
-
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+detections: 
+  - D1500
+  - D1510
 
 metadata: 
+    version: 0.1
     state: draft
 
   
