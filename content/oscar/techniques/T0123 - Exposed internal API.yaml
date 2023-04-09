@@ -9,21 +9,26 @@ realm:
 
 summary: Exposed internal API
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Exposed internal API attack technique is when an attacker targets a publicly accessible API intended for internal use only, providing an entry point for accessing sensitive information or systems within an organization. 
+  This is a common issue when API endpoints are mistakenly exposed to the public or not properly secured, which can allow attackers to gain access to sensitive data or systems.
+  Attackers can discover exposed internal APIs by using automated tools to scan public IP addresses or by reverse-engineering mobile applications or browser extensions. 
+  Once they have identified a vulnerable API, attackers can use it to gather information, launch attacks, or steal sensitive data.
+  The impact of this attack can be severe as attackers can bypass traditional security controls and gain access to internal systems or data that are not meant to be publicly accessible.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1550
+  - M1720
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://owasp.org/www-project-api-security/
+  - https://techcrunch.com/2023/01/19/t-mobile-data-breach/
 
 metadata: 
+    version: 0.1
     state: draft
 
   

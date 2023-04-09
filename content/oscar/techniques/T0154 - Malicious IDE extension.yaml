@@ -8,21 +8,24 @@ realm:
 
 summary: Malicious IDE extension
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Malicious IDE extension attack is an attack technique in which an attacker creates a malicious extension for an Integrated Development Environment (IDE) and uploads it to the IDE's extension marketplace or repository. 
+  The malicious extension may appear to be a legitimate tool or add-on, but when installed, it can perform unauthorized actions such as stealing user credentials or introducing vulnerabilities in the code.
+  Once installed, a malicious IDE extension can access the developer's code, which can contain sensitive information such as access keys, passwords, and credentials. 
+  This information can then be used by the attacker to gain unauthorized access to cloud resources, steal data, or launch further attacks.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1500
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
+  - D1520
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://blog.aquasec.com/can-you-trust-your-vscode-extensions
 
 metadata: 
+    version: 0.1
     state: draft
 
   

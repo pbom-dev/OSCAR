@@ -10,21 +10,24 @@ realm:
 
 summary: Services(Servers) compromise
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Services (servers) compromise attack in the supply chain is a type of attack that targets the servers hosting the software development and distribution infrastructure. 
+  This attack can happen when an attacker gains access to the server through a vulnerability, misconfiguration, or social engineering attack. 
+  Once the attacker gains access to the server, they can modify the source code or software packages being distributed to include malicious code or backdoors. 
+  This attack can compromise multiple software projects and potentially all users who download or use the compromised software.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1720
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1500
+  - D1510
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://research.nccgroup.com/2022/01/13/10-real-world-stories-of-how-weve-compromised-ci-cd-pipelines/
 
 metadata: 
+    version: 0.1
     state: draft
 
   

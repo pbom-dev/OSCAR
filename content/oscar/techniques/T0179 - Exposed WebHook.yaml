@@ -8,21 +8,23 @@ realm:
 
 summary: Exposed WebHook
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Exposed WebHook attack in CI/CD posture is a technique where an attacker exploits a publicly accessible or improperly authenticated and authorized WebHook endpoint in a CI/CD setup. 
+  The attacker sends malicious payloads or triggers unauthorized actions through the WebHook, gaining unauthorized access to the CI/CD pipeline or associated resources. 
+  The consequences can include unauthorized access to data, compromise of the CI/CD pipeline, injection of malicious code, or disruption of the software development process.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1790
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections:
+  - D1510
+  - D1590
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://www.cidersecurity.io/blog/research/how-we-abused-repository-webhooks-to-access-internal-ci-systems-at-scale/
 
 metadata: 
+    version: 0.1
     state: draft
 
   

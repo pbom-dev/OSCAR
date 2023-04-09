@@ -9,21 +9,23 @@ realm:
 
 summary: Exposed database
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Exposing a database to the public internet can be a critical security issue, as attackers can use it to gain access to sensitive information.
+  In the context of cloud security and infrastructure as code, this attack technique typically involves misconfigured security group rules or network access control lists (ACLs) that allow public access to a database. 
+  It can also occur when developers or system administrators accidentally expose database credentials or when misconfigured server configurations allow database access.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1550
+  - M1720
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://securitytrails.com/blog/open-exposed-databases
 
 metadata: 
+    version: 0.1
     state: draft
 
   

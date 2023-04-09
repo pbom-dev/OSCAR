@@ -9,21 +9,27 @@ realm:
 
 summary: Brandjacking
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Brandjacking is a type of attack where an attacker impersonates a legitimate brand or project in an attempt to trick users into downloading and installing a malicious container or package. 
+  This can happen when an attacker creates a package or container with a similar name or logo to a well-known and trusted brand or project, and then distributes it through public repositories.
+  Brandjacking can be particularly dangerous in the context of container and open source security, as many developers and users rely on public repositories and may not take the time to thoroughly verify the authenticity of packages they download.
+  Once a malicious package is installed, it can be difficult to detect and can lead to serious security breaches.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1500
+  - M1502
+  - M1503
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1500
+  - D1510
+  - D1520
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://www.mend.io/resources/blog/new-supply-chain-attack-methods-april/
 
 metadata: 
+    version: 0.1
     state: draft
 
   

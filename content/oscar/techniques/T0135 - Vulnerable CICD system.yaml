@@ -8,21 +8,25 @@ realm:
 
 summary: Vulnerable CICD system
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  An attacker can target the CI/CD system itself and exploit vulnerabilities in the system, such as insecure configurations or outdated software. 
+  The attacker may also target the build scripts, which could contain secrets and sensitive information, allowing them to gain access to the underlying systems or inject malicious code into the software being built.
+  Some common vulnerabilities in CI/CD systems include insecure storage of credentials, unsecured APIs, and outdated software components. 
+  Additionally, attackers may take advantage of misconfigured permissions, such as overly permissive access controls that allow them to escalate privileges or access sensitive information.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1720
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
+  - D1590
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://www.paloaltonetworks.com/blog/prisma-cloud/shift-left-ci-cd-security-for-your-software-supply-chain/
+  - https://owasp.org/www-project-top-10-ci-cd-security-risks/
 
 metadata: 
+    version: 0.1
     state: draft
 
   

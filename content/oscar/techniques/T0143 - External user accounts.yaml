@@ -10,21 +10,26 @@ realm:
 
 summary: External user accounts
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  External User Accounts attack technique in the CI/CD, SCM posture and cloud security involves compromising external user accounts to gain unauthorized access to CI/CD pipelines, source code repositories or cloud systems.
+  Attackers may gain unauthorized access to these accounts through various means, such as phishing, social engineering, or password cracking. 
+  Once compromised, attackers can inject malicious code into CI/CD pipelines, tamper with deployment pipelines, manipulate source code repositories, or access cloud systems. 
+  This can result in the deployment of unauthorized or malicious code to production systems, introduction of vulnerabilities or backdoors into source code, theft of intellectual property, or other malicious activities.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
+mitigations: 
+  - M1450
+  - M1451
+  - M1550
+  - M1661
+
+detections: 
+  - D1510
+
+references: 
   - 
-
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
-
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
 
 metadata: 
+    version: 0.1
     state: draft
 
   
