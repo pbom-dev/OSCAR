@@ -6,7 +6,7 @@ tactic: Exfiltration
 realm: 
   - SCMPosture
 
-summary: Source code
+summary: Code Repositroies Abuse
 
 description: |
   Adversaries may exfiltrate data to a code repository rather than over their primary command and control channel. 
