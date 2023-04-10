@@ -1,0 +1,29 @@
+id: T0188
+type: Technique
+
+tactic: Execution
+
+realm: 
+  - CodeSecurity
+
+summary: Cross Site Request Forgery
+
+description: |
+          Cross Site Request Forgert, or CSRF, may have different affects, depending on the application code. It is widely used in conjunction with spear-phising attacks where adversaries will attempt to abuse authenticated users sessions to perform actions that will allow them to take over a server.
+
+mitigations: # REQUIRED - <list> -reference to mitigation references
+  - 
+
+detections: # REQUIRED - <list> - reference to detection defintitions
+  - 
+
+subtechinques: # OPTIONAL <list> - reference to TechIDs
+  - 
+
+references: 
+  -
+
+metadata: 
+    state: draft
+
+  
