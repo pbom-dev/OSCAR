@@ -9,21 +9,25 @@ realm:
 
 summary: Combosquatting
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Combosquatting is an attack technique where an attacker tries to impersonate legitimate open source packages by adding (or often appending) common words, terms, or letters to the authentic package or image name.
+  For example, there is popular JavaScript package "lodash" and an attacker may create a package with name "lodashs".
+  The goal of this attack technique is to trick users into unknowingly downloading and using these fake packages or images, which may contain malicious code, vulnerabilities, or other security risks.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1500
+  - M1502
+  - M1503
+  - M1590
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1500
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://dev.to/sumstrm/different-typosquatting-attacks-to-know-of-for-a-secure-supply-chain-4j70
 
 metadata: 
+    version: 0.1
     state: draft
 
   

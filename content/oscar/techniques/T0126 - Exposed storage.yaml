@@ -9,21 +9,24 @@ realm:
 
 summary: Exposed storage
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Exposed storage is an attack technique where an attacker targets and exploits cloud storage containers or buckets that are publicly accessible or have weak access controls. 
+  The attacker can gain access to sensitive data stored in the containers, such as personal information, financial data, or intellectual property.
+  Exposed storage can occur due to misconfigured access controls, where the data is mistakenly made publicly available or accessible to unauthorized users. 
+  This can occur when the default security settings for cloud storage services are not properly adjusted, or when access controls are not regularly reviewed and updated.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1550
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://www.trendmicro.com/vinfo/es/security/news/virtualization-and-cloud/a-misconfigured-amazon-s3-exposed-almost-50-thousand-pii-in-australia
+  - https://www.darkreading.com/application-security/cloud-misconfig-exposes-3tb-sensitive-airport-data-amazon-s3-bucket
 
 metadata: 
+    version: 0.1
     state: draft
 
   

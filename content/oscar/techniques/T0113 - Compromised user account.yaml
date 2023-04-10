@@ -11,21 +11,29 @@ realm:
 
 summary: Compromised user account
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  A compromised user account is a serious security threat, as attackers can use it to bypass security measures that are in place to protect an organization's assets. 
+  Attackers can gain access to legitimate user accounts in several ways, including brute-force attacks, phishing, malware, or social engineering.
+  Once an attacker gains access to a user's account, they can access the cloud resources, artifact repository, infrastructure-as-code templates, or source code repository to steal or modify sensitive data or launch further attacks.
+  In such case an attacker is able to modify the code and cloud resources, inject malware or backdoors, or replace legitimate artifacts.
+  This can result in data breaches, system downtime, reputation damage, and financial losses.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1450
+  - M1451
+  - M1550
+  - M1661
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
+  - D1520
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://blog.gitguardian.com/poisoning-the-source-how-and-why-attackers-are-targeting-developer-accounts/
+  - https://rhinosecuritylabs.com/aws/aws-iam-credentials-get-compromised/
 
 metadata: 
+    version: 0.1
     state: draft
 
   

@@ -1,0 +1,12 @@
+id: M1790
+type: Mitigation
+summary: Limit access to webhooks
+description: |
+  Limit access to WebHooks to trusted sources or IP addresses and avoid exposing them to the internet or making them publicly accessible.
+
+references:
+  - https://hookdeck.com/webhooks/guides/webhooks-security-checklist#security-threats-and-solution-recap
+
+metadata:
+  - version: 0.1
+  - state: draft

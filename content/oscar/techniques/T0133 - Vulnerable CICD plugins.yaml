@@ -8,21 +8,24 @@ realm:
 
 summary: Vulnerable CICD plugins
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Vulnerable CI/CD plugins attack technique is an initial access tactic where an attacker exploits a vulnerability in a plugin used by a continuous integration and continuous delivery (CI/CD) pipeline to gain access to the pipeline or the underlying system.
+  Vulnerable plugins used in the CI/CD pipeline can be exploited by attackers to inject malicious code or to execute arbitrary commands on the target system.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1720
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
+  - D1590
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://www.legitsecurity.com/blog/how-to-continuously-detect-vulnerable-jenkins-plugins-to-avoid-a-software-supply-chain-attack
+  - https://www.jenkins.io/security/plugins/
+  - https://www.theregister.com/2022/06/30/jenkins_plugins_security_advisories/
 
 metadata: 
+    version: 0.1
     state: draft
 
   

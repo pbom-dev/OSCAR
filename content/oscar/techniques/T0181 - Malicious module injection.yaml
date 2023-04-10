@@ -8,21 +8,24 @@ realm:
 
 summary: Malicious module injection
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Malicious module injection is an attack that targets the Infrastructure as Code (IaC) process, where an attacker injects malicious code or modules into the configuration files used to define and provision infrastructure resources. 
+  This can occur during the development or deployment phases of the IaC process, and the injected code can lead to backdoors, data breaches, resource hijacking, or integrity compromise.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1730
+  - M1731
+  - M1732
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://www.trendmicro.com/vinfo/us/security/news/virtualization-and-cloud/infrastructure-as-code-security-risks-and-how-to-avoid-them
+  - https://about.gitlab.com/blog/2022/02/17/fantastic-infrastructure-as-code-security-attacks-and-how-to-find-them/
 
 metadata: 
+    version: 0.1
     state: draft
 
   

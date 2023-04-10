@@ -9,21 +9,25 @@ realm:
 
 summary: Compromised developer workstation
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Compromised developer workstation attack is a technique where an attacker gains access to a developer's machine, which contains sensitive information such as access credentials, keys, and code repositories. 
+  This technique can allow an attacker to steal code or modify it to include backdoors or other malicious code. 
+  The attacker can also use this access to gain entry into other systems within the organization.
+  This type of attack can be carried out through various means, such as Phishing, Typosquatting, Brandjacking, malicious IDE extensions, or exploiting vulnerabilities in the developer's system. 
+  Once the attacker gains access, they can install malware or backdoors, extract sensitive information, or use the machine as a foothold to carry out further attacks.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1720
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
+  - D1520
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://www.reversinglabs.com/blog/vs-code-ide-hack-how-supply-chain-attacks-can-proliferate-between-developer-ecosystems
 
 metadata: 
+    version: 0.1
     state: draft
 
   

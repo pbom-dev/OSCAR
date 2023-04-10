@@ -9,21 +9,30 @@ realm:
 
 summary: Typosquatting
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Typosquatting is an attack technique where an attacker creates a package or container with a name that is very similar to a legitimate one, in hopes that a user will make a typo and download the malicious package or container. 
+  For example, if a legitimate package is named "numpy," an attacker might create a package named "numpyy" or "numpi" in hopes that a user will accidentally install the malicious package instead. 
+  In container security, it involves creating a container image with a similar name to a legitimate one, while in open-source security, it involves creating a malicious package with a similar name to a legitimate one.
+  Once the user installs the malicious package or container, the attacker can potentially gain access to the user's system or data, or inject malicious code into the user's environment.
+  
+mitigations: 
+  - M1500
+  - M1502
+  - M1503
+  - M1590
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+detections: 
+  - D1500
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+subtechinques:
+  - T0157
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://bytesafe.dev/posts/understanding-typosquatting-methods/
+  - https://cycode.com/typosquatting-repojacking-domain-takeover/
 
 metadata: 
+    version: 0.1
     state: draft
 
   

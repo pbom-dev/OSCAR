@@ -14,21 +14,29 @@ realm:
 
 summary: Shadow IT
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Shadow IT refers to the use of information technology, including software, applications, services, and devices, by employees without the approval or knowledge of the IT department. 
+  It poses a risk to various areas of security, including cloud security, artifact security, CI/CD posture, container security, and open-source security. 
+  Shadow IT can result in the use of unapproved tools, libraries, or dependencies that may contain vulnerabilities or malicious code, leading to data breaches and other security incidents. 
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1450
+  - M1451
+  - M1503
+  - M1550
+  - M1720
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections:
+  - D1500
+  - D1510
+  - D1520
+  - D1590
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://www.thirdpartytrust.com/blog/what-is-shadow-it-digital-supply-chain/
 
 metadata: 
+    version: 0.1
     state: draft
 
   

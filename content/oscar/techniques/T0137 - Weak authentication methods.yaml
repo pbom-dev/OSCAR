@@ -10,21 +10,25 @@ realm:
 
 summary: Weak authentication methods
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Weak authentication methods are a common attack technique used by threat actors to gain unauthorized access to cloud environments or code repositories. This attack technique relies on exploiting vulnerabilities in the authentication methods used to control access to resources.
+  In cloud security, weak authentication methods can be exploited through several vectors, such as stolen credentials, brute force attacks, and password spraying. 
+  Threat actors can also take advantage of misconfigured security groups or network access control lists (ACLs) to bypass authentication and gain access to cloud resources.
+  In code security, weak authentication methods can be exploited through vulnerabilities in source code management platforms, such as Git repositories. 
+  For instance, if developers use weak passwords or if the authentication protocols used by the repository are vulnerable, attackers can steal source code or inject malicious code into the codebase.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1550
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
+  - D1520
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://affinity-it-security.com/what-is-weak-authentication/
 
 metadata: 
+    version: 0.1
     state: draft
 
   

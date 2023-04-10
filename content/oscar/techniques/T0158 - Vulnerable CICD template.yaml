@@ -9,21 +9,27 @@ realm:
 
 summary: Vulnerable CICD template
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Vulnerable CI/CD template attack is an attack technique that targets the templates used in the CI/CD pipeline configuration. 
+  These templates are used to automate the process of building, testing, and deploying applications. 
+  Attackers can modify these templates to include malicious code or configuration that can result in unauthorized access or data theft.
+  In this attack, the attacker typically searches for templates that have known vulnerabilities or weak configurations. 
+  Once identified, the attacker can modify the template to include their malicious code or configuration. 
+  The attacker then waits for the target to use the modified template in their CI/CD pipeline, which can result in the attacker gaining access to sensitive data or systems.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1720
+  - M1732
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
+  - D1590
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://cycode.com/github-actions-vulnerabilities/
 
 metadata: 
+    version: 0.1
     state: draft
 
   

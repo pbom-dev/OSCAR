@@ -9,21 +9,24 @@ realm:
 
 summary: Permissive network access
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Permissive network access is an attack technique where an attacker targets and exploits network configurations that allow overly permissive access to a cloud-based network. 
+  This could include open ports, insecure protocols, or misconfigured network security groups (NSGs). 
+  An attacker can leverage this permissive access to launch a variety of attacks, such as network scanning, port scanning, or remote code execution.
+  For example, an organization may have a public-facing web application that requires access to a backend database server. 
+  If the NSG rules for the database server are too permissive, allowing access from any IP address, an attacker could potentially gain access to the database server from anywhere on the internet.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1550
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1510
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://sysdig.com/blog/aws-security-groups-guide/
 
 metadata: 
+    version: 0.1
     state: draft
 
   

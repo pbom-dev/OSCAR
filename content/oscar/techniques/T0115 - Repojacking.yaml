@@ -9,21 +9,28 @@ realm:
 
 summary: Repojacking
 
-description: # REQUIRED - <key:value> - supports markdown
+description: |
+  Dependency repository hijacking (aka repo jacking) is an obscure supply chain vulnerability, conceptually similar to subdomain takeover, that impacts over 70,000 open-source projects and affects everything from web frameworks to cryptocurrencies. 
+  This vulnerability is trivial to exploit, results in remote code injection, and affects major projects from companies like Google, GitHub, Facebook, Kubernetes, NodeJS, Amazon, and many others. 
+  Every project whose compilation depends on dynamically linked code from GitHub repositories is potentially vulnerable. 
+  When the linked repository owner changes their username, it becomes immediately available to be re-registered by anyone. 
+  This means that any project that linked back to the original repository URL has now become vulnerable to remote code injection through dependency hijacking. 
+  A malicious attacker can register the old GitHub username, recreate the repository, and use it to serve malicious code to any project that depends on it.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1730
+  - M1732
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
+detections: 
+  - D1500
 
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
-
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
-  -
+references: 
+  - https://www.malwarebytes.com/blog/news/2022/11/github-patches-the-latest-flaw-that-allowed-repojacking
+  - https://thehackernews.com/2022/10/github-repojacking-bug-couldve-allowed.html
+  - https://blog.securityinnovation.com/repo-jacking-exploiting-the-dependency-supply-chain
 
 metadata: 
+    version: 0.1
     state: draft
 
   
