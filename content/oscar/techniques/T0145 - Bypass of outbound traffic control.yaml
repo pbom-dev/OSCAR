@@ -4,7 +4,7 @@ type: Technique
 tactic: Exfiltration
 
 realm: 
-  - CloudSecurity
+  - Cloud Security
 
 summary: Bypass of outbound traffic control
 

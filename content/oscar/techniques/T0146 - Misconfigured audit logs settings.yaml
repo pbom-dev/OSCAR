@@ -4,9 +4,9 @@ type: Technique
 tactic: Defense Evasion
 
 realm: 
-  - CI/CDPosture
-  - CloudSecurity
-  - SCMPosture
+  - CI/CD Posture
+  - Cloud Security
+  - SCM Posture
 
 summary: Misconfigured audit logs settings
 

@@ -4,9 +4,9 @@ type: Technique
 tactic: Persistence
 
 realm: 
-  - CodeSecurity
-  - OpenSourceSecurity
-  - SCMPosture
+  - Code Security
+  - Open Source Security
+  - SCM Posture
 
 summary: Backdoor in code
 

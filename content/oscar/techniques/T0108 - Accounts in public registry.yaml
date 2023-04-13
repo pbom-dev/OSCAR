@@ -4,8 +4,8 @@ type: Technique
 tactic: Resource Development
 
 realm: 
-  - OpenSourceSecurity
-  - SCMPosture
+  - Open Source Security
+  - SCM Posture
 
 summary: Accounts in public registry
 

@@ -4,9 +4,9 @@ type: Technique
 tactic: Reconnaissance
 
 realm: 
-  - ContainerSecurity
-  - OpenSourceSecurity
-  - SCMPosture
+  - Container Security
+  - Open Source Security
+  - SCM Posture
 
 summary: Discover technology stacks
 

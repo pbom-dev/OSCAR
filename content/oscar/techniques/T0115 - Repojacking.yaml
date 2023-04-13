@@ -4,8 +4,8 @@ type: Technique
 tactic: Initial Access
 
 realm: 
-  - ContainerSecurity
-  - OpenSourceSecurity
+  - Container Security
+  - Open Source Security
 
 summary: Repojacking
 

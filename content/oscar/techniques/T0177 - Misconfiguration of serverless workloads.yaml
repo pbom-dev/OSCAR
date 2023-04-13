@@ -4,7 +4,7 @@ type: Technique
 tactic: Impact
 
 realm: 
-  - CloudSecurity
+  - Cloud Security
 
 summary: Misconfiguration of serverless workloads
 

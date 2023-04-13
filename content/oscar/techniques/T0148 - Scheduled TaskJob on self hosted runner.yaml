@@ -4,7 +4,7 @@ type: Technique
 tactic: Persistence
 
 realm: 
-  - CI/CDPosture
+  - CI/CD Posture
 
 summary: Scheduled TaskJob on self hosted runner
 

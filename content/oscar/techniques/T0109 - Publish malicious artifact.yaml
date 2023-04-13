@@ -4,8 +4,8 @@ type: Technique
 tactic: Resource Development
 
 realm: 
-  - ContainerSecurity
-  - OpenSourceSecurity
+  - Container Security
+  - Open Source Security
 
 summary: Publish malicious artifact
 

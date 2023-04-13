@@ -4,8 +4,8 @@ type: Technique
 tactic: Persistence
 
 realm: 
-  - CI/CDPosture
-  - SCMPosture
+  - CI/CD Posture
+  - SCM Posture
 
 summary: Add user
 

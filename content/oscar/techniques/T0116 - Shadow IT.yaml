@@ -4,13 +4,13 @@ type: Technique
 tactic: Initial Access
 
 realm: 
-  - ArtifactSecurity
-  - CI/CDPosture
-  - CloudSecurity
-  - ContainerSecurity
-  - OpenSourceSecurity
-  - SCMPosture
-  - SecretsHygiene
+  - Artifact Security
+  - CI/CD Posture
+  - Cloud Security
+  - Container Security
+  - Open Source Security
+  - SCM Posture
+  - Secrets Hygiene
 
 summary: Shadow IT
 

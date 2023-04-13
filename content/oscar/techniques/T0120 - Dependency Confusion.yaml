@@ -4,9 +4,9 @@ type: Technique
 tactic: Initial Access
 
 realm: 
-  - ArtifactSecurity
-  - ContainerSecurity
-  - OpenSourceSecurity
+  - Artifact Security
+  - Container Security
+  - Open Source Security
 
 summary: Dependency confusion
 

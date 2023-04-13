@@ -4,8 +4,8 @@ type: Technique
 tactic: Lateral Movement
 
 realm: 
-  - CodeSecurity
-  - SCMPosture
+  - Code Security
+  - SCM Posture
 
 summary: Push implants across repositories 
 

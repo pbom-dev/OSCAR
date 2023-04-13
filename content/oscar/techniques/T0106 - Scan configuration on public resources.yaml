@@ -4,8 +4,8 @@ type: Technique
 tactic: Reconnaissance
 
 realm: 
-  - CI/CDPosture
-  - CloudSecurity
+  - CI/CD Posture
+  - Cloud Security
 
 summary: Scan configuration on public resources
 

@@ -4,8 +4,8 @@ type: Technique
 tactic: Privilege Escalation
 
 realm: 
-  - OpenSourceSecurity
-  - SCMPosture
+  - Open Source Security
+  - SCM Posture
 
 summary: Inject malicious dependency to privileged user repository 
 

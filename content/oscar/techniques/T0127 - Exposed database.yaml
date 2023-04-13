@@ -4,8 +4,8 @@ type: Technique
 tactic: Initial Access
 
 realm: 
-  - CloudSecurity
-  - Infrastructureascode
+  - Cloud Security
+  - Infrastructure as code
 
 summary: Exposed database
 
