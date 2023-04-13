@@ -4,10 +4,10 @@ type: Technique
 tactic: Lateral Movement
 
 realm: 
-  - ArtifactSecurity
-  - CI/CDPosture
-  - CloudSecurity
-  - SCMPosture
+  - Artifact Security
+  - CI/CD Posture
+  - Cloud Security
+  - SCM Posture
 
 summary: Overprivileged user account
 

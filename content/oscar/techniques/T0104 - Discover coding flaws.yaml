@@ -4,8 +4,8 @@ type: Technique
 tactic: Reconnaissance
 
 realm: 
-  - CodeSecurity
-  - SCMPosture
+  - Code Security
+  - SCM Posture
 
 summary: Discover coding flaws
 

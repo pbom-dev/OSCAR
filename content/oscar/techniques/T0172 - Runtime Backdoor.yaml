@@ -4,9 +4,9 @@ type: Technique
 tactic: Execution
 
 realm: 
-  - CodeSecurity
-  - ContainerSecurity
-  - OpenSourceSecurity
+  - Code Security
+  - Container Security
+  - Open Source Security
 
 summary: Runtime Backdoor
 

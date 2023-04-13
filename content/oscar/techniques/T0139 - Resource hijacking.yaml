@@ -4,9 +4,9 @@ type: Technique
 tactic: Impact
 
 realm: 
-  - CI/CDPosture
-  - CloudSecurity
-  - ContainerSecurity
+  - CI/CD Posture
+  - Cloud Security
+  - Container Security
 
 summary: Resource hijacking
 

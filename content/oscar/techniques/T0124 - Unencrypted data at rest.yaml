@@ -4,8 +4,8 @@ type: Technique
 tactic: Collection
 
 realm: 
-  - CloudSecurity
-  - Infrastructureascode
+  - Cloud Security
+  - Infrastructure as code
 
 summary: Unencrypted data at rest
 

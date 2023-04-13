@@ -4,8 +4,8 @@ type: Technique
 tactic: Initial Access
 
 realm: 
-  - CI/CDPosture
-  - OpenSourceSecurity
+  - CI/CD Posture
+  - Open Source Security
 
 summary: Vulnerable CICD template
 

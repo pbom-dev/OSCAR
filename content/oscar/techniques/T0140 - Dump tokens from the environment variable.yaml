@@ -4,11 +4,11 @@ type: Technique
 tactic: Credential Access
 
 realm: 
-  - CI/CDPosture
-  - CloudSecurity
-  - ContainerSecurity
-  - Infrastructureascode
-  - SecretsHygiene
+  - CI/CD Posture
+  - Cloud Security
+  - Container Security
+  - Infrastructure as code
+  - Secrets Hygiene
 
 summary: Dump tokens from the environment variable
 

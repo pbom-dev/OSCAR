@@ -4,8 +4,8 @@ type: Technique
 tactic: Defense Evasion
 
 realm: 
-  - CI/CDPosture
-  - SCMPosture
+  - CI/CD Posture
+  - SCM Posture
 
 summary: Bypass Review using admin permission
 

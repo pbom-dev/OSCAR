@@ -4,9 +4,9 @@ type: Technique
 tactic: Initial Access
 
 realm: 
-  - ArtifactSecurity
-  - CI/CDPosture
-  - SCMPosture
+  - Artifact Security
+  - CI/CD Posture
+  - SCM Posture
 
 summary: Services(Servers) compromise
 

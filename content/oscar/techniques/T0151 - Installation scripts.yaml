@@ -4,9 +4,9 @@ type: Technique
 tactic: Execution
 
 realm: 
-  - CloudSecurity
-  - CodeSecurity
-  - OpenSourceSecurity
+  - Cloud Security
+  - Code Security
+  - Open Source Security
 
 summary: Installation scripts
 
