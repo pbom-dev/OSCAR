@@ -4,8 +4,8 @@ type: Technique
 tactic: Execution
 
 realm: 
-  - ArtifactSecurity
-  - OpenSourceSecurity
+  - Artifact Security
+  - Open Source Security
 
 summary: Malicious artifact execution
 

@@ -1,0 +1,30 @@
+id: T0190
+type: Technique
+
+tactic: Collection
+
+realm:
+  - Cloud Security
+  - Infrastructure as code
+
+summary: Weak Encryption
+
+description: |
+          It is recommended to use adequate encryption for it to be affective - meaning to maintaine confidentiality of data. Use of obosolete/weak cihpers and hash functions is discouredged  
+
+mitigations: # REQUIRED - <list> -reference to mitigation references
+  - 
+
+detections: # REQUIRED - <list> - reference to detection defintitions
+  - 
+
+subtechinques: # OPTIONAL <list> - reference to TechIDs
+  - 
+
+references: 
+  -
+
+metadata: 
+    state: draft
+
+  

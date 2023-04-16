@@ -4,8 +4,8 @@ type: Technique
 tactic: Privilege Escalation
 
 realm: 
-  - CI/CDPosture
-  - ContainerSecurity
+  - CI/CD Posture
+  - Container Security
 
 summary: Runners agents running with high user privileges
 

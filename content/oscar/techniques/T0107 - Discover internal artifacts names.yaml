@@ -4,8 +4,8 @@ type: Technique
 tactic: Reconnaissance
 
 realm: 
-  - ContainerSecurity
-  - SCMPosture
+  - Container Security
+  - SCM Posture
 
 summary: Discover internal artifacts names
 

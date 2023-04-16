@@ -4,7 +4,7 @@ type: Technique
 tactic: Exfiltration
 
 realm: 
-  - SCMPosture
+  - SCM Posture
 
 summary: Code Repositroies Abuse
 

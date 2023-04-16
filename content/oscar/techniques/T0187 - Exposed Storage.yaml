@@ -4,7 +4,7 @@ type: Technique
 tactic: Reconnaissance
 
 realm: 
-  - CloudSecrity
+  - Cloud Security
 
 summary: Exposed Storage
 

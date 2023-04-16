@@ -4,9 +4,9 @@ type: Technique
 tactic: Initial Access
 
 realm: 
-  - CloudSecurity
-  - CodeSecurity
-  - Infrastructureascode
+  - Cloud Security
+  - Code Security
+  - Infrastructure as code
 
 summary: Weak authentication methods
 

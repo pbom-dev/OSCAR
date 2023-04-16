@@ -4,7 +4,7 @@ type: Technique
 tactic: Execution
 
 realm: 
-  - SCMPosture
+  - SCM Posture
 
 summary: Auto merge rules in SCM
 

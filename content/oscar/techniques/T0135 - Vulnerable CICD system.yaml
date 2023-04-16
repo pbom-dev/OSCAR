@@ -4,7 +4,7 @@ type: Technique
 tactic: Initial Access
 
 realm: 
-  - CI/CDPosture
+  - CI/CD Posture
 
 summary: Vulnerable CICD system
 

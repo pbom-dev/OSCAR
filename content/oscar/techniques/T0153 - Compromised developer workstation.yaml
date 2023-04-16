@@ -4,8 +4,8 @@ type: Technique
 tactic: Initial Access
 
 realm: 
-  - CodeSecurity
-  - SCMPosture
+  - Code Security
+  - SCM Posture
 
 summary: Compromised developer workstation
 

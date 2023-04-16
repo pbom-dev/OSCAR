@@ -4,9 +4,9 @@ type: Technique
 tactic: Initial Access
 
 realm: 
-  - CI/CDPosture
-  - CloudSecurity
-  - SCMPosture
+  - CI/CD Posture
+  - Cloud Security
+  - SCM Posture
 
 summary: External user accounts
 

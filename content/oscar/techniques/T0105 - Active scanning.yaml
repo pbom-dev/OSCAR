@@ -4,7 +4,7 @@ type: Technique
 tactic: Reconnaissance
 
 realm: 
-  - CloudSecurity
+  - Cloud Security
 
 summary: Active scanning
 
