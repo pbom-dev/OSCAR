@@ -1,0 +1,15 @@
+id: D1860
+type: Detection
+summary: Configure audit logs for SCM
+description: |
+  Audit logs can capture various types of events, such as user logins, file modifications, repository access, changes to access permissions, administrative actions, and system events. 
+  These events can provide insights into who did what, when, and where in the SCM system, helping to detect and investigate potential security incidents, including source code leaks.
+
+references:
+  - https://docs.gitlab.com/ee/administration/audit_events.html
+  - https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization
+  - https://confluence.atlassian.com/bitbucketserver/view-and-configure-the-audit-log-776640417.html
+
+metadata:
+  - version: 0.1
+  - state: draft

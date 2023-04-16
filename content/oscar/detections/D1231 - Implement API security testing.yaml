@@ -1,0 +1,12 @@
+id: D1231
+type: Detection
+summary: Implement API security testing
+description: |
+  Conduct regular security testing of APIs, including vulnerability assessments and penetration testing, to identify any potential weaknesses or vulnerabilities that may allow APIs to be exposed to the public.
+
+references:
+  - https://www.stackhawk.com/blog/api-security-testing-vs-api-security-monitoring/
+
+metadata:
+  - version: 0.1
+  - state: draft

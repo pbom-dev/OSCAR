@@ -1,0 +1,13 @@
+id: M1261
+type: Mitigation
+summary: Implement proper access control for cloud storages
+description: |
+  Ensure that appropriate access controls are implemented and regularly reviewed for all cloud storage containers or buckets. 
+  This includes setting up strong authentication methods, such as multi-factor authentication (MFA), and restricting access to only authorized users and applications based on the principle of least privilege.
+
+references:
+  - https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html
+
+metadata:
+  - version: 0.1
+  - state: draft

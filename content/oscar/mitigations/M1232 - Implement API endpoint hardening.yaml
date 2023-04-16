@@ -1,0 +1,13 @@
+id: M1232
+type: Mitigation
+summary: Implement API endpoint hardening
+description: |
+  Regularly review and update the security configurations of API endpoints to ensure that they are properly secured and not inadvertently exposed to the public. This may include proper authentication and authorization mechanisms, input validation, and output encoding to prevent attacks such as SQL injection or cross-site scripting (XSS).
+
+references:
+  - https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html
+  - https://access.redhat.com/documentation/en-us/red_hat_openstack_platform/13/html/security_and_hardening_guide/hardening_api_endpoints
+
+metadata:
+  - version: 0.1
+  - state: draft

@@ -17,12 +17,15 @@ description: |
   Once users download and install the malicious package or container image, it can compromise their systems and potentially cause significant harm, such as stealing sensitive data or taking control of the system.
 
 mitigations: 
+  - M1090
   - M1500
   - M1503
   - M1730
   - M1732
 
 detections: 
+  - D1090
+  - D1101
   - D1500
   - D1510
 
@@ -30,7 +33,7 @@ references:
   - https://www.bleepingcomputer.com/news/security/malicious-lolip0p-pypi-packages-install-info-stealing-malware/
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

@@ -1,0 +1,14 @@
+id: D1881
+type: Detection
+summary: Missing Referer header
+description: |
+  Check the Referer header in incoming HTTP requests to ensure that they match the expected source of the request. 
+  If the Referer header is missing or does not match the expected source, it could indicate a potential CSRF attack. However, note that the Referer header can be easily spoofed or omitted by some browsers, so this technique may not be foolproof.
+
+references:
+  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
+  - https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html
+
+metadata:
+  - version: 0.1
+  - state: draft

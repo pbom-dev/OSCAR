@@ -17,18 +17,20 @@ description: |
 
 mitigations: 
   - M1500
+  - M1502
   - M1503
   - M1720
   - M1732
 
 detections: 
   - D1500
+  - D1510
 
 references: 
   - https://cheatsheetseries.owasp.org/cheatsheets/Vulnerable_Dependency_Management_Cheat_Sheet.html
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

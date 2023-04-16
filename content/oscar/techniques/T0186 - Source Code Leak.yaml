@@ -9,21 +9,23 @@ realm:
 summary: Source Code Leak
 
 description: |
-          When source code is disclosed, it can lead to various risks, including the loss of intellectual property, legal issues, and competitive disadvantage. However, in the context of supply chain security, source code disclosure can expose vulnerabilities such as third-party library vulnerabilities, hard-coded secrets, code weaknesses, and logic bugs. These vulnerabilities can be exploited as initial access points to further attack the supply chain.
+  When source code is disclosed, it can lead to various risks, including the loss of intellectual property, legal issues, and competitive disadvantage. 
+  However, in the context of supply chain security, source code disclosure can expose vulnerabilities such as third-party library vulnerabilities, hard-coded secrets, code weaknesses, and logic bugs. 
+  These vulnerabilities can be exploited as initial access points to further attack the supply chain.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1661
+  - M1860
+  - M1861
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
-
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
+detections: 
+  - D1860
 
 references: 
   - https://sec.okta.com/articles/2022/12/okta-code-repositories
 
 metadata: 
+    version: 0.2
     state: draft
 
   

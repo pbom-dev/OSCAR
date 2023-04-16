@@ -1,0 +1,13 @@
+id: M1131
+type: Mitigation
+summary: Disable or lock compromised accounts
+description: |
+  Disable or lock the compromised user account to prevent further unauthorized access. 
+  This can be done through an administrative action, such as disabling the account in the user management console or contacting the service provider or IT department to take appropriate action.
+  
+references:
+  - https://auth0.com/docs/secure/attack-protection/breached-password-detection
+
+metadata:
+  - version: 0.1
+  - state: draft

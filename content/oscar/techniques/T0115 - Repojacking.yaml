@@ -18,10 +18,15 @@ description: |
   A malicious attacker can register the old GitHub username, recreate the repository, and use it to serve malicious code to any project that depends on it.
 
 mitigations: 
+  - M1502
+  - M1720
   - M1730
   - M1732
 
 detections: 
+  - D1260
+  - D1261
+  - D1262
   - D1500
 
 references: 
@@ -30,7 +35,7 @@ references:
   - https://blog.securityinnovation.com/repo-jacking-exploiting-the-dependency-supply-chain
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

@@ -20,6 +20,8 @@ mitigations:
   - M1720
 
 detections: 
+  - D1261
+  - D1262
   - D1510
 
 references: 
@@ -27,7 +29,7 @@ references:
   - https://github.com/prowler-cloud/prowler
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

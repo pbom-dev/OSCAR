@@ -19,11 +19,13 @@ description: |
   This can result in a wide-scale compromise of systems that use the affected code.
 
 mitigations: 
+  - M1110
   - M1503
   - M1730
   - M1732
 
 detections: 
+  - D1260
   - D1510
 
 references: 
@@ -32,7 +34,7 @@ references:
   - https://www.legitsecurity.com/blog/how-a-massive-widespread-malware-attack-almost-occurred-on-github
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

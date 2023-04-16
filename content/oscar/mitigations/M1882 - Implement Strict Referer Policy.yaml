@@ -1,0 +1,14 @@
+id: M1882
+type: Mitigation
+summary: Implement Strict Referer Policy
+description: |
+  Implementing a strict Referer policy can help mitigate CSRF attacks. 
+  The Referer header is sent by web browsers in HTTP requests and indicates the source of the request. By validating the Referer header on the server side and only allowing requests from trusted sources, CSRF attacks can be mitigated.
+
+references:
+  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
+  - https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html
+
+metadata:
+  - version: 0.1
+  - state: draft

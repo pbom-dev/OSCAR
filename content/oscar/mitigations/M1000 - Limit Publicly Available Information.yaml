@@ -1,0 +1,12 @@
+id: M1000
+type: Mitigation
+summary: Limit Publicly Available Information
+description: |
+  Be cautious about what information is publicly available, including on websites, social media, and other public sources, as it can provide valuable clues to attackers about naming conventions or other system details.
+
+references:
+  - https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/01-Information_Gathering/README
+
+metadata:
+  - version: 0.1
+  - state: draft

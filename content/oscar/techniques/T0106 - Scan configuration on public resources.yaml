@@ -15,16 +15,21 @@ description: |
   By scanning the configuration of public resources, an attacker can develop an understanding of the target's attack surface and identify vulnerabilities that can be exploited in future attacks.
 
 mitigations: 
+  - M1000
   - M1550
+  - M1720
 
-detections: 
+detections:
+  - D1260
+  - D1261
+  - D1262
   - D1510
 
 references: 
   - https://www.scmagazine.com/resource/cloud-security/5-challenges-to-public-cloud-security
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

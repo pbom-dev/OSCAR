@@ -1,0 +1,15 @@
+id: M1260
+type: Mitigation
+summary: Implement least privilege access
+description: |
+  When granting permissions, you decide who is getting what permissions to which Amazon S3 resources or other cloud storages. 
+  You enable specific actions that you want to allow on those resources. 
+  Therefore you should grant only the permissions that are required to perform a task. 
+  Implementing least privilege access is fundamental in reducing security risk and the impact that could result from errors or malicious intent.
+
+references:
+  - https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html
+
+metadata:
+  - version: 0.1
+  - state: draft

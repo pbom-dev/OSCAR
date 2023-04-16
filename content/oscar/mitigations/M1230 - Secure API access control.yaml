@@ -1,0 +1,13 @@
+id: M1230
+type: Mitigation
+summary: Secure API access control
+description: |
+  Implement strong authentication and authorization mechanisms for accessing APIs, including the use of API keys, access tokens, or other secure mechanisms to ensure that only authorized users or applications can access internal APIs.
+
+references:
+  - https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html
+  - https://owasp.org/www-project-api-security/
+
+metadata:
+  - version: 0.1
+  - state: draft

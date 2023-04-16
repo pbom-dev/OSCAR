@@ -1,0 +1,13 @@
+id: M1124
+type: Mitigation
+summary: Use token encryption and obfuscation
+description: |
+  Use encryption or obfuscation techniques to protect tokens when they are stored in applications or transmitted over networks. 
+  This can prevent attackers from easily extracting or intercepting tokens from source code or network traffic.
+  
+references:
+  - https://auth0.com/docs/secure/tokens/token-best-practices
+
+metadata:
+  - version: 0.1
+  - state: draft

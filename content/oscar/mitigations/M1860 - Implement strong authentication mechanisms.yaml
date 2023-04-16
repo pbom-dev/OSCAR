@@ -1,0 +1,17 @@
+id: M1860
+type: Mitigation
+summary: Implement strong authentication mechanisms
+description: |
+  Authentication is the process of verifying the identity of a user or entity accessing the SCM system. 
+  Strong authentication typically involves using multiple factors to verify the user's identity, beyond just a username and password. 
+  This may include factors such as something the user knows (e.g., password), something the user has (e.g., smart card or token), and something the user is (e.g., biometric data like fingerprint or facial recognition). 
+  Multi-factor authentication (MFA) can significantly enhance the security of SCM systems by adding an additional layer of protection against unauthorized access.
+
+references:
+  - https://docs.gitlab.com/ee/topics/authentication/
+  - https://docs.github.com/en/authentication
+  - https://about.gitlab.com/blog/2022/03/21/security-hygiene-best-practices-for-gitlab-users/
+
+metadata:
+  - version: 0.1
+  - state: draft

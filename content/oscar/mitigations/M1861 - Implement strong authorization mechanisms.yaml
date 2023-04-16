@@ -1,0 +1,15 @@
+id: M1861
+type: Mitigation
+summary: Implement strong authorization mechanisms
+description: |
+  Strong authorization ensures that users only have access to the resources and actions that are necessary for their job functions and responsibilities, and nothing more. 
+  This can be achieved through proper access controls, such as role-based access control (RBAC) or attribute-based access control (ABAC), which define fine-grained permissions and privileges for users, groups, and repositories in the SCM system.
+  Regularly review user permissions and remove all unnecessary permissions for specific users.
+
+references:
+  - https://docs.gitlab.com/ee/user/permissions.html
+  - https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/repository-roles-for-an-organization
+
+metadata:
+  - version: 0.1
+  - state: draft

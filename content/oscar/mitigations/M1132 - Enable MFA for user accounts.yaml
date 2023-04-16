@@ -1,0 +1,13 @@
+id: M1132
+type: Mitigation
+summary: Enable MFA for user accounts
+description: |
+  Enable MFA for all user accounts, which adds an additional layer of security beyond passwords. 
+  This can help prevent unauthorized access even if the user account credentials are compromised.
+  
+references:
+  - https://cheatsheetseries.owasp.org/cheatsheets/Multifactor_Authentication_Cheat_Sheet.html
+
+metadata:
+  - version: 0.1
+  - state: draft

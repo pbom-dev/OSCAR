@@ -9,24 +9,25 @@ realm:
 summary: Command injection
 
 description: |
-    OS command injection is a web security vulnerability that allows an attacker to execute arbitrary operating system commands on the server that is running an application.
-    Command injection attacks are possible when an application passes unsafe user supplied data (forms, cookies, HTTP headers etc.) to a system shell. 
-    In this attack, the attacker-supplied operating system commands are usually executed with the privileges of the vulnerable application. 
-    Command injection attacks are possible largely due to insufficient input validation
+  OS command injection is a web security vulnerability that allows an attacker to execute arbitrary operating system commands on the server that is running an application.
+  Command injection attacks are possible when an application passes unsafe user supplied data (forms, cookies, HTTP headers etc.) to a system shell. 
+  In this attack, the attacker-supplied operating system commands are usually executed with the privileges of the vulnerable application. 
+  Command injection attacks are possible largely due to insufficient input validation
 
 mitigations:
   - M1180
   - M1181
-  - Applications should run using the lowest privileges that are required to accomplish the necessary tasks
-  - If possible, create isolated accounts with limited privileges that are only used for a single task
+  - M1182
+  - M1720
 
 detections:
   - D1170
+  - D1171
 
 references:
   - https://owasp.org/www-community/attacks/Command_Injection
   - https://portswigger.net/web-security/os-command-injection
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft

@@ -1,0 +1,13 @@
+id: D1090
+type: Detection
+summary: Implement package or image integrity verification
+description: |
+  Implement mechanisms to verify the integrity of packages or container images downloaded from public registries, such as digital signatures, checksums, or hash values. 
+  Compare the downloaded packages or images against trusted sources to ensure that they have not been tampered with during the upload process.
+  
+references:
+  - https://owasp.org/www-project-top-10-ci-cd-security-risks/CICD-SEC-09-Improper-Artifact-Integrity-Validation
+
+metadata:
+  - version: 0.1
+  - state: draft

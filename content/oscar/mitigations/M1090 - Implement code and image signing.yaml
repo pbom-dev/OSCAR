@@ -1,0 +1,13 @@
+id: M1090
+type: Mitigation
+summary: Implement code and image signing
+description: |
+  Require digital signatures or code signing certificates for packages or container images uploaded to public registries. 
+  This helps ensure the integrity and authenticity of the artifacts, and helps detect any tampering or malicious modifications.
+
+references:
+  - https://owasp.org/www-project-top-10-ci-cd-security-risks/CICD-SEC-09-Improper-Artifact-Integrity-Validation
+
+metadata:
+  - version: 0.1
+  - state: draft

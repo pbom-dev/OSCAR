@@ -1,0 +1,12 @@
+id: M1122
+type: Mitigation
+summary: Implement token management best practices
+description: |
+  Follow token management best practices, such as generating tokens with sufficient entropy and length (e.g., at least 16 characters), rotating tokens periodically, and avoiding hardcoding tokens in source code or scripts.
+  
+references:
+  - https://auth0.com/docs/secure/tokens/token-best-practices
+
+metadata:
+  - version: 0.1
+  - state: draft

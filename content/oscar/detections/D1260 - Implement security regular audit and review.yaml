@@ -1,0 +1,13 @@
+id: D1260
+type: Detection
+summary: Implement regular security audit and review
+description: |
+  Conduct regular security audits and vulnerability assessments of your systems and storages configurations to identify and address any potential misconfigurations or vulnerabilities that could lead to exposed storage. 
+  This includes reviewing access controls, encryption settings, and other security configurations to ensure they are aligned with best practices and organizational security policies.
+
+references:
+  - https://www.strikegraph.com/blog/what-is-a-security-audit
+
+metadata:
+  - version: 0.1
+  - state: draft

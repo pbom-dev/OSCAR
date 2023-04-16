@@ -1,0 +1,13 @@
+id: D1261
+type: Detection
+summary: Implement penetration testing
+description: |
+  Penetration testing, also known as ethical hacking or vulnerability assessment, is a proactive approach to mitigating cybersecurity risks. 
+  It involves simulating real-world cyber attacks on a system, network, or application in a controlled and authorized manner to identify vulnerabilities and weaknesses that could be exploited by malicious actors.
+
+references:
+  - https://www.cloudflare.com/learning/security/glossary/what-is-penetration-testing/
+
+metadata:
+  - version: 0.1
+  - state: draft

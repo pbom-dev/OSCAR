@@ -9,21 +9,28 @@ realm:
 summary: Exposed Storage
 
 description: |
-          Attackers are constantly searching for any data that might help them achieve their malicious goals. Exposed storage such as S3 buckets are highly values since it might contain sensetivie information that can be used to yield an attack. For example: file system snapshots that might contain code or secrets.
+  Attackers are constantly searching for any data that might help them achieve their malicious goals. 
+  Exposed storage such as S3 buckets are highly values since it might contain sensetivie information that can be used to yield an attack. 
+  For example: file system snapshots that might contain code or secrets.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1240
+  - M1260
+  - M1261
+  - M1550
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
-
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
+detections: 
+  - D1510
+  - D1260
+  - D1261
+  - D1262
 
 references: 
-  -
+  - https://www.trendmicro.com/vinfo/es/security/news/virtualization-and-cloud/a-misconfigured-amazon-s3-exposed-almost-50-thousand-pii-in-australia
+  - https://www.darkreading.com/application-security/cloud-misconfig-exposes-3tb-sensitive-airport-data-amazon-s3-bucket
 
 metadata: 
+    version: 0.2
     state: draft
 
  

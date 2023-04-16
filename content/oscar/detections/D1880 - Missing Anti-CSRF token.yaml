@@ -1,0 +1,14 @@
+id: D1880
+type: Detection
+summary: Missing Anti-CSRF token
+description: |
+  If your web application implements anti-CSRF tokens, validate the presence and correctness of the token in each incoming request. 
+  If the token is missing or does not match the expected value, it could indicate a CSRF attack.
+
+references:
+  - https://owasp.org/www-community/Anti_CRSF_Tokens_ASP-NET
+  - https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html
+
+metadata:
+  - version: 0.1
+  - state: draft

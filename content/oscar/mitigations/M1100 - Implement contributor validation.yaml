@@ -1,0 +1,13 @@
+id: M1110
+type: Mitigation
+summary: Implement contributor validation
+description: |
+  Verify the identity and trustworthiness of code contributors before accepting their code contributions to the open-source repository. 
+  This can include validating their identity, reputation, and previous contributions, and using a well-defined process for onboarding new contributors to ensure that they are legitimate and not malicious actors.
+
+references:
+  - https://thenewstack.io/php-supply-chain-attack-shows-open-sources-virtues-and-vices/
+
+metadata:
+  - version: 0.1
+  - state: draft

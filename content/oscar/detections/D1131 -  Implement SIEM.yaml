@@ -1,0 +1,12 @@
+id: D1131
+type: Detection
+summary: Implement SIEM
+description: |
+  Implement a SIEM system to centralize and analyze logs and events from various sources, including user account-related activities. Use SIEM rules or correlation rules to detect any abnormal or suspicious user account-related activities, such as multiple failed login attempts, changes to account settings outside of normal patterns, or simultaneous login attempts from different locations.
+  
+references:
+  - https://www.microsoft.com/en-ww/security/business/security-101/what-is-siem
+
+metadata:
+  - version: 0.1
+  - state: draft

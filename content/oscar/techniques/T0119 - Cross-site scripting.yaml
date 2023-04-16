@@ -21,9 +21,11 @@ mitigations:
   - M1192
   - M1193
   - M1194
+  - M1883
 
 detections:
   - D1170
+  - D1171
 
 references:
   - https://owasp.org/www-community/attacks/xss/
@@ -31,6 +33,6 @@ references:
   - https://portswigger.net/web-security/cross-site-scripting
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
