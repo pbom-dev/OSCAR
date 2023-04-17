@@ -7,7 +7,7 @@ realm:
   - CI/CD Posture
   - Open Source Security
 
-summary: Vulnerable CICD template
+summary: Vulnerable CI/CD template
 
 description: |
   Vulnerable CI/CD template attack is an attack technique that targets the templates used in the CI/CD pipeline configuration. 

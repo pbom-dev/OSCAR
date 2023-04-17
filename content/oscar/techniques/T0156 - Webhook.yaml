@@ -6,7 +6,7 @@ tactic: Exfiltration
 realm: 
   - SCM Posture
 
-summary: Webhook
+summary: Exfiltration over webhooks
 
 description: |
   A Webhook attack is a technique used by threat actors to gain unauthorized access to a target's web application and exfiltrate data from it. 

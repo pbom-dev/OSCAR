@@ -1,0 +1,33 @@
+id: T0191
+type: Technique
+
+tactic: Impact
+
+realm:
+  - Cloud Security
+  - Infrastructure as code
+  - Code Security
+
+summary: Malicious code in artifacts
+
+description: |
+          By infecting artifacts with malicious code, attackers can gain access to a large number of unsuspecting customers who use these components in their systems or products. This can allow the attackers to steal sensitive information, disrupt operations, or take control of affected systems.
+          Furthermore, because the malicious code is embedded within a seemingly legitimate component, it can be difficult to detect and remove. This makes supply chain attacks particularly dangerous and challenging to defend against.
+          Overall, the goal of infecting artifacts with malicious code is to spread the malware to as many targets as possible, while remaining undetected for as long as possible.
+
+mitigations: # REQUIRED - <list> -reference to mitigation references
+  - 
+
+detections: # REQUIRED - <list> - reference to detection defintitions
+  - 
+
+subtechinques: # OPTIONAL <list> - reference to TechIDs
+  - 
+
+references: 
+  - https://en.wikipedia.org/wiki/2020_United_States_federal_government_data_breach
+
+metadata: 
+    state: draft
+
+  

@@ -6,7 +6,7 @@ tactic: Initial Access
 realm: 
   - CI/CD Posture
 
-summary: Exposed WebHook
+summary: Exposed webHook
 
 description: |
   Exposed WebHook attack in CI/CD posture is a technique where an attacker exploits a publicly accessible or improperly authenticated and authorized WebHook endpoint in a CI/CD setup. 
