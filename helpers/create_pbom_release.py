@@ -169,6 +169,7 @@ def generate_matrix(oscar_source_path, pbom_data_path):
                 "name": y['summary'],
                 "tooltip": y['summary'],
                 "url": f"https://pbom.dev/techniques/&t_id={y['id']}",
+                "description": y['description'],
                 #"subTechniques": [] if y['subtechinques']==[None] else y['subtechinques'],
                 #"subTechniuqesAmount": len([] if y['subtechinques']==[None] else y['subtechinques']),
                 "version": "1.0",
