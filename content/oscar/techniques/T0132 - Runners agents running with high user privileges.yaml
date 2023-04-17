@@ -7,7 +7,7 @@ realm:
   - CI/CD Posture
   - Container Security
 
-summary: Runners agents running with high user privileges
+summary: Overprivileged CI/CD Runners
 
 description: |
    A container/runner agent privilege escalation attack is a security threat where an attacker exploits vulnerabilities in a container/runner agent to gain elevated privileges or access to sensitive resources they are not authorized to have. 

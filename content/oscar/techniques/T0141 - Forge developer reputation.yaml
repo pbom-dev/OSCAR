@@ -6,13 +6,10 @@ tactic: Resource Development
 realm: 
   - Open Source Security
 
-summary: Forge developer reputation
+summary: Fake developer reputation (Starjacking)
 
 description: |
-  A forge developer reputation attack is a type of cyber attack that involves an attacker posing as a trusted developer to gain access to a software repository or community. In this attack, the attacker creates a fake account that impersonates a legitimate developer or organization, often using similar or identical usernames and avatars. 
-  The attacker then uses this fake account to gain access to a software repository or community, where they may be able to contribute or distribute malicious code.
-  The goal of the forge developer reputation attack is to exploit the trust that users place in the legitimate developer or organization to gain access to sensitive information or to distribute malware or other harmful code. 
-
+  Third-party package managers, such as Node Package Manager, PyPi, and Yarn, are commonly used for integrating open-source software packages into existing development environments. These package managers provide metadata about the software and often include a link to the package's source code repository to help developers assess the software's reliability. One way developers evaluate the trustworthiness of a package is by checking its popularity, which is typically measured by the number of "Stars" the package has received. However, some package managers do not validate the connection between the package and its source code repository, which leaves them vulnerable to attacks. Malicious actors can manipulate the popularity statistics of a package by associating a popular source code repository URL with a malicious package, leading developers to unwittingly incorporate the malicious code into their development environment.
 mitigations: 
   - M1731
 
@@ -22,6 +19,7 @@ detections:
 
 references: 
   - https://thenewstack.io/php-supply-chain-attack-shows-open-sources-virtues-and-vices/
+  - https://checkmarx.com/blog/starjacking-making-your-new-open-source-package-popular-in-a-snap/
 
 metadata: 
     version: 0.1
