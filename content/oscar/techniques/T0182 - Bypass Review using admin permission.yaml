@@ -7,7 +7,7 @@ realm:
   - CI/CD Posture
   - SCM Posture
 
-summary: Bypass Review using admin permission
+summary: Bypass review using admin permission
 
 description: |
   The Bypass Review using admin permission attack technique refers to a defense evasion tactic where an attacker gains administrative access to a CI/CD pipeline and uses that access to bypass security reviews of code changes.

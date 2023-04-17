@@ -8,7 +8,7 @@ realm:
   - Container Security
   - Open Source Security
 
-summary: Runtime Backdoor
+summary: Runtime backdoor
 
 description: |
   A runtime backdoor attack is a type of cyber attack where an attacker gains unauthorized access to a computer system or network and installs a malicious software or code that allows them to control the system or steal sensitive information.

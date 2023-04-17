@@ -7,7 +7,7 @@ realm:
   - Cloud Security
   - Infrastructure as code
 
-summary: Weak Encryption
+summary: Weak encryption
 
 description: |
           It is recommended to use adequate encryption for it to be affective - meaning to maintaine confidentiality of data. Use of obosolete/weak cihpers and hash functions is discouredged  

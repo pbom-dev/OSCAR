@@ -6,7 +6,7 @@ tactic: Impact
 realm: 
   - SCM Posture
 
-summary: Source Code Leak
+summary: Source code leak
 
 description: |
           When source code is disclosed, it can lead to various risks, including the loss of intellectual property, legal issues, and competitive disadvantage. However, in the context of supply chain security, source code disclosure can expose vulnerabilities such as third-party library vulnerabilities, hard-coded secrets, code weaknesses, and logic bugs. These vulnerabilities can be exploited as initial access points to further attack the supply chain.
