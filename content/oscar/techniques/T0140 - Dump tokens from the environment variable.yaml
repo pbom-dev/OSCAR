@@ -10,7 +10,7 @@ realm:
   - Infrastructure as code
   - Secrets Hygiene
 
-summary: Dump tokens from the environment variable
+summary: Harvest tokens from environment variables
 
 description: |
   This type of attack involves searching for environment variables that may contain sensitive information and dumping their values to gain access to the associated resources.
