@@ -6,7 +6,7 @@ tactic: Impact
 realm: 
   - SCM Posture
 
-summary: Delete repositories for DoS
+summary: Delete repositories
 
 description: |
   A delete repository attack technique in a CI/CD pipeline is a type of denial-of-service (DoS) attack that targets the code repositories used by the pipeline. 
