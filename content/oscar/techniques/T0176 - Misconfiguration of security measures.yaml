@@ -6,7 +6,7 @@ tactic: Defense Evasion
 realm: 
   - Cloud Security
 
-summary: Misconfiguration of security measures
+summary: Misconfigured security measures
 
 description: |
   Misconfiguration of security measures refers to an attack technique where an attacker takes advantage of misconfigured security settings in cloud environments to evade detection and launch further attacks. 

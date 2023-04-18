@@ -1,0 +1,26 @@
+id: T0193
+type: Technique
+
+tactic: Collection
+
+realm: 
+  - Cloud Security
+
+summary: Sensitive information in environment variables
+
+description: |
+      Environment variables are a type of configuration parameter that contain information about the environment in which an application is running. These variables can be set and accessed by the operating system or application, and may contain sensitive information such as passwords, API keys, or other credentials.
+
+mitigations: 
+  - 
+
+detections: 
+  - 
+
+references: 
+  - 
+metadata: 
+    version: 0.1
+    state: draft
+
+  
