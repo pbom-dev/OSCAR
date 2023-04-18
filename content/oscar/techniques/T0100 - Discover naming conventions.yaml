@@ -17,19 +17,20 @@ description: |
   Alternatively, an attacker might analyze naming conventions to determine the structure and organization of a codebase, which could aid in future attacks.
 
 mitigations: 
+  - M1000
+  - M1001
   - M1503
   - M1720
-  - M1730
-  - M1732
 
 detections: 
   - D1500
+  - D1510
 
 references:
   - https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/01-Information_Gathering/README
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

@@ -16,10 +16,16 @@ description: |
   This can occur when the default security settings for cloud storage services are not properly adjusted, or when access controls are not regularly reviewed and updated.
 
 mitigations: 
+  - M1240
+  - M1260
+  - M1261
   - M1550
 
 detections: 
   - D1510
+  - D1260
+  - D1261
+  - D1262
 
 references: 
   - https://www.trendmicro.com/vinfo/es/security/news/virtualization-and-cloud/a-misconfigured-amazon-s3-exposed-almost-50-thousand-pii-in-australia

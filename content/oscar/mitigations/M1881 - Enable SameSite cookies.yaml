@@ -1,0 +1,14 @@
+id: M1881
+type: Mitigation
+summary: Enable SameSite cookies
+description: |
+  Same-Site cookies are designed to restrict the transmission of cookies to only the same origin (i.e., the same domain and protocol) as the original website. 
+  This can help prevent CSRF attacks by ensuring that cookies are not sent to malicious websites.
+
+references:
+  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie
+  - https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html
+
+metadata:
+  - version: 0.1
+  - state: draft

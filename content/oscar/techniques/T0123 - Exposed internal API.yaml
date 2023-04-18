@@ -17,10 +17,15 @@ description: |
   The impact of this attack can be severe as attackers can bypass traditional security controls and gain access to internal systems or data that are not meant to be publicly accessible.
 
 mitigations: 
+  - M1230
+  - M1231
+  - M1232
   - M1550
   - M1720
 
 detections: 
+  - D1230
+  - D1231
   - D1510
 
 references: 
@@ -28,7 +33,7 @@ references:
   - https://techcrunch.com/2023/01/19/t-mobile-data-breach/
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

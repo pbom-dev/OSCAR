@@ -22,8 +22,11 @@ mitigations:
   - M1503
   - M1730
   - M1732
+  - M1860
+  - M1861
 
 detections: 
+  - D1090
   - D1500
   - D1510
 
@@ -32,7 +35,7 @@ references:
   - https://owasp.org/www-project-top-10-ci-cd-security-risks/CICD-SEC-09-Improper-Artifact-Integrity-Validation
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

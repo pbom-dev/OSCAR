@@ -22,9 +22,11 @@ description: |
 mitigations: 
   - M1500
   - M1503
+  - M1720
   - M1732
 
 detections: 
+  - D1262
   - D1500
   - D1510
 
@@ -33,7 +35,7 @@ references:
   - https://thenewstack.io/php-supply-chain-attack-shows-open-sources-virtues-and-vices/
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

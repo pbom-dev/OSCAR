@@ -21,6 +21,9 @@ mitigations:
 
 detections: 
   - D1170
+  - D1260
+  - D1261
+  - D1262
   - D1500
   - D1510
 
@@ -28,7 +31,7 @@ references:
   - https://docs.github.com/en/code-security/supply-chain-security/end-to-end-supply-chain/securing-code
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

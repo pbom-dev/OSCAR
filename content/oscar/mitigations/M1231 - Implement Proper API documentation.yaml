@@ -1,0 +1,12 @@
+id: M1231
+type: Mitigation
+summary: Implement Proper API documentation
+description: |
+  Clearly document the intended use and accessibility of each API endpoint and provide proper documentation to internal developers and third-party developers to prevent accidental exposure of internal APIs to the public.
+
+references:
+  - https://swagger.io/blog/api-documentation/what-is-api-documentation-and-why-it-matters/
+
+metadata:
+  - version: 0.1
+  - state: draft

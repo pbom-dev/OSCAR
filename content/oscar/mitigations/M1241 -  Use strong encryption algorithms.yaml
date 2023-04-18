@@ -1,0 +1,14 @@
+id: M1241
+type: Mitigation
+summary: Use strong encryption algorithms
+description: |
+  Implementing strong encryption algorithms with appropriate key lengths and security parameters can significantly increase the resilience of encryption at rest mechanisms. 
+  Organizations should use industry-standard encryption algorithms that are widely recognized and reviewed by the security community.
+  For example, AES, ECC, RSA.
+
+references:
+  - https://www.simplilearn.com/data-encryption-methods-article
+
+metadata:
+  - version: 0.1
+  - state: draft

@@ -16,9 +16,13 @@ description: |
   Without encryption, sensitive data such as login credentials, financial information, or personal data can be easily accessed by attackers, putting the data and the users at risk.
 
 mitigations: 
+  - M1241
   - M1250
 
 detections: 
+  - D1260
+  - D1261
+  - D1262
   - D1510
 
 references: 
@@ -26,7 +30,7 @@ references:
   - https://cloud.google.com/docs/security/encryption-in-transit
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

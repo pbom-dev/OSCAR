@@ -1,0 +1,14 @@
+id: D1130
+type: Detection
+summary: 
+description: |
+  Implement monitoring mechanisms that track and analyze account activity, such as changes to permissions, creation or deletion of resources, or modifications to critical settings. 
+  Regularly review and analyze account activity logs to detect any unauthorized or suspicious activities that may indicate a compromised user account.
+  
+references:
+  - https://docs.gitlab.com/ee/administration/audit_events.html
+  - https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization
+
+metadata:
+  - version: 0.1
+  - state: draft

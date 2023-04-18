@@ -24,10 +24,15 @@ description: |
 mitigations: 
     - M1120
     - M1121
+    - M1122
+    - M1123
+    - M1124
 
 detections:
     - D1120
-    - D1121
+    - D1260
+    - D1261
+    - D1262
     - D1500
 
 subtechniques:
@@ -38,5 +43,5 @@ references:
     - https://support.google.com/googleapi/answer/6310037?hl=en
 
 metadata:
-    version: 0.1
+    version: 0.2
     state: draft

@@ -1,0 +1,14 @@
+id: M1182
+type: Mitigation
+summary: Implement least privilege
+description: |
+  Ensure that the application runs with the least privileges necessary to perform its tasks. 
+  Avoid running the application with excessive privileges or as the root/administrator user, as this can potentially allow an attacker to gain unauthorized access to the entire system.
+
+
+references:
+  - https://www.cyberark.com/what-is/least-privilege/
+
+metadata:
+  - version: 0.1
+  - state: draft

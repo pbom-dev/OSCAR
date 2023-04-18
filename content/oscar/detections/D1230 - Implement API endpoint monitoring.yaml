@@ -1,0 +1,13 @@
+id: D1230
+type: Detection
+summary: Implement API endpoint monitoring
+description: |
+  Implement monitoring mechanisms to track all API endpoints and their accessibility status. 
+  Regularly review logs and audit trails to identify any API endpoints that are exposed to the public but are intended for internal use only.
+
+references:
+  - https://www.stackhawk.com/blog/api-security-testing-vs-api-security-monitoring/
+
+metadata:
+  - version: 0.1
+  - state: draft

@@ -17,6 +17,7 @@ description: |
   Alternatively, an attacker might analyze the technology stack to determine the overall architecture of the application and identify potential attack vectors or weak spots.
 
 mitigations: 
+  - M1000
   - M1503
   - M1720
   - M1730
@@ -29,7 +30,7 @@ references:
   - https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/01-Information_Gathering/README
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

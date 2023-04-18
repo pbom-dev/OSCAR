@@ -19,12 +19,17 @@ description: |
   This can result in data breaches, system downtime, reputation damage, and financial losses.
 
 mitigations: 
+  - M1130
+  - M1131
+  - M1132
   - M1450
   - M1451
   - M1550
   - M1661
 
 detections: 
+  - D1130
+  - D1131
   - D1510
   - D1520
 
@@ -33,7 +38,7 @@ references:
   - https://rhinosecuritylabs.com/aws/aws-iam-credentials-get-compromised/
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

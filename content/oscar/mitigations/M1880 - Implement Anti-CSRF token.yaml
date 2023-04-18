@@ -1,0 +1,14 @@
+id: M1880
+type: Mitigation
+summary: Implement Anti-CSRF token
+description: |
+  Implementing anti-CSRF tokens, also known as CSRF tokens or synchronization tokens, can be an effective mitigation technique. 
+  A unique token is generated for each user session and included in each form or request. 
+  The server verifies the presence and validity of the token in each incoming request, ensuring that it originated from the same user session and not from a malicious source.
+
+references:
+  - https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html
+
+metadata:
+  - version: 0.1
+  - state: draft

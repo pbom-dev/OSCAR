@@ -16,15 +16,17 @@ description: |
   By discovering internal artifact names, an attacker can also gain insight into the organization's software development practices, and potentially identify development teams or individuals that are responsible for creating and maintaining specific applications or components.
 
 mitigations: 
+  - M1001
   - M1503
   - M1732
 
 detections: 
+  - D1260
   - D1500
   - D1510
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

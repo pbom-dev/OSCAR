@@ -1,0 +1,14 @@
+id: M1883
+type: Mitigation
+summary: Implement Web Application Firewall
+description: |
+  A web application firewall (WAF) is a security control that is designed to protect web applications from various types of cyber threats, such as web-based attacks, including Cross-Site Scripting (XSS), SQL Injection, Cross-Site Request Forgery (CSRF), and other application-layer attacks.
+  A WAF acts as a filter between a web application and the incoming requests from clients, such as web browsers or mobile apps. 
+  It examines the incoming requests and responses to and from the web application, and applies a set of predefined security rules to identify and block malicious requests or traffic.
+
+references:
+  - https://www.cloudflare.com/learning/ddos/glossary/web-application-firewall-waf/
+
+metadata:
+  - version: 0.1
+  - state: draft

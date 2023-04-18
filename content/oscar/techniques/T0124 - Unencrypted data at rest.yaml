@@ -19,8 +19,12 @@ description: |
 
 mitigations: 
   - M1240
+  - M1241
 
 detections: 
+  - D1260
+  - D1261
+  - D1262
   - D1510
 
 references: 
@@ -29,7 +33,7 @@ references:
   - https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-atrest
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

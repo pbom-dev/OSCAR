@@ -1,0 +1,12 @@
+id: M1001
+type: Mitigation
+summary: Avoid Predictable Naming Conventions
+description: |
+  Use random, unique, and non-predictable naming conventions for resources in the system or network to make it difficult for attackers to enumerate and gather information.
+
+references:
+  - https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/01-Information_Gathering/README
+
+metadata:
+  - version: 0.1
+  - state: draft

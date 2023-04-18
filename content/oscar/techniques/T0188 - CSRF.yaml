@@ -9,21 +9,29 @@ realm:
 summary: Cross Site Request Forgery
 
 description: |
-          Cross Site Request Forgert, or CSRF, may have different affects, depending on the application code. It is widely used in conjunction with spear-phising attacks where adversaries will attempt to abuse authenticated users sessions to perform actions that will allow them to take over a server.
+  Cross Site Request Forgert, or CSRF, may have different affects, depending on the application code. 
+  It is widely used in conjunction with spear-phising attacks where adversaries will attempt to abuse authenticated users sessions to perform actions that will allow them to take over a server.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1720
+  - M1880
+  - M1881
+  - M1882
+  - M1883
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
-
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
+detections: 
+  - D1261
+  - D1262
+  - D1171
+  - D1880
+  - D1881
 
 references: 
-  -
+  - https://www.securityweek.com/csrf-vulnerability-kudu-scm-allowed-code-execution-azure-services/
+  - https://owasp.org/www-community/attacks/csrf
 
 metadata: 
+    version: 0.2
     state: draft
 
   
