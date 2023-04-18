@@ -1,0 +1,13 @@
+id: M1301
+type: Mitigation
+summary: Implement log sanitization
+description: |
+  Configure log levels and verbosity to minimize the amount of sensitive information that is logged. 
+  Set appropriate log levels to ensure that only necessary information is logged, and avoid logging sensitive data unless absolutely necessary.
+
+references:
+  - https://sematext.com/blog/logging-levels/
+
+metadata:
+  - version: 0.1
+  - state: draft

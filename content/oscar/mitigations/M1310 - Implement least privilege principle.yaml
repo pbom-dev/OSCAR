@@ -1,0 +1,13 @@
+id: M1310
+type: Mitigation
+summary: Implement least privilege principle
+description: |
+  Follow the POLP, which involves granting users the minimum necessary privileges to perform their job functions, and avoid assigning excessive privileges to user accounts. 
+  Regularly review and update user privileges based on the principle of least privilege, and remove unnecessary privileges to reduce the risk of overprivileged accounts.
+
+references:
+  - https://www.cyberark.com/what-is/least-privilege/
+
+metadata:
+  - version: 0.1
+  - state: draft

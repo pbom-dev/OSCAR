@@ -1,0 +1,13 @@
+id: M1320
+type: Mitigation
+summary: Implement least privilege principle for containers
+description: |
+  Follow the principle of least privilege by granting only the necessary permissions and privileges to container/runner agents based on their required functionality. 
+  Avoid using privileged containers/runner agents unless absolutely necessary.
+
+references:
+  - https://medium.com/jobteaser-dev-team/docker-user-best-practices-a8d2ca5205f4
+
+metadata:
+  - version: 0.1
+  - state: draft

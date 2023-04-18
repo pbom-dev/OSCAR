@@ -1,0 +1,13 @@
+id: D1300
+type: Detection
+summary: Implement regular log reviews
+description: |
+   Conduct regular manual reviews of logs to identify any sensitive information that may have been inadvertently logged. 
+   This can involve reviewing log files for patterns or anomalies that may indicate sensitive information, or using search and filtering techniques to identify potential incidents.
+  
+references:
+  - https://devops.com/how-logs-can-empower-your-ci-cd-delivery-pipeline/
+
+metadata:
+  - version: 0.1
+  - state: draft

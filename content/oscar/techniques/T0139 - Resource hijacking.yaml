@@ -22,15 +22,20 @@ description: |
 mitigations: 
   - M1550
   - M1720
+  - M1860
+  - M1861
 
 detections: 
+  - D1260
+  - D1261
+  - D1262
   - D1510
 
 references: 
   - https://socprime.com/blog/purpleurchin-campaign-detection-a-new-crypto-mining-operation-massively-abuses-github-actions-and-other-popular-free-ci-cd-service-accounts/
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

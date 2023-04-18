@@ -32,7 +32,7 @@ references:
   - https://www.darkreading.com/application-security/cloud-misconfig-exposes-3tb-sensitive-airport-data-amazon-s3-bucket
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

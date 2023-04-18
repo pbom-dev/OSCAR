@@ -22,7 +22,7 @@ references:
   - https://checkmarx.com/blog/starjacking-making-your-new-open-source-package-popular-in-a-snap/
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

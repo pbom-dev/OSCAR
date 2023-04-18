@@ -22,6 +22,9 @@ mitigations:
   - M1720
 
 detections: 
+  - D1260
+  - D1261
+  - D1262
   - D1510
   - D1520
 
@@ -29,7 +32,7 @@ references:
   - https://duo.com/blog/beyond-s3-exposed-resources-on-aws
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

@@ -15,6 +15,8 @@ description: |
   If the logging settings are misconfigured, security teams may not have visibility into these types of network activities, making it easier for attackers to evade detection.
 
 mitigations: 
+  - M1440
+  - M1441
   - M1550
 
 detections: 
@@ -26,7 +28,7 @@ references:
   - https://blog.marcolancini.it/continuous-cloud-visibility/
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

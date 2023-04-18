@@ -17,16 +17,22 @@ description: |
   If the NSG rules for the database server are too permissive, allowing access from any IP address, an attacker could potentially gain access to the database server from anywhere on the internet.
 
 mitigations: 
+  - M1280
+  - M1281
+  - M1282
   - M1550
 
-detections: 
+detections:
+  - D1260
+  - D1261
+  - D1262
   - D1510
 
 references: 
   - https://sysdig.com/blog/aws-security-groups-guide/
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

@@ -1,0 +1,13 @@
+id: D1430
+type: Detection
+summary: Monitor for failed login attempts
+description: |
+  Set up monitoring and logging mechanisms to detect and alert on failed login attempts to external user accounts.
+  Monitor for patterns of suspicious login activity, such as multiple failed login attempts from different IP addresses or unusual login times or locations, which may indicate password cracking attempts.
+  
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

@@ -1,0 +1,13 @@
+id: M1290
+type: Mitigation
+summary: Double-checking package or container names
+description: |
+  Users should carefully review package or container names before downloading or installing them, and ensure they are spelled correctly. 
+  Double-checking the names can help identify any typos or subtle differences that may indicate a malicious package or container.
+
+references:
+  - https://blog.packagecloud.io/should-you-be-worried-about-typosquatting-or-url-hijacking/
+
+metadata:
+  - version: 0.1
+  - state: draft

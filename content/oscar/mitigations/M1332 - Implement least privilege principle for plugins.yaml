@@ -1,0 +1,13 @@
+id: M1332
+type: Mitigation
+summary: Implement least privilege principle for plugins
+description: |
+  Limit the privileges and permissions of plugins used in the CI/CD pipeline to the minimum necessary to perform their intended functions. 
+  Avoid using plugins with excessive or unnecessary privileges that could be exploited by attackers.  
+
+references:
+  - https://www.cyberark.com/what-is/least-privilege/
+
+metadata:
+  - version: 0.1
+  - state: draft

@@ -1,0 +1,13 @@
+id: M1311
+type: Mitigation
+summary: Implement multi-factor authentication
+description: |
+  Require multi-factor authentication (MFA) for user accounts, especially for privileged accounts. 
+  MFA adds an additional layer of security and can help prevent unauthorized access to user accounts, reducing the risk of overprivileged accounts being compromised.
+
+references:
+  - https://aws.amazon.com/what-is/mfa/
+
+metadata:
+  - version: 0.1
+  - state: draft

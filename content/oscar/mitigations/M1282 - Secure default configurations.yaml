@@ -1,0 +1,15 @@
+id: M1282
+type: Mitigation
+summary: Secure default configurations
+description: |
+  Configure network security groups, firewalls, and other network components with secure default settings. 
+  Avoid overly permissive settings that allow unrestricted access and default configurations that may be susceptible to attacks.
+
+references:
+  - https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html
+  - https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview
+  - https://www.fortinet.com/resources/cyberglossary/firewall-configuration
+
+metadata:
+  - version: 0.1
+  - state: draft

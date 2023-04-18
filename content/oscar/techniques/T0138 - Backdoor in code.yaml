@@ -21,14 +21,17 @@ mitigations:
   - M1731
   - M1732
 
-detections: 
+detections:
+  - D1260
+  - D1261
+  - D1262
   - D1510
 
 references: 
   - https://kerkour.com/supply-chain-attacks-and-backdoored-dependencies
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

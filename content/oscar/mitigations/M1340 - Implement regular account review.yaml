@@ -1,0 +1,14 @@
+id: M1340
+type: Mitigation
+summary: Implement regular account review
+description: |
+  Conduct regular reviews of user accounts in the CI/CD system to identify and remove any unnecessary or unused accounts. 
+  Review the privileges and permissions of user accounts to ensure they are aligned with job roles and responsibilities. 
+  Disable or remove user accounts promptly when they are no longer needed.  
+
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

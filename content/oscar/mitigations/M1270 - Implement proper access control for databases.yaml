@@ -1,0 +1,15 @@
+id: M1270
+type: Mitigation
+summary: Implement proper access control for databases
+description: |
+  Review and restrict security group rules, network ACLs, and firewall rules associated with the database to allow access only from authorized IP addresses or CIDR blocks. 
+  Avoid allowing unnecessary public access and follow the principle of least privilege by granting only the minimum permissions required for legitimate users and applications.
+
+references:
+  - https://docs.oracle.com/cd/B10500_01/server.920/a96524/c23acces.htm
+  - https://cloud.google.com/sql/docs/mysql/instance-access-control
+  - https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-database-security/#what-is-database-security
+
+metadata:
+  - version: 0.1
+  - state: draft
