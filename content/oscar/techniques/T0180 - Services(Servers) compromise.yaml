@@ -8,7 +8,7 @@ realm:
   - CI/CD Posture
   - SCM Posture
 
-summary: Services(Servers) compromise
+summary: Compromise services / servers
 
 description: |
   Services (servers) compromise attack in the supply chain is a type of attack that targets the servers hosting the software development and distribution infrastructure. 

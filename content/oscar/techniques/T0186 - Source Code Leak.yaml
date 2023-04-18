@@ -6,7 +6,7 @@ tactic: Impact
 realm: 
   - SCM Posture
 
-summary: Source Code Leak
+summary: Source code leak
 
 description: |
   When source code is disclosed, it can lead to various risks, including the loss of intellectual property, legal issues, and competitive disadvantage. 

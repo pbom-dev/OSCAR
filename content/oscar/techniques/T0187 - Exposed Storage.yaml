@@ -6,7 +6,7 @@ tactic: Reconnaissance
 realm: 
   - Cloud Security
 
-summary: Exposed Storage
+summary: Exposed storage
 
 description: |
   Attackers are constantly searching for any data that might help them achieve their malicious goals. 

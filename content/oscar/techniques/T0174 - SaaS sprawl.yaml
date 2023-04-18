@@ -4,7 +4,7 @@ type: Technique
 tactic: Defense Evasion
 
 realm: 
-  - Cloud Security
+  - Cloud resources sprawl
 
 summary: SaaS sprawl
 

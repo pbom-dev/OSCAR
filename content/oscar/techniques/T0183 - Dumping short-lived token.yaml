@@ -7,7 +7,7 @@ realm:
   - CI/CD Posture
   - Infrastructure as code
 
-summary: Dumping short-lived token
+summary: Harvesting short-lived token
 
 description: |
   This attack technique involves searching for short-lived tokens that are used during the CI/CD process and extracting them for later use in unauthorized activities.

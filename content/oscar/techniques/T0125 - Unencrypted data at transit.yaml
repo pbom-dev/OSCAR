@@ -7,7 +7,7 @@ realm:
   - Cloud Security
   - Infrastructure as code
 
-summary: Unencrypted data at transit
+summary: Unencrypted data in transit
 
 description: |
   Data encryption in transit refers to the process of encrypting data as it moves between two points over a network or the internet. 

@@ -6,7 +6,7 @@ tactic: Execution
 realm: 
   - Open Source Security
 
-summary: Package Manager
+summary: Package manager
 
 description: # REQUIRED - <key:value> - supports markdown
 

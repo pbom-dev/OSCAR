@@ -6,7 +6,7 @@ tactic: Persistence
 realm: 
   - CI/CD Posture
 
-summary: Scheduled TaskJob on self hosted runner
+summary: Scheduled tasks on self hosted runner
 
 description: |
   In this attack, the attacker gains access to a self-hosted runner, which is a server or a virtual machine that runs the CI/CD pipelines for an organization. 

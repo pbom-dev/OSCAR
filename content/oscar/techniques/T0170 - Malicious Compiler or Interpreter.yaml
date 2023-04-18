@@ -7,7 +7,7 @@ realm:
   - Cloud Security
   - Container Security
 
-summary: Malicious Compiler or Interpreter
+summary: Malicious compiler or interpreter
 
 description: |
   The malicious compiler or interpreter attack is a defense evasion technique where an attacker modifies the software development tools to insert malicious code into the final product. 

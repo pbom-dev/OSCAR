@@ -6,7 +6,7 @@ tactic: Exfiltration
 realm: 
   - SCM Posture
 
-summary: Code Repositroies Abuse
+summary: Exfiltration to code repositories
 
 description: |
   Adversaries may exfiltrate data to a code repository rather than over their primary command and control channel. 
