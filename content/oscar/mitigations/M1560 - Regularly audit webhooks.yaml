@@ -1,0 +1,13 @@
+id: M1560
+type: Mitigation
+summary: Regularly audit webhooks
+description: |
+  Organizations should regularly review and audit the webhooks used in their web applications to identify any unauthorized or malicious ones. 
+  Unused webhooks should be deleted, and new ones should be approved only after careful review.
+
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

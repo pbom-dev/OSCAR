@@ -1,0 +1,13 @@
+id: D1550
+type: Detection
+summary: Implement real-time monitoring of cloud resources
+description: |
+  Continuously monitor cloud resources to detect anomalous or suspicious behavior, such as unexpected changes to serverless functions, compute engines, or integration workflows.
+  
+
+references:
+  - https://bluexp.netapp.com/blog/aws-blg-aws-monitoring-tools-and-best-practices-monitor-what-matters
+
+metadata:
+  - version: 0.1
+  - state: draft

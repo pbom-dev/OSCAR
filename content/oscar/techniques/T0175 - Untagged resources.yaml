@@ -16,17 +16,22 @@ description: |
   This technique can be used to maintain access to the cloud environment even after the original point of entry has been remediated or patched. 
 
 mitigations: 
-  - 
+  - M1550
+  - M1750
+  - M1751
+  - M1752
 
 detections: 
-  - 
+  - D1131
+  - D1750
+  - D1751
 
 references: 
   - https://ismsguy.medium.com/treating-the-mishmash-of-missing-tag-resources-in-aws-using-the-cloud-custodian-part-1-63ca506f12f2
   - https://www.infoworld.com/article/3246986/better-cloud-management-through-cloud-resource-tagging.html
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

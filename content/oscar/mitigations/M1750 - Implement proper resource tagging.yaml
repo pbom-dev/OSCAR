@@ -1,0 +1,13 @@
+id: M1750
+type: Mitigation
+summary: Implement proper resource tagging
+description: |
+  Ensure that all cloud resources are properly tagged with meaningful labels and metadata. 
+  This can help to track and identify resources, making it easier to detect any unauthorized or untagged resources.
+
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

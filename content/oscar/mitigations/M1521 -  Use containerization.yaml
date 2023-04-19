@@ -1,0 +1,12 @@
+id: M1521
+type: Mitigation
+summary: Use containerization
+description: |
+  Use containerization or virtualization technologies to isolate build environments and prevent malicious code from spreading across multiple projects or systems.
+
+references:
+  - https://www.redhat.com/en/topics/containers/sandboxed-containers
+
+metadata:
+  - version: 0.1
+  - state: draft

@@ -1,0 +1,12 @@
+id: M1530
+type: Mitigation
+summary: Use multi-factor authentication
+description: |
+  Implement multi-factor authentication (MFA) for all users, including developers, to reduce the risk of unauthorized access to their workstations and other resources.
+
+references:
+  - https://aws.amazon.com/what-is/mfa/
+
+metadata:
+  - version: 0.1
+  - state: draft

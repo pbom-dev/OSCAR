@@ -1,0 +1,12 @@
+id: M1741
+type: Mitigation
+summary: Implement access controls and permissions for SaaS applications
+description: |
+  Implement access controls and permissions for SaaS applications, such as limiting access to certain users or departments and requiring multi-factor authentication for all users.
+
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

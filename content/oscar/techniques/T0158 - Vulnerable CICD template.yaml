@@ -18,18 +18,21 @@ description: |
   The attacker then waits for the target to use the modified template in their CI/CD pipeline, which can result in the attacker gaining access to sensitive data or systems.
 
 mitigations: 
+  - M1580
+  - M1581
   - M1720
   - M1732
 
 detections: 
   - D1510
+  - D1580
   - D1590
 
 references: 
   - https://cycode.com/github-actions-vulnerabilities/
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

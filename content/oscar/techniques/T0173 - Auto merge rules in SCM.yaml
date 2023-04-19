@@ -20,8 +20,11 @@ mitigations:
   - M1730
   - M1731
   - M1732
+  - M1860
+  - M1861
 
 detections:
+  - D1262
   - D1500
   - D1510
 
@@ -29,7 +32,7 @@ references:
   - https://securityintelligence.com/posts/abusing-source-code-management-systems/
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

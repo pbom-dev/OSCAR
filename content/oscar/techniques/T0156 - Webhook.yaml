@@ -18,6 +18,10 @@ description: |
 
 mitigations: 
   - M1550
+  - M1560
+  - M1561
+  - M1562
+  - M1563
 
 detections: 
   - D1510
@@ -29,7 +33,7 @@ references:
   - https://checkmarx.com/blog/webhook-party-malicious-packages-caught-exfiltrating-data-via-legit-webhook-services/
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

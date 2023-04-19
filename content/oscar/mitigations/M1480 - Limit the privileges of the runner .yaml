@@ -1,0 +1,13 @@
+id: M1480
+type: Mitigation
+summary: Limit the privileges of the runner
+description: |
+  Restrict the permissions of the self-hosted runner to the minimum necessary for it to run the CI/CD pipelines. 
+  This can help prevent an attacker from using the runner to access sensitive data or execute malicious code.
+
+references:
+  - https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions#hardening-for-self-hosted-runners
+
+metadata:
+  - version: 0.1
+  - state: draft

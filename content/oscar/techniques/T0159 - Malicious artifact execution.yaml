@@ -31,7 +31,7 @@ references:
   - https://owasp.org/www-project-top-10-ci-cd-security-risks/CICD-SEC-09-Improper-Artifact-Integrity-Validation
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

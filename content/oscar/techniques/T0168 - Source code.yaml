@@ -14,18 +14,19 @@ description: |
   Exfiltration to a code repository can also provide a significant amount of cover to the adversary if it is a popular service already used by hosts within the network.
 
 mitigations: 
-  - M1550
+  - M1680
 
 detections: 
   - D1510
   - D1590
+  - D1680
 
 references: 
   - https://attack.mitre.org/techniques/T1567/001/
   - https://www.optimizationcore.com/security/github-exfiltration-indicators-threat-hunt-monitor-block/
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

@@ -1,0 +1,12 @@
+id: M1540
+type: Mitigation
+summary: Use trusted sources
+description: |
+  Only download and install IDE extensions from trusted sources, such as the official marketplace or repository for your IDE.
+
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

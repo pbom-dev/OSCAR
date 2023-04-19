@@ -17,6 +17,9 @@ description: |
   Once the attacker gains access, they can install malware or backdoors, extract sensitive information, or use the machine as a foothold to carry out further attacks.
 
 mitigations: 
+  - M1530
+  - M1531
+  - M1532
   - M1720
 
 detections: 
@@ -27,7 +30,7 @@ references:
   - https://www.reversinglabs.com/blog/vs-code-ide-hack-how-supply-chain-attacks-can-proliferate-between-developer-ecosystems
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

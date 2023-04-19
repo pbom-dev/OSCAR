@@ -1,0 +1,12 @@
+id: D1680
+type: Detection
+summary: Monitor code repositories activity
+description: |
+  Monitoring activity in code repositories can help identify unusual or suspicious activity, such as large or unusual commits or code changes outside of normal work hours.
+  
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

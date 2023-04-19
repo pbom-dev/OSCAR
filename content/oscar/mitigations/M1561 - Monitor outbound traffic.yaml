@@ -1,0 +1,11 @@
+id: M1561
+type: Mitigation
+summary: Monitor outbound traffic
+description: |
+  Organizations should monitor outbound traffic from their web applications for any unusual or suspicious activity, such as large data transfers or connections to unfamiliar IP addresses.
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

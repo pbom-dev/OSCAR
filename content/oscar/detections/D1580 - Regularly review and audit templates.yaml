@@ -1,0 +1,12 @@
+id: D1580
+type: Detection
+summary: Regularly review and audit templates
+description: |
+  Regularly review and audit CI/CD pipeline configurations to identify any suspicious or unauthorized changes to the templates.
+  
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

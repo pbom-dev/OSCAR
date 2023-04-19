@@ -1,0 +1,12 @@
+id: M1581
+type: Mitigation
+summary: Template validation
+description: |
+  Validating the templates before they are used in the CI/CD pipeline can help ensure that they are not modified or tampered with by attackers. 
+  This can include using digital signatures or checksums to validate the authenticity and integrity of the templates.
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

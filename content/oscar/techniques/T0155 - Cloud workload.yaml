@@ -15,17 +15,20 @@ description: |
   Attackers may also use event-triggered execution to persistently execute serverless functions over time, such as creating Lambda functions in AWS environments that add additional cloud credentials to a user.
 
 mitigations: 
+  - M1532
   - M1550
+  - M1551
 
 detections: 
   - D1510 
+  - D1550
 
 references: 
   - https://www.cadosecurity.com/cado-discovers-denonia-the-first-malware-specifically-targeting-lambda/
   - https://blog.morphisec.com/what-is-cloud-workload-security
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

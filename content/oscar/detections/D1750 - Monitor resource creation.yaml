@@ -1,0 +1,12 @@
+id: D1750
+type: Detection
+summary: Monitor resource creation
+description: |
+  By monitoring the creation of new resources in the cloud environment, security teams can detect any untagged resources that may have been created by an attacker.
+  
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft
