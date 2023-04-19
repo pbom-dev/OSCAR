@@ -1,0 +1,14 @@
+id: M1440
+type: Mitigation
+summary: Review logging settings
+description: |
+   It's crucial to regularly verify and validate that logging settings are configured correctly and are functioning as intended. 
+   This includes ensuring that logs are being generated, stored securely, and are accessible to security teams for analysis. 
+   Regular audits of logging settings can help identify any misconfigurations or gaps in logging coverage.
+
+references:
+  - https://www.dataset.com/blog/the-10-commandments-of-logging/
+
+metadata:
+  - version: 0.1
+  - state: draft

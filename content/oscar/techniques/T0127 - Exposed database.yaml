@@ -15,17 +15,25 @@ description: |
   It can also occur when developers or system administrators accidentally expose database credentials or when misconfigured server configurations allow database access.
 
 mitigations: 
+  - M1270
+  - M1271
+  - M1272
   - M1550
   - M1720
 
-detections: 
+detections:
+  - D1131
+  - D1260
+  - D1261
+  - D1262
+  - D1270
   - D1510
 
 references: 
   - https://securitytrails.com/blog/open-exposed-databases
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

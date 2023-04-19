@@ -1,0 +1,13 @@
+id: M1280
+type: Mitigation
+summary: Implement least privilege network access
+description: |
+  Follow the principle of least privilege and restrict network access to only what is necessary. 
+  Limit the number of open ports, protocols, and services to the minimum required for the intended purpose of the system or application.
+
+references:
+  - https://www.cyberark.com/what-is/least-privilege/
+
+metadata:
+  - version: 0.1
+  - state: draft

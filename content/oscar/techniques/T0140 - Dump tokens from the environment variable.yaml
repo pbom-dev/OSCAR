@@ -20,8 +20,13 @@ description: |
 
 mitigations: 
   - M1120
+  - M1860
+  - M1861
 
 detections: 
+  - D1260
+  - D1261
+  - D1262
   - D1510
 
 references: 
@@ -29,7 +34,7 @@ references:
   - https://developer.hashicorp.com/vault/docs/what-is-vault
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

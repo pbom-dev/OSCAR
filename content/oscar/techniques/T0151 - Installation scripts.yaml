@@ -30,7 +30,7 @@ references:
   - https://medium.com/checkmarx-security/automatic-execution-of-code-upon-package-download-on-python-package-manager-cd6ed9e366a8
 
 metadata:
-    version: 0.1 
+    version: 0.1
     state: draft
 
   

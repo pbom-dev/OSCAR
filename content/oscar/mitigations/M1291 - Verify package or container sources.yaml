@@ -1,0 +1,13 @@
+id: M1291
+type: Mitigation
+summary: Verify package or container sources
+description: |
+  Users should only download packages or containers from trusted sources, such as official repositories or trusted vendors. 
+  Avoid downloading packages or containers from unknown or suspicious sources, as they may be more prone to typosquatting attacks
+
+references:
+  - https://blog.packagecloud.io/should-you-be-worried-about-typosquatting-or-url-hijacking/
+
+metadata:
+  - version: 0.1
+  - state: draft

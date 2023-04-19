@@ -37,7 +37,7 @@ references:
   - https://threatpost.com/cryptominers-python-supply-chain/167135/
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

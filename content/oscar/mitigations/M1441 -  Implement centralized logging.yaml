@@ -1,0 +1,13 @@
+id: M1441
+type: Mitigation
+summary: Implement centralized logging
+description: |
+   Implementing centralized logging mechanisms can help ensure that logs are collected from all relevant systems and network devices, and stored securely in a central repository. 
+   This can provide a consolidated view of logs and enable security teams to analyze them effectively for detecting any suspicious activities.
+
+references:
+  - https://www.crowdstrike.com/cybersecurity-101/observability/centralized-logging/
+
+metadata:
+  - version: 0.1
+  - state: draft

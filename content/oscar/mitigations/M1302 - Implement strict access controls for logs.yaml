@@ -1,0 +1,13 @@
+id: M1302
+type: Mitigation
+summary: Implement strict access controls for logs
+description: |
+  Implement strict access controls for logs to ensure that only authorized personnel have access to log files. 
+  Use role-based access controls (RBAC) and least privilege principles to restrict access to logs to only those who need it for their job functions.
+
+references:
+  - https://www.techtarget.com/searchsecurity/tip/Security-log-management-and-logging-best-practices
+
+metadata:
+  - version: 0.1
+  - state: draft

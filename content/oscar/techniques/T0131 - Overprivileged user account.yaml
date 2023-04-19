@@ -17,10 +17,14 @@ description: |
   This could lead to the deployment of compromised software, which can result in data breaches, malware infections, or other security incidents.
 
 mitigations: 
+  - M1310
+  - M1311
   - M1550
   - M1661
 
-detections: 
+detections:
+  - D1261 
+  - D1310
   - D1510
   - D1590
 
@@ -29,7 +33,7 @@ references:
   - https://www.cyberark.com/what-is/privileged-access-management/
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

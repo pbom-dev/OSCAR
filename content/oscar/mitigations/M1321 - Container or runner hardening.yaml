@@ -1,0 +1,13 @@
+id: M1321
+type: Mitigation
+summary: Container or runner hardening
+description: |
+  Apply security best practices for hardening container or runner agent images, configurations, and host systems, including regular patching and updates, disabling unnecessary services and components, and implementing strong authentication and access controls.
+
+references:
+  - https://github.com/step-security/harden-runner
+  - https://docs.gitlab.com/runner/security/
+
+metadata:
+  - version: 0.1
+  - state: draft

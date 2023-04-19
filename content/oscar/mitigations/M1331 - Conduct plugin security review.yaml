@@ -1,0 +1,13 @@
+id: M1331
+type: Mitigation
+summary: Conduct plugin security review
+description: |
+  Conduct thorough security reviews of plugins before incorporating them into the CI/CD pipeline. 
+  Evaluate the reputation, reliability, and security history of plugins, and choose only those that are well-maintained, regularly updated, and have a good track record of security.
+
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

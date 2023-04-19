@@ -18,9 +18,14 @@ description: |
   For instance, if developers use weak passwords or if the authentication protocols used by the repository are vulnerable, attackers can steal source code or inject malicious code into the codebase.
 
 mitigations: 
+  - M1130
+  - M1132
   - M1550
+  - M1860
+  - M1861
 
 detections: 
+  - D1261
   - D1510
   - D1520
 
@@ -28,7 +33,7 @@ references:
   - https://affinity-it-security.com/what-is-weak-authentication/
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

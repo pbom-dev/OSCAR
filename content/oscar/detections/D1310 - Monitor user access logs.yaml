@@ -1,0 +1,13 @@
+id: D1310
+type: Detection
+summary: Monitor user access logs
+description: |
+  Regularly review and analyze user access logs, including authentication logs, authorization logs, and privilege change logs. 
+  Look for any unusual or suspicious activities, such as users attempting to access resources or systems that they are not authorized to access, or privilege changes that are not in line with the principle of least privilege.   
+  
+references:
+  - https://www.crowdstrike.com/cybersecurity-101/observability/access-logs/
+
+metadata:
+  - version: 0.1
+  - state: draft

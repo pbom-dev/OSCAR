@@ -21,15 +21,19 @@ mitigations:
   - M1451
   - M1550
   - M1661
+  - M1860
+  - M1861
 
 detections: 
+  - D1430
+  - D1431
   - D1510
 
 references: 
   - 
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

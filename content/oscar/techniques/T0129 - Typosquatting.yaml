@@ -16,13 +16,16 @@ description: |
   Once the user installs the malicious package or container, the attacker can potentially gain access to the user's system or data, or inject malicious code into the user's environment.
   
 mitigations: 
+  - M1290
+  - M1291
   - M1500
   - M1502
   - M1503
-  - M1590
 
 detections: 
   - D1500
+  - D1510
+  - D1520
 
 subtechinques:
   - T0157
@@ -32,7 +35,7 @@ references:
   - https://cycode.com/typosquatting-repojacking-domain-takeover/
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

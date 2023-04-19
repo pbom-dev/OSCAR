@@ -1,0 +1,13 @@
+id: M1300
+type: Mitigation
+summary: Implement log sanitization
+description: |
+  Implement log sanitization techniques that automatically remove or obfuscate sensitive information from logs, such as passwords, API keys, access tokens, or other types of credentials. 
+  This can prevent sensitive information from being inadvertently logged in the first place.
+
+references:
+  - https://developer.harness.io/docs/first-gen/firstgen-platform/techref-category/techref-security/secrets-and-log-sanitization/
+
+metadata:
+  - version: 0.1
+  - state: draft

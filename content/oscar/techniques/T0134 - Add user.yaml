@@ -16,14 +16,19 @@ description: |
   This allows the attacker to continue to access and control the system even if their original access is removed or blocked.
 
 mitigations: 
-  - M1550
+  - M1340
+  - M1860
+  - M1861
 
 detections: 
+  - D1260
+  - D1261
+  - D1262
   - D1510
   - D1590
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

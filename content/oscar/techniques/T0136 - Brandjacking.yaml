@@ -16,6 +16,7 @@ description: |
   Once a malicious package is installed, it can be difficult to detect and can lead to serious security breaches.
 
 mitigations: 
+  - M1200
   - M1500
   - M1502
   - M1503
@@ -29,7 +30,7 @@ references:
   - https://www.mend.io/resources/blog/new-supply-chain-attack-methods-april/
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

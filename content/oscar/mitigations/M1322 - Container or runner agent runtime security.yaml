@@ -1,0 +1,12 @@
+id: M1322
+type: Mitigation
+summary: Container or runner agent runtime security
+description: |
+  Utilize container or runner agent runtime security solutions that can detect and prevent privilege escalation attempts in real-time, such as container runtime security tools, runtime security scanning, and container or runner agent security policies.
+
+references:
+  - https://blog.qualys.com/product-tech/2020/11/03/built-in-runtime-security-for-containers
+
+metadata:
+  - version: 0.1
+  - state: draft

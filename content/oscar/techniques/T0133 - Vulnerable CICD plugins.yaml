@@ -13,9 +13,15 @@ description: |
   Vulnerable plugins used in the CI/CD pipeline can be exploited by attackers to inject malicious code or to execute arbitrary commands on the target system.
 
 mitigations: 
+  - M1330
+  - M1331
+  - M1332
   - M1720
 
 detections: 
+  - D1260
+  - D1261
+  - D1262
   - D1510
   - D1590
 
@@ -25,7 +31,7 @@ references:
   - https://www.theregister.com/2022/06/30/jenkins_plugins_security_advisories/
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

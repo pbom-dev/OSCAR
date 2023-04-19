@@ -1,0 +1,13 @@
+id: D1270
+type: Detection
+summary: Implement network scanning
+description: |
+   Conduct regular network scans to identify open ports and services exposed to the public internet. 
+   Look for unexpected or unauthorized open ports associated with services that may indicate misconfigurations or vulnerabilities.
+  
+references:
+  - https://www.redhat.com/sysadmin/quick-nmap-inventory
+
+metadata:
+  - version: 0.1
+  - state: draft

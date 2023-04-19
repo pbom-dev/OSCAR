@@ -1,0 +1,14 @@
+id: M1281
+type: Mitigation
+summary: Configure network security group
+description: |
+  Review and regularly update NSG configurations to ensure that only necessary inbound and outbound traffic is allowed. 
+  Use explicit deny rules to block all other unnecessary or unauthorized traffic.
+
+references:
+  - https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html
+  - https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview
+
+metadata:
+  - version: 0.1
+  - state: draft

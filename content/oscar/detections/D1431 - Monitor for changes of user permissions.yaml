@@ -1,0 +1,13 @@
+id: D1431
+type: Detection
+summary: Monitor for changes of user permissions
+description: |
+  Regularly review and audit user account permissions and monitor for any unauthorized changes to permissions or roles associated with external user accounts. 
+  Detect and alert on any changes that may grant excessive or unauthorized access to critical resources or actions.
+  
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

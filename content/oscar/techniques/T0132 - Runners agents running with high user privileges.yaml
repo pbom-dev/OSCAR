@@ -14,9 +14,15 @@ description: |
    Attackers may exploit software vulnerabilities or weaknesses in container security controls to gain access to privileged resources, execute arbitrary code, or escape the container/runner agent and gain access to the host system. 
 
 mitigations: 
+  - M1320
+  - M1321
+  - M1322
+  - M1451
   - M1732
 
 detections: 
+  - D1261
+  - D1262
   - D1510
   - D1520
   - D1590
@@ -29,7 +35,7 @@ references:
   - https://sysdig.com/blog/detecting-mitigating-cve-2022-0492-sysdig/
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

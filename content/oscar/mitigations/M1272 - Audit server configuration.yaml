@@ -1,0 +1,14 @@
+id: M1272
+type: Mitigation
+summary: Audit server configuration
+description: |
+  Regularly audit server configurations to ensure that there are no misconfigurations that allow unauthorized database access. 
+  Check for misconfigured firewall rules, open ports, and any other configurations that may expose the database to the public internet. 
+  Follow security best practices and recommendations from your cloud service provider for securing database instances
+
+references:
+  - https://pleasantpasswords.com/info/pleasant-password-server/f-best-practices/secure-and-harden-your-server-environment/checklist-for-securing-and-hardening-your-server-environment
+
+metadata:
+  - version: 0.1
+  - state: draft
