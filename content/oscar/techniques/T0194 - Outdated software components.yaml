@@ -1,0 +1,29 @@
+id: T0194
+type: Technique
+
+tactic: Initial Access
+
+realm: 
+  - CI/CD Posture
+  - Container Security
+  - Infrastructure as code
+  - Open Source Security
+
+summary: Outdated software components
+
+description: | 
+    Outdated software compoenents can impact various aspects of security. The obvious one is, of course, outdated software usually means unpatched vulnerabilties. But it also means that in case of an incident it will be harder for an organization to react and patch becuase it has higher risk of breaking functionality
+mitigations: 
+  - 
+
+detections: 
+  - 
+
+references: 
+  - https://www.truesec.com/hub/blog/secure-your-software-supply-chain-trusting-3rd-parties
+
+metadata: 
+    version: 0.2
+    state: draft
+
+  
