@@ -1,0 +1,12 @@
+id: M1531
+type: Mitigation
+summary: Implement endpoint security solutions
+description: |
+  Implement endpoint security solutions such as antivirus, endpoint detection and response, extended detection and response to prevent malware and other malicious activity on developer workstations.
+
+references:
+  - https://www.checkpoint.com/cyber-hub/threat-prevention/what-is-endpoint-detection-and-response/edr-vs-xdr/
+
+metadata:
+  - version: 0.1
+  - state: draft

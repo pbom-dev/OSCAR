@@ -1,0 +1,12 @@
+id: M1520
+type: Mitigation
+summary: Use security scanning tools
+description: |
+  Use security scanning tools to scan build scripts, project files and code repositories for known vulnerabilities, malware, or other security risks.
+
+references:
+  - https://owasp.org/www-community/Source_Code_Analysis_Tools
+
+metadata:
+  - version: 0.1
+  - state: draft

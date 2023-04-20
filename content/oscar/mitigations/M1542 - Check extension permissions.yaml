@@ -1,0 +1,12 @@
+id: M1542
+type: Mitigation
+summary: Check extension permissions
+description: |
+  Check the permissions required by the extension before installing it. Only grant necessary permissions and avoid extensions that require excessive permissions.
+
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

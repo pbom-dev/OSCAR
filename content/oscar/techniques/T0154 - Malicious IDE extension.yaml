@@ -15,7 +15,10 @@ description: |
   This information can then be used by the attacker to gain unauthorized access to cloud resources, steal data, or launch further attacks.
 
 mitigations: 
-  - M1500
+  - M1540
+  - M1541
+  - M1542
+  - M1543
 
 detections: 
   - D1510
@@ -25,7 +28,7 @@ references:
   - https://blog.aquasec.com/can-you-trust-your-vscode-extensions
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

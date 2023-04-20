@@ -1,0 +1,12 @@
+id: M1680
+type: Mitigation
+summary: Limit access to code repositories
+description: |
+   Limit the access to code repositories to only those who need it. Use strong authentication and access control measures such as multi-factor authentication, role-based access control, and restricted access to only specific IP addresses.
+
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

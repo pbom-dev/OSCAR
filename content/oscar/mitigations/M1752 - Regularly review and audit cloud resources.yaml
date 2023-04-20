@@ -1,0 +1,13 @@
+id: M1752
+type: Mitigation
+summary: Regularly review and audit cloud resources
+description: |
+  Regularly review and audit all cloud resources to identify any untagged or unauthorized resources. 
+  This can help to detect and remove any potential threats before they are used to compromise the environment.
+
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

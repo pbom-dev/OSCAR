@@ -1,0 +1,12 @@
+id: M1543
+type: Mitigation
+summary: Update extensions regularly
+description: |
+  Keep your IDE and all extensions up-to-date to ensure they are protected against known vulnerabilities and exploits.
+
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

@@ -1,0 +1,13 @@
+id: D1490
+type: Detection
+summary: Monitor repository access
+description: |
+  Monitor the access logs for the code repositories used by the CI/CD pipeline. 
+  Look for unusual activity such as unauthorized access attempts, multiple failed login attempts, or access from unfamiliar IP addresses.
+  
+references:
+  - https://docs.gitlab.com/ee/administration/logs/
+
+metadata:
+  - version: 0.1
+  - state: draft

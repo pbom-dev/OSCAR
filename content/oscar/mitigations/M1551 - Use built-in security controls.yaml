@@ -1,0 +1,12 @@
+id: M1551
+type: Mitigation
+summary: Use built-in security controls
+description: |
+  Utilize built-in security controls provided by the cloud provider, such as AWS's AWS Shield, AWS WAF, and Azure's Azure Firewall.
+references:
+  - https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html
+  - https://azure.microsoft.com/en-us/products/azure-firewall
+
+metadata:
+  - version: 0.1
+  - state: draft

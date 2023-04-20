@@ -1,0 +1,12 @@
+id: M1541
+type: Mitigation
+summary: Read reviews and ratings
+description: |
+  Before installing an extension, read reviews and ratings from other users to ensure it is trustworthy.
+
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

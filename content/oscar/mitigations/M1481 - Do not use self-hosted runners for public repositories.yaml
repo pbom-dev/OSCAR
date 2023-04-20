@@ -1,0 +1,14 @@
+id: M1481
+type: Mitigation
+summary: Avoid using self-hosted runners for public repositories
+description: |
+  We recommend that you only use self-hosted runners with private repositories. 
+  This is because forks of your public repository can potentially run dangerous code on your self-hosted runner machine by creating a pull request that executes the code in a workflow.
+  This is not an issue with GitHub-hosted runners because each GitHub-hosted runner is always a clean isolated virtual machine, and it is destroyed at the end of the job execution.
+
+references:
+  - https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners#self-hosted-runner-security
+
+metadata:
+  - version: 0.1
+  - state: draft

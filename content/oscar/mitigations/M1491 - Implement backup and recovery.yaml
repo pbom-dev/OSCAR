@@ -1,0 +1,13 @@
+id: M1491
+type: Mitigation
+summary: Implement backup and recovery
+description: |
+  Implement a backup and recovery strategy for the code repositories used by the CI/CD pipeline. 
+  This can help you restore the code repositories in case they are deleted or become unavailable due to an attack.
+
+references:
+  - https://docs.github.com/en/organizations/managing-organization-settings/setting-permissions-for-deleting-or-transferring-repositories
+
+metadata:
+  - version: 0.1
+  - state: draft

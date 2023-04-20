@@ -15,19 +15,24 @@ description: |
   The goal of this attack technique is to trick users into unknowingly downloading and using these fake packages or images, which may contain malicious code, vulnerabilities, or other security risks.
 
 mitigations: 
+  - M1200
+  - M1290
+  - M1291
   - M1500
   - M1502
   - M1503
   - M1590
 
 detections: 
+  - D1260
+  - D1262
   - D1500
 
 references: 
   - https://dev.to/sumstrm/different-typosquatting-attacks-to-know-of-for-a-secure-supply-chain-4j70
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

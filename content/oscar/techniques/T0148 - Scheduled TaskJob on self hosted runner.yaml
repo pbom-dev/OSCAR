@@ -14,16 +14,18 @@ description: |
   The scheduled task or job can be programmed to perform a variety of malicious activities, such as downloading and executing additional malware or maintaining a persistent backdoor for future attacks. 
 
 mitigations: 
-  - M1720
+  - M1480
+  - M1481
 
 detections: 
   - D1510
+  - D1590
 
 references: 
   - https://www.praetorian.com/blog/introducing-gato-for-ci-cd-exploitation/
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

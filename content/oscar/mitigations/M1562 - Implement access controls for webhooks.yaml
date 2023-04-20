@@ -1,0 +1,12 @@
+id: M1562
+type: Mitigation
+summary: Implement access controls for webhooks
+description: |
+  Access controls should be implemented to limit the number of users who can create and modify webhooks. 
+  Strong authentication and authorization mechanisms should also be implemented to prevent unauthorized access to the web application.
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

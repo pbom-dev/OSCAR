@@ -1,0 +1,12 @@
+id: M1630
+type: Mitigation
+summary: Implement runtime encryption
+description: |
+  Sensitive information such as passwords should be encrypted during runtime and while in transit.
+
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

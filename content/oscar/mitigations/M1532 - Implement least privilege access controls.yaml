@@ -1,0 +1,12 @@
+id: M1532
+type: Mitigation
+summary: Implement least privilege access controls
+description: |
+  Limit access to sensitive resources and data to authorized personnel only, and implement least privilege access controls to prevent unauthorized access to sensitive information.
+
+references:
+  - https://www.cyberark.com/what-is/least-privilege/
+
+metadata:
+  - version: 0.1
+  - state: draft

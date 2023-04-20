@@ -17,12 +17,16 @@ description: |
 
 mitigations: 
   - M1490
+  - M1491
+  - M1860
+  - M1861
 
 detections: 
+  - D1490
   - D1590
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

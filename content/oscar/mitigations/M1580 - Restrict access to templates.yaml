@@ -1,0 +1,13 @@
+id: M1580
+type: Mitigation
+summary: Restrict access to templates
+description: |
+  Storing the templates in a secure location can help prevent unauthorized access to the templates. 
+  This can include encrypting the templates and restricting access to them to only authorized personnel.
+  Restrict access for templates modification for authorized persons only.
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

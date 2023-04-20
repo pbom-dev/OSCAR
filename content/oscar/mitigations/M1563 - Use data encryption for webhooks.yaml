@@ -1,0 +1,11 @@
+id: M1563
+type: Mitigation
+summary: Use data encryption for webhooks
+description: |
+  Data transmitted through webhooks should be encrypted to prevent eavesdropping and interception by attackers.
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

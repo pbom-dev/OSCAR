@@ -13,20 +13,21 @@ description: |
   These commands and scripts can be executed upon IDE project build and run.
 
 mitigations:
-  - M1200
   - M1500
   - M1502
   - M1503
+  - M1520
+  - M1521
 
 detections:
   - D1510
-  - D1512
+  - D1520
 
 references:
   - https://www.trendmicro.com/en_us/research/23/a/attacking-the-supply-chain-developer.html
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

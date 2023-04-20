@@ -1,0 +1,13 @@
+id: M1751
+type: Mitigation
+summary: Implement resource management policies
+description: |
+  Establish policies that require all resources to be properly tagged and monitored regularly. 
+  This can help to prevent the creation of untagged resources and quickly identify any that are created.
+
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

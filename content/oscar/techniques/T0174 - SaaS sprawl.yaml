@@ -17,6 +17,8 @@ description: |
 
 mitigations: 
   - M1550
+  - M1740
+  - M1741
 
 detections: 
   - D1510
@@ -25,7 +27,7 @@ references:
   - https://www.beamy.io/resources/blog/what-is-saas-sprawl/
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

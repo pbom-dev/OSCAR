@@ -1,0 +1,13 @@
+id: M1740
+type: Mitigation
+summary: Establish guidelines for the use of SaaS application
+description: |
+  Establish clear policies and guidelines for the use of SaaS applications and enforce them rigorously. 
+  This can include guidelines for which applications are approved for use, who is authorized to sign up for new applications, and how to vet new applications for security risks.
+
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

@@ -1,0 +1,12 @@
+id: D1751
+type: Detection
+summary: 
+description: |
+  By monitoring the usage of resources in the cloud environment, security teams can identify any unusual or suspicious behavior that may indicate the presence of an untagged resource.
+    
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft
