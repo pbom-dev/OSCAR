@@ -9,18 +9,25 @@ realm:
 summary: Sensitive information in environment variables
 
 description: |
-      Environment variables are a type of configuration parameter that contain information about the environment in which an application is running. These variables can be set and accessed by the operating system or application, and may contain sensitive information such as passwords, API keys, or other credentials.
+  Environment variables are a type of configuration parameter that contain information about the environment in which an application is running. 
+  These variables can be set and accessed by the operating system or application, and may contain sensitive information such as passwords, API keys, or other credentials.
 
 mitigations: 
-  - 
+  - M1120
+  - M1930
+  - M1931
 
-detections: 
-  - 
+detections:
+  - D1260
+  - D1261
+  - D1262
+  - D1930
 
 references: 
-  - 
+  - https://www.trendmicro.com/en_fi/research/22/h/analyzing-hidden-danger-of-environment-variables-for-keeping-secrets.html
+
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

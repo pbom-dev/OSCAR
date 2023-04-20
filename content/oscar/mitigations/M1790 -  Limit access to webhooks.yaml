@@ -3,6 +3,8 @@ type: Mitigation
 summary: Limit access to webhooks
 description: |
   Limit access to WebHooks to trusted sources or IP addresses and avoid exposing them to the internet or making them publicly accessible.
+  Avoid making WebHook endpoints publicly accessible unless absolutely necessary. 
+  Use firewalls or access controls to limit access to WebHook endpoints and ensure that only authorized systems and users can access them.
 
 references:
   - https://hookdeck.com/webhooks/guides/webhooks-security-checklist#security-threats-and-solution-recap

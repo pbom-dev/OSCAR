@@ -17,6 +17,7 @@ description: |
 
 mitigations: 
   - M1120
+  - M1830
 
 detections: 
   - D1590
@@ -25,7 +26,7 @@ references:
   - https://www.synacktiv.com/en/publications/cicd-secrets-extraction-tips-and-tricks.html
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

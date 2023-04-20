@@ -16,10 +16,16 @@ description: |
   For example, an attacker can take advantage of misconfigured security groups or firewall rules to bypass security controls and access sensitive data or resources.
 
 mitigations: 
+  - M1530
   - M1550
   - M1720
+  - M1760
+  - M1761
 
 detections:
+  - D1260
+  - D1261
+  - D1262
   - D1510
   - D1520
 
@@ -31,7 +37,7 @@ references:
   - https://www.upguard.com/blog/cloud-misconfiguration
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

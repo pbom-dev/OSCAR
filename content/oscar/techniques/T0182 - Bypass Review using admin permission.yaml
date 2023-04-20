@@ -19,8 +19,11 @@ description: |
 
 mitigations: 
   - M1661
+  - M1662
 
-detections: 
+detections:
+  - D1260
+  - D1261
   - D1510
   - D1590
 
@@ -29,7 +32,7 @@ references:
   - https://www.cidersecurity.io/blog/research/bypassing-required-reviews-using-github-actions/
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

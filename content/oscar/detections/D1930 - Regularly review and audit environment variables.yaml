@@ -1,0 +1,12 @@
+id: D1930
+type: Detection
+summary: Regularly review and audit environment variables
+description: |
+  Regularly review and audit environment variables to ensure that they do not contain sensitive information.
+
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

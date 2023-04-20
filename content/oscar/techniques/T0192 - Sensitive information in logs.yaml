@@ -10,20 +10,26 @@ realm:
 summary: Sensitive information in logs
 
 description: |
-    Operational logs are a valuable source of information for organizations to monitor their systems and applications, identify issues, and improve their overall security posture. However, these logs can also contain sensitive information such as personally identifiable information (PII) data, tokens, credentials, and internal system information.
-    While this information may be useful to legitimate system administrators and security personnel, it can also be highly valuable to attackers who want to exploit vulnerabilities in the system. An adversary may attempt to gain access to the operational logs in order to steal valuable data or deepen their attack by using the information contained within the logs to escalate their privileges and move laterally within the organization's network.
+  Operational logs are a valuable source of information for organizations to monitor their systems and applications, identify issues, and improve their overall security posture. However, these logs can also contain sensitive information such as personally identifiable information (PII) data, tokens, credentials, and internal system information.
+  While this information may be useful to legitimate system administrators and security personnel, it can also be highly valuable to attackers who want to exploit vulnerabilities in the system. An adversary may attempt to gain access to the operational logs in order to steal valuable data or deepen their attack by using the information contained within the logs to escalate their privileges and move laterally within the organization's network.
 
 mitigations: 
-  - 
+  - M1300
+  - M1301
+  - M1302
+  - M1440
+  - M1441
 
 detections: 
-  - 
+  - D1131
+  - D1300
 
 references: 
-  - 
+  - https://medium.com/google-cloud/protect-sensitive-info-in-logs-using-google-cloud-4548211d4654
+  - https://www.logiq.ai/6-ways-to-protect-sensitive-data-in-logs/
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

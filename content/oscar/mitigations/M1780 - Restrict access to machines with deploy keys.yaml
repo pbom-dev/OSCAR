@@ -1,0 +1,12 @@
+id: M1780
+type: Mitigation
+summary: Restrict access to machines with deploy keys
+description: |
+  Limit access to machines with deploy keys to only authorized personnel who need it to perform their duties.
+
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

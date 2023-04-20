@@ -1,0 +1,12 @@
+id: M1930
+type: Detection
+summary: Avoid storing sensitive information in environment variables
+description: |
+  Avoid storing sensitive information in environment variables wherever possible.
+
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

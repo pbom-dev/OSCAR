@@ -1,0 +1,13 @@
+id: M1782
+type: Mitigation
+summary: Securely store private keys
+description: |
+  Ensure that private keys associated with deploy keys are securely stored and are not accessible to unauthorized individuals or processes. 
+  Use strong encryption to protect private keys when they are not in use.
+
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

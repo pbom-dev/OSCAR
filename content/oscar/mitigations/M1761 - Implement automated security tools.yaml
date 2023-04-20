@@ -1,0 +1,13 @@
+id: M1761
+type: Mitigation
+summary: Implement automated security tools
+description: |
+  Automated security tools can help to identify misconfigured security settings and alert security teams to potential vulnerabilities. 
+  These tools can also help to automatically remediate misconfigurations before they can be exploited.
+
+references:
+  - https://brightsec.com/blog/security-misconfiguration/
+
+metadata:
+  - version: 0.1
+  - state: draft

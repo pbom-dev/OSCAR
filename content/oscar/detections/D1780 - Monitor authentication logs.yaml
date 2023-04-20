@@ -1,0 +1,12 @@
+id: D1780
+type: Detection
+summary: Monitor authentication logs
+description: |
+  Monitor authentication logs for any unusual activity, such as failed authentication attempts or successful logins from unusual locations or machines.
+    
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

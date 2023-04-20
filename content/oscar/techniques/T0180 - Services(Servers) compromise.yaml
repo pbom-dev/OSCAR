@@ -17,9 +17,12 @@ description: |
   This attack can compromise multiple software projects and potentially all users who download or use the compromised software.
 
 mitigations: 
+  - M1272
   - M1720
 
 detections: 
+  - D1261
+  - D1262
   - D1500
   - D1510
 
@@ -27,7 +30,7 @@ references:
   - https://research.nccgroup.com/2022/01/13/10-real-world-stories-of-how-weve-compromised-ci-cd-pipelines/
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

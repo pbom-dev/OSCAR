@@ -1,0 +1,13 @@
+id: M1791
+type: Mitigation
+summary: Use secure communication channels
+description: |
+  Use secure communication channels, such as HTTPS, to protect communication between WebHook endpoints and other systems. 
+  Use encryption and secure authentication mechanisms to protect sensitive data in transit.
+
+references:
+  - https://hookdeck.com/webhooks/guides/webhooks-security-checklist#security-threats-and-solution-recap
+
+metadata:
+  - version: 0.1
+  - state: draft

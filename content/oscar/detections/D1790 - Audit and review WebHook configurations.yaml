@@ -1,0 +1,12 @@
+id: D1790
+type: Detection
+summary: Audit and review WebHook configurations
+description: |
+  Regularly review and audit WebHook configurations to identify any misconfigurations or vulnerabilities that could be exploited by attackers.
+    
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft
