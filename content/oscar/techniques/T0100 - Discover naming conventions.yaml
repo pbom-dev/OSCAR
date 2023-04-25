@@ -11,10 +11,10 @@ realm:
 summary: Discover naming conventions
 
 description: |
-  This technique involves analyzing the naming conventions used in container images, source code repositories, and other related artifacts. 
-  By examining the naming conventions, an attacker can gain insights into the technologies and frameworks used in the application, as well as potentially identifying weak spots or vulnerabilities that can be exploited.
-  For example, an attacker might use this technique to identify the specific version of a library or software component used in an application, which could then be cross-referenced with known vulnerabilities to determine if the application is at risk. 
-  Alternatively, an attacker might analyze naming conventions to determine the structure and organization of a codebase, which could aid in future attacks.
+  &ensp;This technique involves analyzing the naming conventions used in container images, source code repositories, and other related artifacts.<br> 
+  &ensp;By examining the naming conventions, an attacker can gain insights into the technologies and frameworks used in the application, as well as potentially identifying weak spots or vulnerabilities that can be exploited.<br>
+  &ensp;For example, an attacker might use this technique to identify the specific version of a library or software component used in an application, which could then be cross-referenced with known vulnerabilities to determine if the application is at risk.<br> 
+  &ensp;Alternatively, an attacker might analyze naming conventions to determine the structure and organization of a codebase, which could aid in future attacks.
 
 mitigations: 
   - M1000

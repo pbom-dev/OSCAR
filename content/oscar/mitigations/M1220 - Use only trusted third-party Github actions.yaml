@@ -1,0 +1,13 @@
+id: M1220
+type: Mitigation
+summary: Use only trusted third-party Github actions from reputable sources
+description: |
+  Using only trusted third-party Github actions from reputable sources is an important security practice that reduces the risk of vulnerabilities in the CI/CD pipeline. 
+  Reputable sources include established Github action providers with a history of creating high-quality, secure actions. Organizations can verify the reputation of a third-party Github action by researching the provider, reviewing their Github action repositories, and checking for reported security issues.
+
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft
