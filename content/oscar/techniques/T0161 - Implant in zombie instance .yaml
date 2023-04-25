@@ -16,13 +16,14 @@ description: |
   Attackers can use the zombie instance to perform various malicious actions, such as stealing sensitive data, launching DDoS attacks, or using the instance for cryptocurrency mining.
 
 mitigations: 
+  - M1532
   - M1550
 
 detections: 
   - D1510
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

@@ -1,0 +1,14 @@
+id: D1791
+type: Detection
+summary: Analyze WebHook payloads and activity
+description: |
+  Monitor WebHook activity for any unusual or suspicious activity, such as repeated or excessive requests, unexpected payloads, or unauthorized actions.
+  Analyze WebHook payloads to identify any signs of malicious or unauthorized activity. 
+  Look for unexpected or unusual payloads, such as payloads that include shell commands or file paths.
+    
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

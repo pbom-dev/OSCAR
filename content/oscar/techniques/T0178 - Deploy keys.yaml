@@ -17,15 +17,21 @@ description: |
 
 mitigations: 
   - M1661
+  - M1780
+  - M1781
+  - M1782
+  - M1783
 
 detections: 
   - D1510
+  - D1780
+  - D1781
 
 references: 
   - https://www.ibm.com/downloads/cas/OG6KNX1E
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

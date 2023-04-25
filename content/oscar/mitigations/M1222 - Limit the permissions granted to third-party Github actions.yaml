@@ -1,0 +1,14 @@
+id: M1222
+type: Mitigation
+summary: Limit the permissions granted to third-party Github actions
+description: |
+  Limiting the permissions granted to third-party Github actions to only the necessary access required for the task is a security practice that can reduce the risk of vulnerabilities in the CI/CD pipeline. 
+  This involves evaluating the required permissions of each action and granting access on a least privilege basis, meaning that only the minimum level of access required for the intended task is granted. 
+  By limiting permissions, organizations can reduce the risk of unauthorized access or exposure of sensitive data, thereby improving the overall security of the CI/CD pipeline.
+
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

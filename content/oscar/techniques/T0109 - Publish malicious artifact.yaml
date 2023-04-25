@@ -10,13 +10,13 @@ realm:
 summary: Publish malicious artifact
 
 description: |
-  Public registries are widely used by developers and organizations to download and distribute software packages and container images, making them an attractive target for attackers.
-  In this type of attack, the attacker creates a package or container image that contains malicious code or files, such as a backdoor or other malware. 
-  The attacker then uploads the package or image to PyPI, DockerHub or other registry, posing as a legitimate user or creating a fake account. 
-  Once the package or image is uploaded, it becomes available for download by other users who may unsuspectingly use it in their projects.
-  The supply chain attack can have far-reaching consequences as it can affect all systems that rely on the malicious package or image. 
-  For example, a Python package that is downloaded from PyPI may be used by multiple applications and libraries, potentially compromising all systems that use it.
-  Similarly, a container image with a malicious payload may be used to deploy an application across multiple environments, leading to a widespread compromise.
+  &ensp;Public registries are widely used by developers and organizations to download and distribute software packages and container images, making them an attractive target for attackers.<br>
+  &ensp;In this type of attack, the attacker creates a package or container image that contains malicious code or files, such as a backdoor or other malware.<br> 
+  &ensp;The attacker then uploads the package or image to PyPI, DockerHub or other registry, posing as a legitimate user or creating a fake account.<br> 
+  &ensp;Once the package or image is uploaded, it becomes available for download by other users who may unsuspectingly use it in their projects.<br>
+  &ensp;The supply chain attack can have far-reaching consequences as it can affect all systems that rely on the malicious package or image.<br> 
+  &ensp;For example, a Python package that is downloaded from PyPI may be used by multiple applications and libraries, potentially compromising all systems that use it.<br>
+  &ensp;Similarly, a container image with a malicious payload may be used to deploy an application across multiple environments, leading to a widespread compromise.
 
 mitigations: 
   - M1090

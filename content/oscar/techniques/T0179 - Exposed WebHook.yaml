@@ -15,16 +15,20 @@ description: |
 
 mitigations: 
   - M1790
+  - M1791
+  - M1792
 
 detections:
   - D1510
   - D1590
+  - D1790
+  - D1791
 
 references: 
   - https://www.cidersecurity.io/blog/research/how-we-abused-repository-webhooks-to-access-internal-ci-systems-at-scale/
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

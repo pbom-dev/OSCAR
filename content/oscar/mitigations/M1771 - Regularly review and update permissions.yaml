@@ -1,0 +1,13 @@
+id: M1771
+type: Mitigation
+summary: Regularly review and update permissions
+description: |
+  Organizations should review and update the permissions granted to serverless functions on a regular basis. 
+  This can help to identify and remediate any misconfigurations or overly permissive permissions.
+
+references:
+  - https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-permissions.html
+
+metadata:
+  - version: 0.1
+  - state: draft

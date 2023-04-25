@@ -8,20 +8,25 @@ realm:
   - Cloud Security
   - SCM Posture
 summary: Create access token
+
 description: |
-    Following initial access, an attacker may attempt to create alternative means of access to the system that was infiltrated. Since the initial access may use a temporary or temporary session token - a common adversary technique would be to create an access token which will persist the access to the system. For example, after getting an initail access by abusing a compromised 2FA backed session token an attacker created access tokens that allowed both persistance and lateral movement (Circle CI reference)
+  Following initial access, an attacker may attempt to create alternative means of access to the system that was infiltrated. 
+  Since the initial access may use a temporary or temporary session token - a common adversary technique would be to create an access token which will persist the access to the system. For example, after getting an initail access by abusing a compromised 2FA backed session token an attacker created access tokens that allowed both persistance and lateral movement (Circle CI reference)
+
 mitigations:
-  - Network segmentation. If possible, limit sensitive actions to specific network segments. 
-  - Follow least privelages methodology. Limit the number of users with high permissions and/or ability to perform sensitive actions
-  - Audit sensitive operations
-  - 2FA for sensitive operations. Even if a user passed 2FA, for every sensitive operation they would need to re-authenticate
+  - M1310
+  - M1311
+  - M1450
+  - M1451
+  - M1830
 
 detections: 
-  - Audit rogue creation of API credentials
+  - D1650
 
 refrences:
   - https://circleci.com/blog/jan-4-2023-incident-report/
+
 metadata:
-  version: 0.1
+  version: 0.2
   state: draft
  

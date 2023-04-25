@@ -11,9 +11,9 @@ realm:
 summary: Discover used open-source dependencies
 
 description: |
-  This technique involves identifying the open-source dependencies used in an application, such as third-party libraries, frameworks, and other related components. 
-  By identifying the specific open-source dependencies used in an application, an attacker can gain insights into the potential vulnerabilities associated with those components, as well as potential attack vectors and weak spots in the application.
-  For example, an attacker might use this technique to identify specific versions of a vulnerable open-source library used in an application, which could then be exploited to gain unauthorized access to the application or the underlying system.
+  &ensp;This technique involves identifying the open-source dependencies used in an application, such as third-party libraries, frameworks, and other related components.<br>
+  &ensp;By identifying the specific open-source dependencies used in an application, an attacker can gain insights into the potential vulnerabilities associated with those components, as well as potential attack vectors and weak spots in the application.<br>
+  &ensp;For example, an attacker might use this technique to identify specific versions of a vulnerable open-source library used in an application, which could then be exploited to gain unauthorized access to the application or the underlying system.
 
 mitigations: 
   - M1500

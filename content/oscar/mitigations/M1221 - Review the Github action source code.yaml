@@ -1,0 +1,13 @@
+id: M1221
+type: Mitigation
+summary: Review the Github action source code
+description: |
+  Reviewing the Github action code and checking if it has been audited or reviewed by security experts is an important security practice to reduce the risk of vulnerabilities in the CI/CD pipeline. 
+  By inspecting the code and checking if it has been audited, organizations can identify potential security issues and increase their confidence in the security of the Github action.
+
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

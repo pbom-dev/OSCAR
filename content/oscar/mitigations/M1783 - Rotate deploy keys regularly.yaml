@@ -1,0 +1,12 @@
+id: M1783
+type: Mitigation
+summary: Rotate deploy keys regularly
+description: |
+  Rotate deploy keys regularly, just like any other authentication credential, to limit the exposure if a key is compromised.
+
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

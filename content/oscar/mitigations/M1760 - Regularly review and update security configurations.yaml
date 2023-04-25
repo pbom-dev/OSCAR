@@ -1,0 +1,12 @@
+id: M1760
+type: Mitigation
+summary: Regularly review and update security configurations
+description: |
+  Organizations should review their security configurations on a regular basis and ensure that they are up to date. This includes reviewing firewall rules, access controls, and other security settings to ensure that they are properly configured.
+
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

@@ -18,6 +18,9 @@ mitigations:
   - M1732
 
 detections: 
+  - D1260
+  - D1261
+  - D1262
   - D1510
 
 references: 
@@ -25,7 +28,7 @@ references:
   - https://about.gitlab.com/blog/2022/02/17/fantastic-infrastructure-as-code-security-attacks-and-how-to-find-them/
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

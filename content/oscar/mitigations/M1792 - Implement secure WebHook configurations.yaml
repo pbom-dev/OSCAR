@@ -1,0 +1,13 @@
+id: M1792
+type: Mitigation
+summary: Implement secure WebHook configurations
+description: |
+  Audit WebHook configurations to ensure that they are properly configured and secure. 
+  Identify and remediate any misconfigurations or vulnerabilities that could be exploited by attackers.
+
+references:
+  - https://hookdeck.com/webhooks/guides/webhooks-security-checklist#security-threats-and-solution-recap
+
+metadata:
+  - version: 0.1
+  - state: draft

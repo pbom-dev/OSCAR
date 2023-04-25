@@ -18,8 +18,13 @@ description: |
 mitigations: 
   - M1550
   - M1720
+  - M1770
+  - M1771
 
 detections:
+  - D1260
+  - D1261
+  - D1262
   - D1500
   - D1510
 
@@ -27,7 +32,7 @@ references:
   - https://cloudsecurityalliance.org/blog/2022/11/20/top-threat-9-to-cloud-computing-misconfiguration-and-exploitation-of-serverless-and-container-workloads/
 
 metadata: 
-    version: 0.1
+    version: 0.2
     state: draft
 
   

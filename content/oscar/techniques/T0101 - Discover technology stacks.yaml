@@ -11,10 +11,10 @@ realm:
 summary: Discover technology stacks
 
 description: |
-  This technique involves analyzing the technology stacks used in an application, such as programming languages, frameworks, libraries, and other related technologies. 
-  By identifying the specific technology stack used in an application, an attacker can gain insights into the potential vulnerabilities associated with that technology, as well as potential attack vectors and weak spots in the application.
-  For example, an attacker might use this technique to identify specific versions of a library or software component used in an application, which could then be cross-referenced with known vulnerabilities to determine if the application is at risk. 
-  Alternatively, an attacker might analyze the technology stack to determine the overall architecture of the application and identify potential attack vectors or weak spots.
+  &ensp;This technique involves analyzing the technology stacks used in an application, such as programming languages, frameworks, libraries, and other related technologies.<br> 
+  &ensp;By identifying the specific technology stack used in an application, an attacker can gain insights into the potential vulnerabilities associated with that technology, as well as potential attack vectors and weak spots in the application.<br>
+  &ensp;For example, an attacker might use this technique to identify specific versions of a library or software component used in an application, which could then be cross-referenced with known vulnerabilities to determine if the application is at risk.<br> 
+  &ensp;Alternatively, an attacker might analyze the technology stack to determine the overall architecture of the application and identify potential attack vectors or weak spots.
 
 mitigations: 
   - M1000

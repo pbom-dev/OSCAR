@@ -10,14 +10,14 @@ realm:
 summary: Accounts in public registry
 
 description: |
-  An attacker can use accounts in public registries, such as PyPI or DockerHub, to perform a supply chain attack in several ways. 
-  One approach is to compromise the credentials of a legitimate developer account and use it to upload malicious packages or container images. 
-  The attacker can then promote the malicious artifact by using misleading descriptions or keywords, potentially increasing the number of downloads.
-  Alternatively, the attacker can create a fake developer account and upload malicious packages or container images using it. 
-  The attacker may use a similar username or avatar to legitimate developers to trick users into thinking the account is legitimate. 
-  Once the malicious artifact is uploaded, the attacker can promote it using various techniques, such as hijacking popular package names or using misleading descriptions.
-  Another approach is to target the infrastructure used by public registries, such as the servers or the communication channels used by developers to upload packages or container images. 
-  An attacker may compromise the infrastructure and use it to inject malicious code into legitimate packages or container images as they are being uploaded.
+  &ensp;An attacker can use accounts in public registries, such as PyPI or DockerHub, to perform a supply chain attack in several ways.<br> 
+  &ensp;One approach is to compromise the credentials of a legitimate developer account and use it to upload malicious packages or container images.<br> 
+  &ensp;The attacker can then promote the malicious artifact by using misleading descriptions or keywords, potentially increasing the number of downloads.<br>
+  &ensp;Alternatively, the attacker can create a fake developer account and upload malicious packages or container images using it.<br> 
+  &ensp;The attacker may use a similar username or avatar to legitimate developers to trick users into thinking the account is legitimate.<br> 
+  &ensp;Once the malicious artifact is uploaded, the attacker can promote it using various techniques, such as hijacking popular package names or using misleading descriptions.<br>
+  &ensp;Another approach is to target the infrastructure used by public registries, such as the servers or the communication channels used by developers to upload packages or container images.<br> 
+  &ensp;An attacker may compromise the infrastructure and use it to inject malicious code into legitimate packages or container images as they are being uploaded.
 
 mitigations: 
   - M1500

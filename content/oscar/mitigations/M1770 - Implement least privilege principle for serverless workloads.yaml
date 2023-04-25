@@ -1,0 +1,12 @@
+id: M1770
+type: Mitigation
+summary: Implement least privilege principle for serverless workloads
+description: |
+  Serverless functions should be granted only the permissions they require to perform their specific task, and no more. By implementing the principle of least privilege, organizations can reduce the risk of an attacker gaining access to sensitive resources.
+
+references:
+  - https://www.paloaltonetworks.com/cyberpedia/what-is-the-principle-of-least-privilege
+
+metadata:
+  - version: 0.1
+  - state: draft

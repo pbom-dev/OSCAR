@@ -1,0 +1,13 @@
+id: M1781
+type: Mitigation
+summary: Use dedicated machines for deploy keys
+description: |
+  Consider using dedicated machines for deploy keys and avoid using these machines for other purposes. 
+  This can help reduce the attack surface and make it easier to monitor for suspicious activity.
+
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

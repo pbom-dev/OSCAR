@@ -1,0 +1,12 @@
+id: D1781
+type: Detection
+summary: Audit and review deploy key access
+description: |
+  Regularly review and audit access to deploy keys and their associated repositories or codebases to identify any unusual activity or unauthorized access attempts.
+    
+references:
+  - 
+
+metadata:
+  - version: 0.1
+  - state: draft

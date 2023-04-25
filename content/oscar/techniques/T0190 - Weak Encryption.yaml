@@ -10,21 +10,23 @@ realm:
 summary: Weak encryption
 
 description: |
-          It is recommended to use adequate encryption for it to be affective - meaning to maintaine confidentiality of data. Use of obosolete/weak cihpers and hash functions is discouredged  
+  A weak encryption attack in cloud security occurs when an attacker exploits vulnerabilities in the encryption mechanism used by a cloud service to gain unauthorized access to sensitive information. 
+  This can happen when the encryption algorithm used by the cloud service is weak or when the encryption keys are not properly managed.
 
-mitigations: # REQUIRED - <list> -reference to mitigation references
-  - 
+mitigations: 
+  - M1241
+  - M1720
 
-detections: # REQUIRED - <list> - reference to detection defintitions
-  - 
-
-subtechinques: # OPTIONAL <list> - reference to TechIDs
-  - 
+detections:
+  - D1261
+  - D1262
+  - D1510
 
 references: 
-  -
+  - https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/04-Testing_for_Weak_Encryption
 
 metadata: 
+    version: 0.2
     state: draft
 
   
