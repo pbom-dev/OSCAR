@@ -33,6 +33,7 @@ subtechinques:
 references: 
   - https://bytesafe.dev/posts/understanding-typosquatting-methods/
   - https://cycode.com/typosquatting-repojacking-domain-takeover/
+  - https://www.reversinglabs.com/blog/beware-impostor-http-libraries-lurk-on-pypi
 
 metadata: 
     version: 0.2
