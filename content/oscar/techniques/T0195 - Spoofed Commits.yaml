@@ -1,0 +1,27 @@
+id: T0195
+type: Technique
+
+tactic: Defense Evasion
+
+realm: 
+  - SCM Posture
+
+summary: Spoofed Commits
+
+description: |
+  By modifying metadata in commits, attackers can easily push their own code to code repositories. For example, by changing the name and email in a commit it is possible to pass as a legitimate user.
+
+mitigations: 
+  - M1731
+
+detections: 
+  - 
+
+references: 
+  - https://www.arnica.io/blog/demystifying-the-pl0x-github-attack
+
+metadata: 
+    version: 0.1
+    state: draft
+
+  
