@@ -1,0 +1,65 @@
+id:  AS3
+type: Attack Story
+date: 2021-04
+
+summary: Codecov Breach
+description: |
+        Codecov is a popular code coverage utility that is used as stem in the CI/CD of many companies.
+
+# Techinques used in attack
+attacks:
+  - attack: Codecov
+    index: 1
+    stage: supply-chain
+    techniques:
+      - technique:
+        - techid: T0103
+        - techname: Scan Public Artifacts For Secrets
+        - tactic: Reconnaissance
+        - comment: The attackers scanned Docker Hub and discovered git credentials in the official Codecov image
+      - technique:
+        - techid: T0142
+        - techname: Accidental Public Disclosure Of Internal Resources
+        - tactic: Reconnaissance
+        - comment: The git credentials was indeliberately saved in the public docker image
+      - technique:
+        - techid: T0114
+        - techname: Compromised Service Account
+        - tactic: Initial Access
+        - comment: The attackers gained access to Codecov's Git repo
+      - technique:
+        - techid: T0191
+        - techname: Malicious Code In Artifacts
+        - tactic: Impact
+        - comment: The Bash Uploader script was modified to exfiltrate environnent variables of the running system
+
+  - attack: Codecov users
+    index: 2
+    stage: post-supply-chain
+    technqiues:
+      - technique:
+        - id: T0118
+        - tactic: Execution
+        - title: Command Injection
+        - comment: |
+                When the Codecov image was executed - the malicious implant in the Bash Uploader script exflitrated environment variable to the attacker controlled
+      - technique:
+        - id: T0122
+        - tactic: Initial Access
+        - title: Vulnerability In Third-Party CI/CD Actions
+        - comment: |
+              The Bash Uploader script was used as part of 3rd party Github actions
+        - urls:
+          - https://unit42.paloaltonetworks.com/codecov-bash-uploader/
+      - technique:
+        - id: T0140
+        - tactic: Credential Access
+        - title: Harvest Tokens From Environment Variables
+       
+
+references:
+    - https://blog.google/threat-analysis-group/countering-threats-north-korea/
+    - https://www.mandiant.com/resources/blog/3cx-software-supply-chain-compromise
+    - https://www.3cx.com/blog/news/security-action-plan/
+    
+
