@@ -55,11 +55,17 @@ attacks:
         - id: T0140
         - tactic: Credential Access
         - title: Harvest Tokens From Environment Variables
+      - technique:
+        - id: T0121
+        - tactic: Resource Development
+        - title: Compromised Legitimate Artifact
+      - technique:
+        - id: T0159
+        - tactic: Execution
+        - title: Malicious Artifact Execution
+        - comment: Customers that utilized the Codecov image were impacted
+        
+              
        
-
 references:
-    - https://blog.google/threat-analysis-group/countering-threats-north-korea/
-    - https://www.mandiant.com/resources/blog/3cx-software-supply-chain-compromise
-    - https://www.3cx.com/blog/news/security-action-plan/
-    
-
+    - https://about.codecov.io/security-update/
