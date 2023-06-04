@@ -12,69 +12,67 @@ attacks:
     index: 1
     stage: pre-supply-chain
     techniques:
-      - technique:
-        - techid: T0191
-        - techname: Malicious Code In Artifacts
-        - tactic: Impact
-        - comment: The attackers trojanized the softare X_TRADER. The software was digitally signed by "Trading Technologies" which strongly suggests that the firm's supply chain was breached.
-        - urls:
-          - https://www.mandiant.com/resources/blog/3cx-software-supply-chain-compromise
+    - techid: T0191
+      techname: Malicious Code In Artifacts
+      tactic: Impact
+      comment: The attackers trojanized the softare X_TRADER. The software was digitally signed by "Trading Technologies" which strongly suggests that the firm's supply chain was breached.
+      urls:
+        https://www.mandiant.com/resources/blog/3cx-software-supply-chain-compromise
   - attack: 3CX
     index: 2
     stage: supply-chain
     technqiues:
-      - technique:
-        - id: T0153
-        - tactic: Initial Access
-        - title: Compromised Developer Workstation
-        - comment: |
+    - techid: T0153
+      tactic: Initial Access
+      techname: Compromised Developer Workstation
+      comment: |
                 A 3CX employee desktop is infected with the trojanized X_TRADER software. There is evidence that the vendor site was compromised and infected with an exploit kit that distributed the trojanized software
-      - technique:
-        - id: T0113
-        - tactic: Initial Access
-        - title: Compromised User Account
-        - comment: |
+      
+    - techid: T0113
+      tactic: Initial Access
+      techname: Compromised User Account
+      comment: |
               Attackers harvested user credentials from infected machines
-      - technique:
-        - id: T0137
-        - tactic: Initial Access
-        - title: Weak Authentication Methods
-        - comment: |
+      
+    - techid: T0137
+      tactic: Initial Access
+      techname: Weak Authentication Methods
+      comment: |
               Attackers connected to the company VPN using credentials, as a second factor authentication was not enabled.
-      - technique:
-        - id: T0137
-        - tactic: Lateral Movements
-        - title: Overprivileged User Account
-        - comment: |
+      
+    - techid: T0131
+      tactic: Lateral Movements
+      techname: Overprivileged User Account
+      comment: |
               The compromised user had access to the entire network and the build system.
-      - technique:
-        - id: T0184
-        - tactic: Credential Access
-        - title: Harvesting Sensitive Information From Files
-        - comment: |
+      
+    - techid: T0184
+      tactic: Credential Access
+      techname: Harvesting Sensitive Information From Files
+      comment: |
               3CX used to save their application password unencrypted/unhashed in the file system. It is not clear if that was used as part of this attack, but the fact is that they released a new client that resolves this issue.
-      - technique:
-        - id: T0176
-        - tactic: Defense Evasion
-        - title: Misconfigured Security Measures
-        - comment: |
+      
+    - techid: T0176
+      tactic: Defense Evasion
+      techname: Misconfigured Security Measures
+      comment: |
               The EDR (if it existed) didn't detect malware on the desktop. The build system was not hardened (network/application). Code scanning tools didn't exist/were not configured correctly/nobody looked into the results.
-      - technique:
-        - id: T0146
-        - tactic: Defense Evasion
-        - title: Misconfigured Audit Logs Settings
-        - comment: |
+      
+    - techid: T0146
+      tactic: Defense Evasion
+      techname: Misconfigured Audit Logs Settings
+      comment: |
               Access and changes to the build system and content should have been logged and alerted upon.
-      - technique:
-        - id: T0191
-        - tactic: Impact
-        - title: Malicious Code In Artifacts
-        - comment: |
+      
+    - techid: T0191
+      tactic: Impact
+      techname: Malicious Code In Artifacts
+      comment: |
               The attacker infected the 3CX software with a backdoor.
 
 references:
-    - https://blog.google/threat-analysis-group/countering-threats-north-korea/
-    - https://www.mandiant.com/resources/blog/3cx-software-supply-chain-compromise
-    - https://www.3cx.com/blog/news/security-action-plan/
+    https://blog.google/threat-analysis-group/countering-threats-north-korea/
+    https://www.mandiant.com/resources/blog/3cx-software-supply-chain-compromise
+    https://www.3cx.com/blog/news/security-action-plan/
     
 
