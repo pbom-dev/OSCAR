@@ -12,43 +12,43 @@ attacks:
     index: 1
     stage: supply-chain
     techniques:
-      - technique:
-        - techid: T0195
-        - techname: Spoofed Commits
-        - tactic: Defense Evasion
-        - comment: The attackers tried to impersonate two PHP developers
-      - technique:
-        - techid: T0137
-        - techname: Weak Authentication Methods
-        - tactic: Reconnaissance
-        - comment: As part of the action items after the breach was to enable MFA
-      - technique:
-        - techid: T0180
-        - techname: Compromise Services / Servers
-        - tactic: Initial Access
-        - comment: PHP Git server was maitained by the PHP developers. After the breach they decided to move to Github. 
-      - technique:
-        - techid: T0191
-        - techname: Malicious Code In Artifacts
-        - tactic: Impact
-        - comment: |
+      
+      - techniqueID: T0195
+        techName: Spoofed Commits
+        tactic: Defense Evasion
+        comment: The attackers tried to impersonate two PHP developers
+      
+      - techniqueID: T0137
+        techName: Weak Authentication Methods
+        tactic: Reconnaissance
+        comment: As part of the action items after the breach was to enable MFA
+      
+      - techniqueID: T0180
+        techName: Compromise Services / Servers
+        tactic: Initial Access
+        comment: PHP Git server was maitained by the PHP developers. After the breach they decided to move to Github. 
+      
+      - techniqueID: T0191
+        techName: Malicious Code In Artifacts
+        tactic: Impact
+        comment: |
                 On March 28th, 2021, two commits to the source code of PHP were more than extraordinary. They contained a backdoor which would execute if HTTP_USER_AGENTT string starts with ‘zerodium’.
 
   - attack: PHP Userss
     index: 2
     stage: post-supply-chain
-    technqiues:
-      - technique:
-        - id: T0172
-        - tactic: Execution
-        - title: Runtime Backdoor
-        - comment: The backdoor would execute commands when a http request with user-agent zerodium was sent
-      - technique:
-        - id: T0111
-        - tactic: Resource Development
-        - title: Malicious Code Contribution To An Open-Source Repository
+    techniques:
+      
+        - techniqueID: T0172
+          tactic: Execution
+          techName: Runtime Backdoor
+          comment: The backdoor would execute commands when a http request with user-agent zerodium was sent
+        
+        - techniqueID: T0111
+          tactic: Resource Development
+          techName: Malicious Code Contribution To An Open-Source Repository
         
               
        
-references:
+links:
     - https://www.lifars.com/2021/03/official-php-git-repository-was-compromised/

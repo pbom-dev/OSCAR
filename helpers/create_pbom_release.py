@@ -90,8 +90,8 @@ class PageGenerator(object):
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Create PBOM release')
-    parser.add_argument('-s', '--source', help='OSCAR source path', required=True)
-    parser.add_argument('-d', '--dest', help='PBOM data destination path', required=True)
+    parser.add_argument('-s', '--source', help='OSCAR source path', required=False, default='/Users/ronen/workspace/OSCAR/content/oscar')
+    parser.add_argument('-d', '--dest', help='PBOM data destination path', required=False, default='/Users/ronen/workspace/OSCAR/data')
     return parser.parse_args()
 
 def setup_directory(pbom_data_path):
@@ -101,6 +101,7 @@ def setup_directory(pbom_data_path):
         os.mkdir(os.path.join(pbom_data_path, 'pbom_data', 'techniques'))
         os.mkdir(os.path.join(pbom_data_path, 'pbom_data', 'mitigations'))
         os.mkdir(os.path.join(pbom_data_path, 'pbom_data', 'detections'))
+        os.mkdir(os.path.join(pbom_data_path, 'pbom_data', 'compaigns'))
     except:
         logger.error("Can't create directory")
 
@@ -140,6 +141,78 @@ def create_release(oscar_source_path, pbom_data_path):
         # save to file
         with open(os.path.join(pbom_data_path, 'pbom_data', 'techniques', tech_fname.split('/')[-1].replace('.yaml', '.json')), 'w') as f:
             json.dump(full_page, f, indent=4)
+    
+    # generate attack story
+    logger.info("Generating attack story")
+    generate_attack_story(oscar_source_path, pbom_data_path)
+
+
+def generate_attack_story(oscar_source_path, pbom_data_path):
+    '''
+    This function will generate the attack story for PBOM
+    '''
+    colors = {
+        "supply-chain": "#FF0000",
+        "pre-supply-chain": "#00FF00",
+        "post-supply-chain": "#0000FF"
+    }
+    j = {}
+    story_path = os.path.join(oscar_source_path, 'stories')
+    # read all yamls from path  
+    story_list = []
+    for filename in glob.glob(story_path + '/*.yaml'):
+        logger.info('Reading file: %s', filename)
+        with open(filename, 'r') as f:
+            # read yaml file
+            y = yaml.load(f, Loader=yaml.SafeLoader)
+            # convert to json
+            #print(y)
+            j = {
+                "name": y['summary'],
+                "description": y['description'],
+                "techniques": [],
+                "legendItems": [],
+                "metadata": [],
+                "links": y['links'],
+                "id": y['id']
+            }
+
+            for attack in y['attacks']:
+                for technique in attack['techniques']:
+                    temp_tech = {
+                        "techniqueID": technique['techniqueID'],
+                        "tactic": technique['tactic'],
+                        "techName": technique['techName'],
+
+                        "color": attack['stage'],
+                        "attack_index": attack['index'],
+                        "entity_name": attack['attack']
+                    }
+                    if 'comment' in technique:
+                        temp_tech['comment'] = technique['comment']
+                    else:
+                        temp_tech['comment'] = ""
+                    j['techniques'].append(temp_tech)
+
+                # add legend items
+                j['legendItems'].append({
+                    "color": colors[attack['stage']],
+                    "label": attack['stage'],
+                    "name:": attack['attack'],
+                    "index": attack['index']
+                })
+                        
+        # save to json
+        with open(os.path.join(pbom_data_path, 'pbom_data', 'compaigns', filename.split('/')[-1].replace('.yaml', '.json')), 'w') as f:
+            f.write(json.dumps(j, indent=4))
+        story_list.append({
+            "name": j['name'],
+            "filename": filename.split('/')[-1].replace('.yaml', '.json')
+        })
+    
+    # save story list
+    with open(os.path.join(pbom_data_path, 'pbom_data', 'compaigns', 'story_list.json'), 'w') as f:
+        f.write(json.dumps(story_list, indent=4))
 
 
 
@@ -199,4 +272,5 @@ if __name__ == '__main__':
     oscar_source_path = args.source
     logger.info("Creating PBOM release")
     create_release(oscar_source_path, pbom_data_path)
+    #generate_attack_story(oscar_source_path, pbom_data_path)
     logger.info("Done")

@@ -12,35 +12,35 @@ attacks:
     index: 1
     stage: supply-chain
     techniques:
-      - technique:
-        - id: T0153
-        - tactic: Initial Access
-        - title: Compromised Developer Workstation
-        - comment: Attacker accesses unattended workstation of on of the CCleaner developers and installed a backdoor
-      - technique:
-        - id: T0113
-        - tactic: Initial Access
-        - title: Compromised User Account
-        - comment: |
+      
+      - techniqueID: T0153
+        tactic: Initial Access
+        techName: Compromised Developer Workstation
+        comment: Attacker accesses unattended workstation of on of the CCleaner developers and installed a backdoor
+      
+      - techniqueID: T0113
+        tactic: Initial Access
+        techName: Compromised User Account
+        comment: |
               The developer machine was accessed by using TeamViewer. This suggests that the developer's credentials where compromised
-      - technique:
-        - techid: T0137
-        - techname: Weak Authentication Methods
-        - tactic: Reconnaissance
-        - comment: The TeamViewer credentials where probably obtained from a different breach. If MFA was enabled - these credentials would not have been enough for connecting to the workstation
-      - technique:
-        - techid: T0176
-        - techname: Misconfigured Security Measures
-        - tactic: Defense Evasion
-        - comment: The attacker not only managed to infect more the 40 workstations in the company network but also did that for the CCleaner but also for the build system.
-      - technique:
-        - techid: T0191
-        - techname: Malicious Code In Artifacts
-        - tactic: Impact
-        - comment: Attackers compiled a customised version of ShadowPad, an infamous backdoor that allows attackers to download further malicious modules or steal data.
+      
+      - techniqueID: T0137
+        techName: Weak Authentication Methods
+        tactic: Reconnaissance
+        comment: The TeamViewer credentials where probably obtained from a different breach. If MFA was enabled - these credentials would not have been enough for connecting to the workstation
+      
+      - techniqueID: T0176
+        techName: Misconfigured Security Measures
+        tactic: Defense Evasion
+        comment: The attacker not only managed to infect more the 40 workstations in the company network but also did that for the CCleaner but also for the build system.
+      
+      - techniqueID: T0191
+        techName: Malicious Code In Artifacts
+        tactic: Impact
+        comment: Attackers compiled a customised version of ShadowPad, an infamous backdoor that allows attackers to download further malicious modules or steal data.
 
         
               
        
-references:
+links:
     - https://blog.avast.com/update-ccleaner-attackers-entered-via-teamviewer
