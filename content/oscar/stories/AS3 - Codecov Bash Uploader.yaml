@@ -12,60 +12,59 @@ attacks:
     index: 1
     stage: supply-chain
     techniques:
-      
-      - techid: T0103
-        techname: Scan Public Artifacts For Secrets
+      - techniqueID: T0103
+        techName: Scan Public Artifacts For Secrets
         tactic: Reconnaissance
         comment: The attackers scanned Docker Hub and discovered git credentials in the official Codecov image
       
-      - techid: T0142
-        techname: Accidental Public Disclosure Of Internal Resources
+      - techniqueID: T0142
+        techName: Accidental Public Disclosure Of Internal Resources
         tactic: Reconnaissance
         comment: The git credentials was indeliberately saved in the public docker image
       
-      - techid: T0114
-        techname: Compromised Service Account
+      - techniqueID: T0114
+        techName: Compromised Service Account
         tactic: Initial Access
         comment: The attackers gained access to Codecov's Git repo
       
-      - techid: T0191
-        techname: Malicious Code In Artifacts
+      - techniqueID: T0191
+        techName: Malicious Code In Artifacts
         tactic: Impact
         comment: The Bash Uploader script was modified to exfiltrate environnent variables of the running system
 
   - attack: Codecov users
     index: 2
     stage: post-supply-chain
-    technqiues:
+    techniques:
       
-      - techid: T0118
+      - techniqueID: T0118
         tactic: Execution
-        techname: Command Injection
+        techName: Command Injection
         comment: |
                 When the Codecov image was executed - the malicious implant in the Bash Uploader script exflitrated environment variable to the attacker controlled
       
-      - techid: T0122
+      - techniqueID: T0122
         tactic: Initial Access
-        techname: Vulnerability In Third-Party CI/CD Actions
+        techName: Vulnerability In Third-Party CI/CD Actions
         comment: |
               The Bash Uploader script was used as part of 3rd party Github actions
-        urls:
+        links:
           https://unit42.paloaltonetworks.com/codecov-bash-uploader/
       
-      - techid: T0140
+      - techniqueID: T0140
         tactic: Credential Access
-        techname: Harvest Tokens From Environment Variables
-      
-      - techid: T0121
+        techName: Harvest Tokens From Environment Variables
+        
+      - techniqueID: T0121
         tactic: Resource Development
-        techname: Compromised Legitimate Artifact
+        techName: Compromised Legitimate Artifact
       
-      - techid: T0159
+      - techniqueID: T0159
         tactic: Execution
-        techname: Malicious Artifact Execution
+        techName: Malicious Artifact Execution
         comment: Customers that utilized the Codecov image were impacted
         
               
        
-references:
+links:
     - https://about.codecov.io/security-update/

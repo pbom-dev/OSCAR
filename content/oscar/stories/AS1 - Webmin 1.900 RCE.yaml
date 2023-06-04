@@ -13,25 +13,24 @@ attacks:
     index: 1
     stage: supply-chain
     techniques:
-    - techid: T0180
-      techname:  Compromise services / servers
+    - techniqueID: T0180
+      techName:  Compromise services / servers
       tactic: Initial Access
-         
-      
-    - techid: T0191
-      techname:  Malicious Code In Artifacts
+    
+    - techniqueID: T0191
+      techName:  Malicious Code In Artifacts
       tactic: Impact
       comment: The attackers infected the webmin code with a backdoor that allowed remote code execution.
       
-    - techid: T0135
+    - techniqueID: T0135
       tactic: Initial Access
-      title: Vulnerable CICD System
+      techName: Vulnerable CICD System
       comment: |
                 At some time in April 2018, the Webmin development build server was exploited and a vulnerability added to the password_change.cgi script. According to their official writeup. The code that was integrated was taken from the local system and not from a controlled SCM.
       
-    - techid: T0194
+    - techniqueID: T0194
       tactic: Initial Access
-      title: Outdated Software Components
+      techName: Outdated Software Components
       comment: |
               The webmin build server was apperantly explioitable and the attackers used this to repeat the attack. 
               *"On September 10th 2018, the vulnerable build server was decomissioned and replaced with a newly installed server running CentOS 7. However, the build directory containing the modified file was copied across from backups made on the original server."*
@@ -40,10 +39,11 @@ attacks:
     index: 2
     stage: post-supply-chain
     techniques:
-    - techid: T0172
-      title: Runtime Backdoor
+    - techniqueID: T0172
+      techName: Runtime Backdoor
+      tactic: Execution
       comment: Customers that where using the infected software version could have been breached by the RCE backdoor
 
 
-references:
-    https://webmin.com/security/#remote-command-execution-cve-2019-15231
+links:
+    - https://webmin.com/security/#remote-command-execution-cve-2019-15231
