@@ -101,7 +101,7 @@ def setup_directory(pbom_data_path):
         os.mkdir(os.path.join(pbom_data_path, 'pbom_data', 'techniques'))
         os.mkdir(os.path.join(pbom_data_path, 'pbom_data', 'mitigations'))
         os.mkdir(os.path.join(pbom_data_path, 'pbom_data', 'detections'))
-        os.mkdir(os.path.join(pbom_data_path, 'pbom_data', 'compaigns'))
+        os.mkdir(os.path.join(pbom_data_path, 'pbom_data', 'campaigns'))
     except:
         logger.error("Can't create directory")
 
