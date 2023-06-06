@@ -203,7 +203,7 @@ def generate_attack_story(oscar_source_path, pbom_data_path):
                 })
                         
         # save to json
-        with open(os.path.join(pbom_data_path, 'pbom_data', 'compaigns', filename.split('/')[-1].replace('.yaml', '.json')), 'w') as f:
+        with open(os.path.join(pbom_data_path, 'pbom_data', 'campaigns', filename.split('/')[-1].replace('.yaml', '.json')), 'w') as f:
             f.write(json.dumps(j, indent=4))
         story_list.append({
             "name": j['name'],
@@ -211,7 +211,7 @@ def generate_attack_story(oscar_source_path, pbom_data_path):
         })
     
     # save story list
-    with open(os.path.join(pbom_data_path, 'pbom_data', 'compaigns', 'story_list.json'), 'w') as f:
+    with open(os.path.join(pbom_data_path, 'pbom_data', 'campaigns', 'story_list.json'), 'w') as f:
         f.write(json.dumps(story_list, indent=4))
 
 
