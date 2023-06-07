@@ -11,6 +11,8 @@ attacks:
   - attack: CCleaner
     index: 1
     stage: supply-chain
+    customer: 0
+    supplier: 2
     techniques:
       
       - techniqueID: T0153

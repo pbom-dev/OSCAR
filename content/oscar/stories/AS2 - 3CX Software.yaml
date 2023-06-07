@@ -11,6 +11,8 @@ attacks:
   - attack: Trading Technologies
     index: 1
     stage: pre-supply-chain
+    customer: 0
+    supplier: 2
     techniques:
     - techniqueID: T0191
       techName: Malicious Code In Artifacts
@@ -21,6 +23,8 @@ attacks:
   - attack: 3CX
     index: 2
     stage: supply-chain
+    customer: 1
+    supplier: 3
     techniques:
     - techniqueID: T0153
       tactic: Initial Access
@@ -41,7 +45,7 @@ attacks:
               Attackers connected to the company VPN using credentials, as a second factor authentication was not enabled.
       
     - techniqueID: T0131
-      tactic: Lateral Movements
+      tactic: Lateral Movement
       techName: Overprivileged User Account
       comment: |
               The compromised user had access to the entire network and the build system.

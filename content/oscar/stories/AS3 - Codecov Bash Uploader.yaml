@@ -11,6 +11,8 @@ attacks:
   - attack: Codecov
     index: 1
     stage: supply-chain
+    customer: 0
+    supplier: 2
     techniques:
       - techniqueID: T0103
         techName: Scan Public Artifacts For Secrets
@@ -35,6 +37,8 @@ attacks:
   - attack: Codecov users
     index: 2
     stage: post-supply-chain
+    customer: 1
+    supplier: 0
     techniques:
       
       - techniqueID: T0118
@@ -54,7 +58,7 @@ attacks:
       - techniqueID: T0140
         tactic: Credential Access
         techName: Harvest Tokens From Environment Variables
-        
+
       - techniqueID: T0121
         tactic: Resource Development
         techName: Compromised Legitimate Artifact
