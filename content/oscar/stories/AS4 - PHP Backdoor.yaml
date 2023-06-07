@@ -11,6 +11,8 @@ attacks:
   - attack: PHP Zerodium Backdoor
     index: 1
     stage: supply-chain
+    customer: 0
+    supplier: 2
     techniques:
       
       - techniqueID: T0195
@@ -37,6 +39,8 @@ attacks:
   - attack: PHP Userss
     index: 2
     stage: post-supply-chain
+    customer: 1
+    supplier: 0
     techniques:
       
         - techniqueID: T0172

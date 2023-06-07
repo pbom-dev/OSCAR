@@ -90,8 +90,8 @@ class PageGenerator(object):
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Create PBOM release')
-    parser.add_argument('-s', '--source', help='OSCAR source path', required=False, default='/Users/ronen/workspace/OSCAR/content/oscar')
-    parser.add_argument('-d', '--dest', help='PBOM data destination path', required=False, default='/Users/ronen/workspace/OSCAR/data')
+    parser.add_argument('-s', '--source', help='OSCAR source path', required=True)
+    parser.add_argument('-d', '--dest', help='PBOM data destination path', required=True)
     return parser.parse_args()
 
 def setup_directory(pbom_data_path):
@@ -199,8 +199,13 @@ def generate_attack_story(oscar_source_path, pbom_data_path):
                     "color": colors[attack['stage']],
                     "label": attack['stage'],
                     "name:": attack['attack'],
-                    "index": attack['index']
+                    "index": attack['index'],
+                    "customer": attack['customer'],
+                    "supplier": attack['supplier']
                 })
+
+        # sort techniques by attack_index and tactic
+        j['techniques'] = sorted(j['techniques'], key=lambda k: (k['attack_index'], TACTICS_ENUM[k['tactic']]))
                         
         # save to json
         with open(os.path.join(pbom_data_path, 'pbom_data', 'campaigns', filename.split('/')[-1].replace('.yaml', '.json')), 'w') as f:
@@ -209,7 +214,10 @@ def generate_attack_story(oscar_source_path, pbom_data_path):
             "name": j['name'],
             "filename": filename.split('/')[-1].replace('.yaml', '.json')
         })
-    
+
+    # sort story list techniques by index and TACTICS_ENUM
+    #story_list = sorted(story_list['techniques'], key=lambda k: (k['index'], TACTICS_ENUM[k['tactic']]))
+
     # save story list
     with open(os.path.join(pbom_data_path, 'pbom_data', 'campaigns', 'story_list.json'), 'w') as f:
         f.write(json.dumps(story_list, indent=4))
@@ -254,7 +262,6 @@ def generate_matrix(oscar_source_path, pbom_data_path):
             j[y['tactic']]['amount'] += 1
 
     # sort matrix by tacticid
-    j = dict(sorted(j.items(), key=lambda item: item[1]['tacticid']))
 
     # sort items by id
     for tactic in j:
