@@ -198,7 +198,7 @@ def generate_attack_story(oscar_source_path, pbom_data_path):
                 j['legendItems'].append({
                     "color": colors[attack['stage']],
                     "label": attack['stage'],
-                    "name:": attack['attack'],
+                    "name": attack['attack'],
                     "index": attack['index'],
                     "customer": attack['customer'],
                     "supplier": attack['supplier']
