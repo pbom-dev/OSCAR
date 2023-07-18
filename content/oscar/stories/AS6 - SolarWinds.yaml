@@ -1,0 +1,77 @@
+id:  AS6
+type: Attack Story
+date: 2019-03
+
+summary: SolarWinds
+description: |
+        The SolarWinds incident, one of the most significant cyberattacks in recent history, began when hackers gained unauthorized access to the internal network of SolarWinds, a prominent IT management software provider. In 2019, they injected malicious code into SolarWinds' widely used Orion software, which was unknowingly distributed to around 18,000 customers in a software update released in March 2020. Exploiting this compromise, the hackers conducted targeted cyber-espionage campaigns against various organizations. The breach, attributed to a state-sponsored hacking group believed to be linked to the Russian government, allowed the attackers to gain unauthorized access to systems. In response, directives were issued advising affected organizations to disconnect or power down SolarWinds Orion products. The breach also affected Microsoft, which revealed that the attackers had accessed some of their source code repositories. Investigations, forensic analyses, and mitigation efforts were undertaken to assess the breach's extent, remove the malicious code, and bolster security measures. The incident exposed the attackers' sophistication and highlighted the vulnerability of trusted software supply chains, underscoring the importance of robust cybersecurity measures.
+
+# Techinques used in attack
+attacks:
+  - attack: SolarWinds
+    index: 1
+    stage: supply-chain
+    customer: 0
+    supplier: 2
+    techniques:
+    - techniqueID: T0142
+      techName: Accidental public disclosure of internal resources
+      tactic: Reconnaissance
+      comment: |
+        The password “solarwinds123,” was discovered in 2019 on the public internet by an independent security researcher who warned the company that the leak had exposed a SolarWinds file server. According to the researcher, he was able to use this password to access SolarWinds FTP server.
+
+    - techniqueID: T0105
+      techname: Active Scanning
+      tactic: Reconnissance
+      comment: |
+         SolarWinds investigations uncovered evidence that the threat actor compromised credentials and conducted research and surveillance in furtherance of its objectives through persistent access to our software development environment and internal systems, including our Microsoft Office 365 environment,
+
+    - techniqueID: T0153
+      techName:  Compromised developer workstation
+      tactic: Initial Access
+      comment: |
+        The exact infection point at SolarWinds is still unknown, but there are a few theories. One theory is that the attackers compromised a developer workstation and used it to upload the malicious code to the SolarWinds Orion software. Another theory is that the attackers exploited a vulnerability in SolarWinds' build process to inject the malicious code. It is also possible that the attackers used a combination of these methods to gain access to SolarWinds' systems.
+
+    
+    - techniqueID: T0135
+      tactic: Initial Access
+      techName: Vulnerable CICD System
+      comment: |
+                The exact infection point at SolarWinds is still unknown, but there are a few theories. One theory is that the attackers compromised a developer workstation and used it to upload the malicious code to the SolarWinds Orion software. Another theory is that the attackers exploited a vulnerability in SolarWinds' build process to inject the malicious code. It is also possible that the attackers used a combination of these methods to gain access to SolarWinds' systems.
+      
+    - techniqueID: T0113
+      tactic: Initial Access
+      techName: Compromised user account
+      comment: |
+              It is speculated that the attackers employed multiple techniques to compromise user accounts. These methods might have involved the utilization of brute-force attacks or phishing tactics to gain unauthorized access.
+
+    - techniqueID: T0113
+      tactic: Initial Access
+      techName: Compromised user account
+      comment: |
+              It is speculated that the attackers employed multiple techniques to compromise user accounts. These methods might have involved the utilization of brute-force attacks or phishing tactics to gain unauthorized access. 
+
+    - techniqueID: T0191
+      techName: Malicious code in artifacts
+      tactic: Impact
+      comment: | 
+        SolarWinds reported that the attacker introduced a backdoor named Sunburst and UNC2452 into the SolarWinds Orion Software. Contrary to altering the source code itself, the attacker injected the malware into the software during the build process, as disclosed by SolarWinds.
+  - attack: SolarWinds Customers
+    index: 2
+    stage: post-supply-chain
+    customer: 1
+    supplier: 0
+    techniques:
+    - techniqueID: T0172
+      techName: Runtime Backdoor
+      tactic: Execution
+      comment:  |
+        The SolarWinds breach had a potentially significant impact due to the widespread use of the compromised Orion Software in numerous high-profile organizations. These included prominent US agencies, as well as technology giants like Microsoft, Intel, and Cisco. While the specific extent of the damage caused by the breach has not been publicly disclosed, the potential for harm was substantial, considering the stature of these companies as significant suppliers of software in the industry
+
+
+links:
+    - https://orangematter.solarwinds.com/2021/05/07/an-investigative-update-of-the-cyberattack/
+    - https://edition.cnn.com/2021/02/26/politics/solarwinds123-password-intern/index.html
+    - https://www.mandiant.com/solarwinds-break-resource-center
+
+

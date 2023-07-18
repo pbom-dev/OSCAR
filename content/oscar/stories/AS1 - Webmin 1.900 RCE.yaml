@@ -4,8 +4,7 @@ date: 2018-04
 
 summary: Webmin 1.900 RCE
 description: |
-        Webmin is a popular server administration software. Webmin version 1.890 was released with a backdoor that could allow anyone with knowledge of it to execute commands as root. Versions 1.900 to 1.920 also contained a backdoor using similar code, but it was not exploitable in a default Webmin install. Only if the admin had enabled the feature at Webmin ⇾ Webmin Configuration ⇾ Authentication to allow changing of expired passwords could it be used by an attacker.
-        Neither of these were accidental bugs - rather, the Webmin source code had been maliciously modified to add a non-obvious vulnerability. 
+        Webmin, a widely used server administration software, experienced a security incident where attackers introduced a backdoor into version 1.890. This backdoor allowed individuals with knowledge of it to execute commands with root privileges. Subsequent versions, 1.900 to 1.920, also contained a similar backdoor in the code, but it was not exploitable in a default Webmin installation. Only if an administrator had specifically enabled the "changing of expired passwords" feature in the Webmin Configuration ⇾ Authentication section, could it be utilized by an attacker. These vulnerabilities were not accidental flaws; rather, the Webmin source code was deliberately modified to include a concealed vulnerability.
 
 # Techinques used in attack
 attacks:
@@ -18,6 +17,8 @@ attacks:
     - techniqueID: T0180
       techName:  Compromise services / servers
       tactic: Initial Access
+      comment: |
+          At some time in April 2018, the Webmin development build server was exploited and a vulnerability added to the password_change.cgi
     
     - techniqueID: T0191
       techName:  Malicious Code In Artifacts
