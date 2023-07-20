@@ -34,7 +34,7 @@ attacks:
         - tactic: Initial Access
         - title: Outdated Software Components
         - comment: |
-              The webmin build server was apperantly explioitable and the attackers used this to repeat the attack. 
+              The webmin build server was apparently exploitable and the attackers used this to repeat the attack. 
               *"On September 10th 2018, the vulnerable build server was decomissioned and replaced with a newly installed server running CentOS 7. However, the build directory containing the modified file was copied across from backups made on the original server."*
 
   - attack: Webmin Customers
