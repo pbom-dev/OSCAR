@@ -21,7 +21,7 @@ attacks:
         The password “solarwinds123,” was discovered in 2019 on the public internet by an independent security researcher who warned the company that the leak had exposed a SolarWinds file server. According to the researcher, he was able to use this password to access SolarWinds FTP server.
 
     - techniqueID: T0105
-      techname: Active Scanning
+      techName: Active Scanning
       tactic: Reconnissance
       comment: |
          SolarWinds investigations uncovered evidence that the threat actor compromised credentials and conducted research and surveillance in furtherance of its objectives through persistent access to our software development environment and internal systems, including our Microsoft Office 365 environment,
