@@ -22,7 +22,7 @@ attacks:
 
     - techniqueID: T0105
       techName: Active Scanning
-      tactic: Reconnissance
+      tactic: Reconnaissance
       comment: |
          SolarWinds investigations uncovered evidence that the threat actor compromised credentials and conducted research and surveillance in furtherance of its objectives through persistent access to our software development environment and internal systems, including our Microsoft Office 365 environment,
 
