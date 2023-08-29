@@ -262,7 +262,8 @@ def generate_matrix(oscar_source_path, pbom_data_path):
             j[y['tactic']]['amount'] += 1
 
     # sort matrix by tacticid
-
+    j = dict(sorted(j.items(), key=lambda item: item[1]['tacticid']))
+    
     # sort items by id
     for tactic in j:
         j[tactic]['items'] = sorted(j[tactic]['items'], key=lambda k: k['id'])
