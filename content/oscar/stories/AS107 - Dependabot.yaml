@@ -1,0 +1,63 @@
+id:  AS107
+type: Attack Story
+date: 2023-09
+
+summary: Spoofed Dependabot
+description: |
+    A large-scale attack targeted hundreds of GitHub repositories, involving malicious code commits designed to mimic "Dependabot," a standard GitHub tool. The attackers attempted to go unnoticed by impersonating this trusted tool.
+        
+# Techinques used in attack
+attacks:
+  - attack: Github Repos
+    index: 1
+    stage: supply-chain
+    customer: 0
+    supplier: 2
+    techniques:
+    - techniqueID: T0112
+      techName: Compromised Token
+      tactic: Initial Access
+      comment: |
+        The perpetrators managed to acquire personal GitHub tokens, although the method of compromise remains unclear. Given the widespread nature of the attack across numerous unrelated repositories, it is likely that compromised developer workstations played a role.
+
+    - techniqueID: T0153
+      techName: Compromised Developer Workstation
+      tactic: Initial Access
+      comment: |
+        The attackers managed to acquire personal GitHub tokens, although the method of compromise remains unclear. Given the widespread nature of the attack across numerous unrelated repositories, it is likely that compromised developer workstations played a role.   
+
+    - techniqueID: T0195
+      techName: Spoofed Commits
+      tactic: Defense Evasion
+      comment: |
+        The attackers commits aimed to evade detection by adopting the guise of 'Dependabot,' a tool from GitHub designed to tackle security vulnerabilities in third-party libraries.
+
+    - techniqueID: T0140
+      techName:  Harvest Tokens From Environment Variables
+      tactic: Credential Access
+      comment: |
+        Attackers pushed a Github action definition that was configured to execute per push and send GitHub secrets and variables to a command and control server. This has the potential to compromise more resources from code to cloud.
+    - techniqueID: T0196
+      techName:  Backdoor in code
+      tactic: Impact
+      comment: |
+        Attackers also infected Javascript files with a password stealing malware.
+   
+  
+  - attack: Users of code for inefected repoistories
+    index: 2
+    stage: post-supply-chain
+    customer: 1
+    supplier: 0
+    techniques:
+    - techniqueID: T0113
+      techName: Compromised user account
+      tactic: Initial Access
+      comment:  |
+          Once the JavaScript code designed to steal passwords is deployed, it initiates another phase of the attack. Not only can it be utilized to pilfer data, but it also serves as a potential gateway for launching another supply chain attack on the affected users' audience.
+
+
+links:
+    - https://checkmarx.com/blog/surprise-when-dependabot-contributes-malicious-code/
+
+
