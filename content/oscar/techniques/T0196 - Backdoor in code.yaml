@@ -1,0 +1,37 @@
+id: T0196
+type: Technique
+
+tactic: Impact
+
+realm: 
+  - Code Security
+  - Open Source Security
+  - SCM Posture
+
+summary: Backdoor in code
+
+description: |
+  Backdoor in code attack technique involves inserting a malicious code segment or backdoor into the software codebase, which allows the attacker to maintain access and control over the system even after their initial access has been removed or blocked.
+  In this attack, the attacker gains access to the codebase through various means, such as exploiting vulnerabilities or stealing credentials. 
+  Once they have gained access, the attacker inserts a malicious code segment or backdoor into the codebase. 
+  This code segment may be designed to execute specific malicious activities, such as stealing sensitive information, or to provide the attacker with continued access and control over the system.
+
+mitigations: 
+  - M1550
+  - M1731
+  - M1732
+
+detections:
+  - D1260
+  - D1261
+  - D1262
+  - D1510
+
+references: 
+  - https://kerkour.com/supply-chain-attacks-and-backdoored-dependencies
+
+metadata: 
+    version: 0.2
+    state: draft
+
+  
