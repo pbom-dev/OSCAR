@@ -1,0 +1,60 @@
+id:  AS108
+type: Attack Story
+date: 2022-02
+
+summary: JuiceStealer - PyPi Supply Chain Attack
+description: |
+    The threat actor known as "JuiceLedger" orchestrated a large-scale attack on PyPi, the official Python package repository. This attack was multifaceted, targeting package maintainers by attempting to compromise their PyPi accounts. Additionally, the attacker engaged in TypoSquatting, uploading malicious packages to the repository
+        
+# Techinques used in attack
+attacks:
+  - attack: PyPi package maintainers
+    index: 1
+    stage: supply-chain
+    customer: 0
+    supplier: 2
+    techniques:
+    - techniqueID: T0113
+      techName: Compromised User Account
+      tactic: Initial Access
+      comment: |
+        PyPi package maintainers received a phishing email requesting validation of their PyPi credentials, which directed them to a fraudulent PyPi login page in an attempt to steal their account information.
+
+    
+
+    - techniqueID: T0111
+      techName: Malicious Code Contribution To An Open-Source Repository
+      tactic: Resource Development
+      comment: |
+        These phishing attempts were successful on at least two occasions, targeting version 0.1.6 of "exotel" (with over 480,000 total downloads) and versions 2.0.2 and 4.0.2 of "spam" (with over 200,000 total downloads). The malicious code was crafted to pilfer cryptocurrency credentials and was later augmented with a broader functionality aimed at stealing Chrome passwords
+
+
+    - techniqueID: T0129
+      techName: Typosquatting
+      tactic: Initial Access
+      comment: |
+        Simultaneously with the phishing attempts, the same malware, JuiceStealer, was introduced into hundreds of Python packages, strategically designed to mimic legitimate packages
+       
+  
+  - attack: Users of code for inefected repoistories
+    index: 2
+    stage: post-supply-chain
+    customer: 1
+    supplier: 0
+    techniques:
+    - techniqueID: T0113
+      techName: Compromised user account
+      tactic: Initial Access
+      comment:  |
+          The JuiceStealer malware, initially created to pilfer cryptocurrency wallet credentials, was subsequently modified to extract credentials from Chrome. This alteration significantly escalates the supply chain attack, increasing its potential impact
+    
+    
+
+
+links:
+    - https://arstechnica.com/information-technology/2022/09/actors-behind-pypi-supply-chain-attack-have-been-active-since-late-2021/
+    - https://www.sentinelone.com/labs/pypi-phishing-campaign-juiceledger-threat-actor-pivots-from-fake-apps-to-supply-chain-attacks/
+    - https://checkmarx.com/blog/first-known-phishing-attack-against-pypi-users/
+    
+
+
