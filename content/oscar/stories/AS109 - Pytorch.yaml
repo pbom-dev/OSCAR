@@ -30,7 +30,7 @@ attacks:
     techniques:
     - techniqueID: T0140
       techName: Harvest Tokens From Environment Variables
-      tactic: Credentials Access
+      tactic: Credential Access
       comment:  |
           The malicious code within the Torchtriton package extracted and exfiltrated environment variables and files from the home directory of users who installed this package.
 
