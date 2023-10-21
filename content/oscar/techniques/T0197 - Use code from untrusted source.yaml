@@ -1,0 +1,35 @@
+id: T0197
+type: Technique
+
+tactic: Initial Access
+
+realm: 
+  - Open Source Security
+  - CI/CD Posture
+
+summary: Use code from untrusted source
+
+description: |
+    It is possible to install a package not from an official package repository - but rather install directly using a URL. Packages from official repositories are usually vetted for security vulnerabilities. Installing from an unverified URL can expose your system to malicious software, including viruses, malware, or other security threats.
+mitigations: 
+  - M1450
+  - M1451
+  - M1503
+  - M1550
+  - M1720
+
+detections:
+  - D1500
+  - D1510
+  - D1520
+  - D1590
+
+references: 
+  - https://www.thirdpartytrust.com/blog/what-is-shadow-it-digital-supply-chain/
+  - https://www.bleepingcomputer.com/news/security/new-xcodespy-malware-targets-ios-devs-in-supply-chain-attack/
+
+metadata: 
+    version: 0.2
+    state: draft
+
+  
