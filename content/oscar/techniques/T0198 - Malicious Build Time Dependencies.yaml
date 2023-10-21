@@ -1,0 +1,28 @@
+id: T0198
+type: Technique
+
+tactic: Defense Evasion
+
+realm: 
+  - CI/CD Posture
+  - Code Security
+  - Open Source Security
+
+summary: Malicious Build Time Dependencies
+
+description: |
+  Within the CI/CD workflow, code can be pushed at different stages. During the build process, plugins are often utilized for tasks like building and testing. However, if a third-party plugin is compromised, malicious code can be introduced. For instance, an attacker gains control over a Maven plugin (a popular build framework) and  injectx malware during the build process. SBOM tools may not be effective in detecting such scenarios as they primarily operate on source code.
+
+mitigations: 
+  - 
+
+detections: 
+  - 
+
+references: 
+  - https://i.blackhat.com/BH-US-23/Presentations/US-23-Long-Reflections-On-Trust.pdf
+metadata: 
+    version: 0.1
+    state: draft
+
+  
