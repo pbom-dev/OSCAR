@@ -6,6 +6,7 @@ tactic: Execution
 realm: 
   - Artifact Security
   - Open Source Security
+  - CI/CD Posture
 
 summary: Malicious artifact execution
 

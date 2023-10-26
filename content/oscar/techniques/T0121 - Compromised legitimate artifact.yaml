@@ -6,6 +6,7 @@ tactic: Resource Development
 realm: 
   - Container Security
   - Open Source Security
+  - CI/CD Posture
 
 summary: Compromised legitimate artifact
 

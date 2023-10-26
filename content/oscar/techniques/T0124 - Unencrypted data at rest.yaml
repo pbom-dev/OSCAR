@@ -6,6 +6,7 @@ tactic: Collection
 realm: 
   - Cloud Security
   - Infrastructure as code
+  - CI/CD Posture
 
 summary: Unencrypted data at rest
 

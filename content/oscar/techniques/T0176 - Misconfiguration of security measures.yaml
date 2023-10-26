@@ -5,6 +5,7 @@ tactic: Defense Evasion
 
 realm: 
   - Cloud Security
+  - CI/CD Posture
 
 summary: Misconfigured security measures
 

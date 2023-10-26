@@ -6,6 +6,7 @@ tactic: Lateral Movement
 realm: 
   - Code Security
   - SCM Posture
+  - CI/CD Posture
 
 summary: Push implants across repositories 
 

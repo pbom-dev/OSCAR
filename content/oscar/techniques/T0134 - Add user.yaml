@@ -6,6 +6,7 @@ tactic: Persistence
 realm: 
   - CI/CD Posture
   - SCM Posture
+  - Cloud Security
 
 summary: Add user
 

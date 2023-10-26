@@ -5,6 +5,7 @@ tactic: Exfiltration
 
 realm: 
   - Cloud Security
+  - CI/CD Posture
 
 summary: Bypass of outbound traffic control
 
