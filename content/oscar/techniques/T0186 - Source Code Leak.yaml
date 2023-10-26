@@ -5,6 +5,7 @@ tactic: Impact
 
 realm: 
   - SCM Posture
+  - CI/CD Posture
 
 summary: Source code leak
 
