@@ -5,6 +5,7 @@ tactic: Collection
 
 realm: 
   - Cloud Security
+  - CI/CD Posture
 
 summary: Sensitive information in environment variables
 

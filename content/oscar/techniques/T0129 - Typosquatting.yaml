@@ -6,6 +6,7 @@ tactic: Initial Access
 realm: 
   - Container Security
   - Open Source Security
+  - CI/CD Posture
 
 summary: Typosquatting
 

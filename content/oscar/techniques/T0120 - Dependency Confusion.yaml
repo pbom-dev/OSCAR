@@ -7,6 +7,7 @@ realm:
   - Artifact Security
   - Container Security
   - Open Source Security
+  - CI/CD Posture
 
 summary: Dependency confusion
 

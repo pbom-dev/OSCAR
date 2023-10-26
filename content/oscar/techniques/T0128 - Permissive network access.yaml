@@ -6,6 +6,7 @@ tactic: Initial Access
 realm: 
   - Cloud Security
   - Infrastructure as code
+  - CI/CD Posture
 
 summary: Permissive network access
 
