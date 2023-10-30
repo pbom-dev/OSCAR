@@ -22,9 +22,9 @@ realm: # REQUIRED - <list> - multiple choice
 summary: # REQUIRED - <key:value>
 description: # REQUIRED - <key:value> - supports markdown
 mitigations: # REQUIRED - <list> -reference to mitigation references
-detections: # REQUIRED - <list> - reference to detection defintitions
+detections: # REQUIRED - <list> - reference to detection definitions
 subtechinques: # OPTIONAL <list> - reference to TechIDs
-references: # OPTIONAL <list> - reference to attacks, articals, blogs etc...
+references: # OPTIONAL <list> - reference to attacks, articles, blogs etc...
 metadata:
   state: # REQUIRED <key:value> choose  draft or release
   version: # OPTIONAL <key:value> note a version number of this document
