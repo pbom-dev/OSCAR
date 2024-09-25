@@ -10,9 +10,9 @@ realm:
 summary: Scan configuration on public resources
 
 description: |
-  &ensp;This technique involves scanning the configuration of public cloud resources and CI/CD pipelines for misconfigurations and vulnerabilities that can be exploited by attackers to gain unauthorized access or cause system disruption.<br>
-  &ensp;An attacker can use this technique to identify configuration weaknesses in an organization's cloud infrastructure and CI/CD pipelines, including weak authentication mechanisms, misconfigured security groups, and unsecured storage buckets.<br> 
-  &ensp;By scanning the configuration of public resources, an attacker can develop an understanding of the target's attack surface and identify vulnerabilities that can be exploited in future attacks.
+  This technique involves scanning the configuration of public cloud resources and CI/CD pipelines for misconfigurations and vulnerabilities that can be exploited by attackers to gain unauthorized access or cause system disruption.
+  An attacker can use this technique to identify configuration weaknesses in an organization's cloud infrastructure and CI/CD pipelines, including weak authentication mechanisms, misconfigured security groups, and unsecured storage buckets.
+  By scanning the configuration of public resources, an attacker can develop an understanding of the target's attack surface and identify vulnerabilities that can be exploited in future attacks.
 
 mitigations: 
   - M1000

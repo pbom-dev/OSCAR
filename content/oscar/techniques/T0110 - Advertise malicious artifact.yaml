@@ -10,11 +10,11 @@ realm:
 summary: Advertise malicious artifact
 
 description: |
-  &ensp;An Advertise Malicious Artifact attack is a type of cyber attack in which an attacker distributes a malicious package or container image to a broader audience, typically by advertising it on popular repositories or registries.<br>
-  &ensp;The goal of this attack is to entice users into downloading and using the malicious artifact, thereby compromising their systems.<br>
-  &ensp;In this attack, the attacker may create a fake developer account or use an existing legitimate account to upload the malicious artifact to popular repositories or registries such as PyPI or DockerHub.<br> 
-  &ensp;The attacker may then use various techniques to promote the malicious artifact, such as forum promotion, commenting, using misleading descriptions, tags, or keywords, or by hijacking popular package names.<br>
-  &ensp;Once users download and install the malicious package or container image, it can compromise their systems and potentially cause significant harm, such as stealing sensitive data or taking control of the system.
+  An Advertise Malicious Artifact attack is a type of cyber attack in which an attacker distributes a malicious package or container image to a broader audience, typically by advertising it on popular repositories or registries.
+  The goal of this attack is to entice users into downloading and using the malicious artifact, thereby compromising their systems.
+  In this attack, the attacker may create a fake developer account or use an existing legitimate account to upload the malicious artifact to popular repositories or registries such as PyPI or DockerHub.
+  The attacker may then use various techniques to promote the malicious artifact, such as forum promotion, commenting, using misleading descriptions, tags, or keywords, or by hijacking popular package names.
+  Once users download and install the malicious package or container image, it can compromise their systems and potentially cause significant harm, such as stealing sensitive data or taking control of the system.
 
 mitigations: 
   - M1090
