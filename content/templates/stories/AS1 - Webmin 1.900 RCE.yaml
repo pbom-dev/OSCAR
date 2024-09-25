@@ -7,7 +7,7 @@ description: |
         Webmin is a popular server administration software. Webmin version 1.890 was released with a backdoor that could allow anyone with knowledge of it to execute commands as root. Versions 1.900 to 1.920 also contained a backdoor using similar code, but it was not exploitable in a default Webmin install. Only if the admin had enabled the feature at Webmin ⇾ Webmin Configuration ⇾ Authentication to allow changing of expired passwords could it be used by an attacker.
         Neither of these were accidental bugs - rather, the Webmin source code had been maliciously modified to add a non-obvious vulnerability. 
 
-# Techinques used in attack
+# Techniques used in attack
 attacks:
   - attack: Webmin
     index: 1
@@ -22,7 +22,7 @@ attacks:
         - techid: T0191
         - techname: Malicious Code In Artifacts
         - tactic: Impact
-        - comment: The attackers infected the webmin code with a backdoor that allowed remote code execution.
+        - comment: The attackers infected the Webmin code with a backdoor that allowed remote code execution.
       - technique:
         - id: T0135
         - tactic: Initial Access
@@ -34,8 +34,8 @@ attacks:
         - tactic: Initial Access
         - title: Outdated Software Components
         - comment: |
-              The webmin build server was apparently exploitable and the attackers used this to repeat the attack. 
-              *"On September 10th 2018, the vulnerable build server was decomissioned and replaced with a newly installed server running CentOS 7. However, the build directory containing the modified file was copied across from backups made on the original server."*
+              The Webmin build server was apparently exploitable and the attackers used this to repeat the attack. 
+              "On September 10th 2018, the vulnerable build server was decommissioned and replaced with a newly installed server running CentOS 7. However, the build directory containing the modified file was copied across from backups made on the original server."
 
   - attack: Webmin Customers
     index: 2

@@ -12,9 +12,9 @@ realm:
 summary: Outdated software components
 
 description: | 
-  Outdated software compoenents can impact various aspects of security. 
-  The obvious one is, of course, outdated software usually means unpatched vulnerabilties. 
-  But it also means that in case of an incident it will be harder for an organization to react and patch becuase it has higher risk of breaking functionality.
+  Outdated software components can impact various aspects of security. 
+  The obvious one is, of course, outdated software usually means unpatched vulnerabilities. 
+  But it also means that in case of an incident it will be harder for an organization to react and patch because it has higher risk of breaking functionality.
 
 mitigations: 
   - M1500

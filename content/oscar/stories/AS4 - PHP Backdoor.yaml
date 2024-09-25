@@ -4,9 +4,9 @@ date: 2021-03
 
 summary: PHP Zerodium Backdoor
 description: |
-        In March 2023 it was discovered that a bad actor succeeded to infect the official PHP code with a backdoor. PHP is one the most common technologies for web applications - a succesful attack would have meant taking over millions of servers.
+        In March 2023 it was discovered that a bad actor succeeded to infect the official PHP code with a backdoor. PHP is one the most common technologies for web applications - a successful attack would have meant taking over millions of servers.
 
-# Techinques used in attack
+# Techniques used in attack
 attacks:
   - attack: PHP Zerodium Backdoor
     index: 1
@@ -28,15 +28,15 @@ attacks:
       - techniqueID: T0180
         techName: Compromise Services / Servers
         tactic: Initial Access
-        comment: PHP Git server was maitained by the PHP developers. After the breach they decided to move to Github. 
+        comment: PHP Git server was maintained by the PHP developers. After the breach they decided to move to Github.
       
       - techniqueID: T0191
         techName: Malicious Code In Artifacts
         tactic: Impact
         comment: |
-                On March 28th, 2021, two commits to the source code of PHP were more than extraordinary. They contained a backdoor which would execute if HTTP_USER_AGENTT string starts with ‘zerodium’.
+                On March 28th, 2021, two commits to the source code of PHP were more than extraordinary. They contained a backdoor which would execute if HTTP_USER_AGENT string starts with 'zerodium'.
 
-  - attack: PHP Userss
+  - attack: PHP Users
     index: 2
     stage: post-supply-chain
     customer: 1
@@ -46,7 +46,7 @@ attacks:
         - techniqueID: T0172
           tactic: Execution
           techName: Runtime Backdoor
-          comment: The backdoor would execute commands when a http request with user-agent zerodium was sent
+          comment: The backdoor would execute commands when a HTTP request with User-Agent 'zerodium' was sent
         
         - techniqueID: T0111
           tactic: Resource Development

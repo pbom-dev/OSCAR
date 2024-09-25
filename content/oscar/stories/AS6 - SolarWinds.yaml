@@ -6,7 +6,7 @@ summary: SolarWinds
 description: |
         The SolarWinds incident, one of the most significant cyberattacks in recent history, began when hackers gained unauthorized access to the internal network of SolarWinds, a prominent IT management software provider. In 2019, they injected malicious code into SolarWinds' widely used Orion software, which was unknowingly distributed to around 18,000 customers in a software update released in March 2020. Exploiting this compromise, the hackers conducted targeted cyber-espionage campaigns against various organizations. The breach, attributed to a state-sponsored hacking group believed to be linked to the Russian government, allowed the attackers to gain unauthorized access to systems. In response, directives were issued advising affected organizations to disconnect or power down SolarWinds Orion products. The breach also affected Microsoft, which revealed that the attackers had accessed some of their source code repositories. Investigations, forensic analyses, and mitigation efforts were undertaken to assess the breach's extent, remove the malicious code, and bolster security measures. The incident exposed the attackers' sophistication and highlighted the vulnerability of trusted software supply chains, underscoring the importance of robust cybersecurity measures.
 
-# Techinques used in attack
+# Techniques used in attack
 attacks:
   - attack: SolarWinds
     index: 1
@@ -18,7 +18,7 @@ attacks:
       techName: Accidental public disclosure of internal resources
       tactic: Reconnaissance
       comment: |
-        The password “solarwinds123,” was discovered in 2019 on the public internet by an independent security researcher who warned the company that the leak had exposed a SolarWinds file server. According to the researcher, he was able to use this password to access SolarWinds FTP server.
+        The password "solarwinds123," was discovered in 2019 on the public internet by an independent security researcher who warned the company that the leak had exposed a SolarWinds file server. According to the researcher, he was able to use this password to access SolarWinds FTP server.
 
     - techniqueID: T0105
       techName: Active Scanning

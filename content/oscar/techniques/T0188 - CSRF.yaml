@@ -9,8 +9,8 @@ realm:
 summary: Cross Site Request Forgery
 
 description: |
-  Cross Site Request Forgert, or CSRF, may have different affects, depending on the application code. 
-  It is widely used in conjunction with spear-phising attacks where adversaries will attempt to abuse authenticated users sessions to perform actions that will allow them to take over a server.
+  Cross-Site Request Forgery, or CSRF, may have different affects, depending on the application code. 
+  It is widely used in conjunction with spear-phishing attacks where adversaries will attempt to abuse authenticated users sessions to perform actions that will allow them to take over a server.
 
 mitigations: 
   - M1720

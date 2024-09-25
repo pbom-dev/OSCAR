@@ -10,7 +10,7 @@ summary: SQL injection
 
 description: | 
   SQL injection is a web security vulnerability that allows an attacker to interfere with the queries that an application makes to its database. 
-  A SQL injection attack consists of insertion or “injection” of a SQL query via the input data from the client to the application. 
+  A SQL injection attack consists of insertion or "injection" of a SQL query via the input data from the client to the application. 
   Successful SQL injection exploit can read sensitive data from the database, modify database data (Insert/Update/Delete), execute administration operations on the database (such as shutdown the DBMS), recover the content of a given file present on the DBMS file system and in some cases issue commands to the operating system.
 
 mitigations:

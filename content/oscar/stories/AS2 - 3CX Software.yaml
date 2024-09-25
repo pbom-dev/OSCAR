@@ -4,9 +4,9 @@ date: 2023-04
 
 summary: 3CX Desktop
 description: |
-        3CX is a VOIP software company with more than 600000 customers. In April 2023, the company was subject to an attack that infected their 3CX desktop software with malware. It is suspected to be a nation state attack carried out by North Korea. The attack was faciltiated by attacking the supply chain of a trading software company, Trading Technoloigies. 
+        3CX is a VOIP software company with more than 600000 customers. In April 2023, the company was subject to an attack that infected their 3CX desktop software with malware. It is suspected to be a nation state attack carried out by North Korea. The attack was facilitated by attacking the supply chain of a trading software company, Trading Technologies. 
 
-# Techinques used in attack
+# Techniques used in attack
 attacks:
   - attack: Trading Technologies
     index: 1
@@ -17,7 +17,7 @@ attacks:
     - techniqueID: T0191
       techName: Malicious Code In Artifacts
       tactic: Impact
-      comment: The attackers trojanized the softare X_TRADER. The software was digitally signed by "Trading Technologies" which strongly suggests that the firm's supply chain was breached.
+      comment: The attackers trojanized the software X_TRADER. The software was digitally signed by "Trading Technologies" which strongly suggests that the firm's supply chain was breached.
       links:
         https://www.mandiant.com/resources/blog/3cx-software-supply-chain-compromise
   - attack: 3CX
@@ -54,7 +54,7 @@ attacks:
       tactic: Credential Access
       techName: Harvesting Sensitive Information From Files
       comment: |
-              3CX used to save their application password unencrypted/unhashed in the file system. It is not clear if that was used as part of this attack, but the fact is that they released a new client that resolves this issue.
+              3CX used to save their application password unencrypted/un-hashed in the file system. It is not clear if that was used as part of this attack, but the fact is that they released a new client that resolves this issue.
       
     - techniqueID: T0176
       tactic: Defense Evasion

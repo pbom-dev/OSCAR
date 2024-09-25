@@ -9,7 +9,7 @@ realm:
 summary: IDE
 
 description: |
-  Malicous code can be injected into build commands, build scripts or project files. 
+  Malicious code can be injected into build commands, build scripts or project files. 
   These commands and scripts can be executed upon IDE project build and run.
 
 mitigations:

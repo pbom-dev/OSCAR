@@ -6,7 +6,7 @@ summary: Webmin 1.900 RCE
 description: |
         Webmin, a widely used server administration software, experienced a security incident where attackers introduced a backdoor into version 1.890. This backdoor allowed individuals with knowledge of it to execute commands with root privileges. Subsequent versions, 1.900 to 1.920, also contained a similar backdoor in the code, but it was not exploitable in a default Webmin installation. Only if an administrator had specifically enabled the "changing of expired passwords" feature in the Webmin Configuration ⇾ Authentication section, could it be utilized by an attacker. These vulnerabilities were not accidental flaws; rather, the Webmin source code was deliberately modified to include a concealed vulnerability.
 
-# Techinques used in attack
+# Techniques used in attack
 attacks:
   - attack: Webmin
     index: 1
@@ -23,7 +23,7 @@ attacks:
     - techniqueID: T0191
       techName:  Malicious Code In Artifacts
       tactic: Impact
-      comment: The attackers infected the webmin code with a backdoor that allowed remote code execution.
+      comment: The attackers infected the Webmin code with a backdoor that allowed remote code execution.
       
     - techniqueID: T0135
       tactic: Initial Access
@@ -35,8 +35,8 @@ attacks:
       tactic: Initial Access
       techName: Outdated Software Components
       comment: |
-              The webmin build server was apperantly explioitable and the attackers used this to repeat the attack. 
-              *"On September 10th 2018, the vulnerable build server was decomissioned and replaced with a newly installed server running CentOS 7. However, the build directory containing the modified file was copied across from backups made on the original server."*
+              The Webmin build server was apparently exploitable and the attackers used this to repeat the attack. 
+              "On September 10th 2018, the vulnerable build server was decommissioned and replaced with a newly installed server running CentOS 7. However, the build directory containing the modified file was copied across from backups made on the original server."
 
   - attack: Webmin Customers
     index: 2
