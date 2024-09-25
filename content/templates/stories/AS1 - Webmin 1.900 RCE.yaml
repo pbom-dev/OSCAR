@@ -19,8 +19,8 @@ attacks:
         - tactic: Initial Access
          
       - technique:
-        - techid: T0191
-        - techname: Malicious Code In Artifacts
+        - techniqueID: T0191
+        - techName: Malicious Code In Artifacts
         - tactic: Impact
         - comment: The attackers infected the webmin code with a backdoor that allowed remote code execution.
       - technique:

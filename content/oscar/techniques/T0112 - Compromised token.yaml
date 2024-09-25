@@ -35,7 +35,7 @@ detections:
     - D1262
     - D1500
 
-subtechniques:
+subTechniques:
     - T0105
 
 references:

@@ -28,7 +28,7 @@ detections:
   - D1510
   - D1520
 
-subtechinques:
+subTechniques:
   - T0157
 
 references: 

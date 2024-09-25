@@ -1,9 +1,10 @@
-import yaml
-import json
-import glob
-import os
-import logging
 import argparse
+import glob
+import json
+import logging
+import os
+
+import yaml
 
 logger = logging.getLogger(__name__)
 formatter = logging.Formatter('%(asctime)s - %(funcName)s:%(lineno)d - %(levelname)s - %(message)s')
@@ -25,12 +26,14 @@ TACTICS_ENUM = {
     "Collection": "TA10",
     "Exfiltration": "TA11",
     "Impact": "TA12"
- }
+}
+
 
 class PageGenerator(object):
     '''
     This class will generate the full page for a technique with all the mitigations and detections
     '''
+
     def __init__(self, mitigation_path, detection_path):
         self.mitigation_path = mitigation_path
         self.detection_path = detection_path
@@ -44,7 +47,7 @@ class PageGenerator(object):
             j = self.yaml_to_json(fname)
             d[j['id']] = j
         return d
-    
+
     def read_detection(self):
         d = {}
         files_glob = glob.glob(os.path.join(self.detection_path, '*.yaml'))
@@ -53,12 +56,11 @@ class PageGenerator(object):
             d[j['id']] = j
 
         return d
-    
-    def yaml_to_json(self,yaml_file):
+
+    def yaml_to_json(self, yaml_file):
         with open(yaml_file, 'r') as f:
             data = yaml.load(f, Loader=yaml.FullLoader)
         return data
-
 
     def generate(self, tech_fname):
         # save_to_file will save the mitigation and detection files to the mitigation_path and detection_path
@@ -73,19 +75,17 @@ class PageGenerator(object):
             try:
                 tech['mitigations'].append(self.mitigations[m])
             except KeyError:
-                #logger.error(f"No mitigations in {tech_fname}")
+                # logger.error(f"No mitigations in {tech_fname}")
                 pass
-            
+
         for d in j['detections']:
             try:
                 tech['detections'].append(self.detections[d])
             except KeyError:
-                #logger.error(f"No detections in {tech_fname}")
+                # logger.error(f"No detections in {tech_fname}")
                 pass
 
-
         return tech
-
 
 
 def parse_args():
@@ -93,6 +93,7 @@ def parse_args():
     parser.add_argument('-s', '--source', help='OSCAR source path', required=True)
     parser.add_argument('-d', '--dest', help='PBOM data destination path', required=True)
     return parser.parse_args()
+
 
 def setup_directory(pbom_data_path):
     logger.info("Creating directories")
@@ -105,9 +106,10 @@ def setup_directory(pbom_data_path):
     except:
         logger.error("Can't create directory")
 
+
 def yaml_to_json(yaml_file):
     with open(yaml_file, 'r') as f:
-            data = yaml.load(f, Loader=yaml.FullLoader)
+        data = yaml.load(f, Loader=yaml.FullLoader)
     return data
 
 
@@ -126,22 +128,26 @@ def create_release(oscar_source_path, pbom_data_path):
     # transform mitigations and detections to json and save to the pbom_data directory
     logger.info("Copying mitigations and detections to pbom_data directory")
 
-    for fname in glob.glob(os.path.join(oscar_source_path, "mitigations","*.yaml")):
-        with open(os.path.join(pbom_data_path, 'pbom_data', 'mitigations', fname.split('/')[-1].replace('.yaml', '.json')), 'w') as f:
+    for fname in glob.glob(os.path.join(oscar_source_path, "mitigations", "*.yaml")):
+        with open(os.path.join(pbom_data_path, 'pbom_data', 'mitigations',
+                               fname.split('/')[-1].replace('.yaml', '.json')), 'w') as f:
             json.dump(yaml_to_json(fname), f, indent=4)
 
-    for fname in glob.glob(os.path.join(oscar_source_path, "detections","*.yaml")):
-        with open(os.path.join(pbom_data_path, 'pbom_data', 'detections', fname.split('/')[-1].replace('.yaml', '.json')), 'w') as f:
+    for fname in glob.glob(os.path.join(oscar_source_path, "detections", "*.yaml")):
+        with open(
+                os.path.join(pbom_data_path, 'pbom_data', 'detections', fname.split('/')[-1].replace('.yaml', '.json')),
+                'w') as f:
             json.dump(yaml_to_json(fname), f, indent=4)
-    
+
     p = PageGenerator(os.path.join(oscar_source_path, 'mitigations'), os.path.join(oscar_source_path, 'detections'))
-    
-    for tech_fname in glob.glob(os.path.join(oscar_source_path, "techniques","*.yaml")):
+
+    for tech_fname in glob.glob(os.path.join(oscar_source_path, "techniques", "*.yaml")):
         full_page = p.generate(tech_fname)
         # save to file
-        with open(os.path.join(pbom_data_path, 'pbom_data', 'techniques', tech_fname.split('/')[-1].replace('.yaml', '.json')), 'w') as f:
+        with open(os.path.join(pbom_data_path, 'pbom_data', 'techniques',
+                               tech_fname.split('/')[-1].replace('.yaml', '.json')), 'w') as f:
             json.dump(full_page, f, indent=4)
-    
+
     # generate attack story
     logger.info("Generating attack story")
     generate_attack_story(oscar_source_path, pbom_data_path)
@@ -166,7 +172,7 @@ def generate_attack_story(oscar_source_path, pbom_data_path):
             # read yaml file
             y = yaml.load(f, Loader=yaml.SafeLoader)
             # convert to json
-            #print(y)
+            # print(y)
             j = {
                 "name": y['summary'],
                 "description": y['description'],
@@ -206,9 +212,10 @@ def generate_attack_story(oscar_source_path, pbom_data_path):
 
         # sort techniques by attack_index and tactic
         j['techniques'] = sorted(j['techniques'], key=lambda k: (k['attack_index'], TACTICS_ENUM[k['tactic']]))
-                        
+
         # save to json
-        with open(os.path.join(pbom_data_path, 'pbom_data', 'campaigns', filename.split('/')[-1].replace('.yaml', '.json')), 'w') as f:
+        with open(os.path.join(pbom_data_path, 'pbom_data', 'campaigns',
+                               filename.split('/')[-1].replace('.yaml', '.json')), 'w') as f:
             f.write(json.dumps(j, indent=4))
         story_list.append({
             "name": j['name'],
@@ -216,12 +223,11 @@ def generate_attack_story(oscar_source_path, pbom_data_path):
         })
 
     # sort story list techniques by index and TACTICS_ENUM
-    #story_list = sorted(story_list['techniques'], key=lambda k: (k['index'], TACTICS_ENUM[k['tactic']]))
+    # story_list = sorted(story_list['techniques'], key=lambda k: (k['index'], TACTICS_ENUM[k['tactic']]))
 
     # save story list
     with open(os.path.join(pbom_data_path, 'pbom_data', 'campaigns', 'story_list.json'), 'w') as f:
         f.write(json.dumps(story_list, indent=4))
-
 
 
 def generate_matrix(oscar_source_path, pbom_data_path):
@@ -234,36 +240,36 @@ def generate_matrix(oscar_source_path, pbom_data_path):
             # read yaml file
             y = yaml.load(f, Loader=yaml.SafeLoader)
             # convert to json
-            #print(y)
+            # print(y)
             if y['tactic'] not in j:
                 j[y['tactic']] = {"items": [],
                                   "amount": 0,
                                   "tooltip": y['tactic'],
-                                  "tacticid": TACTICS_ENUM[y['tactic']]}
+                                  "tacticId": TACTICS_ENUM[y['tactic']]}
 
-            # default subtechniques
-            
-            y.setdefault('subtechinques', [])
+            # default subTechniques
+
+            y.setdefault('subTechniques', [])
 
             item = {"tags": y['realm'],
-                "id": y['id'],
-                "name": y['summary'],
-                "tooltip": y['summary'],
-                "url": f"https://pbom.dev/techniques/&t_id={y['id']}",
-                "description": y['description'],
-                #"subTechniques": [] if y['subtechinques']==[None] else y['subtechinques'],
-                #"subTechniuqesAmount": len([] if y['subtechinques']==[None] else y['subtechinques']),
-                "version": "1.0",
-                "created": "1970-01-01T00:00:00",
-                "updated": "1970-01-01T00:00:00",
-                "contributors": ["OscarTheGrouch"]
-                }
+                    "id": y['id'],
+                    "name": y['summary'],
+                    "tooltip": y['summary'],
+                    "url": f"https://pbom.dev/techniques/&t_id={y['id']}",
+                    "description": y['description'],
+                    # "subTechniques": [] if y['subTechniques']==[None] else y['subTechniques'],
+                    # "subTechniquesAmount": len([] if y['subTechniques']==[None] else y['subTechniques']),
+                    "version": "1.0",
+                    "created": "1970-01-01T00:00:00",
+                    "updated": "1970-01-01T00:00:00",
+                    "contributors": ["OscarTheGrouch"]
+                    }
             j[y['tactic']]['items'].append(item)
             j[y['tactic']]['amount'] += 1
 
-    # sort matrix by tacticid
-    j = dict(sorted(j.items(), key=lambda item: item[1]['tacticid']))
-    
+    # sort matrix by tacticId
+    j = dict(sorted(j.items(), key=lambda item: item[1]['tacticId']))
+
     # sort items by id
     for tactic in j:
         j[tactic]['items'] = sorted(j[tactic]['items'], key=lambda k: k['id'])
@@ -273,12 +279,12 @@ def generate_matrix(oscar_source_path, pbom_data_path):
         logger.info("Saving matrix.json to %s", os.path.join(pbom_data_path, 'matrix.json'))
         f.write(json.dumps(j, indent=4))
 
-if __name__ == '__main__':
 
+if __name__ == '__main__':
     args = parse_args()
     pbom_data_path = args.dest
     oscar_source_path = args.source
     logger.info("Creating PBOM release")
     create_release(oscar_source_path, pbom_data_path)
-    #generate_attack_story(oscar_source_path, pbom_data_path)
+    # generate_attack_story(oscar_source_path, pbom_data_path)
     logger.info("Done")
