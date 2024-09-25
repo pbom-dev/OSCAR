@@ -6,7 +6,7 @@ summary: Codecov Breach
 description: |
         Codecov is a popular code coverage utility that is used as stem in the CI/CD of many companies.
 
-# Techinques used in attack
+# Techniques used in attack
 attacks:
   - attack: Codecov
     index: 1
@@ -22,7 +22,7 @@ attacks:
       - techniqueID: T0142
         techName: Accidental Public Disclosure Of Internal Resources
         tactic: Reconnaissance
-        comment: The git credentials was indeliberately saved in the public docker image
+        comment: The git credentials was in-deliberately saved in the public docker image
       
       - techniqueID: T0114
         techName: Compromised Service Account
@@ -32,7 +32,7 @@ attacks:
       - techniqueID: T0191
         techName: Malicious Code In Artifacts
         tactic: Impact
-        comment: The Bash Uploader script was modified to exfiltrate environnent variables of the running system
+        comment: The Bash Uploader script was modified to exfiltrate environment variables of the running system
 
   - attack: Codecov users
     index: 2
@@ -45,7 +45,7 @@ attacks:
         tactic: Execution
         techName: Command Injection
         comment: |
-                When the Codecov image was executed - the malicious implant in the Bash Uploader script exflitrated environment variable to the attacker controlled
+                When the Codecov image was executed - the malicious implant in the Bash Uploader script exfiltrated environment variable to the attacker controlled
       
       - techniqueID: T0122
         tactic: Initial Access

@@ -1,6 +1,6 @@
 id: M1250
 type: Mitigation
-summary: Enable data sencryption in transit
+summary: Enable data encryption in transit
 description: |
   Data encryption in transit is a critical security control in cloud computing that involves encrypting data as it moves between two points over a network or the internet. This is important to prevent data breaches, protect sensitive data, and comply with data privacy regulations. 
   Cloud service providers use various encryption protocols to establish a secure communication channel, and organizations should ensure that encryption is properly implemented and verified.

@@ -6,7 +6,7 @@ summary: Spoofed Dependabot
 description: |
     A large-scale attack targeted hundreds of GitHub repositories, involving malicious code commits designed to mimic "Dependabot," a standard GitHub tool. The attackers attempted to go unnoticed by impersonating this trusted tool.
         
-# Techinques used in attack
+# Techniques used in attack
 attacks:
   - attack: Github Repos
     index: 1
@@ -44,7 +44,7 @@ attacks:
         Attackers also infected Javascript files with a password stealing malware.
    
   
-  - attack: Users of code for inefected repoistories
+  - attack: Users of code for infected repositories
     index: 2
     stage: post-supply-chain
     customer: 1

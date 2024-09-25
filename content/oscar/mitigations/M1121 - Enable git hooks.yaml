@@ -3,7 +3,7 @@ type: Mitigation
 summary: Enable git hooks to find source code related issues early
 description: |
   Enable git hooks to automate the scanning of source code before it is published via git commits.  
-  All Git implementations include a hooks directory inthe .git base directory.  
+  All Git implementations include a hooks directory in the .git base directory.  
   In that directory are several git automations called "hooks".  
   These hooks will automatically run scripts when certain actions happen.  
   The best example of this is the pre-commit hook that runs before a git commit is successful. 

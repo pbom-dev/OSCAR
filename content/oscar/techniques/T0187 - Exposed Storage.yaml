@@ -10,7 +10,7 @@ summary: Exposed storage
 
 description: |
   Attackers are constantly searching for any data that might help them achieve their malicious goals. 
-  Exposed storage such as S3 buckets are highly values since it might contain sensetivie information that can be used to yield an attack. 
+  Exposed storage such as S3 buckets are highly values since it might contain sensitive information that can be used to yield an attack. 
   For example: file system snapshots that might contain code or secrets.
 
 mitigations: 

@@ -4,9 +4,9 @@ date: 2022-12
 
 summary: Pytorch Dependency Confusion
 description: |
-    PyTorch is a machine learning framework based on the Torch library. On December 2022, it was revealed that several builds were infected by malware that was designed to steal environment variables and files. This attack was facilitiated by using dependency confusion of the package "torchtriton" which PyTorch was consuming.
+    PyTorch is a machine learning framework based on the Torch library. On December 2022, it was revealed that several builds were infected by malware that was designed to steal environment variables and files. This attack was facilitated by using dependency confusion of the package "torchtriton" which PyTorch was consuming.
         
-# Techinques used in attack
+# Techniques used in attack
 attacks:
   - attack: Torchtriton package
     index: 1
@@ -18,7 +18,7 @@ attacks:
       techName: Dependency Confusion
       tactic: Initial Access
       comment: |
-        Torchtriron is a package that the Pytorch project is consuming. On December 2022, the package was altered to exfiltrate sensitive information. Later on, the person that performs this attack confessed anonymosly that it was done for research purposes and all the collected data was deleted.
+        Torchtriton is a package that the Pytorch project is consuming. On December 2022, the package was altered to exfiltrate sensitive information. Later on, the person that performs this attack confessed anonymously that it was done for research purposes and all the collected data was deleted.
         
        
   

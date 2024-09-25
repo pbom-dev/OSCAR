@@ -6,7 +6,7 @@ summary: JuiceStealer - PyPi Supply Chain Attack
 description: |
     The threat actor known as "JuiceLedger" orchestrated a large-scale attack on PyPi, the official Python package repository. This attack was multifaceted, targeting package maintainers by attempting to compromise their PyPi accounts. Additionally, the attacker engaged in TypoSquatting, uploading malicious packages to the repository
         
-# Techinques used in attack
+# Techniques used in attack
 attacks:
   - attack: PyPi package maintainers
     index: 1
@@ -36,7 +36,7 @@ attacks:
         Simultaneously with the phishing attempts, the same malware, JuiceStealer, was introduced into hundreds of Python packages, strategically designed to mimic legitimate packages
        
   
-  - attack: Users of code for inefected repoistories
+  - attack: Users of code for infected repositories
     index: 2
     stage: post-supply-chain
     customer: 1

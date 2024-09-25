@@ -1,6 +1,6 @@
 ---
 title: "Technique"
-description: "Techniques represent “how” an adversary achieves a tactical objective by performing an action. For example, an adversary create a backdoor in third party software used within the organization's supply chain. Techniques may also represent “what” an adversary gains by
+description: "Techniques represent "how" an adversary achieves a tactical objective by performing an action. For example, an adversary create a backdoor in third party software used within the organization's supply chain. Techniques may also represent "what" an adversary gains by
 performing an action. This is a useful distinction for the Discovery tactic as the techniques highlight what type of information an adversary is after with a particular action. 
 
 Sub-techniques further break down behaviors described by techniques into more specific descriptions of how behavior is used to achieve an objective. For example, with backdoor added to third party code, the adversary would need to become a maintainer of the third party library or masquerade the backdoor within a potentially legitimate pull request.
@@ -23,7 +23,7 @@ summary: # REQUIRED - <key:value>
 description: # REQUIRED - <key:value> - supports markdown
 mitigations: # REQUIRED - <list> -reference to mitigation references
 detections: # REQUIRED - <list> - reference to detection definitions
-subtechinques: # OPTIONAL <list> - reference to TechIDs
+subTechniques: # OPTIONAL <list> - reference to techniqueIDs
 references: # OPTIONAL <list> - reference to attacks, articles, blogs etc...
 metadata:
   state: # REQUIRED <key:value> choose  draft or release
@@ -46,21 +46,19 @@ description: |
     Dependency confusion is a type of supply chain attack that occurs when an attacker exploits the way some package managers, such as npm and PyPI, resolve dependencies when installing software libraries.
     In a typical software development project, developers rely on a variety of external libraries, often referred to as dependencies, to build their applications. These libraries are typically stored in a remote repository, and developers use a package manager to install and manage them. An attacker will utilize prior knowledge of usage of dependencies (*Discover used open-source dependencies*) to upload a malicious package with the same name to a public repository. This might "confuse" package managers to use to public resource instead of the local one - thus executing or infecting the CI/CD. This can happen on the developer's machine or the build system and has the potential to further steps of an attack - for example, if the malicious code exfiltrate an access token to production environment
 
-mitigations:
-# reference to mitigation references
+mitigations: # reference to mitigation references
     - M1200
 
-detections: 
-# reference to detection defintitions
+detections: # reference to detection definitions
     - Detect rogue outgoing traffic from CI/CD system
     
-subtechinques:
-# reference to TechIDs
+subTechniques: # reference to techniqueIDs
     - 
 
-refrences:
+references:
     - https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610
     - https://pytorch.org/blog/compromised-nightly-dependency/
+
 metadata:
     version: 0.1
     state: draft
@@ -169,11 +167,11 @@ summary: Dependency Confusion
 **Sample Response:**
 
 ```YAML
-decription: |
+description: |
       Dependency confusion is a type of supply chain attack that occurs when an attacker exploits the way some package managers, such as npm and PyPI, resolve dependencies when installing software libraries.
 ```
 
-## mitigiations
+## mitigations
 
 **Type:** String (long text)\
 **Description:** a list of mitigation methods - please reference a mitigation id. \
@@ -196,7 +194,7 @@ detections:
   - D1200
 ```
 
-## subtechinques
+## subTechniques
 
 **Type:** array\
 **Description:** A list of all sub-techniques associated with the technique itself.\
@@ -205,7 +203,7 @@ detections:
 **Sample Response:**
 
 ```YAML
-subtechnique: 
+subTechnique: 
   - T1001
   - T1002
 ```
@@ -234,7 +232,7 @@ references:
 **Description:** state of document. The options are `draft` or `release`\
 **Field requirement:** <span style="color:#FF3A39;background-color:#FFF2F1">Mandatory</span>
 
-### metadata.versionte
+### metadata.version
 **Type:** String\
 **Description:** Version number\
 **Field requirement:** <span style="color:#39B55B; background-color:#EBF7EE;">Optional</span>

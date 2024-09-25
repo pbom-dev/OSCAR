@@ -6,7 +6,7 @@ summary: CCleaner
 description: |
         CCleaner is a popular system cleanup software
 
-# Techinques used in attack
+# Techniques used in attack
 attacks:
   - attack: CCleaner
     index: 1
