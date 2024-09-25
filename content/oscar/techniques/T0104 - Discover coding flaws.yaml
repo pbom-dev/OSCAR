@@ -10,9 +10,9 @@ realm:
 summary: Discover coding flaws
 
 description: |
-  &ensp;This technique involves identifying coding flaws in an application's codebase, including vulnerabilities such as buffer overflows, race conditions, injection flaws, and other software bugs that can be exploited by attackers to gain unauthorized access or cause system disruption.<br>
-  &ensp;An attacker can use this technique to gain insight into potential weaknesses in the application's codebase and identify attack vectors that can be exploited in future attacks.<br> 
-  &ensp;By discovering coding flaws in an application, an attacker can develop a better understanding of the application's architecture and potential vulnerabilities.
+  This technique involves identifying coding flaws in an application's codebase, including vulnerabilities such as buffer overflows, race conditions, injection flaws, and other software bugs that can be exploited by attackers to gain unauthorized access or cause system disruption.
+  An attacker can use this technique to gain insight into potential weaknesses in the application's codebase and identify attack vectors that can be exploited in future attacks.
+  By discovering coding flaws in an application, an attacker can develop a better understanding of the application's architecture and potential vulnerabilities.
 
 mitigations: 
   - M1720

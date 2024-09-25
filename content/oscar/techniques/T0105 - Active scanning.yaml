@@ -9,9 +9,9 @@ realm:
 summary: Active scanning
 
 description: |
-  &ensp;This technique involves actively scanning an organization's cloud infrastructure for vulnerabilities and misconfigurations that can be exploited by attackers to gain unauthorized access or cause system disruption.<br>
-  &ensp;An attacker can use this technique to identify vulnerable assets within an organization's cloud infrastructure and develop an understanding of the target's attack surface.<br> 
-  &ensp;By conducting active scanning, an attacker can gather information about an organization's network topology, application architecture, and security controls, and use this information to plan and execute more effective attacks.
+  This technique involves actively scanning an organization's cloud infrastructure for vulnerabilities and misconfigurations that can be exploited by attackers to gain unauthorized access or cause system disruption.
+  An attacker can use this technique to identify vulnerable assets within an organization's cloud infrastructure and develop an understanding of the target's attack surface.
+  By conducting active scanning, an attacker can gather information about an organization's network topology, application architecture, and security controls, and use this information to plan and execute more effective attacks.
 
 mitigations: 
   - M1450
