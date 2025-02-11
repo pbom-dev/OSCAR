@@ -23,7 +23,7 @@ mitigations:
 detections: 
   - D1650
 
-refrences:
+references:
   - https://circleci.com/blog/jan-4-2023-incident-report/
 
 metadata:
