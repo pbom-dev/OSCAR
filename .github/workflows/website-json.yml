@@ -33,7 +33,7 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
             github_token: ${{ secrets.TOKEN }}
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: matrix
           path: matrix.json
